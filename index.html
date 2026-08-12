@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><title>主板每日筛选 · 总览</title>
+<style>
+body{font-family:-apple-system,'Segoe UI','Microsoft YaHei',sans-serif;background:#f5f6fa;margin:0;padding:24px;color:#1f2329}
+h1{font-size:20px;margin:0 0 4px}
+.sub{color:#8a8f99;font-size:13px;margin-bottom:16px;line-height:1.6}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin-bottom:16px}
+.cards{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.stat{background:#f0f5ff;border-radius:10px;padding:12px 18px;min-width:140px}
+.stat .n{font-size:24px;font-weight:700;color:#2f54eb}
+.stat .l{font-size:12px;color:#8a8f99;margin-top:2px}
+.stat.red{background:#fff1f0}.stat.red .n{color:#cf1322}
+.stat.grn{background:#f6ffed}.stat.grn .n{color:#389e0d}
+.dash-title{font-size:14px;font-weight:700;margin:0 0 12px}
+.bar-wrap{margin:10px 0}
+.bar-label{font-size:12px;color:#5a6068;margin-bottom:4px;display:flex;justify-content:space-between}
+.bar{height:22px;border-radius:6px;overflow:hidden;display:flex;background:#eef0f3}
+.bar .up{background:#cf1322}.bar .dn{background:#389e0d}
+.legend{font-size:12px;color:#8a8f99;margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px 12px;text-align:right;border-bottom:1px solid #eef0f3}
+th{background:#fafbfc;color:#5a6068;font-weight:600;position:sticky;top:0}
+td.code{text-align:left;font-family:monospace;color:#1f2329;font-weight:600}
+td:nth-child(2){text-align:left}
+tr:hover{background:#f8faff}
+.note{font-size:12px;color:#8a8f99;margin-top:14px;line-height:1.7}
+.pending{color:#bfbfbf;font-style:italic}
+.daylink{display:inline-block;margin:6px 8px 6px 0;padding:8px 14px;background:#fff;border:1px solid #e3e6eb;border-radius:8px;text-decoration:none;color:#2f54eb;font-size:14px}
+.daylink:hover{background:#f0f5ff}
+.qbar{margin:10px 0 18px}
+.qbar input{padding:8px 12px;font-size:14px;border:1px solid #ccd1d9;border-radius:8px}
+.qbar button{padding:8px 16px;font-size:14px;border:0;border-radius:8px;background:#2f54eb;color:#fff;cursor:pointer;margin-left:6px}
+.fab{position:fixed;right:22px;bottom:22px;width:52px;height:52px;border-radius:50%;background:#2f54eb;color:#fff;
+box-shadow:0 4px 14px rgba(47,84,235,.4);display:flex;align-items:center;justify-content:center;text-decoration:none;
+font-size:24px;z-index:60;line-height:1}
+.fab:hover{background:#1d39c4}
+.fab span{font-size:11px;display:block;text-align:center;line-height:1.15}
+th.sortable{cursor:pointer;user-select:none;position:relative}
+th.sortable:hover{color:#2f54eb}
+th.sortable.asc::after{content:' ▲';font-size:9px;color:#2f54eb}
+th.sortable.desc::after{content:' ▼';font-size:9px;color:#2f54eb}
+</style></head><body>
+<h1>A股主板 · 每日「14:30上涨 & 前收跌」筛选</h1>
+<div class='sub'>每个交易日14:30自动生成当日页（次日早盘列待补），次日约11:35（早盘收盘后）自动回填早盘收盘价。下方按天查询 / 点击进入独立日页面。</div>
+<div class='qbar'>
+<input id='q' type='date' placeholder='选择日期'><button onclick='go()'>查询</button>
+<span id='msg' style='color:#cf1322;margin-left:10px;font-size:13px'></span>
+</div>
+<div class='card'><div class='dash-title'>📅 全部日页面（共 3 天）</div><a class='daylink' href='day/2026-08-11.html'>2026-08-11 <span style='color:#8a8f99;font-size:12px'>(233只·✅已补齐)</span></a><a class='daylink' href='day/2026-08-10.html'>2026-08-10 <span style='color:#8a8f99;font-size:12px'>(1510只·✅已补齐)</span></a><a class='daylink' href='day/2026-08-07.html'>2026-08-07 <span style='color:#8a8f99;font-size:12px'>(514只·✅已补齐)</span></a></div>
+<div class='card'><div class='dash-title'>📊 最新统计看板（2026-08-12 · 锚点 2026-08-11）</div>
+<div class='cards'>
+<div class='stat'><div class='n'>233</div><div class='l'>符合条件个股数</div></div>
+<div class='stat red'><div class='n'>159</div><div class='l'>2026-08-12 上午收盘 上涨<br>(相对2026-08-11收盘·市场口径)</div></div>
+<div class='stat grn'><div class='n'>74</div><div class='l'>2026-08-12 上午收盘 下跌<br>(相对2026-08-11收盘)</div></div>
+<div class='stat red'><div class='n'>215</div><div class='l'>2026-08-12 上午 延续上涨<br>(相对2026-08-10收盘)</div></div>
+<div class='stat grn'><div class='n'>18</div><div class='l'>2026-08-12 上午 低于2026-08-10收盘</div></div>
+</div>
+<div class='bar-wrap'>
+<div class='bar-label'><span>2026-08-12 上午收盘 相对 2026-08-11 收盘（市场标准"上涨"口径）</span><span>上涨 159 · 下跌 74</span></div>
+<div class='bar'><div class='up' style='width:68%'></div><div class='dn' style='width:32%'></div></div>
+</div>
+<div class='bar-wrap'>
+<div class='bar-label'><span>2026-08-12 上午收盘 相对 2026-08-10 收盘（延续前收口径）</span><span>上涨 215 · 下跌 18</span></div>
+<div class='bar'><div class='up' style='width:92%'></div><div class='dn' style='width:8%'></div></div>
+</div>
+注：A股“当日上涨”的官方基准是前一交易日收盘。对 2026-08-12 而言，前一交易日是 2026-08-11，故“2026-08-12上午上涨”以 2026-08-11 收盘为基准。</div>
+<script>
+var manifest=[{"date": "2026-08-11", "filled": true, "total": 233, "list_date": "2026-08-12"}, {"date": "2026-08-10", "filled": true, "total": 1510, "list_date": "2026-08-11"}, {"date": "2026-08-07", "filled": true, "total": 514, "list_date": "2026-08-10"}];
+function go(){var d=document.getElementById('q').value;if(!d){return;}
+var hit=manifest.find(function(m){return m.date===d;});
+if(hit){location.href='day/'+d+'.html';}
+else{document.getElementById('msg').textContent='该日暂无数据（可能不是交易日或尚未生成）';}}
+</script>
+</body></html>
