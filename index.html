@@ -35,15 +35,20 @@ box-shadow:0 4px 14px rgba(47,84,235,.4);display:flex;align-items:center;justify
 font-size:24px;z-index:60;line-height:1}
 .fab:hover{background:#1d39c4}
 .fab span{font-size:11px;display:block;text-align:center;line-height:1.15}
+.fab-top{background:#fff;color:#2f54eb;border:1px solid #e3e6eb;box-shadow:0 4px 14px rgba(0,0,0,.08);bottom:84px}
+.fab-top:hover{background:#f0f5ff}
+.fab-top svg{display:block}
 th.sortable{cursor:pointer;user-select:none;position:relative}
 th.sortable:hover{color:#2f54eb}
 th.sortable.asc::after{content:' ▲';font-size:9px;color:#2f54eb}
 th.sortable.desc::after{content:' ▼';font-size:9px;color:#2f54eb}
-.star{text-align:center;cursor:pointer;font-size:18px;color:#d9d9d9;user-select:none;width:34px}
-.star:hover{color:#faad14}
+.star{text-align:center;cursor:pointer;user-select:none;width:34px}
+.star svg{vertical-align:middle;transition:fill .15s}
+.star:hover svg{fill:#faad14}
 .starred{background:#fffbe6}
-.starred .star{color:#faad14}
+.starred .star svg{fill:#faad14}
 .starh{width:34px;text-align:center}
+.starh svg{vertical-align:middle}
 .theme{text-align:left;color:#5a6068;max-width:240px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style></head><body>
 <h1>A股主板 · 每日「14:30上涨 & 前收跌」筛选</h1>
@@ -67,4 +72,5 @@ var hit=manifest.find(function(m){return m.date===d;});
 if(hit){location.href='day/'+d+'.html';}
 else{document.getElementById('msg').textContent='该日暂无数据（可能不是交易日或尚未生成）';}}
 </script>
+<a class='fab fab-top' href='javascript:void(0)' onclick='window.scrollTo({top:0,behavior:"smooth"})' title='返回顶部' aria-label='返回顶部'><svg viewBox='0 0 24 24' width='22' height='22' fill='#2f54eb'><path d='M12 4l8 8h-5v8h-6v-8H4z'/></svg></a>
 </body></html>
