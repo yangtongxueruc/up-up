@@ -1,0 +1,257 @@
+{
+ "generated_at": "2026-08-13 11:01",
+ "baseline": 41.4,
+ "n": 3603,
+ "candidates": [
+  {
+   "name": "涨幅≤0.6% 且 换手≥2% 且 振幅≥3%",
+   "known": false,
+   "n": 111,
+   "hr": 64.9,
+   "mean_ret": 1.2,
+   "excess": 23.4,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "换手≥3% 且 量比≤1.0 且 活跃度≥3",
+   "known": false,
+   "n": 417,
+   "hr": 64.0,
+   "mean_ret": 2.08,
+   "excess": 22.6,
+   "days_beat": 6,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "known": false,
+   "n": 149,
+   "hr": 60.4,
+   "mean_ret": 1.15,
+   "excess": 19.0,
+   "days_beat": 3,
+   "days_total": 7
+  },
+  {
+   "name": "换手≥5%",
+   "known": false,
+   "n": 500,
+   "hr": 58.2,
+   "mean_ret": 1.65,
+   "excess": 16.8,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤0.6% 且 换手≥2% 且 活跃度≥3",
+   "known": false,
+   "n": 181,
+   "hr": 57.5,
+   "mean_ret": 0.96,
+   "excess": 16.0,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "换手≥4%",
+   "known": false,
+   "n": 658,
+   "hr": 56.7,
+   "mean_ret": 1.54,
+   "excess": 15.2,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤0.6% 且 换手≥3%",
+   "known": false,
+   "n": 100,
+   "hr": 56.0,
+   "mean_ret": 1.23,
+   "excess": 14.6,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤0.3% 且 换手≥2%",
+   "known": false,
+   "n": 97,
+   "hr": 55.7,
+   "mean_ret": 0.85,
+   "excess": 14.2,
+   "days_beat": 3,
+   "days_total": 7
+  },
+  {
+   "name": "换手≥3%",
+   "known": false,
+   "n": 943,
+   "hr": 55.6,
+   "mean_ret": 1.39,
+   "excess": 14.1,
+   "days_beat": 6,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤0.3% 且 换手≥3% 且 量比≤1.2",
+   "known": false,
+   "n": 49,
+   "hr": 55.1,
+   "mean_ret": 0.78,
+   "excess": 13.7,
+   "days_beat": 3,
+   "days_total": 6
+  },
+  {
+   "name": "振幅≥4%",
+   "known": false,
+   "n": 1314,
+   "hr": 53.9,
+   "mean_ret": 1.15,
+   "excess": 12.4,
+   "days_beat": 5,
+   "days_total": 7
+  },
+  {
+   "name": "活跃度≥4",
+   "known": false,
+   "n": 998,
+   "hr": 53.3,
+   "mean_ret": 1.22,
+   "excess": 11.9,
+   "days_beat": 5,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤1.0% 且 换手≥2%",
+   "known": false,
+   "n": 331,
+   "hr": 52.9,
+   "mean_ret": 0.71,
+   "excess": 11.4,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "换手≥2%",
+   "known": false,
+   "n": 1484,
+   "hr": 52.0,
+   "mean_ret": 1.05,
+   "excess": 10.5,
+   "days_beat": 6,
+   "days_total": 7
+  },
+  {
+   "name": "振幅≥3%",
+   "known": false,
+   "n": 2112,
+   "hr": 47.8,
+   "mean_ret": 0.75,
+   "excess": 6.4,
+   "days_beat": 6,
+   "days_total": 7
+  },
+  {
+   "name": "换手≥1%",
+   "known": false,
+   "n": 2635,
+   "hr": 45.7,
+   "mean_ret": 0.58,
+   "excess": 4.3,
+   "days_beat": 6,
+   "days_total": 7
+  },
+  {
+   "name": "活跃度≥3",
+   "known": false,
+   "n": 2576,
+   "hr": 45.1,
+   "mean_ret": 0.57,
+   "excess": 3.7,
+   "days_beat": 5,
+   "days_total": 7
+  },
+  {
+   "name": "量比≤0.8",
+   "known": false,
+   "n": 1033,
+   "hr": 44.7,
+   "mean_ret": 0.59,
+   "excess": 3.3,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "振幅≥2%",
+   "known": false,
+   "n": 3105,
+   "hr": 43.1,
+   "mean_ret": 0.45,
+   "excess": 1.7,
+   "days_beat": 6,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤0.3%",
+   "known": false,
+   "n": 368,
+   "hr": 42.9,
+   "mean_ret": 0.05,
+   "excess": 1.5,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "量比≤1.0",
+   "known": false,
+   "n": 2040,
+   "hr": 42.9,
+   "mean_ret": 0.46,
+   "excess": 1.5,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "量比≤1.2",
+   "known": false,
+   "n": 2729,
+   "hr": 42.2,
+   "mean_ret": 0.43,
+   "excess": 0.8,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤0.6%",
+   "known": false,
+   "n": 744,
+   "hr": 41.4,
+   "mean_ret": 0.11,
+   "excess": -0.0,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "涨幅≤1.0%",
+   "known": false,
+   "n": 1243,
+   "hr": 39.7,
+   "mean_ret": 0.07,
+   "excess": -1.7,
+   "days_beat": 4,
+   "days_total": 7
+  },
+  {
+   "name": "B：涨幅≤0.3% 且 换手≥3%",
+   "known": true,
+   "n": 52,
+   "hr": 57.7,
+   "mean_ret": 0.95,
+   "excess": 16.3,
+   "days_beat": 3,
+   "days_total": 6
+  }
+ ]
+}
