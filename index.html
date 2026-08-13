@@ -61,7 +61,7 @@ th.sortable.desc::after{border-top-color:#2f54eb}
 .rulebar button:hover{border-color:#2f54eb;color:#2f54eb}
 .rulebar button.on{background:#2f54eb;color:#fff;border-color:#2f54eb}
 .rtag{display:inline-block;min-width:20px;padding:2px 8px;border-radius:6px;font-weight:700;font-size:12px;color:#fff;margin:1px 2px}
-.rtag.rA{background:#2f54eb}.rtag.rC{background:#fa8c16}.rtag.rt0{background:#f0f0f0;color:#bfbfbf}
+.rtag.rA{background:#2f54eb}.rtag.rC{background:#fa8c16}.rtag.rX{background:#13c2c2}.rtag.rt0{background:#f0f0f0;color:#bfbfbf}
 tr.rule-hit{background:#fffbe6}
 tr.rule-hit:hover{background:#fff1b8}
 </style></head><body>
@@ -83,9 +83,10 @@ tr.rule-hit:hover{background:#fff1b8}
 <div class='stat' style='background:#eef4ff'><div class='n' style='color:#2f54eb'>20</div><div class='l'>命中规则 A<br>(涨幅≤0.6% 且 换手≥2%)</div></div>
 <div class='stat' style='background:#fff4e6'><div class='n' style='color:#fa8c16'>0</div><div class='l'>命中规则 C<br>(涨幅≤0.6% 且 换手≥3% 且 量比≤1.2)</div></div>
 <div class='stat' style='background:#f9f0ff'><div class='n' style='color:#722ed1'>0</div><div class='l'>同时命中 A 与 C</div></div>
+<div class='stat' style='background:#e6fffb'><div class='n' style='color:#13c2c2'>12</div><div class='l'>命中规则 X（探索最优）<br>涨幅≤0.6% 且 换手≥2% 且 振幅≥3%</div></div>
 </div><div class='stat'><div class='n' style='font-size:17px'>平</div><div class='l'>今日大盘 regime<br>(沪深300 +0.06%)</div></div><div class='stat grn'><div class='n'>高</div><div class='l'>规则A 可信度<br>(历史同类超额 +18pp，n=1828)</div></div><div class='legend' style='margin-top:6px'>规则 A＝「14:30涨幅≤0.6%% 且 换手率≥2%%」。regime 按沪深300当日涨跌幅分档；可信度为该档历史回测中规则A相对当日基准的超额胜率，<b>非绝对胜率</b>。详见分析页。</div><div class='cards'><div class='stat' style='flex:1 1 100%'>
 <div class='n' style='font-size:15px'>🔎 涨幅≤0.6% 且 换手≥2% 且 振幅≥3%</div>
-<div class='l'>探索候选规则（样本内·待前向验证）<br>n=111 · 历史收涨率 64.9%（超额 +23.4pp）· 均收益 +1.20% · 稳健 4/7 天</div></div></div></div>
+<div class='l'>探索候选规则（样本内·待前向验证）<br>n=138 · 历史收涨率 60.9%（超额 +21.3pp）· 均收益 +1.00% · 稳健 5/8 天</div></div></div></div>
 <script>
 var manifest=[{"date": "2026-08-13", "filled": false, "total": 237, "list_date": "2026-08-14"}, {"date": "2026-08-12", "filled": true, "total": 1409, "list_date": "2026-08-13"}, {"date": "2026-08-11", "filled": true, "total": 233, "list_date": "2026-08-12"}, {"date": "2026-08-10", "filled": true, "total": 1510, "list_date": "2026-08-11"}, {"date": "2026-08-07", "filled": true, "total": 514, "list_date": "2026-08-10"}, {"date": "2026-08-06", "filled": true, "total": 318, "list_date": "2026-08-07"}, {"date": "2026-08-05", "filled": true, "total": 251, "list_date": "2026-08-06"}, {"date": "2026-08-04", "filled": true, "total": 400, "list_date": "2026-08-05"}, {"date": "2026-08-03", "filled": true, "total": 377, "list_date": "2026-08-04"}];
 function go(){var d=document.getElementById('q').value;if(!d){return;}
