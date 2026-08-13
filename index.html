@@ -55,6 +55,15 @@ th.sortable.desc::after{border-top-color:#2f54eb}
 .theme{text-align:left;color:#5a6068;max-width:220px;white-space:normal;word-break:break-word;overflow:visible}
 .act{text-align:center;font-weight:700;color:#fff;border-radius:6px;width:60px}
 .act1{background:#bfbfbf}.act2{background:#ffc53d;color:#614700}.act3{background:#ff9c3f}.act4{background:#fa541c}.act5{background:#cf1322}
+.rulebar{margin:0 0 12px;font-size:13px;color:#5a6068;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rulebar .lab{font-weight:600;color:#5a6068}
+.rulebar button{border:1px solid #d0d5dd;background:#fff;color:#5a6068;padding:5px 13px;border-radius:7px;cursor:pointer;font-size:13px;transition:all .15s}
+.rulebar button:hover{border-color:#2f54eb;color:#2f54eb}
+.rulebar button.on{background:#2f54eb;color:#fff;border-color:#2f54eb}
+.rtag{display:inline-block;min-width:20px;padding:2px 8px;border-radius:6px;font-weight:700;font-size:12px;color:#fff;margin:1px 2px}
+.rtag.rA{background:#2f54eb}.rtag.rC{background:#fa8c16}.rtag.rt0{background:#f0f0f0;color:#bfbfbf}
+tr.rule-hit{background:#fffbe6}
+tr.rule-hit:hover{background:#fff1b8}
 </style></head><body>
 <h1>A股主板 · 每日「14:30上涨 & 前收跌」筛选</h1>
 <div class='sub'>每个交易日14:30自动生成当日页（次日早盘列待补），次日约11:35（早盘收盘后）自动回填早盘收盘价。下方按天查询 / 点击进入独立日页面。</div>
@@ -69,7 +78,7 @@ th.sortable.desc::after{border-top-color:#2f54eb}
 <div class='stat'><div class='n'>待更新</div><div class='l'>2026-08-13 上午收盘<br>(次日早盘列待补)</div></div>
 </div>
 <div class='legend'>本页于 2026-08-12 14:30 生成（当日14:30快照）。"次日早盘收盘价"列将在 <b>2026-08-13 11:35</b> 左右（早盘收盘后）自动回填。</div>
-</div>
+<div class='stat'><div class='n' style='font-size:17px'>涨</div><div class='l'>今日大盘 regime<br>(沪深300 +0.58%)</div></div><div class='stat red'><div class='n'>低</div><div class='l'>规则A 可信度<br>(历史同类超额 -3pp，n=514)</div></div><div class='legend' style='margin-top:6px'>规则 A＝「14:30涨幅≤0.6%% 且 换手率≥2%%」。regime 按沪深300当日涨跌幅分档；可信度为该档历史回测中规则A相对当日基准的超额胜率，<b>非绝对胜率</b>。详见分析页。</div></div>
 <script>
 var manifest=[{"date": "2026-08-12", "filled": false, "total": 1409, "list_date": "2026-08-13"}, {"date": "2026-08-11", "filled": true, "total": 233, "list_date": "2026-08-12"}, {"date": "2026-08-10", "filled": true, "total": 1510, "list_date": "2026-08-11"}, {"date": "2026-08-07", "filled": true, "total": 514, "list_date": "2026-08-10"}, {"date": "2026-08-06", "filled": true, "total": 318, "list_date": "2026-08-07"}, {"date": "2026-08-05", "filled": true, "total": 251, "list_date": "2026-08-06"}, {"date": "2026-08-04", "filled": true, "total": 400, "list_date": "2026-08-05"}, {"date": "2026-08-03", "filled": true, "total": 377, "list_date": "2026-08-04"}];
 function go(){var d=document.getElementById('q').value;if(!d){return;}
