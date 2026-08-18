@@ -82,8 +82,8 @@ tr.rule-hit:hover{background:#fff1b8}
 <div class='stat' style='background:#f9f0ff'><div class='n' style='color:#722ed1'>2</div><div class='l'>同时命中 A 与 C</div></div>
 <div class='stat' style='background:#e6fffb'><div class='n' style='color:#13c2c2'>9</div><div class='l'>命中规则 X（探索最优）<br>换手≥3% 且 量比≤1.0 且 活跃度≥3</div></div>
 </div><div class='stat'><div class='n' style='font-size:17px'>强涨</div><div class='l'>今日大盘 regime<br>(沪深300 +1.27%)</div></div><div class='stat red'><div class='n'>低</div><div class='l'>规则A 可信度<br>(历史同类超额 -25pp，n=651)</div></div><div class='legend' style='margin-top:6px'>规则 A＝「14:30涨幅≤0.6%% 且 换手率≥2%%」。regime 按沪深300当日涨跌幅分档；可信度为该档历史回测中规则A相对当日基准的超额胜率，<b>非绝对胜率</b>。详见分析页。</div><div class='cards'><div class='stat' style='flex:1 1 100%'>
-<div class='n' style='font-size:15px'>🔎 换手≥3% 且 量比≤1.0 且 活跃度≥3</div>
-<div class='l'>探索候选规则（样本内·待前向验证）<br>n=618 · 历史收涨率 59.5%（超额 +20.7pp）· 均收益 +1.48% · 稳健 8/9 天</div></div></div></div>
+<div class='n' style='font-size:15px'>🔎 涨幅≤0.6% 且 换手≥2% 且 振幅≥3%</div>
+<div class='l'>探索候选规则（样本内·待前向验证）<br>n=186 · 历史收涨率 63.4%（超额 +18.9pp）· 均收益 +0.96% · 稳健 7/10 天</div></div></div></div>
 <div class='card'>
 <div class='rulebar'><span class='lab'>按命中规则筛选：</span><button data-f='all' onclick="applyRuleFilter('all',this)" class='on'>全部</button><button data-f='A' onclick="applyRuleFilter('A',this)">命中规则 A</button><button data-f='C' onclick="applyRuleFilter('C',this)">命中规则 C</button><button data-f='AC' onclick="applyRuleFilter('AC',this)">同时命中 A 与 C</button><button data-f='X' onclick="applyRuleFilter('X',this)" style='border-color:#13c2c2;color:#13c2c2'>命中规则 X · 换手≥3% 且 量比≤1.0 且 活跃度≥3</button><span id='rulecnt' style='color:#8a8f99'></span></div>
 <table>
