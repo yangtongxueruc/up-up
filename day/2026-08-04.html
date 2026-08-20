@@ -65,7 +65,44 @@ th.sortable.desc::after{border-top-color:#2f54eb}
 .rtag.rA{background:#2f54eb}.rtag.rC{background:#fa8c16}.rtag.rX{background:#13c2c2}.rtag.rt0{background:#f0f0f0;color:#bfbfbf}
 tr.rule-hit{background:#fffbe6}
 tr.rule-hit:hover{background:#fff1b8}
+
+.dprow{display:flex;justify-content:flex-end;align-items:center;gap:9px;margin:0 0 10px}
+.dplab{font-size:12px;color:#8a8f99;white-space:nowrap}
+.dpbox{position:relative;display:inline-flex}
+.dpbtn{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;background:#fff;border:1px solid #d8dce3;border-radius:9px;
+cursor:pointer;font-size:14px;color:#1f2329;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:border-color .15s,color .15s;
+font-family:inherit;line-height:1.2}
+.dpbtn:hover{border-color:#2f54eb;color:#2f54eb}
+.dpbtn .cur{font-weight:600;font-variant-numeric:tabular-nums}
+.dpbtn .arw{color:#a8aeb8;font-size:10px}
+.dppop{position:absolute;top:calc(100% + 8px);right:0;width:278px;background:#fff;border:1px solid #e3e6eb;border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.14);padding:12px;display:none;z-index:200}
+.dpbox.left .dppop{left:0;right:auto}
+.dppop.open{display:block}
+.dphead{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.dphead .ym{font-size:14px;font-weight:700;color:#1f2329;font-variant-numeric:tabular-nums}
+.dpnav{border:1px solid #e3e6eb;background:#fff;color:#5a6068;width:27px;height:27px;border-radius:7px;cursor:pointer;
+font-size:14px;line-height:1;padding:0;font-family:inherit}
+.dpnav:hover:not(:disabled){border-color:#2f54eb;color:#2f54eb}
+.dpnav:disabled{opacity:.3;cursor:not-allowed}
+.dpgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.dpwk{text-align:center;font-size:11px;color:#a8aeb8;padding:3px 0;font-weight:600}
+.dpd{text-align:center;font-size:13px;padding:7px 0;border-radius:7px;font-variant-numeric:tabular-nums;color:#ccd0d8;user-select:none}
+.dpd.has{background:#eef4ff;color:#2f54eb;font-weight:700;cursor:pointer}
+.dpd.has:hover{background:#2f54eb;color:#fff}
+.dpd.has.pend{background:#fff7e6;color:#fa8c16}
+.dpd.has.pend:hover{background:#fa8c16;color:#fff}
+.dpd.cur{background:#2f54eb;color:#fff;font-weight:700;cursor:pointer;box-shadow:0 0 0 2px rgba(47,84,235,.2)}
+.dpd.cur:hover{background:#1d39c4;color:#fff}
+.dpd.today{outline:1px dashed #ffa940;outline-offset:-1px}
+.dpd.empty{visibility:hidden}
+.dplg{display:flex;gap:10px;margin-top:10px;padding-top:9px;border-top:1px solid #f0f2f5;font-size:11px;color:#8a8f99;flex-wrap:wrap}
+.dplg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.dpempty{font-size:12px;color:#8a8f99;text-align:center;padding:8px 0}
+.qbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+@media (max-width:520px){.dppop{width:252px}.dprow{justify-content:flex-start}}
 </style></head><body>
+<div class='dprow'><span class='dplab'>切换日期</span><div class='dpbox' id='dpbox'><button type='button' class='dpbtn' id='dpbtn' title='切换 / 查询日期'><span class='cal'>📅</span><span class='cur'>2026-08-04</span><span class='arw'>▾</span></button><div class='dppop' id='dppop'></div></div></div>
 <h1>A股主板（2026-08-04 锚点）：2026-08-04 14:30 上涨 且 2026-08-03 收跌 的个股</h1>
 <div class='sub'>筛选条件（通用，按锚点日平移）：① <b>2026-08-04</b> 下午14:30 股价 &gt; <b>2026-08-03</b> 收盘（当日上涨）；② <b>2026-08-03</b> 收盘 &lt; <b>2026-07-31</b> 收盘（前交易日收跌）。<br>
 列出：<b>2026-08-05</b> 上午收盘（11:30）。数据来源：日线取自新浪财经，分时取自新浪财经（5分钟K线）。本页 数据已补齐。</div>
@@ -90,9 +127,9 @@ tr.rule-hit:hover{background:#fff1b8}
 <div class='stat' style='background:#eef4ff'><div class='n' style='color:#2f54eb'>15</div><div class='l'>命中规则 A<br>(涨幅≤0.6% 且 换手≥2%)</div></div>
 <div class='stat' style='background:#fff4e6'><div class='n' style='color:#fa8c16'>7</div><div class='l'>命中规则 C<br>(涨幅≤0.6% 且 换手≥3% 且 量比≤1.2)</div></div>
 <div class='stat' style='background:#f9f0ff'><div class='n' style='color:#722ed1'>7</div><div class='l'>同时命中 A 与 C</div></div>
-</div><div class='stat'><div class='n' style='font-size:17px'>强涨</div><div class='l'>今日大盘 regime<br>(沪深300 +1.27%)</div></div><div class='stat red'><div class='n'>低</div><div class='l'>规则A 可信度<br>(历史同类超额 -25pp，n=651)</div></div><div class='legend' style='margin-top:6px'>规则 A＝「14:30涨幅≤0.6%% 且 换手率≥2%%」。regime 按沪深300当日涨跌幅分档；可信度为该档历史回测中规则A相对当日基准的超额胜率，<b>非绝对胜率</b>。详见分析页。</div><div class='cards'><div class='stat' style='flex:1 1 100%'>
-<div class='n' style='font-size:15px'>🔎 涨幅≤0.6% 且 换手≥2% 且 振幅≥3%</div>
-<div class='l'>探索候选规则（样本内·待前向验证）<br>n=138 · 历史收涨率 60.9%（超额 +21.3pp）· 均收益 +1.00% · 稳健 5/8 天</div></div></div>注：A股“当日上涨”的官方基准是前一交易日收盘。对 2026-08-05 而言，前一交易日是 2026-08-04，故“2026-08-05上午上涨”以 2026-08-04 收盘为基准。</div>
+</div><div class='stat'><div class='n' style='font-size:17px'>强涨</div><div class='l'>今日大盘 regime<br>(沪深300 +1.27%)</div></div><div class='stat red'><div class='n'>低</div><div class='l'>规则A 可信度<br>(历史同类超额 -10pp，n=1976)</div></div><div class='legend' style='margin-top:6px'>规则 A＝「14:30涨幅≤0.6%% 且 换手率≥2%%」。regime 按沪深300当日涨跌幅分档；可信度为该档历史回测中规则A相对当日基准的超额胜率，<b>非绝对胜率</b>。详见分析页。</div><div class='cards'><div class='stat' style='flex:1 1 100%'>
+<div class='n' style='font-size:15px'>🔎 换手≥3% 且 量比≤1.0 且 活跃度≥3</div>
+<div class='l'>探索候选规则（样本内·待前向验证）<br>n=651 · 历史收涨率 57.1%（超额 +15.6pp）· 均收益 +1.25% · 稳健 8/12 天</div></div></div>注：A股“当日上涨”的官方基准是前一交易日收盘。对 2026-08-05 而言，前一交易日是 2026-08-04，故“2026-08-05上午上涨”以 2026-08-04 收盘为基准。</div>
 <div class='card'>
 <div class='rulebar'><span class='lab'>按命中规则筛选：</span><button data-f='all' onclick="applyRuleFilter('all',this)" class='on'>全部</button><button data-f='A' onclick="applyRuleFilter('A',this)">命中规则 A</button><button data-f='C' onclick="applyRuleFilter('C',this)">命中规则 C</button><button data-f='AC' onclick="applyRuleFilter('AC',this)">同时命中 A 与 C</button><span id='rulecnt' style='color:#8a8f99'></span></div>
 <table>
@@ -192,5 +229,92 @@ function toggleStar(code){
 }
 applyStarsOnLoad();
 applyRuleFilter('all', null);
+</script>
+<script>window.DP_CFG={"curDate": "2026-08-04", "linkPrefix": "", "manifestUrl": "../manifest.json", "fallback": [{"date": "2026-08-19", "filled": true, "total": 51, "list_date": "2026-08-20"}, {"date": "2026-08-18", "filled": true, "total": 193, "list_date": "2026-08-19"}, {"date": "2026-08-17", "filled": true, "total": 1325, "list_date": "2026-08-18"}, {"date": "2026-08-14", "filled": true, "total": 960, "list_date": "2026-08-17"}, {"date": "2026-08-13", "filled": true, "total": 237, "list_date": "2026-08-14"}, {"date": "2026-08-12", "filled": true, "total": 1409, "list_date": "2026-08-13"}, {"date": "2026-08-11", "filled": true, "total": 233, "list_date": "2026-08-12"}, {"date": "2026-08-10", "filled": true, "total": 1510, "list_date": "2026-08-11"}, {"date": "2026-08-07", "filled": true, "total": 514, "list_date": "2026-08-10"}, {"date": "2026-08-06", "filled": true, "total": 318, "list_date": "2026-08-07"}, {"date": "2026-08-05", "filled": true, "total": 251, "list_date": "2026-08-06"}, {"date": "2026-08-04", "filled": true, "total": 400, "list_date": "2026-08-05"}, {"date": "2026-08-03", "filled": true, "total": 377, "list_date": "2026-08-04"}]};</script>
+<script>
+(function(){
+  var CFG = window.DP_CFG || {};
+  var WK = ['\u65e5','\u4e00','\u4e8c','\u4e09','\u56db','\u4e94','\u516d'];
+  var data = {}, view = null;
+  function pad(n){ return (n<10?'0':'')+n; }
+  function key(y,m,d){ return y+'-'+pad(m+1)+'-'+pad(d); }
+  function setData(arr){ data={}; (arr||[]).forEach(function(x){ if(x&&x.date) data[x.date]=x; }); }
+  function keys(){ return Object.keys(data).sort(); }
+  function pop(){ return document.getElementById('dppop'); }
+  function isOpen(){ var p=pop(); return !!(p&&p.classList.contains('open')); }
+  function close(){ var p=pop(); if(p) p.classList.remove('open'); }
+  function baseMonth(){
+    var ks=keys(), b=CFG.curDate||(ks.length?ks[ks.length-1]:'');
+    if(!b){ var t=new Date(); return {y:t.getFullYear(), m:t.getMonth()}; }
+    return {y:parseInt(b.slice(0,4),10), m:parseInt(b.slice(5,7),10)-1};
+  }
+  function render(){
+    var p=pop(); if(!p||!view) return;
+    var y=view.y, m=view.m;
+    var startDow=new Date(y,m,1).getDay(), dim=new Date(y,m+1,0).getDate();
+    var ks=keys();
+    var minM=ks.length?ks[0].slice(0,7):null, maxM=ks.length?ks[ks.length-1].slice(0,7):null;
+    var curM=y+'-'+pad(m+1);
+    var t=new Date(), tk=key(t.getFullYear(),t.getMonth(),t.getDate());
+    var h="<div class='dphead'><button type='button' class='dpnav' id='dpprev' title='\u4e0a\u4e00\u6708'>\u2039</button>"
+        + "<span class='ym'>"+y+" \u5e74 "+(m+1)+" \u6708</span>"
+        + "<button type='button' class='dpnav' id='dpnext' title='\u4e0b\u4e00\u6708'>\u203a</button></div><div class='dpgrid'>";
+    WK.forEach(function(w){ h+="<div class='dpwk'>"+w+"</div>"; });
+    for(var i=0;i<startDow;i++) h+="<div class='dpd empty'></div>";
+    for(var d=1;d<=dim;d++){
+      var k=key(y,m,d), cls='dpd', at='', rec=data[k];
+      if(rec){
+        if(k===CFG.curDate){ cls+=' cur'; } else { cls += rec.filled?' has':' has pend'; }
+        at=" data-d=\""+k+"\" title=\""+k+" \u00b7 "+(rec.total==null?'':rec.total+" \u53ea \u00b7 ")
+          +(rec.filled?'\u5df2\u8865\u9f50':'\u5f85\u56de\u586b')+"\"";
+      }
+      if(k===tk) cls+=' today';
+      h+="<div class='"+cls+"'"+at+">"+d+"</div>";
+    }
+    h+="</div>";
+    if(!ks.length) h+="<div class='dpempty'>\u6682\u65e0\u4efb\u4f55\u65e5\u9875\u9762</div>";
+    h+="<div class='dplg'>"
+      +"<span><i style='background:#eef4ff;box-shadow:inset 0 0 0 1px #c3d5ff'></i>\u6709\u6570\u636e</span>"
+      +"<span><i style='background:#fff7e6;box-shadow:inset 0 0 0 1px #ffd591'></i>\u5f85\u56de\u586b</span>"
+      +"<span><i style='background:#2f54eb'></i>\u5f53\u524d\u9875</span>"
+      +"<span><i style='background:#f2f3f5;box-shadow:inset 0 0 0 1px #e6e8ec'></i>\u65e0\u6570\u636e</span></div>";
+    p.innerHTML=h;
+    var pv=document.getElementById('dpprev'), nx=document.getElementById('dpnext');
+    if(pv){ pv.disabled=!!(minM&&curM<=minM); pv.onclick=function(e){e.stopPropagation();step(-1);}; }
+    if(nx){ nx.disabled=!!(maxM&&curM>=maxM); nx.onclick=function(e){e.stopPropagation();step(1);}; }
+    Array.prototype.forEach.call(p.querySelectorAll('.dpd[data-d]'), function(el){
+      el.onclick=function(e){
+        e.stopPropagation();
+        var d=el.getAttribute('data-d');
+        if(d===CFG.curDate){ close(); return; }
+        location.href=(CFG.linkPrefix||'')+d+'.html';
+      };
+    });
+  }
+  function step(k){
+    var y=view.y, m=view.m+k;
+    if(m<0){m=11;y--;} if(m>11){m=0;y++;}
+    view={y:y,m:m}; render();
+  }
+  function toggle(e){
+    e.stopPropagation();
+    if(isOpen()){ close(); return; }
+    view=baseMonth(); render();
+    var p=pop(); if(p) p.classList.add('open');
+  }
+  setData(CFG.fallback);
+  var btn=document.getElementById('dpbtn');
+  if(btn) btn.onclick=toggle;
+  document.addEventListener('click', function(e){
+    var b=document.getElementById('dpbox');
+    if(b && !b.contains(e.target)) close();
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'||e.keyCode===27) close(); });
+  if(CFG.manifestUrl && window.fetch){
+    fetch(CFG.manifestUrl,{cache:'no-cache'}).then(function(r){return r.ok?r.json():null;}).then(function(j){
+      if(j&&j.length){ setData(j); if(isOpen()) render(); }
+    })['catch'](function(){});
+  }
+})();
 </script>
 </body></html>
