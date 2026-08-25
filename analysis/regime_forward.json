@@ -1,0 +1,188 @@
+{
+ "generated_at": "2026-08-25 13:59",
+ "config_generated_at": "2026-08-25 13:57",
+ "note": "固定 regime_rules.json 对已回填交易日的逐日评估；2026-08-26 起为样本外。",
+ "overall": {
+  "n_hit": 367,
+  "hit_hr": 76.8,
+  "excess_vs_base": 38.2
+ },
+ "per_day": [
+  {
+   "date": "2026-08-03",
+   "regime": "跌",
+   "n_day": 377,
+   "base_hr": 25.2,
+   "rule": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "n_hit": 12,
+   "hit_hr": 83.3,
+   "excess": 58.1,
+   "hit_mean": 1.74
+  },
+  {
+   "date": "2026-08-04",
+   "regime": "强涨",
+   "n_day": 400,
+   "base_hr": 85.2,
+   "rule": "换手≥3% 且 量比≤1.0 且 活跃度≥3（不加涨幅上限）",
+   "n_hit": 136,
+   "hit_hr": 91.2,
+   "excess": 5.9,
+   "hit_mean": 5.21
+  },
+  {
+   "date": "2026-08-05",
+   "regime": "强涨",
+   "n_day": 251,
+   "base_hr": 21.9,
+   "rule": "换手≥3% 且 量比≤1.0 且 活跃度≥3（不加涨幅上限）",
+   "n_hit": 16,
+   "hit_hr": 25.0,
+   "excess": 3.1,
+   "hit_mean": -0.31
+  },
+  {
+   "date": "2026-08-06",
+   "regime": "平",
+   "n_day": 318,
+   "base_hr": 18.2,
+   "rule": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "n_hit": 4,
+   "hit_hr": 0.0,
+   "excess": -18.2,
+   "hit_mean": -0.73
+  },
+  {
+   "date": "2026-08-07",
+   "regime": "涨",
+   "n_day": 514,
+   "base_hr": 60.1,
+   "rule": "换手≥5% 且 涨幅≤0.5%",
+   "n_hit": 9,
+   "hit_hr": 77.8,
+   "excess": 17.7,
+   "hit_mean": 2.48
+  },
+  {
+   "date": "2026-08-10",
+   "regime": "平",
+   "n_day": 1510,
+   "base_hr": 31.5,
+   "rule": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "n_hit": 28,
+   "hit_hr": 64.3,
+   "excess": 32.8,
+   "hit_mean": 1.19
+  },
+  {
+   "date": "2026-08-11",
+   "regime": "跌",
+   "n_day": 233,
+   "base_hr": 68.2,
+   "rule": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "n_hit": 31,
+   "hit_hr": 90.3,
+   "excess": 22.1,
+   "hit_mean": 2.06
+  },
+  {
+   "date": "2026-08-12",
+   "regime": "涨",
+   "n_day": 1408,
+   "base_hr": 34.7,
+   "rule": "换手≥5% 且 涨幅≤0.5%",
+   "n_hit": 12,
+   "hit_hr": 50.0,
+   "excess": 15.3,
+   "hit_mean": 0.04
+  },
+  {
+   "date": "2026-08-13",
+   "regime": "平",
+   "n_day": 237,
+   "base_hr": 24.1,
+   "rule": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "n_hit": 1,
+   "hit_hr": 0.0,
+   "excess": -24.1,
+   "hit_mean": -2.29
+  },
+  {
+   "date": "2026-08-14",
+   "regime": "平",
+   "n_day": 956,
+   "base_hr": 75.9,
+   "rule": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "n_hit": 2,
+   "hit_hr": 50.0,
+   "excess": -25.9,
+   "hit_mean": -0.49
+  },
+  {
+   "date": "2026-08-17",
+   "regime": "强涨",
+   "n_day": 1325,
+   "base_hr": 28.8,
+   "rule": "换手≥3% 且 量比≤1.0 且 活跃度≥3（不加涨幅上限）",
+   "n_hit": 9,
+   "hit_hr": 11.1,
+   "excess": -17.7,
+   "hit_mean": -2.54
+  },
+  {
+   "date": "2026-08-18",
+   "regime": "震荡",
+   "n_day": 193,
+   "base_hr": 32.6,
+   "rule": "",
+   "n_hit": 0,
+   "hit_hr": null,
+   "excess": null,
+   "hit_mean": null
+  },
+  {
+   "date": "2026-08-19",
+   "regime": "弱跌",
+   "n_day": 51,
+   "base_hr": 43.1,
+   "rule": "涨幅≤0.4%（低涨幅）",
+   "n_hit": 6,
+   "hit_hr": 50.0,
+   "excess": 6.9,
+   "hit_mean": 0.74
+  },
+  {
+   "date": "2026-08-20",
+   "regime": "平",
+   "n_day": 2139,
+   "base_hr": 25.3,
+   "rule": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "n_hit": 0,
+   "hit_hr": null,
+   "excess": null,
+   "hit_mean": null
+  },
+  {
+   "date": "2026-08-21",
+   "regime": "涨",
+   "n_day": 468,
+   "base_hr": 18.6,
+   "rule": "换手≥5% 且 涨幅≤0.5%",
+   "n_hit": 5,
+   "hit_hr": 20.0,
+   "excess": 1.4,
+   "hit_mean": -3.29
+  },
+  {
+   "date": "2026-08-24",
+   "regime": "弱跌",
+   "n_day": 492,
+   "base_hr": 69.7,
+   "rule": "涨幅≤0.4%（低涨幅）",
+   "n_hit": 96,
+   "hit_hr": 82.3,
+   "excess": 12.6,
+   "hit_mean": 0.95
+  }
+ ]
+}

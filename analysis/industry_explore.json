@@ -1,0 +1,622 @@
+{
+ "generated_at": "2026-08-25 14:14",
+ "n": 10872,
+ "base": 38.6,
+ "industry_top": [
+  {
+   "ind": "半导体",
+   "n": 67,
+   "hr": 70.1,
+   "excess": 31.5,
+   "mean_ret": 2.17,
+   "days_beat": 6,
+   "days_total": 7
+  },
+  {
+   "ind": "通信设备",
+   "n": 109,
+   "hr": 66.1,
+   "excess": 27.4,
+   "mean_ret": 1.93,
+   "days_beat": 8,
+   "days_total": 10
+  },
+  {
+   "ind": "计算机、通信和其他电子设备制造业",
+   "n": 145,
+   "hr": 54.5,
+   "excess": 15.8,
+   "mean_ret": 0.48,
+   "days_beat": 6,
+   "days_total": 10
+  },
+  {
+   "ind": "工业金属",
+   "n": 186,
+   "hr": 50.5,
+   "excess": 11.9,
+   "mean_ret": 0.26,
+   "days_beat": 5,
+   "days_total": 10
+  },
+  {
+   "ind": "电池",
+   "n": 97,
+   "hr": 50.5,
+   "excess": 11.9,
+   "mean_ret": 0.57,
+   "days_beat": 7,
+   "days_total": 12
+  },
+  {
+   "ind": "消费电子",
+   "n": 117,
+   "hr": 50.4,
+   "excess": 11.8,
+   "mean_ret": 0.53,
+   "days_beat": 6,
+   "days_total": 10
+  },
+  {
+   "ind": "化学制药",
+   "n": 163,
+   "hr": 49.7,
+   "excess": 11.0,
+   "mean_ret": -0.13,
+   "days_beat": 9,
+   "days_total": 13
+  },
+  {
+   "ind": "光学光电子",
+   "n": 163,
+   "hr": 49.7,
+   "excess": 11.0,
+   "mean_ret": 0.75,
+   "days_beat": 4,
+   "days_total": 10
+  },
+  {
+   "ind": "通用设备",
+   "n": 107,
+   "hr": 49.5,
+   "excess": 10.9,
+   "mean_ret": 0.47,
+   "days_beat": 7,
+   "days_total": 9
+  },
+  {
+   "ind": "煤炭开采加工",
+   "n": 121,
+   "hr": 47.9,
+   "excess": 9.3,
+   "mean_ret": 0.21,
+   "days_beat": 7,
+   "days_total": 13
+  },
+  {
+   "ind": "燃气",
+   "n": 83,
+   "hr": 45.8,
+   "excess": 7.1,
+   "mean_ret": -0.03,
+   "days_beat": 6,
+   "days_total": 10
+  },
+  {
+   "ind": "白色家电",
+   "n": 110,
+   "hr": 45.5,
+   "excess": 6.8,
+   "mean_ret": 0.04,
+   "days_beat": 8,
+   "days_total": 13
+  },
+  {
+   "ind": "橡胶和塑料制品业",
+   "n": 55,
+   "hr": 45.5,
+   "excess": 6.8,
+   "mean_ret": 0.12,
+   "days_beat": 6,
+   "days_total": 11
+  },
+  {
+   "ind": "农产品加工",
+   "n": 108,
+   "hr": 45.4,
+   "excess": 6.7,
+   "mean_ret": 0.2,
+   "days_beat": 6,
+   "days_total": 10
+  },
+  {
+   "ind": "小金属",
+   "n": 51,
+   "hr": 45.1,
+   "excess": 6.4,
+   "mean_ret": 0.51,
+   "days_beat": 4,
+   "days_total": 8
+  },
+  {
+   "ind": "石油加工贸易",
+   "n": 87,
+   "hr": 44.8,
+   "excess": 6.2,
+   "mean_ret": 0.17,
+   "days_beat": 8,
+   "days_total": 11
+  },
+  {
+   "ind": "塑料制品",
+   "n": 101,
+   "hr": 44.6,
+   "excess": 5.9,
+   "mean_ret": 0.53,
+   "days_beat": 7,
+   "days_total": 12
+  },
+  {
+   "ind": "白酒",
+   "n": 70,
+   "hr": 44.3,
+   "excess": 5.6,
+   "mean_ret": -0.23,
+   "days_beat": 3,
+   "days_total": 8
+  },
+  {
+   "ind": "专用设备制造业",
+   "n": 213,
+   "hr": 44.1,
+   "excess": 5.5,
+   "mean_ret": 0.28,
+   "days_beat": 8,
+   "days_total": 14
+  },
+  {
+   "ind": "军工装备",
+   "n": 136,
+   "hr": 44.1,
+   "excess": 5.5,
+   "mean_ret": 0.23,
+   "days_beat": 6,
+   "days_total": 12
+  },
+  {
+   "ind": "医药制造业",
+   "n": 284,
+   "hr": 43.7,
+   "excess": 5.0,
+   "mean_ret": -0.54,
+   "days_beat": 6,
+   "days_total": 13
+  },
+  {
+   "ind": "土木工程建筑业",
+   "n": 59,
+   "hr": 42.4,
+   "excess": 3.7,
+   "mean_ret": -0.16,
+   "days_beat": 3,
+   "days_total": 8
+  },
+  {
+   "ind": "生物制品",
+   "n": 51,
+   "hr": 41.2,
+   "excess": 2.5,
+   "mean_ret": -0.61,
+   "days_beat": 3,
+   "days_total": 8
+  },
+  {
+   "ind": "光伏设备",
+   "n": 103,
+   "hr": 40.8,
+   "excess": 2.1,
+   "mean_ret": -0.37,
+   "days_beat": 6,
+   "days_total": 11
+  },
+  {
+   "ind": "食品加工制造",
+   "n": 206,
+   "hr": 39.8,
+   "excess": 1.2,
+   "mean_ret": -0.1,
+   "days_beat": 5,
+   "days_total": 15
+  }
+ ],
+ "industry_bottom": [
+  {
+   "ind": "环境治理",
+   "n": 190,
+   "hr": 27.9,
+   "excess": -10.8,
+   "mean_ret": -0.39,
+   "days_beat": 4,
+   "days_total": 13
+  },
+  {
+   "ind": "货币金融服务",
+   "n": 160,
+   "hr": 26.9,
+   "excess": -11.8,
+   "mean_ret": -0.46,
+   "days_beat": 6,
+   "days_total": 13
+  },
+  {
+   "ind": "纺织制造",
+   "n": 101,
+   "hr": 26.7,
+   "excess": -11.9,
+   "mean_ret": -0.4,
+   "days_beat": 3,
+   "days_total": 13
+  },
+  {
+   "ind": "其他社会服务",
+   "n": 53,
+   "hr": 26.4,
+   "excess": -12.2,
+   "mean_ret": -0.67,
+   "days_beat": 2,
+   "days_total": 7
+  },
+  {
+   "ind": "电机",
+   "n": 64,
+   "hr": 25.0,
+   "excess": -13.6,
+   "mean_ret": -0.37,
+   "days_beat": 3,
+   "days_total": 11
+  },
+  {
+   "ind": "钢铁",
+   "n": 148,
+   "hr": 24.3,
+   "excess": -14.3,
+   "mean_ret": -0.37,
+   "days_beat": 3,
+   "days_total": 12
+  },
+  {
+   "ind": "机场航运",
+   "n": 51,
+   "hr": 19.6,
+   "excess": -19.0,
+   "mean_ret": -0.61,
+   "days_beat": 1,
+   "days_total": 6
+  },
+  {
+   "ind": "汽车整车",
+   "n": 79,
+   "hr": 17.7,
+   "excess": -20.9,
+   "mean_ret": -0.96,
+   "days_beat": 1,
+   "days_total": 9
+  }
+ ],
+ "heat": [
+  {
+   "bin": "独苗(1)",
+   "n": 612,
+   "hr": 41.2,
+   "excess": 2.5,
+   "mean_ret": -0.15
+  },
+  {
+   "bin": "2-3",
+   "n": 898,
+   "hr": 43.4,
+   "excess": 4.8,
+   "mean_ret": 0.07
+  },
+  {
+   "bin": "4-6",
+   "n": 1366,
+   "hr": 44.1,
+   "excess": 5.5,
+   "mean_ret": 0.15
+  },
+  {
+   "bin": "7-12",
+   "n": 2055,
+   "hr": 40.8,
+   "excess": 2.2,
+   "mean_ret": -0.04
+  },
+  {
+   "bin": "13+",
+   "n": 5941,
+   "hr": 35.7,
+   "excess": -3.0,
+   "mean_ret": -0.14
+  }
+ ],
+ "heat_R": [
+  {
+   "bin": "独苗(1)",
+   "n": 40,
+   "hr": 72.5,
+   "excess": 33.9,
+   "mean_ret": 1.82
+  },
+  {
+   "bin": "2-3",
+   "n": 53,
+   "hr": 73.6,
+   "excess": 34.9,
+   "mean_ret": 1.96
+  },
+  {
+   "bin": "4-6",
+   "n": 70,
+   "hr": 77.1,
+   "excess": 38.5,
+   "mean_ret": 2.76
+  },
+  {
+   "bin": "7-12",
+   "n": 102,
+   "hr": 80.4,
+   "excess": 41.7,
+   "mean_ret": 2.43
+  },
+  {
+   "bin": "13+",
+   "n": 102,
+   "hr": 76.5,
+   "excess": 37.8,
+   "mean_ret": 2.71
+  }
+ ],
+ "industry_regime": [
+  {
+   "ind": "半导体",
+   "regime": "强涨",
+   "n": 19,
+   "hr": 94.7,
+   "excess": 56.1
+  },
+  {
+   "ind": "半导体",
+   "regime": "平",
+   "n": 20,
+   "hr": 90.0,
+   "excess": 51.4
+  },
+  {
+   "ind": "煤炭开采加工",
+   "regime": "强涨",
+   "n": 17,
+   "hr": 82.4,
+   "excess": 43.7
+  },
+  {
+   "ind": "化学制药",
+   "regime": "涨",
+   "n": 54,
+   "hr": 81.5,
+   "excess": 42.8
+  },
+  {
+   "ind": "工业金属",
+   "regime": "平",
+   "n": 65,
+   "hr": 78.5,
+   "excess": 39.8
+  },
+  {
+   "ind": "通信设备",
+   "regime": "平",
+   "n": 55,
+   "hr": 70.9,
+   "excess": 32.3
+  },
+  {
+   "ind": "光学光电子",
+   "regime": "强涨",
+   "n": 25,
+   "hr": 68.0,
+   "excess": 29.4
+  },
+  {
+   "ind": "通信设备",
+   "regime": "涨",
+   "n": 17,
+   "hr": 64.7,
+   "excess": 26.1
+  },
+  {
+   "ind": "消费电子",
+   "regime": "平",
+   "n": 61,
+   "hr": 63.9,
+   "excess": 25.3
+  },
+  {
+   "ind": "计算机、通信和其他电子设备制造业",
+   "regime": "强涨",
+   "n": 35,
+   "hr": 62.9,
+   "excess": 24.2
+  },
+  {
+   "ind": "计算机、通信和其他电子设备制造业",
+   "regime": "平",
+   "n": 66,
+   "hr": 60.6,
+   "excess": 22.0
+  },
+  {
+   "ind": "通用设备",
+   "regime": "平",
+   "n": 45,
+   "hr": 60.0,
+   "excess": 21.4
+  },
+  {
+   "ind": "光学光电子",
+   "regime": "平",
+   "n": 84,
+   "hr": 59.5,
+   "excess": 20.9
+  },
+  {
+   "ind": "通信设备",
+   "regime": "强涨",
+   "n": 21,
+   "hr": 57.1,
+   "excess": 18.5
+  },
+  {
+   "ind": "电池",
+   "regime": "平",
+   "n": 36,
+   "hr": 52.8,
+   "excess": 14.1
+  },
+  {
+   "ind": "电池",
+   "regime": "涨",
+   "n": 32,
+   "hr": 43.8,
+   "excess": 5.1
+  },
+  {
+   "ind": "白色家电",
+   "regime": "涨",
+   "n": 19,
+   "hr": 42.1,
+   "excess": 3.5
+  },
+  {
+   "ind": "通用设备",
+   "regime": "涨",
+   "n": 29,
+   "hr": 41.4,
+   "excess": 2.7
+  },
+  {
+   "ind": "电池",
+   "regime": "强涨",
+   "n": 17,
+   "hr": 41.2,
+   "excess": 2.5
+  },
+  {
+   "ind": "白色家电",
+   "regime": "平",
+   "n": 47,
+   "hr": 40.4,
+   "excess": 1.8
+  },
+  {
+   "ind": "燃气",
+   "regime": "平",
+   "n": 45,
+   "hr": 40.0,
+   "excess": 1.4
+  },
+  {
+   "ind": "白色家电",
+   "regime": "强涨",
+   "n": 25,
+   "hr": 40.0,
+   "excess": 1.4
+  },
+  {
+   "ind": "通用设备",
+   "regime": "强涨",
+   "n": 24,
+   "hr": 37.5,
+   "excess": -1.1
+  },
+  {
+   "ind": "工业金属",
+   "regime": "强涨",
+   "n": 35,
+   "hr": 37.1,
+   "excess": -1.5
+  },
+  {
+   "ind": "工业金属",
+   "regime": "涨",
+   "n": 80,
+   "hr": 35.0,
+   "excess": -3.6
+  },
+  {
+   "ind": "消费电子",
+   "regime": "强涨",
+   "n": 23,
+   "hr": 34.8,
+   "excess": -3.9
+  },
+  {
+   "ind": "半导体",
+   "regime": "涨",
+   "n": 26,
+   "hr": 34.6,
+   "excess": -4.0
+  },
+  {
+   "ind": "化学制药",
+   "regime": "强涨",
+   "n": 30,
+   "hr": 33.3,
+   "excess": -5.3
+  },
+  {
+   "ind": "煤炭开采加工",
+   "regime": "平",
+   "n": 62,
+   "hr": 32.3,
+   "excess": -6.4
+  },
+  {
+   "ind": "消费电子",
+   "regime": "涨",
+   "n": 26,
+   "hr": 30.8,
+   "excess": -7.9
+  },
+  {
+   "ind": "计算机、通信和其他电子设备制造业",
+   "regime": "涨",
+   "n": 31,
+   "hr": 29.0,
+   "excess": -9.6
+  },
+  {
+   "ind": "化学制药",
+   "regime": "平",
+   "n": 63,
+   "hr": 28.6,
+   "excess": -10.1
+  },
+  {
+   "ind": "光学光电子",
+   "regime": "涨",
+   "n": 44,
+   "hr": 13.6,
+   "excess": -25.0
+  }
+ ],
+ "industry_R": [
+  {
+   "ind": "计算机、通信和其他电子设备制造业",
+   "n": 18,
+   "hr": 94.4,
+   "excess": 55.8,
+   "mean_ret": 5.48
+  }
+ ]
+}
