@@ -182,6 +182,78 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 2026-08-27 的四信号已回填并纳入，属正常增长；但因 08-27 尚未回填次日结果，它<b>未</b>进入本次样本。
 </div>
 
+
+<h2>八之二、有效性提升：改用横截面 alpha + 以「天」为推断单位</h2>
+<div class='card'>
+<p><b>为什么这是更正确的方法。</b>原有口径预测「次日是否上涨」，但其中约
+60~70% 由次日大盘决定——那部分不可预测却占据了大部方差，把选股信号淹没。
+本节改用两个修正：</p>
+<ul>
+<li><b>横截面 alpha</b>：目标 = 个股次日收益 − 当日全样本均值。先在每一天内部中心化，
+<b>大盘与日期效应被完全剔除</b>，模型只需学「同一天里哪些票相对更强」。</li>
+<li><b>以「天」为独立观测</b>：原先把 1.2 万只个股当独立样本做比例检验，但同日个股高度同向，
+有效样本量其实只有 19（天数），这会严重高估显著性。本节改用
+<b>每日等权组合的 alpha 序列</b> 做 t 检验，推断单位才是正确的。</li>
+<li><b>新增两个从未使用的特征</b>：
+<code>tail</code>=14:30→收盘的尾盘走势（尾盘拉升/跳水）；
+<code>rs</code>=当日14:30涨幅 − 当日大盘涨幅（相对强度）。</li>
+</ul>
+
+<h3>8.1 单特征信息系数 IC（与横截面 alpha 的相关，|t|≥2 才算有信息）</h3>
+<table>
+<tr><th>特征</th><th>IC</th><th>t值</th><th>天数</th><th>IC&gt;0天数</th><th>判定</th></tr>
+<tr><td>vr</td><td>-0.0292</td><td class='dn'>-1.33</td><td>19</td><td>7</td><td>不显著</td></tr><tr><td>tail</td><td>-0.0286</td><td class='dn'>-1.39</td><td>18</td><td>9</td><td>不显著</td></tr><tr><td>chg</td><td>+0.0231</td><td class='up'>+0.52</td><td>19</td><td>10</td><td>不显著</td></tr><tr><td>rs</td><td>+0.0231</td><td class='up'>+0.52</td><td>19</td><td>10</td><td>不显著</td></tr><tr><td>activity</td><td>+0.0204</td><td class='up'>+0.44</td><td>19</td><td>9</td><td>不显著</td></tr><tr><td>logprice</td><td>+0.0202</td><td class='up'>+0.47</td><td>19</td><td>10</td><td>不显著</td></tr><tr><td>amplitude</td><td>+0.0171</td><td class='up'>+0.35</td><td>19</td><td>8</td><td>不显著</td></tr><tr><td>day_chg</td><td>+0.0162</td><td class='up'>+0.36</td><td>19</td><td>8</td><td>不显著</td></tr><tr><td>turnover</td><td>+0.0075</td><td class='up'>+0.19</td><td>19</td><td>10</td><td>不显著</td></tr>
+</table>
+<p class='small' style='margin-top:8px'>
+<b>没有任何一个特征达到统计显著</b>（|t| 全部 &lt; 1.4）。相对最强的是
+<code>vr</code>(t=−1.33) 与新增的 <code>tail</code>(t=−1.39)，方向为负——
+即量比偏高、尾盘拉升的股票次日相对更弱（短线反转迹象），但证据强度不足以下结论。</p>
+
+<h3>8.2 各规则的同口径组合 alpha（这才是可信的对照）</h3>
+<table>
+<tr><th>规则</th><th>日均 alpha</th><th>t值</th><th>胜出天</th><th>判定</th></tr>
+<tr class=''><td>新特征·相对强度 rs≥0</td><td>+0.045%</td><td class='up'>+1.11</td><td>11/19</td><td>未达显著</td></tr><tr class=''><td>股价≥50</td><td>+0.383%</td><td class='up'>+1.04</td><td>11/18</td><td>未达显著</td></tr><tr class=''><td>规则A 涨幅≤0.6%且换手≥2%</td><td>+0.235%</td><td class='up'>+0.91</td><td>12/18</td><td>未达显著</td></tr><tr class=''><td>全样本（买所有）</td><td>+0.000%</td><td class='up'>+0.18</td><td>12/19</td><td>未达显著</td></tr><tr class='bad'><td>当前best 换手≥3%且量比≤1.0且活跃度≥3</td><td>-0.108%</td><td class='dn'>-0.26</td><td>7/11</td><td>未达显著</td></tr><tr class='bad'><td>新特征·尾盘走强 tail≥0</td><td>-0.027%</td><td class='dn'>-0.81</td><td>10/19</td><td>未达显著</td></tr>
+</table>
+<div class='alert' style='margin-top:10px'>
+<b>必须正视的结论：所有规则的 t 值都远小于 2，均未达统计显著。</b><br>
+此前在「以个股为单位」的口径下看到的规则A 样本外 +4.5pp，在以<b>天</b>为单位做正确推断后
+t 仅 <b>0.91</b>——方向为正、且 12/18 天胜出，但<b>无法排除是运气</b>。
+当前 best 仍为负（t=−0.26），与前面所有检验一致。
+</div>
+
+<h3>8.3 组合宽度实验：分散化能否提升统计效力</h3>
+<p class='small'>t = 均值/(std/√天数)。放宽 k 会降低 std（分散化），但也会稀释 alpha。下表看净效果。</p>
+<table>
+<tr><th>k（等权买入只数）</th><th>日均 alpha</th><th>std</th><th>t值</th><th>胜出天</th></tr>
+<tr><td>10</td><td>+0.071%</td><td>1.474</td><td class='up'>+0.21</td><td>9/19</td></tr><tr><td>20</td><td>+0.112%</td><td>1.356</td><td class='up'>+0.36</td><td>10/19</td></tr><tr><td>30</td><td>+0.206%</td><td>1.043</td><td class='up'>+0.86</td><td>11/19</td></tr><tr><td>50</td><td>+0.155%</td><td>0.911</td><td class='up'>+0.74</td><td>10/19</td></tr><tr><td>100</td><td>+0.124%</td><td>0.742</td><td class='up'>+0.71</td><td>10/18</td></tr><tr><td>200</td><td>+0.112%</td><td>0.496</td><td class='up'>+0.93</td><td>11/17</td></tr><tr><td>400</td><td>+0.024%</td><td>0.193</td><td class='up'>+0.42</td><td>5/11</td></tr>
+</table>
+<p class='small' style='margin-top:8px'>
+std 随 k 单调下降（1.474 → 0.496），但 alpha 也被稀释，<b>净效果在 k≈30~200 区间最佳</b>。
+若目标是统计效力，买入 <b>100~200 只</b>比精选 10~30 只更有希望达到显著；
+若目标是单笔收益弹性，则相反。注意 k=400 时有效天数降到 11 天（多日样本不足），不可比。
+</p>
+
+<h3>8.4 达到统计显著（t=2）大约还需多少天</h3>
+<p class='small'>按 t ∝ √n 外推：还需天数 = 当前天数 × (2/当前|t|)² − 当前天数。</p>
+<table>
+<tr><th>规则</th><th>约需总天数</th><th>还需增加</th></tr>
+<tr><td>新特征·相对强度 rs≥0</td><td>62</td><td><b>43</b></td></tr><tr><td>股价≥50</td><td>67</td><td><b>48</b></td></tr><tr><td>多因子top30</td><td>80</td><td><b>61</b></td></tr><tr><td>规则A 涨幅≤0.6%且换手≥2%</td><td>87</td><td><b>68</b></td></tr><tr><td>新特征·尾盘走强 tail≥0</td><td>116</td><td><b>97</b></td></tr><tr><td>当前best 换手≥3%且量比≤1.0且活跃度≥3</td><td>651</td><td><b>632</b></td></tr><tr><td>全样本（买所有）</td><td>2346</td><td><b>2327</b></td></tr>
+</table>
+<div class='good'>
+<b>这才是「提升有效性」最诚实也最有效的答案</b>
+<ul>
+<li><b>当前数据不足以证明任何规则有效。</b>要验证规则A，约还需 <b>+69 个交易日</b>（累计约 87 天，≈4 个月）；
+最快的是相对强度 <code>rs≥0</code>，约需 +43 天。</li>
+<li>当前 best 需要约 651 天才能显著——<b>等价于宣告它无效</b>，与前文结论一致。</li>
+<li>因此优先级是：<b>①继续累积数据（最根本）；②组合放宽到 100~200 只降方差；
+③聚焦 rs／股价这两个相对最强的信号；④停止自动规则搜索。</b></li>
+</ul>
+</div>
+<p class='small'>多因子 IC 加权模型的 walk-forward 结果：日均 alpha <b>-0.154%</b>，
+t=-0.81，胜出 4/13 天——19 天样本下多因子必然过拟合，暂不可用。
+完整数据见 <code>site/analysis/alpha_explore.json</code>。</p>
+</div>
+
 <h2>九、局限与使用建议</h2>
 <div class='note'>
 <ul>
