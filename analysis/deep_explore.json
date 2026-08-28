@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-28 14:36",
+ "generated_at": "2026-08-28 14:53",
  "meta": {
   "n": 12215,
   "days": 19,
@@ -45,7 +45,40 @@
    "2026-08-25": 68.5,
    "2026-08-26": 50.9,
    "2026-08-27": 53.8
-  }
+  },
+  "regime_list": [
+   {
+    "regime": "平",
+    "n": 5414,
+    "base": 37.5
+   },
+   {
+    "regime": "弱跌",
+    "n": 543,
+    "base": 67.2
+   },
+   {
+    "regime": "强涨",
+    "n": 2383,
+    "base": 41.3
+   },
+   {
+    "regime": "涨",
+    "n": 3072,
+    "base": 40.7
+   },
+   {
+    "regime": "跌",
+    "n": 610,
+    "base": 41.6
+   },
+   {
+    "regime": "震荡",
+    "n": 193,
+    "base": 32.6
+   }
+  ],
+  "regime_orphan_rows": 0
  },
  "search_space": {
   "rules": 17587,
@@ -62,7 +95,7 @@
  "params": {
   "MIN_TRAIN_DAYS": 5,
   "MIN_TRAIN_N": 60,
-  "MIN_TEST_N": 5,
+  "MIN_TEST_N": 3,
   "MIN_DAY_N": 3,
   "ROBUST_MIN_N": 150,
   "ROBUST_MIN_BEAT": 0.6,
@@ -90,7 +123,12 @@
    ],
    "n": 32,
    "hr": 96.9,
-   "excess": 56.4,
+   "pool_excess": 56.4,
+   "dayavg_excess": 38.0,
+   "dayavg_robust": 10.7,
+   "strat_excess": 55.9,
+   "hit_days": 5,
+   "max_day_share": 0.78,
    "mean_ret": 6.32,
    "days_beat": 2,
    "days_total": 2,
@@ -118,7 +156,12 @@
    ],
    "n": 39,
    "hr": 92.3,
-   "excess": 51.8,
+   "pool_excess": 51.8,
+   "dayavg_excess": 31.7,
+   "dayavg_robust": 31.7,
+   "strat_excess": 51.2,
+   "hit_days": 5,
+   "max_day_share": 0.49,
    "mean_ret": 4.65,
    "days_beat": 3,
    "days_total": 3,
@@ -146,7 +189,12 @@
    ],
    "n": 36,
    "hr": 91.7,
-   "excess": 51.1,
+   "pool_excess": 51.1,
+   "dayavg_excess": 27.5,
+   "dayavg_robust": 27.5,
+   "strat_excess": 50.5,
+   "hit_days": 4,
+   "max_day_share": 0.72,
    "mean_ret": 5.73,
    "days_beat": 2,
    "days_total": 2,
@@ -174,7 +222,12 @@
    ],
    "n": 35,
    "hr": 91.4,
-   "excess": 50.9,
+   "pool_excess": 50.9,
+   "dayavg_excess": 20.6,
+   "dayavg_robust": 14.7,
+   "strat_excess": 50.2,
+   "hit_days": 5,
+   "max_day_share": 0.6,
    "mean_ret": 5.3,
    "days_beat": 3,
    "days_total": 3,
@@ -202,7 +255,12 @@
    ],
    "n": 58,
    "hr": 91.4,
-   "excess": 50.9,
+   "pool_excess": 50.9,
+   "dayavg_excess": 26.7,
+   "dayavg_robust": 26.7,
+   "strat_excess": 50.4,
+   "hit_days": 6,
+   "max_day_share": 0.67,
    "mean_ret": 5.39,
    "days_beat": 2,
    "days_total": 2,
@@ -230,7 +288,12 @@
    ],
    "n": 46,
    "hr": 91.3,
-   "excess": 50.8,
+   "pool_excess": 50.8,
+   "dayavg_excess": 30.6,
+   "dayavg_robust": 30.0,
+   "strat_excess": 50.1,
+   "hit_days": 5,
+   "max_day_share": 0.65,
    "mean_ret": 5.4,
    "days_beat": 3,
    "days_total": 3,
@@ -258,7 +321,12 @@
    ],
    "n": 44,
    "hr": 90.9,
-   "excess": 50.4,
+   "pool_excess": 50.4,
+   "dayavg_excess": 21.9,
+   "dayavg_robust": 21.9,
+   "strat_excess": 49.9,
+   "hit_days": 4,
+   "max_day_share": 0.7,
    "mean_ret": 5.75,
    "days_beat": 2,
    "days_total": 2,
@@ -286,7 +354,12 @@
    ],
    "n": 64,
    "hr": 90.6,
-   "excess": 50.1,
+   "pool_excess": 50.1,
+   "dayavg_excess": 26.4,
+   "dayavg_robust": 26.4,
+   "strat_excess": 49.6,
+   "hit_days": 7,
+   "max_day_share": 0.66,
    "mean_ret": 5.15,
    "days_beat": 2,
    "days_total": 2,
@@ -314,7 +387,12 @@
    ],
    "n": 30,
    "hr": 90.0,
-   "excess": 49.5,
+   "pool_excess": 49.5,
+   "dayavg_excess": 30.6,
+   "dayavg_robust": 30.0,
+   "strat_excess": 48.9,
+   "hit_days": 4,
+   "max_day_share": 0.43,
    "mean_ret": 4.42,
    "days_beat": 3,
    "days_total": 3,
@@ -342,7 +420,12 @@
    ],
    "n": 47,
    "hr": 89.4,
-   "excess": 48.8,
+   "pool_excess": 48.8,
+   "dayavg_excess": 32.4,
+   "dayavg_robust": 32.4,
+   "strat_excess": 48.2,
+   "hit_days": 5,
+   "max_day_share": 0.62,
    "mean_ret": 5.12,
    "days_beat": 2,
    "days_total": 2,
@@ -370,7 +453,12 @@
    ],
    "n": 36,
    "hr": 88.9,
-   "excess": 48.4,
+   "pool_excess": 48.4,
+   "dayavg_excess": 25.0,
+   "dayavg_robust": 25.0,
+   "strat_excess": 48.1,
+   "hit_days": 5,
+   "max_day_share": 0.64,
    "mean_ret": 5.23,
    "days_beat": 2,
    "days_total": 2,
@@ -398,7 +486,12 @@
    ],
    "n": 34,
    "hr": 88.2,
-   "excess": 47.7,
+   "pool_excess": 47.7,
+   "dayavg_excess": 27.5,
+   "dayavg_robust": 27.5,
+   "strat_excess": 47.2,
+   "hit_days": 3,
+   "max_day_share": 0.5,
    "mean_ret": 4.24,
    "days_beat": 2,
    "days_total": 2,
@@ -426,7 +519,12 @@
    ],
    "n": 40,
    "hr": 87.5,
-   "excess": 47.0,
+   "pool_excess": 47.0,
+   "dayavg_excess": 25.2,
+   "dayavg_robust": 21.9,
+   "strat_excess": 46.5,
+   "hit_days": 5,
+   "max_day_share": 0.6,
    "mean_ret": 4.77,
    "days_beat": 3,
    "days_total": 3,
@@ -454,7 +552,12 @@
    ],
    "n": 70,
    "hr": 87.1,
-   "excess": 46.6,
+   "pool_excess": 46.6,
+   "dayavg_excess": 12.2,
+   "dayavg_robust": 26.6,
+   "strat_excess": 46.0,
+   "hit_days": 6,
+   "max_day_share": 0.5,
    "mean_ret": 4.49,
    "days_beat": 4,
    "days_total": 5,
@@ -482,7 +585,12 @@
    ],
    "n": 76,
    "hr": 86.8,
-   "excess": 46.3,
+   "pool_excess": 46.3,
+   "dayavg_excess": 4.1,
+   "dayavg_robust": 22.4,
+   "strat_excess": 45.8,
+   "hit_days": 7,
+   "max_day_share": 0.63,
    "mean_ret": 4.79,
    "days_beat": 3,
    "days_total": 4,
@@ -510,7 +618,12 @@
    ],
    "n": 53,
    "hr": 86.8,
-   "excess": 46.3,
+   "pool_excess": 46.3,
+   "dayavg_excess": 9.3,
+   "dayavg_robust": 31.3,
+   "strat_excess": 45.6,
+   "hit_days": 5,
+   "max_day_share": 0.6,
    "mean_ret": 4.83,
    "days_beat": 2,
    "days_total": 3,
@@ -538,7 +651,12 @@
    ],
    "n": 112,
    "hr": 86.6,
-   "excess": 46.1,
+   "pool_excess": 46.1,
+   "dayavg_excess": 10.2,
+   "dayavg_robust": 22.1,
+   "strat_excess": 45.6,
+   "hit_days": 7,
+   "max_day_share": 0.62,
    "mean_ret": 4.58,
    "days_beat": 4,
    "days_total": 5,
@@ -566,7 +684,12 @@
    ],
    "n": 35,
    "hr": 85.7,
-   "excess": 45.2,
+   "pool_excess": 45.2,
+   "dayavg_excess": 26.5,
+   "dayavg_robust": 31.0,
+   "strat_excess": 44.6,
+   "hit_days": 5,
+   "max_day_share": 0.43,
    "mean_ret": 3.92,
    "days_beat": 3,
    "days_total": 3,
@@ -594,7 +717,12 @@
    ],
    "n": 35,
    "hr": 85.7,
-   "excess": 45.2,
+   "pool_excess": 45.2,
+   "dayavg_excess": 31.4,
+   "dayavg_robust": 31.2,
+   "strat_excess": 44.6,
+   "hit_days": 5,
+   "max_day_share": 0.49,
    "mean_ret": 3.27,
    "days_beat": 3,
    "days_total": 3,
@@ -622,7 +750,12 @@
    ],
    "n": 77,
    "hr": 85.7,
-   "excess": 45.2,
+   "pool_excess": 45.2,
+   "dayavg_excess": 22.3,
+   "dayavg_robust": 25.5,
+   "strat_excess": 44.7,
+   "hit_days": 8,
+   "max_day_share": 0.58,
    "mean_ret": 4.28,
    "days_beat": 4,
    "days_total": 5,
@@ -650,7 +783,12 @@
    ],
    "n": 35,
    "hr": 85.7,
-   "excess": 45.2,
+   "pool_excess": 45.2,
+   "dayavg_excess": 27.3,
+   "dayavg_robust": 25.0,
+   "strat_excess": 44.8,
+   "hit_days": 6,
+   "max_day_share": 0.54,
    "mean_ret": 4.38,
    "days_beat": 3,
    "days_total": 3,
@@ -678,7 +816,12 @@
    ],
    "n": 42,
    "hr": 85.7,
-   "excess": 45.2,
+   "pool_excess": 45.2,
+   "dayavg_excess": 28.1,
+   "dayavg_robust": 33.4,
+   "strat_excess": 44.7,
+   "hit_days": 6,
+   "max_day_share": 0.38,
    "mean_ret": 3.59,
    "days_beat": 3,
    "days_total": 3,
@@ -706,7 +849,12 @@
    ],
    "n": 98,
    "hr": 85.7,
-   "excess": 45.2,
+   "pool_excess": 45.2,
+   "dayavg_excess": 21.9,
+   "dayavg_robust": 24.8,
+   "strat_excess": 44.7,
+   "hit_days": 7,
+   "max_day_share": 0.55,
    "mean_ret": 4.24,
    "days_beat": 4,
    "days_total": 5,
@@ -734,7 +882,12 @@
    ],
    "n": 48,
    "hr": 85.4,
-   "excess": 44.9,
+   "pool_excess": 44.9,
+   "dayavg_excess": 22.3,
+   "dayavg_robust": 17.6,
+   "strat_excess": 44.3,
+   "hit_days": 5,
+   "max_day_share": 0.65,
    "mean_ret": 4.69,
    "days_beat": 3,
    "days_total": 3,
@@ -762,7 +915,12 @@
    ],
    "n": 89,
    "hr": 85.4,
-   "excess": 44.9,
+   "pool_excess": 44.9,
+   "dayavg_excess": 23.7,
+   "dayavg_robust": 19.6,
+   "strat_excess": 44.4,
+   "hit_days": 7,
+   "max_day_share": 0.64,
    "mean_ret": 4.72,
    "days_beat": 3,
    "days_total": 3,
@@ -777,324 +935,460 @@
     "fold": 1,
     "train_days": 5,
     "test_base": 31.5,
-    "greedy_name": "涨幅≥2.0% 且 量比≤0.9 且 股价≥30",
-    "greedy_excess": -14.9,
-    "greedy_train_excess": 49.5,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥10",
-    "robust_excess": 12.2,
-    "robust_train_excess": 44.3,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥10",
-    "shrunk_excess": 14.8,
-    "shrunk_train_excess": 43.3,
-    "top5_excess": 3.5,
+    "n_rules_valid": 9140,
+    "greedy_pool_train_excess": 49.5,
+    "greedy_pool_excess": -14.9,
+    "greedy_pool_usable": true,
+    "greedy_day_train_excess": 47.5,
+    "greedy_day_excess": 14.3,
+    "greedy_day_usable": true,
+    "robust_day_train_excess": 47.5,
+    "robust_day_excess": 14.3,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 47.5,
+    "shrunk_day_excess": 14.3,
+    "shrunk_day_usable": true,
+    "top5_excess": 13.7,
     "fixed_A_excess": 22.5,
     "fixed_best_excess": 9.1,
-    "median_excess": 5.2
+    "median_excess": 5.5,
+    "greedy_pool_name": "涨幅≥2.0% 且 量比≤0.9 且 股价≥30",
+    "greedy_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20",
+    "robust_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-11",
     "fold": 2,
     "train_days": 6,
     "test_base": 68.2,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.9 且 股价≥30",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥20",
-    "robust_excess": 6.8,
-    "robust_train_excess": 47.3,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥10",
-    "shrunk_excess": -1.6,
-    "shrunk_train_excess": 42.7,
-    "top5_excess": 10.5,
+    "n_rules_valid": 10343,
+    "greedy_pool_train_excess": 54.0,
+    "greedy_pool_excess": 31.8,
+    "greedy_pool_usable": true,
+    "greedy_day_train_excess": 46.0,
+    "greedy_day_excess": 0.5,
+    "greedy_day_usable": true,
+    "robust_day_train_excess": 42.0,
+    "robust_day_excess": 1.5,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 42.0,
+    "shrunk_day_excess": 1.5,
+    "shrunk_day_usable": true,
+    "top5_excess": 4.6,
     "fixed_A_excess": 18.2,
     "fixed_best_excess": 15.7,
-    "median_excess": 0.0
+    "median_excess": -0.8,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.9 且 股价≥30",
+    "greedy_day_name": "换手≥2.5% 且 振幅≥6% 且 股价≥50",
+    "robust_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-12",
     "fold": 3,
     "train_days": 7,
     "test_base": 34.7,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.9 且 股价≥20",
-    "greedy_excess": 30.9,
-    "greedy_train_excess": 52.5,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥20",
-    "robust_excess": 25.9,
-    "robust_train_excess": 45.4,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥10",
-    "shrunk_excess": 16.2,
-    "shrunk_train_excess": 40.0,
-    "top5_excess": 31.0,
+    "n_rules_valid": 10851,
+    "greedy_pool_train_excess": 52.5,
+    "greedy_pool_excess": 30.9,
+    "greedy_pool_usable": true,
+    "greedy_day_train_excess": 39.0,
+    "greedy_day_excess": 30.0,
+    "greedy_day_usable": true,
+    "robust_day_train_excess": 36.6,
+    "robust_day_excess": 17.7,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 36.2,
+    "shrunk_day_excess": 18.7,
+    "shrunk_day_usable": true,
+    "top5_excess": 29.5,
     "fixed_A_excess": 2.5,
     "fixed_best_excess": 16.1,
-    "median_excess": 10.2
+    "median_excess": 10.8,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.9 且 股价≥20",
+    "greedy_day_name": "换手≥3% 且 量比≤1.6 且 股价≥50",
+    "robust_day_name": "涨幅≥3.0% 且 换手≥3% 且 股价≥20",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-13",
     "fold": 4,
     "train_days": 8,
     "test_base": 24.1,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥10",
-    "shrunk_excess": null,
-    "shrunk_train_excess": null,
-    "top5_excess": null,
+    "n_rules_valid": 11682,
+    "greedy_pool_train_excess": 50.9,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 40.5,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 34.2,
+    "robust_day_excess": 2.6,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 34.0,
+    "shrunk_day_excess": 5.4,
+    "shrunk_day_usable": true,
+    "top5_excess": 17.6,
     "fixed_A_excess": -4.1,
-    "fixed_best_excess": null,
-    "median_excess": -0.2
+    "fixed_best_excess": 0.9,
+    "median_excess": -1.0,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥10",
+    "robust_day_name": "涨幅≥3.0% 且 换手≥3% 且 股价≥20",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-14",
     "fold": 5,
     "train_days": 9,
     "test_base": 75.9,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "量比≤1.1 且 振幅≥4% 且 股价≥15",
-    "shrunk_excess": null,
-    "shrunk_train_excess": null,
-    "top5_excess": null,
+    "n_rules_valid": 12063,
+    "greedy_pool_train_excess": 51.6,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 40.5,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 30.8,
+    "robust_day_excess": -6.9,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 30.8,
+    "shrunk_day_excess": -6.9,
+    "shrunk_day_usable": true,
+    "top5_excess": 8.7,
     "fixed_A_excess": 8.8,
-    "fixed_best_excess": null,
-    "median_excess": -3.2
+    "fixed_best_excess": -9.3,
+    "median_excess": -3.7,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥10",
+    "robust_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-17",
     "fold": 6,
     "train_days": 10,
     "test_base": 28.8,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "量比≥1.5 且 振幅≤3% 且 活跃度≥3",
-    "shrunk_excess": -3.6,
-    "shrunk_train_excess": 31.8,
-    "top5_excess": null,
+    "n_rules_valid": 12888,
+    "greedy_pool_train_excess": 45.9,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 40.5,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 31.3,
+    "robust_day_excess": 27.7,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 27.1,
+    "shrunk_day_excess": 18.8,
+    "shrunk_day_usable": true,
+    "top5_excess": -8.8,
     "fixed_A_excess": -4.8,
     "fixed_best_excess": -17.7,
-    "median_excess": 1.0
+    "median_excess": 0.7,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥10",
+    "robust_day_name": "换手≥3% 且 股价≥50",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-18",
     "fold": 7,
     "train_days": 11,
     "test_base": 32.6,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.4 且 股价≥20",
-    "shrunk_excess": -12.6,
-    "shrunk_train_excess": 36.5,
-    "top5_excess": null,
+    "n_rules_valid": 13235,
+    "greedy_pool_train_excess": 48.7,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 40.5,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 31.6,
+    "robust_day_excess": -32.6,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 26.3,
+    "shrunk_day_excess": 0.7,
+    "shrunk_day_usable": true,
+    "top5_excess": -32.6,
     "fixed_A_excess": -25.5,
     "fixed_best_excess": -27.9,
-    "median_excess": -16.0
+    "median_excess": -16.0,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥10",
+    "robust_day_name": "换手≥2.5% 且 振幅≥5% 且 股价≥50",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-19",
     "fold": 8,
     "train_days": 12,
     "test_base": 43.1,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥10",
-    "shrunk_excess": null,
-    "shrunk_train_excess": null,
+    "n_rules_valid": 13339,
+    "greedy_pool_train_excess": 49.1,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 40.5,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 30.7,
+    "robust_day_excess": null,
+    "robust_day_usable": false,
+    "shrunk_day_train_excess": 29.2,
+    "shrunk_day_excess": null,
+    "shrunk_day_usable": false,
     "top5_excess": null,
-    "fixed_A_excess": null,
+    "fixed_A_excess": 6.9,
     "fixed_best_excess": null,
-    "median_excess": -0.3
+    "median_excess": 1.3,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥10",
+    "robust_day_name": "振幅≥6% 且 股价≥50",
+    "shrunk_day_name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥10"
    },
    {
     "test_day": "2026-08-20",
     "fold": 9,
     "train_days": 13,
     "test_base": 25.3,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥10",
-    "shrunk_excess": -7.1,
-    "shrunk_train_excess": 33.6,
-    "top5_excess": null,
+    "n_rules_valid": 13359,
+    "greedy_pool_train_excess": 49.1,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 40.5,
+    "greedy_day_excess": 8.0,
+    "greedy_day_usable": true,
+    "robust_day_train_excess": 30.7,
+    "robust_day_excess": 3.9,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 29.2,
+    "shrunk_day_excess": -14.2,
+    "shrunk_day_usable": true,
+    "top5_excess": 4.9,
     "fixed_A_excess": 10.5,
     "fixed_best_excess": -14.2,
-    "median_excess": 2.4
+    "median_excess": 2.4,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥10",
+    "robust_day_name": "振幅≥6% 且 股价≥50",
+    "shrunk_day_name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥10"
    },
    {
     "test_day": "2026-08-21",
     "fold": 10,
     "train_days": 14,
     "test_base": 18.6,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥20",
-    "shrunk_excess": null,
-    "shrunk_train_excess": null,
-    "top5_excess": null,
+    "n_rules_valid": 13750,
+    "greedy_pool_train_excess": 52.6,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 36.3,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 29.3,
+    "robust_day_excess": -9.1,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 22.8,
+    "shrunk_day_excess": -0.4,
+    "shrunk_day_usable": true,
+    "top5_excess": -8.6,
     "fixed_A_excess": -7.2,
     "fixed_best_excess": null,
-    "median_excess": -2.8
+    "median_excess": -2.4,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "量比≤0.7 且 振幅≥4% 且 股价≥20",
+    "robust_day_name": "换手≥2% 且 振幅≥6% 且 股价≥50",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-24",
     "fold": 11,
     "train_days": 15,
     "test_base": 69.7,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥20",
-    "shrunk_excess": null,
-    "shrunk_train_excess": null,
+    "n_rules_valid": 13873,
+    "greedy_pool_train_excess": 53.4,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 36.3,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 27.7,
+    "robust_day_excess": -36.4,
+    "robust_day_usable": true,
+    "shrunk_day_train_excess": 21.1,
+    "shrunk_day_excess": -58.6,
+    "shrunk_day_usable": true,
     "top5_excess": null,
     "fixed_A_excess": 3.0,
     "fixed_best_excess": null,
-    "median_excess": -9.5
+    "median_excess": -9.3,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "量比≤0.7 且 振幅≥4% 且 股价≥20",
+    "robust_day_name": "换手≥2.5% 且 振幅≥6% 且 股价≥50",
+    "shrunk_day_name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20"
    },
    {
     "test_day": "2026-08-25",
     "fold": 12,
     "train_days": 16,
     "test_base": 68.5,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥20",
-    "shrunk_excess": null,
-    "shrunk_train_excess": null,
+    "n_rules_valid": 13931,
+    "greedy_pool_train_excess": 52.0,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 36.3,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 26.3,
+    "robust_day_excess": null,
+    "robust_day_usable": false,
+    "shrunk_day_train_excess": 24.8,
+    "shrunk_day_excess": null,
+    "shrunk_day_usable": false,
     "top5_excess": null,
     "fixed_A_excess": -8.5,
     "fixed_best_excess": null,
-    "median_excess": -8.3
+    "median_excess": -8.3,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "量比≤0.7 且 振幅≥4% 且 股价≥20",
+    "robust_day_name": "量比≤1.2 且 振幅≥6% 且 股价≥20",
+    "shrunk_day_name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥10"
    },
    {
     "test_day": "2026-08-26",
     "fold": 13,
     "train_days": 17,
     "test_base": 50.9,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥20",
-    "shrunk_excess": null,
-    "shrunk_train_excess": null,
+    "n_rules_valid": 14010,
+    "greedy_pool_train_excess": 51.3,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 36.3,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 26.3,
+    "robust_day_excess": null,
+    "robust_day_usable": false,
+    "shrunk_day_train_excess": 24.8,
+    "shrunk_day_excess": -25.9,
+    "shrunk_day_usable": true,
     "top5_excess": null,
     "fixed_A_excess": 36.6,
     "fixed_best_excess": null,
-    "median_excess": 6.7
+    "median_excess": 6.6,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "量比≤0.7 且 振幅≥4% 且 股价≥20",
+    "robust_day_name": "量比≤1.2 且 振幅≥6% 且 股价≥20",
+    "shrunk_day_name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥10"
    },
    {
     "test_day": "2026-08-27",
     "fold": 14,
     "train_days": 18,
     "test_base": 53.8,
-    "greedy_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
-    "greedy_excess": null,
-    "greedy_train_excess": null,
-    "robust_name": "涨幅≥3.0% 且 量比≤1.0 且 股价≥20",
-    "robust_excess": null,
-    "robust_train_excess": null,
-    "shrunk_name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥20",
-    "shrunk_excess": null,
-    "shrunk_train_excess": null,
+    "n_rules_valid": 14083,
+    "greedy_pool_train_excess": 50.9,
+    "greedy_pool_excess": null,
+    "greedy_pool_usable": false,
+    "greedy_day_train_excess": 36.3,
+    "greedy_day_excess": null,
+    "greedy_day_usable": false,
+    "robust_day_train_excess": 26.3,
+    "robust_day_excess": null,
+    "robust_day_usable": false,
+    "shrunk_day_train_excess": 23.0,
+    "shrunk_day_excess": null,
+    "shrunk_day_usable": false,
     "top5_excess": null,
     "fixed_A_excess": 3.7,
-    "fixed_best_excess": null,
-    "median_excess": 0.8
+    "fixed_best_excess": -28.8,
+    "median_excess": 0.4,
+    "greedy_pool_name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥15",
+    "greedy_day_name": "量比≤0.7 且 振幅≥4% 且 股价≥20",
+    "robust_day_name": "量比≤1.2 且 振幅≥6% 且 股价≥20",
+    "shrunk_day_name": "涨幅≥2.0% 且 量比≤1.0 且 股价≥15"
    }
   ],
   "strategies": {
-   "greedy": {
-    "oos_excess": 8.0,
-    "train_excess": 51.0,
-    "decay": 0.843,
-    "std": 22.9,
-    "pos_folds": 1,
-    "n_folds": 2
-   },
-   "robust": {
-    "oos_excess": 15.0,
-    "train_excess": 45.7,
-    "decay": 0.672,
-    "std": 8.0,
-    "pos_folds": 3,
-    "n_folds": 3
-   },
-   "shrunk": {
-    "oos_excess": 1.0,
-    "train_excess": 38.0,
-    "decay": 0.973,
-    "std": 10.8,
+   "greedy_pool": {
+    "oos_excess": 15.9,
+    "train_excess": 50.8,
+    "decay": 0.686,
+    "std": 21.8,
     "pos_folds": 2,
-    "n_folds": 6
+    "n_folds": 3,
+    "n_folds_total": 14,
+    "unusable_folds": 11
+   },
+   "greedy_day": {
+    "oos_excess": 13.2,
+    "train_excess": 39.8,
+    "decay": 0.668,
+    "std": 10.9,
+    "pos_folds": 4,
+    "n_folds": 4,
+    "n_folds_total": 14,
+    "unusable_folds": 10
+   },
+   "robust_day": {
+    "oos_excess": -1.7,
+    "train_excess": 32.2,
+    "decay": 1.054,
+    "std": 19.5,
+    "pos_folds": 6,
+    "n_folds": 10,
+    "n_folds_total": 14,
+    "unusable_folds": 4
+   },
+   "shrunk_day": {
+    "oos_excess": -4.2,
+    "train_excess": 29.9,
+    "decay": 1.142,
+    "std": 21.5,
+    "pos_folds": 6,
+    "n_folds": 11,
+    "n_folds_total": 14,
+    "unusable_folds": 3
    },
    "top5": {
-    "oos_excess": 15.0,
+    "oos_excess": 3.2,
     "train_excess": null,
     "decay": null,
-    "std": 11.7,
-    "pos_folds": 3,
-    "n_folds": 3
+    "std": 17.0,
+    "pos_folds": 6,
+    "n_folds": 9,
+    "n_folds_total": 14,
+    "unusable_folds": 0
    },
    "median": {
     "oos_excess": -1.0,
     "train_excess": null,
     "decay": null,
     "std": 6.6,
-    "pos_folds": 6,
-    "n_folds": 14
+    "pos_folds": 7,
+    "n_folds": 14,
+    "n_folds_total": 14,
+    "unusable_folds": 0
    },
    "fixed_A": {
-    "oos_excess": 4.3,
+    "oos_excess": 4.5,
     "train_excess": null,
     "decay": null,
-    "std": 15.1,
-    "pos_folds": 8,
-    "n_folds": 13
+    "std": 14.6,
+    "pos_folds": 9,
+    "n_folds": 14,
+    "n_folds_total": 14,
+    "unusable_folds": 0
    },
    "fixed_best": {
-    "oos_excess": -3.1,
+    "oos_excess": -6.2,
     "train_excess": null,
     "decay": null,
-    "std": 17.4,
-    "pos_folds": 3,
-    "n_folds": 6
+    "std": 16.5,
+    "pos_folds": 4,
+    "n_folds": 9,
+    "n_folds_total": 14,
+    "unusable_folds": 0
    }
   }
  },
@@ -1129,15 +1423,515 @@
   "跌": {
    "days": 2,
    "n": 610,
+   "base": 41.6,
    "note": "天数<3，无法做留一天检验"
   },
   "弱跌": {
    "days": 2,
    "n": 543,
+   "base": 67.2,
+   "note": "天数<3，无法做留一天检验"
+  },
+  "震荡": {
+   "days": 1,
+   "n": 193,
+   "base": 32.6,
    "note": "天数<3，无法做留一天检验"
   }
  },
+ "holdout": {
+  "split": 9,
+  "train_days": [
+   "2026-08-03",
+   "2026-08-04",
+   "2026-08-05",
+   "2026-08-06",
+   "2026-08-07",
+   "2026-08-10",
+   "2026-08-11",
+   "2026-08-12",
+   "2026-08-13"
+  ],
+  "test_days": [
+   "2026-08-14",
+   "2026-08-17",
+   "2026-08-18",
+   "2026-08-19",
+   "2026-08-20",
+   "2026-08-21",
+   "2026-08-24",
+   "2026-08-25",
+   "2026-08-26",
+   "2026-08-27"
+  ],
+  "train_base": 38.8,
+  "test_base": 41.8,
+  "train_n": 5248,
+  "test_n": 6967,
+  "n_gated": 8025,
+  "picks": [
+   {
+    "pick": "训练期·pool最高（贪婪）",
+    "name": "涨幅≥3.0% 且 量比≤0.7 且 股价≥10",
+    "conds": [
+     [
+      "chg",
+      ">=",
+      3.0
+     ],
+     [
+      "vr",
+      "<=",
+      0.7
+     ],
+     [
+      "price",
+      ">=",
+      10
+     ]
+    ],
+    "train": {
+     "n": 40,
+     "hr": 95.0,
+     "pool": 56.2,
+     "strat": 38.5,
+     "hit_days": 5,
+     "max_share": 0.78
+    },
+    "test": {
+     "n": 9,
+     "hr": 33.3,
+     "pool": -8.5,
+     "strat": -6.0,
+     "dayavg": 0.0,
+     "hit_days": 6,
+     "max_share": 0.22
+    }
+   },
+   {
+    "pick": "训练期·稳健门槛下strat最高",
+    "name": "涨幅≤1.5% 且 量比≤0.7 且 振幅≥4%",
+    "conds": [
+     [
+      "chg",
+      "<=",
+      1.5
+     ],
+     [
+      "vr",
+      "<=",
+      0.7
+     ],
+     [
+      "amplitude",
+      ">=",
+      4
+     ]
+    ],
+    "train": {
+     "n": 50,
+     "hr": 74.0,
+     "pool": 35.2,
+     "strat": 33.6,
+     "hit_days": 9,
+     "max_share": 0.26
+    },
+    "test": {
+     "n": 16,
+     "hr": 25.0,
+     "pool": -16.8,
+     "strat": -15.9,
+     "dayavg": 0.0,
+     "hit_days": 8,
+     "max_share": 0.31
+    }
+   },
+   {
+    "pick": "固定·规则A",
+    "name": "涨幅≤0.6% 且 换手≥2%",
+    "conds": [
+     [
+      "chg",
+      "<=",
+      0.6
+     ],
+     [
+      "turnover",
+      ">=",
+      2
+     ]
+    ],
+    "train": {
+     "n": 280,
+     "hr": 49.6,
+     "pool": 10.8,
+     "strat": 8.6,
+     "hit_days": 9,
+     "max_share": 0.25
+    },
+    "test": {
+     "n": 306,
+     "hr": 47.1,
+     "pool": 5.3,
+     "strat": 6.1,
+     "dayavg": 1.9,
+     "hit_days": 10,
+     "max_share": 0.22
+    }
+   },
+   {
+    "pick": "固定·当前best",
+    "name": "换手≥3% 且 量比≤1.0 且 活跃度≥3",
+    "conds": [
+     [
+      "turnover",
+      ">=",
+      3
+     ],
+     [
+      "vr",
+      "<=",
+      1.0
+     ],
+     [
+      "activity",
+      ">=",
+      3
+     ]
+    ],
+    "train": {
+     "n": 618,
+     "hr": 59.5,
+     "pool": 20.7,
+     "strat": 15.9,
+     "hit_days": 9,
+     "max_share": 0.32
+    },
+    "test": {
+     "n": 61,
+     "hr": 16.4,
+     "pool": -25.4,
+     "strat": -22.3,
+     "dayavg": -19.9,
+     "hit_days": 9,
+     "max_share": 0.34
+    }
+   },
+   {
+    "pick": "固定·股价≥50",
+    "name": "股价≥50",
+    "conds": [
+     [
+      "price",
+      ">=",
+      50
+     ]
+    ],
+    "train": {
+     "n": 330,
+     "hr": 62.7,
+     "pool": 23.9,
+     "strat": 18.0,
+     "hit_days": 9,
+     "max_share": 0.24
+    },
+    "test": {
+     "n": 469,
+     "hr": 46.9,
+     "pool": 5.1,
+     "strat": 5.9,
+     "dayavg": -1.1,
+     "hit_days": 10,
+     "max_share": 0.19
+    }
+   },
+   {
+    "pick": "固定·股价≥20",
+    "name": "股价≥20",
+    "conds": [
+     [
+      "price",
+      ">=",
+      20
+     ]
+    ],
+    "train": {
+     "n": 1271,
+     "hr": 53.3,
+     "pool": 14.4,
+     "strat": 10.7,
+     "hit_days": 9,
+     "max_share": 0.24
+    },
+    "test": {
+     "n": 1833,
+     "hr": 47.0,
+     "pool": 5.2,
+     "strat": 6.1,
+     "dayavg": -2.5,
+     "hit_days": 10,
+     "max_share": 0.22
+    }
+   }
+  ]
+ },
+ "fixed_eval": {
+  "规则A 涨幅≤0.6%且换手≥2%": {
+   "conds": [
+    [
+     "chg",
+     "<=",
+     0.6
+    ],
+    [
+     "turnover",
+     ">=",
+     2
+    ]
+   ],
+   "n": 586,
+   "hr": 48.3,
+   "pool_excess": 7.8,
+   "strat_excess": 8.0,
+   "oos_excess": 4.5,
+   "oos_std": 14.6,
+   "oos_pos": 9,
+   "oos_folds": 14,
+   "per_day": 30.8,
+   "hit_days": 19,
+   "max_day_share": 0.12,
+   "z": 3.93
+  },
+  "当前best 换手≥3%且量比≤1.0且活跃度≥3": {
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     3
+    ],
+    [
+     "vr",
+     "<=",
+     1.0
+    ],
+    [
+     "activity",
+     ">=",
+     3
+    ]
+   ],
+   "n": 679,
+   "hr": 55.7,
+   "pool_excess": 15.1,
+   "strat_excess": 15.5,
+   "oos_excess": -6.2,
+   "oos_std": 16.5,
+   "oos_pos": 4,
+   "oos_folds": 9,
+   "per_day": 35.7,
+   "hit_days": 18,
+   "max_day_share": 0.29,
+   "z": 8.27
+  },
+  "股价≥20": {
+   "conds": [
+    [
+     "price",
+     ">=",
+     20
+    ]
+   ],
+   "n": 3104,
+   "hr": 49.5,
+   "pool_excess": 9.0,
+   "strat_excess": 9.2,
+   "oos_excess": 0.1,
+   "oos_std": 10.5,
+   "oos_pos": 8,
+   "oos_folds": 14,
+   "per_day": 163.4,
+   "hit_days": 19,
+   "max_day_share": 0.13,
+   "z": 11.86
+  },
+  "股价≥50": {
+   "conds": [
+    [
+     "price",
+     ">=",
+     50
+    ]
+   ],
+   "n": 799,
+   "hr": 53.4,
+   "pool_excess": 12.9,
+   "strat_excess": 12.9,
+   "oos_excess": 4.2,
+   "oos_std": 16.1,
+   "oos_pos": 8,
+   "oos_folds": 13,
+   "per_day": 42.1,
+   "hit_days": 19,
+   "max_day_share": 0.11,
+   "z": 7.69
+  },
+  "规则A+股价≥20": {
+   "conds": [
+    [
+     "chg",
+     "<=",
+     0.6
+    ],
+    [
+     "turnover",
+     ">=",
+     2
+    ],
+    [
+     "price",
+     ">=",
+     20
+    ]
+   ],
+   "n": 199,
+   "hr": 49.7,
+   "pool_excess": 9.2,
+   "strat_excess": 9.5,
+   "oos_excess": 5.0,
+   "oos_std": 19.7,
+   "oos_pos": 7,
+   "oos_folds": 13,
+   "per_day": 10.5,
+   "hit_days": 18,
+   "max_day_share": 0.13,
+   "z": 2.67
+  },
+  "规则A+股价≥50": {
+   "conds": [
+    [
+     "chg",
+     "<=",
+     0.6
+    ],
+    [
+     "turnover",
+     ">=",
+     2
+    ],
+    [
+     "price",
+     ">=",
+     50
+    ]
+   ],
+   "n": 45,
+   "hr": 53.3,
+   "pool_excess": 12.8,
+   "strat_excess": 12.0,
+   "oos_excess": 4.3,
+   "oos_std": 28.0,
+   "oos_pos": 4,
+   "oos_folds": 9,
+   "per_day": 2.4,
+   "hit_days": 14,
+   "max_day_share": 0.18,
+   "z": 1.75
+  },
+  "涨幅≥3%且换手≥3%且股价≥20": {
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ],
+    [
+     "turnover",
+     ">=",
+     3
+    ],
+    [
+     "price",
+     ">=",
+     20
+    ]
+   ],
+   "n": 576,
+   "hr": 53.8,
+   "pool_excess": 13.3,
+   "strat_excess": 13.3,
+   "oos_excess": -5.1,
+   "oos_std": 20.9,
+   "oos_pos": 7,
+   "oos_folds": 13,
+   "per_day": 30.3,
+   "hit_days": 19,
+   "max_day_share": 0.2,
+   "z": 6.66
+  },
+  "换手≥3%且股价≥50": {
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     3
+    ],
+    [
+     "price",
+     ">=",
+     50
+    ]
+   ],
+   "n": 359,
+   "hr": 56.5,
+   "pool_excess": 16.0,
+   "strat_excess": 16.2,
+   "oos_excess": 7.6,
+   "oos_std": 30.1,
+   "oos_pos": 8,
+   "oos_folds": 13,
+   "per_day": 18.9,
+   "hit_days": 18,
+   "max_day_share": 0.14,
+   "z": 6.28
+  }
+ },
  "recommendations": [
+  {
+   "name": "涨幅≥3.0% 且 量比≤0.9 且 股价≥30",
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ],
+    [
+     "vr",
+     "<=",
+     0.9
+    ],
+    [
+     "price",
+     ">=",
+     30
+    ]
+   ],
+   "n": 89,
+   "hr": 85.4,
+   "pool_excess": 44.9,
+   "dayavg_excess": 23.7,
+   "dayavg_robust": 19.6,
+   "strat_excess": 44.4,
+   "hit_days": 7,
+   "max_day_share": 0.64,
+   "oos_excess": 31.8,
+   "oos_folds": 1,
+   "oos_pos": 1,
+   "mean_ret": 4.72,
+   "per_day": 4.7,
+   "days_beat": 3,
+   "days_total": 3,
+   "z": 8.65
+  },
   {
    "name": "涨幅≥3.0% 且 量比≤0.9 且 股价≥20",
    "conds": [
@@ -1159,8 +1953,12 @@
    ],
    "n": 112,
    "hr": 86.6,
-   "excess": 46.1,
-   "insample_excess": 46.1,
+   "pool_excess": 46.1,
+   "dayavg_excess": 10.2,
+   "dayavg_robust": 22.1,
+   "strat_excess": 45.6,
+   "hit_days": 7,
+   "max_day_share": 0.62,
    "oos_excess": 30.9,
    "oos_folds": 1,
    "oos_pos": 1,
@@ -1171,71 +1969,74 @@
    "z": 9.98
   },
   {
-   "name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥20",
+   "name": "换手≥3% 且 量比≤1.6 且 股价≥50",
    "conds": [
     [
-     "chg",
+     "turnover",
      ">=",
-     3.0
+     3
     ],
     [
      "vr",
      "<=",
-     1.1
+     1.6
     ],
     [
      "price",
      ">=",
-     20
+     50
     ]
    ],
-   "n": 200,
-   "hr": 81.5,
-   "excess": 41.0,
-   "insample_excess": 41.0,
-   "oos_excess": 25.9,
+   "n": 136,
+   "hr": 75.0,
+   "pool_excess": 34.5,
+   "dayavg_excess": 28.9,
+   "dayavg_robust": 9.7,
+   "strat_excess": 34.3,
+   "hit_days": 12,
+   "max_day_share": 0.38,
+   "oos_excess": 30.0,
    "oos_folds": 1,
    "oos_pos": 1,
-   "mean_ret": 3.92,
-   "per_day": 10.5,
+   "mean_ret": 2.98,
+   "per_day": 7.2,
    "days_beat": 6,
-   "days_total": 7,
-   "z": 11.9
+   "days_total": 8,
+   "z": 8.24
   },
   {
-   "name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥10",
+   "name": "换手≥3% 且 股价≥50",
    "conds": [
     [
-     "chg",
+     "turnover",
      ">=",
-     3.0
-    ],
-    [
-     "vr",
-     "<=",
-     1.1
+     3
     ],
     [
      "price",
      ">=",
-     10
+     50
     ]
    ],
-   "n": 296,
-   "hr": 73.3,
-   "excess": 32.8,
-   "insample_excess": 32.8,
-   "oos_excess": 12.2,
+   "n": 359,
+   "hr": 56.5,
+   "pool_excess": 16.0,
+   "dayavg_excess": 14.8,
+   "dayavg_robust": 7.9,
+   "strat_excess": 16.2,
+   "hit_days": 18,
+   "max_day_share": 0.14,
+   "oos_excess": 27.7,
    "oos_folds": 1,
    "oos_pos": 1,
-   "mean_ret": 3.16,
-   "per_day": 15.6,
-   "days_beat": 9,
-   "days_total": 12,
-   "z": 11.63
+   "mean_ret": 1.1,
+   "per_day": 18.9,
+   "days_beat": 11,
+   "days_total": 17,
+   "z": 6.28
   },
   {
-   "name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥20",
+   "name": "涨幅≥3.0% 且 换手≥3% 且 股价≥20",
    "conds": [
     [
      "chg",
@@ -1243,9 +2044,9 @@
      3.0
     ],
     [
-     "vr",
-     "<=",
-     1.2
+     "turnover",
+     ">=",
+     3
     ],
     [
      "price",
@@ -1253,21 +2054,25 @@
      20
     ]
    ],
-   "n": 236,
-   "hr": 80.1,
-   "excess": 39.6,
-   "insample_excess": 39.6,
-   "oos_excess": 6.8,
-   "oos_folds": 1,
-   "oos_pos": 1,
-   "mean_ret": 3.81,
-   "per_day": 12.4,
-   "days_beat": 7,
-   "days_total": 8,
-   "z": 12.5
+   "n": 576,
+   "hr": 53.8,
+   "pool_excess": 13.3,
+   "dayavg_excess": 9.5,
+   "dayavg_robust": -4.2,
+   "strat_excess": 13.3,
+   "hit_days": 19,
+   "max_day_share": 0.2,
+   "oos_excess": 10.2,
+   "oos_folds": 2,
+   "oos_pos": 2,
+   "mean_ret": 1.21,
+   "per_day": 30.3,
+   "days_beat": 11,
+   "days_total": 18,
+   "z": 6.66
   },
   {
-   "name": "涨幅≥3.0% 且 量比≤1.2 且 股价≥10",
+   "name": "涨幅≥3.0% 且 量比≤0.8 且 股价≥10",
    "conds": [
     [
      "chg",
@@ -1277,7 +2082,7 @@
     [
      "vr",
      "<=",
-     1.2
+     0.8
     ],
     [
      "price",
@@ -1285,82 +2090,125 @@
      10
     ]
    ],
-   "n": 355,
-   "hr": 71.5,
-   "excess": 31.0,
-   "insample_excess": 31.0,
-   "oos_excess": 5.6,
-   "oos_folds": 4,
-   "oos_pos": 2,
-   "mean_ret": 3.01,
-   "per_day": 18.7,
-   "days_beat": 8,
-   "days_total": 13,
-   "z": 12.08
+   "n": 88,
+   "hr": 83.0,
+   "pool_excess": 42.4,
+   "dayavg_excess": 32.3,
+   "dayavg_robust": 23.3,
+   "strat_excess": 42.1,
+   "hit_days": 12,
+   "max_day_share": 0.58,
+   "oos_excess": 8.0,
+   "oos_folds": 1,
+   "oos_pos": 1,
+   "mean_ret": 4.31,
+   "per_day": 4.6,
+   "days_beat": 4,
+   "days_total": 4,
+   "z": 8.14
   },
   {
-   "name": "量比≥1.5 且 振幅≤3% 且 活跃度≥3",
+   "name": "振幅≥6% 且 股价≥50",
    "conds": [
     [
-     "vr",
+     "amplitude",
      ">=",
-     1.5
+     6
+    ],
+    [
+     "price",
+     ">=",
+     50
+    ]
+   ],
+   "n": 259,
+   "hr": 56.8,
+   "pool_excess": 16.2,
+   "dayavg_excess": 14.3,
+   "dayavg_robust": 4.8,
+   "strat_excess": 16.3,
+   "hit_days": 18,
+   "max_day_share": 0.2,
+   "oos_excess": 3.9,
+   "oos_folds": 1,
+   "oos_pos": 1,
+   "mean_ret": 1.29,
+   "per_day": 13.6,
+   "days_beat": 11,
+   "days_total": 16,
+   "z": 5.38
+  },
+  {
+   "name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20",
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ],
+    [
+     "turnover",
+     ">=",
+     2.5
+    ],
+    [
+     "price",
+     ">=",
+     20
+    ]
+   ],
+   "n": 649,
+   "hr": 54.5,
+   "pool_excess": 14.0,
+   "dayavg_excess": 10.3,
+   "dayavg_robust": -3.3,
+   "strat_excess": 14.1,
+   "hit_days": 19,
+   "max_day_share": 0.19,
+   "oos_excess": 1.3,
+   "oos_folds": 13,
+   "oos_pos": 9,
+   "mean_ret": 1.26,
+   "per_day": 34.2,
+   "days_beat": 12,
+   "days_total": 18,
+   "z": 7.48
+  },
+  {
+   "name": "换手≥2% 且 振幅≥6% 且 股价≥50",
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     2
     ],
     [
      "amplitude",
-     "<=",
-     3
-    ],
-    [
-     "activity",
      ">=",
-     3
-    ]
-   ],
-   "n": 1922,
-   "hr": 43.5,
-   "excess": 3.0,
-   "insample_excess": 3.0,
-   "oos_excess": -3.6,
-   "oos_folds": 1,
-   "oos_pos": 0,
-   "mean_ret": -0.03,
-   "per_day": 101.2,
-   "days_beat": 7,
-   "days_total": 12,
-   "z": 2.89
-  },
-  {
-   "name": "涨幅≥3.0% 且 量比≤1.4 且 股价≥20",
-   "conds": [
-    [
-     "chg",
-     ">=",
-     3.0
-    ],
-    [
-     "vr",
-     "<=",
-     1.4
+     6
     ],
     [
      "price",
      ">=",
-     20
+     50
     ]
    ],
-   "n": 285,
-   "hr": 75.8,
-   "excess": 35.3,
-   "insample_excess": 35.3,
-   "oos_excess": -12.6,
+   "n": 232,
+   "hr": 58.6,
+   "pool_excess": 18.1,
+   "dayavg_excess": 17.3,
+   "dayavg_robust": 5.9,
+   "strat_excess": 18.2,
+   "hit_days": 18,
+   "max_day_share": 0.21,
+   "oos_excess": -9.1,
    "oos_folds": 1,
    "oos_pos": 0,
-   "mean_ret": 3.44,
-   "per_day": 15.0,
-   "days_beat": 7,
-   "days_total": 10,
-   "z": 12.27
+   "mean_ret": 1.51,
+   "per_day": 12.2,
+   "days_beat": 11,
+   "days_total": 16,
+   "z": 5.67
   },
   {
    "name": "涨幅≥2.0% 且 量比≤0.9 且 股价≥30",
@@ -1383,8 +2231,12 @@
    ],
    "n": 121,
    "hr": 81.8,
-   "excess": 41.3,
-   "insample_excess": 41.3,
+   "pool_excess": 41.3,
+   "dayavg_excess": 11.8,
+   "dayavg_robust": 23.4,
+   "strat_excess": 41.1,
+   "hit_days": 7,
+   "max_day_share": 0.53,
    "oos_excess": -14.9,
    "oos_folds": 1,
    "oos_pos": 0,
@@ -1393,6 +2245,255 @@
    "days_beat": 4,
    "days_total": 6,
    "z": 9.3
+  },
+  {
+   "name": "换手≥2.5% 且 振幅≥6% 且 股价≥50",
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     2.5
+    ],
+    [
+     "amplitude",
+     ">=",
+     6
+    ],
+    [
+     "price",
+     ">=",
+     50
+    ]
+   ],
+   "n": 215,
+   "hr": 57.7,
+   "pool_excess": 17.2,
+   "dayavg_excess": 18.1,
+   "dayavg_robust": 4.8,
+   "strat_excess": 17.2,
+   "hit_days": 18,
+   "max_day_share": 0.21,
+   "oos_excess": -17.9,
+   "oos_folds": 2,
+   "oos_pos": 1,
+   "mean_ret": 1.52,
+   "per_day": 11.3,
+   "days_beat": 11,
+   "days_total": 16,
+   "z": 5.17
+  },
+  {
+   "name": "涨幅≥3.0% 且 量比≤1.1 且 股价≥10",
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ],
+    [
+     "vr",
+     "<=",
+     1.1
+    ],
+    [
+     "price",
+     ">=",
+     10
+    ]
+   ],
+   "n": 296,
+   "hr": 73.3,
+   "pool_excess": 32.8,
+   "dayavg_excess": 19.6,
+   "dayavg_robust": 2.1,
+   "strat_excess": 32.7,
+   "hit_days": 16,
+   "max_day_share": 0.52,
+   "oos_excess": -20.0,
+   "oos_folds": 2,
+   "oos_pos": 0,
+   "mean_ret": 3.16,
+   "per_day": 15.6,
+   "days_beat": 9,
+   "days_total": 12,
+   "z": 11.63
+  },
+  {
+   "name": "换手≥2.5% 且 振幅≥5% 且 股价≥50",
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     2.5
+    ],
+    [
+     "amplitude",
+     ">=",
+     5
+    ],
+    [
+     "price",
+     ">=",
+     50
+    ]
+   ],
+   "n": 268,
+   "hr": 56.0,
+   "pool_excess": 15.4,
+   "dayavg_excess": 13.9,
+   "dayavg_robust": 2.9,
+   "strat_excess": 15.7,
+   "hit_days": 18,
+   "max_day_share": 0.18,
+   "oos_excess": -32.6,
+   "oos_folds": 1,
+   "oos_pos": 0,
+   "mean_ret": 1.29,
+   "per_day": 14.1,
+   "days_beat": 10,
+   "days_total": 17,
+   "z": 5.21
   }
- ]
+ ],
+ "survivors": [
+  {
+   "name": "振幅≥6% 且 股价≥50",
+   "conds": [
+    [
+     "amplitude",
+     ">=",
+     6
+    ],
+    [
+     "price",
+     ">=",
+     50
+    ]
+   ],
+   "n": 259,
+   "hr": 56.8,
+   "pool_excess": 16.2,
+   "dayavg_excess": 14.3,
+   "dayavg_robust": 4.8,
+   "strat_excess": 16.3,
+   "hit_days": 18,
+   "max_day_share": 0.2,
+   "oos_excess": 3.9,
+   "oos_folds": 1,
+   "oos_pos": 1,
+   "mean_ret": 1.29,
+   "per_day": 13.6,
+   "days_beat": 11,
+   "days_total": 16,
+   "z": 5.38
+  },
+  {
+   "name": "换手≥3% 且 股价≥50",
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     3
+    ],
+    [
+     "price",
+     ">=",
+     50
+    ]
+   ],
+   "n": 359,
+   "hr": 56.5,
+   "pool_excess": 16.0,
+   "dayavg_excess": 14.8,
+   "dayavg_robust": 7.9,
+   "strat_excess": 16.2,
+   "hit_days": 18,
+   "max_day_share": 0.14,
+   "oos_excess": 27.7,
+   "oos_folds": 1,
+   "oos_pos": 1,
+   "mean_ret": 1.1,
+   "per_day": 18.9,
+   "days_beat": 11,
+   "days_total": 17,
+   "z": 6.28
+  },
+  {
+   "name": "涨幅≥3.0% 且 换手≥2.5% 且 股价≥20",
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ],
+    [
+     "turnover",
+     ">=",
+     2.5
+    ],
+    [
+     "price",
+     ">=",
+     20
+    ]
+   ],
+   "n": 649,
+   "hr": 54.5,
+   "pool_excess": 14.0,
+   "dayavg_excess": 10.3,
+   "dayavg_robust": -3.3,
+   "strat_excess": 14.1,
+   "hit_days": 19,
+   "max_day_share": 0.19,
+   "oos_excess": 1.3,
+   "oos_folds": 13,
+   "oos_pos": 9,
+   "mean_ret": 1.26,
+   "per_day": 34.2,
+   "days_beat": 12,
+   "days_total": 18,
+   "z": 7.48
+  },
+  {
+   "name": "涨幅≥3.0% 且 换手≥3% 且 股价≥20",
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ],
+    [
+     "turnover",
+     ">=",
+     3
+    ],
+    [
+     "price",
+     ">=",
+     20
+    ]
+   ],
+   "n": 576,
+   "hr": 53.8,
+   "pool_excess": 13.3,
+   "dayavg_excess": 9.5,
+   "dayavg_robust": -4.2,
+   "strat_excess": 13.3,
+   "hit_days": 19,
+   "max_day_share": 0.2,
+   "oos_excess": 10.2,
+   "oos_folds": 2,
+   "oos_pos": 2,
+   "mean_ret": 1.21,
+   "per_day": 30.3,
+   "days_beat": 11,
+   "days_total": 18,
+   "z": 6.66
+  }
+ ],
+ "thresholds": {
+  "hit_days_min": 11,
+  "max_day_share_max": 0.3,
+  "per_day_min": 5
+ }
 }

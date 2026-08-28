@@ -579,5 +579,18 @@
    "days_beat": 12,
    "days_total": 18
   }
- ]
+ ],
+ "forward_validation": {
+  "checked_at": "2026-08-28 14:53",
+  "method": "walk-forward 14 折（前5天训练→次日检验）+ 时序holdout（前9/后10天）",
+  "best_oos_excess": -6.2,
+  "best_oos_std": 16.5,
+  "best_oos_pos_folds": "4/9",
+  "best_max_day_share": 0.29,
+  "ruleA_oos_excess": 4.5,
+  "ruleA_oos_pos_folds": "9/14",
+  "passed": false,
+  "verdict": "当前 best 未通过前向检验（样本外为负），建议停止作为推荐规则",
+  "note": "详见 site/analysis/deep_explore.json 与 deep_report.html"
+ }
 }
