@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-31 11:21",
+ "generated_at": "2026-08-31 11:06",
  "regimes": {
   "强涨": {
    "n": 17020,
@@ -40,14 +40,6 @@
    "ruleA_hr": 27.4,
    "excess": -3.8,
    "ruleA_ret": -1.55
-  },
-  "震荡": {
-   "n": 193,
-   "base": 32.6,
-   "ruleA_n": 14,
-   "ruleA_hr": 7.1,
-   "excess": -25.5,
-   "ruleA_ret": -4.03
   }
  },
  "overall": {
