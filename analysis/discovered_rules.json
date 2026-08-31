@@ -45,8 +45,8 @@
   "ruleA_oos_excess": -0.0,
   "ruleA_oos_pos_folds": "24/58",
   "passed": false,
-  "verdict": "当前 best 未通过前向检验（样本外为负），建议停止作为推荐规则",
-  "note": "详见 site/analysis/deep_explore.json 与 deep_report.html"
+  "verdict": "当前 best（规则X）未通过前向检验（样本外为负）；规则A 样本外超额≈0（regime 运气）。主信号已于 2026-08-31 切换为 动量S + 多因子MF（见 primary_signals）。",
+  "note": "详见 site/analysis/deep_explore.json 与 deep_report.html。日页面已按新口径渲染：主信号（S/MF）高亮，A/C/X 灰化标注已证伪。"
  },
  "candidates": [
   {
@@ -584,5 +584,67 @@
    "days_beat": 32,
    "days_total": 64
   }
- ]
+ ],
+ "primary_signals": {
+  "declared_at": "2026-08-31 14:20",
+  "baseline_hr": 41.8,
+  "signals": [
+   {
+    "id": "S",
+    "name": "动量 S",
+    "conds": [
+     [
+      "chg",
+      ">=",
+      2.0
+     ],
+     [
+      "amplitude",
+      "<=",
+      3.0
+     ]
+    ],
+    "oos_excess": 15.8,
+    "z": 5.7,
+    "days_beat": "29/41",
+    "status": "primary",
+    "note": "强势低振幅动量：14:30涨幅≥2% 且 全天振幅≤3%（deep_explore 幸存家族）"
+   },
+   {
+    "id": "MF",
+    "name": "多因子 IC 加权 Top30",
+    "features": [
+     "chg",
+     "day_chg",
+     "tail",
+     "rs"
+    ],
+    "t": 4.77,
+    "status": "primary",
+    "note": "walk-forward IC 加权复合得分前 30，仅用此前样本训练，无前视偏差"
+   }
+  ],
+  "retired": [
+   {
+    "id": "A",
+    "name": "规则 A",
+    "reason": "样本外超额≈0（z=−0.14），regime 运气"
+   },
+   {
+    "id": "C",
+    "name": "规则 C",
+    "reason": "A 的加严变体，一并失效"
+   },
+   {
+    "id": "X",
+    "name": "当前 best",
+    "reason": "样本外 −1.7pp，前向门禁未通过"
+   },
+   {
+    "id": "R",
+    "name": "Regime 规则",
+    "reason": "前向检验中，仅作参考"
+   }
+  ]
+ }
 }
