@@ -36,13 +36,17 @@
   "test_days": 26
  },
  "forward_validation": {
-  "checked_at": "2026-08-31 12:09",
-  "method": "时序holdout：前38天重新探索 → 后26天检验",
-  "best_oos_excess": 5.3,
-  "best_oos_pos_folds": "11/21",
-  "passed": true,
-  "verdict": "通过前向检验，提升为主规则",
-  "source": "validate_rule.forward_gate"
+  "checked_at": "2026-08-31 13:02",
+  "method": "walk-forward 59 折（前5天训练→次日检验）+ 时序holdout（前32/后32天）",
+  "best_oos_excess": -1.7,
+  "best_oos_std": 16.5,
+  "best_oos_pos_folds": "25/54",
+  "best_max_day_share": 0.07,
+  "ruleA_oos_excess": -0.0,
+  "ruleA_oos_pos_folds": "24/58",
+  "passed": false,
+  "verdict": "当前 best 未通过前向检验（样本外为负），建议停止作为推荐规则",
+  "note": "详见 site/analysis/deep_explore.json 与 deep_report.html"
  },
  "candidates": [
   {
