@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01 14:18",
+ "generated_at": "2026-09-01 14:39",
  "meta": {
   "n": 59596,
   "days": 83,
@@ -230,6 +230,20 @@
    "rs",
    "tail",
    "day_chg"
+  ],
+  "feat_hist": {
+   "chg": 77,
+   "rs": 77,
+   "day_chg": 77,
+   "amplitude": 11,
+   "tail": 66
+  },
+  "use_common": [
+   "chg",
+   "rs",
+   "day_chg",
+   "tail",
+   "amplitude"
   ],
   "daily_alpha": [
    -1.345,
@@ -549,7 +563,7 @@
     "t": 0.08,
     "pos": 9,
     "split_date": "2026-07-15",
-    "verdict": "正向"
+    "verdict": "未证实"
    }
   },
   "多因子MF top30": {
@@ -610,7 +624,7 @@
    "t": 0.08,
    "pos": 9,
    "split_date": "2026-07-15",
-   "verdict": "正向"
+   "verdict": "未证实"
   },
   "多因子MF top30": {
    "days": 34,
@@ -634,7 +648,7 @@
    "t": -0.84,
    "pos": 16,
    "split_date": "2026-07-15",
-   "verdict": "未证实"
+   "verdict": "负向"
   },
   "相对强度rs≥0": {
    "days": 34,
