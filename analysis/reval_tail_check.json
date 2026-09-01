@@ -1,0 +1,223 @@
+{
+ "n_obs": 59596,
+ "days": 83,
+ "date_range": [
+  "2026-05-06",
+  "2026-08-31"
+ ],
+ "r2": {
+  "zero_n": 11179,
+  "zero_pct": 18.76,
+  "near_n": 11179,
+  "near_pct": 18.76
+ },
+ "r1": {
+  "n_indep": 318541,
+  "n_cmp": 59591,
+  "miss": 5,
+  "pearson": 0.9845,
+  "spearman": 0.9749,
+  "mean_diff": 0.0097,
+  "bad_pct": 0.67
+ },
+ "ic": {
+  "tail": {
+   "days": 82,
+   "ok": true,
+   "ic": -0.07687,
+   "t": -6.299,
+   "p_t": 0.0,
+   "pos_rate": 20.7,
+   "p_sign": 1.0,
+   "ic_std": 0.11051,
+   "ir": -0.6956
+  },
+  "tail_i": {
+   "days": 83,
+   "ok": true,
+   "ic": -0.07846,
+   "t": -6.497,
+   "p_t": 0.0,
+   "pos_rate": 22.9,
+   "p_sign": 1.0,
+   "ic_std": 0.11002,
+   "ir": -0.7131
+  }
+ },
+ "rule_recheck": {
+  "原始 tail": {
+   "cond": {
+    "days": 83,
+    "ok": true,
+    "alpha": 0.229,
+    "alpha_net": 0.029,
+    "t": 6.277,
+    "p_t": 0.0,
+    "pos_days": 65,
+    "pos_rate": 78.3,
+    "p_sign": 0.0,
+    "sd_day": 0.3324,
+    "ci_lo": 0.1575,
+    "ci_hi": 0.3005,
+    "mean_hits": 385.9,
+    "total_hits": 32031,
+    "boot_lo": 0.1591,
+    "boot_hi": 0.3004,
+    "p_boot": 0.995
+   },
+   "pf": {
+    "days": 83,
+    "ok": true,
+    "alpha": 0.229,
+    "alpha_net": 0.029,
+    "t": 6.277,
+    "p_t": 0.0,
+    "pos_days": 65,
+    "pos_rate": 78.3,
+    "p_sign": 0.0,
+    "sd_day": 0.3324,
+    "ci_lo": 0.1575,
+    "ci_hi": 0.3005,
+    "mean_hits": 385.9,
+    "total_hits": 32031,
+    "boot_lo": 0.1591,
+    "boot_hi": 0.3004,
+    "p_boot": 0.995
+   }
+  },
+  "独立 tail_i": {
+   "cond": {
+    "days": 83,
+    "ok": true,
+    "alpha": 0.2341,
+    "alpha_net": 0.0341,
+    "t": 6.428,
+    "p_t": 0.0,
+    "pos_days": 68,
+    "pos_rate": 81.9,
+    "p_sign": 0.0,
+    "sd_day": 0.3319,
+    "ci_lo": 0.1627,
+    "ci_hi": 0.3055,
+    "mean_hits": 371.4,
+    "total_hits": 30828,
+    "boot_lo": 0.1641,
+    "boot_hi": 0.3046,
+    "p_boot": 0.9895
+   },
+   "pf": {
+    "days": 83,
+    "ok": true,
+    "alpha": 0.2341,
+    "alpha_net": 0.0341,
+    "t": 6.428,
+    "p_t": 0.0,
+    "pos_days": 68,
+    "pos_rate": 81.9,
+    "p_sign": 0.0,
+    "sd_day": 0.3319,
+    "ci_lo": 0.1627,
+    "ci_hi": 0.3055,
+    "mean_hits": 371.4,
+    "total_hits": 30828,
+    "boot_lo": 0.1641,
+    "boot_hi": 0.3046,
+    "p_boot": 0.9895
+   }
+  }
+ },
+ "r3_excl_zero": {
+  "cond": {
+   "days": 82,
+   "ok": true,
+   "alpha": 0.1676,
+   "alpha_net": -0.0324,
+   "t": 4.55,
+   "p_t": 1e-05,
+   "pos_days": 57,
+   "pos_rate": 69.5,
+   "p_sign": 0.00027,
+   "sd_day": 0.3336,
+   "ci_lo": 0.0954,
+   "ci_hi": 0.2398,
+   "mean_hits": 254.3,
+   "total_hits": 20852,
+   "boot_lo": 0.095,
+   "boot_hi": 0.2393,
+   "p_boot": 0.9865
+  },
+  "pf": {
+   "days": 82,
+   "ok": true,
+   "alpha": 0.1676,
+   "alpha_net": -0.0324,
+   "t": 4.55,
+   "p_t": 1e-05,
+   "pos_days": 57,
+   "pos_rate": 69.5,
+   "p_sign": 0.00027,
+   "sd_day": 0.3336,
+   "ci_lo": 0.0954,
+   "ci_hi": 0.2398,
+   "mean_hits": 254.3,
+   "total_hits": 20852,
+   "boot_lo": 0.095,
+   "boot_hi": 0.2393,
+   "p_boot": 0.9865
+  }
+ },
+ "months": {
+  "2026-05": {
+   "n": 18,
+   "alpha": 0.2732,
+   "pos": 16
+  },
+  "2026-06": {
+   "n": 21,
+   "alpha": 0.1919,
+   "pos": 17
+  },
+  "2026-07": {
+   "n": 23,
+   "alpha": 0.3393,
+   "pos": 17
+  },
+  "2026-08": {
+   "n": 21,
+   "alpha": 0.1074,
+   "pos": 15
+  }
+ },
+ "regime": {
+  "平": {
+   "n": 16,
+   "alpha": 0.1344,
+   "pos": 13
+  },
+  "弱跌": {
+   "n": 19,
+   "alpha": 0.1721,
+   "pos": 14
+  },
+  "强涨": {
+   "n": 22,
+   "alpha": 0.3747,
+   "pos": 19
+  },
+  "涨": {
+   "n": 13,
+   "alpha": 0.1862,
+   "pos": 8
+  },
+  "跌": {
+   "n": 12,
+   "alpha": 0.2412,
+   "pos": 10
+  },
+  "震荡": {
+   "n": 1,
+   "alpha": 0.0289,
+   "pos": 1
+  }
+ }
+}
