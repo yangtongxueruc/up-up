@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-09-02 14:05",
+  "n": 60686,
+  "days": 84,
+  "baseline": 40.46,
+  "near_limit_threshold": 9.5,
+  "vr_cut": 0.7,
+  "chg_cut": 3.0,
+  "min_day_n": 3,
+  "section_A": {
+    "S": {
+      "label": "涨幅≥3% 且 量比≤0.7（待证伪）",
+      "n": 891,
+      "hit_rate": 54.21,
+      "pool_excess": 13.75
+    },
+    "S_LU": {
+      "label": "└ 其中 涨幅≥9.5%（准涨停）",
+      "n": 274,
+      "hit_rate": 64.96,
+      "pool_excess": 24.5
+    },
+    "S_noLU": {
+      "label": "└ 其中 3%≤涨幅<9.5%",
+      "n": 617,
+      "hit_rate": 49.43,
+      "pool_excess": 8.97
+    },
+    "C1_vr": {
+      "label": "对照：仅 量比≤0.7",
+      "n": 9997,
+      "hit_rate": 36.7,
+      "pool_excess": -3.76
+    },
+    "C3_chg": {
+      "label": "对照：仅 涨幅≥3%",
+      "n": 15363,
+      "hit_rate": 46.01,
+      "pool_excess": 5.54
+    },
+    "C2_limit": {
+      "label": "对照：仅 涨幅≥9.5%",
+      "n": 2469,
+      "hit_rate": 56.22,
+      "pool_excess": 15.75
+    }
+  },
+  "section_B": {
+    "mid": {
+      "stratum": "3% ≤ 涨幅 < 9.5%",
+      "treat_n": 617,
+      "ctrl_n": 12277,
+      "treat_hit_rate": 49.43,
+      "ctrl_hit_rate": 43.78,
+      "pool_increment": 5.65,
+      "dayavg_increment": 12.88,
+      "dayavg_median": 10.0,
+      "t": 3.34,
+      "valid_days": 35
+    },
+    "limit": {
+      "stratum": "涨幅 ≥ 9.5%（准涨停）",
+      "treat_n": 274,
+      "ctrl_n": 2195,
+      "treat_hit_rate": 64.96,
+      "ctrl_hit_rate": 55.13,
+      "pool_increment": 9.84,
+      "dayavg_increment": 5.69,
+      "dayavg_median": 6.67,
+      "t": 1.86,
+      "valid_days": 39
+    },
+    "all3": {
+      "stratum": "涨幅 ≥ 3%%（全档）",
+      "treat_n": 891,
+      "ctrl_n": 14472,
+      "treat_hit_rate": 54.21,
+      "ctrl_hit_rate": 45.5,
+      "pool_increment": 8.71,
+      "dayavg_increment": 12.66,
+      "dayavg_median": 12.99,
+      "t": 5.0,
+      "valid_days": 58
+    }
+  },
+  "section_C": {
+    "vr_missing": 0,
+    "vr_missing_rate": 0.0,
+    "days_with_vr_coverage_lt_90pct": [],
+    "note": "vr 缺失时 le() 返回 False，即该样本不会进入任何 vr≤ 分组；若缺失率按日波动，会造成跨日口径不一致。"
+  },
+  "share_near_limit_in_S": 30.75,
+  "section_D": [
+    {
+      "bin": "[3.0, 4.0)",
+      "treat_n": 396,
+      "ctrl_n": 5247,
+      "treat_hit_rate": 44.95,
+      "ctrl_hit_rate": 42.31,
+      "pool_increment": 2.64,
+      "dayavg_increment": 3.39,
+      "t": 0.63,
+      "valid_days": 23
+    },
+    {
+      "bin": "[4.0, 4.5)",
+      "treat_n": 64,
+      "ctrl_n": 1676,
+      "treat_hit_rate": 51.56,
+      "ctrl_hit_rate": 42.78,
+      "pool_increment": 8.78,
+      "dayavg_increment": -8.27,
+      "t": -0.96,
+      "valid_days": 8
+    },
+    {
+      "bin": "[4.5, 5.0)",
+      "treat_n": 94,
+      "ctrl_n": 1547,
+      "treat_hit_rate": 65.96,
+      "ctrl_hit_rate": 44.67,
+      "pool_increment": 21.29,
+      "dayavg_increment": 21.48,
+      "t": 3.9,
+      "valid_days": 14
+    },
+    {
+      "bin": "[5.0, 6.0)",
+      "treat_n": 40,
+      "ctrl_n": 1726,
+      "treat_hit_rate": 52.5,
+      "ctrl_hit_rate": 45.13,
+      "pool_increment": 7.37,
+      "dayavg_increment": -23.07,
+      "t": -1.61,
+      "valid_days": 4
+    },
+    {
+      "bin": "[9.5, 10.5)",
+      "treat_n": 273,
+      "ctrl_n": 2193,
+      "treat_hit_rate": 64.84,
+      "ctrl_hit_rate": 55.18,
+      "pool_increment": 9.66,
+      "dayavg_increment": 5.63,
+      "t": 1.85,
+      "valid_days": 39
+    }
+  ],
+  "st_suspect_share_in_mid_treat": 15.24,
+  "criteria": {
+    "非涨停层内量比增量 < 1pp": false,
+    "非涨停层内增量不显著(t<2)": false,
+    "量比单独为负向(pool<0)": true
+  },
+  "falsified": false,
+  "conclusion": "未能证伪：在「3% ≤ 涨幅 < 9.5%」层内，量比≤0.7 仍有日均增量 +12.88pp（t=3.34）。低量比可能是真实增量信号，但需先排除数据源口径问题（见 section_C），并做前向检验后再决定是否提升。"
+}
