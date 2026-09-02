@@ -36,18 +36,18 @@ ul{margin:6px 0 6px 18px;padding:0}li{margin:5px 0}
 </style></head><body><div class='wrap'>
 
 <h1>A股主板「14:30 信号 → 次日收涨」规则深度探索 · 样本外验证</h1>
-<p class='sub'>生成于 2026-08-31 13:02 ・ 锚点日 64 个（2026-06-01 ~ 2026-08-28）・ 样本 N=46581 ・
-基准次日收涨率 41.8% ・ 搜索空间 17,587 条候选规则</p>
+<p class='sub'>生成于 2026-09-02 13:24 ・ 锚点日 84 个（2026-05-06 ~ 2026-09-01）・ 样本 N=60686 ・
+基准次日收涨率 40.5% ・ 搜索空间 17,587 条候选规则</p>
 
 <div class='alert'>
 <b>核心结论（先看这里）</b>
 <ul>
 <li><b>自动搜索「最优规则」在本数据集上不可信。</b>扩大搜索空间到 17,587 条后，样本内最高可刷到
-<b>+56pp</b>；但这些规则经样本外检验后<b>全部为负</b>：贪婪选出的最优规则在留出期 <b>28.0pp</b>，
-加稳健门槛后仍是 <b>6.2pp</b>。样本内超额与真实效果几乎无关。</li>
+<b>+56pp</b>；但这些规则经样本外检验后<b>全部为负</b>：贪婪选出的最优规则在留出期 <b>36.3pp</b>，
+加稳健门槛后仍是 <b>12.1pp</b>。样本内超额与真实效果几乎无关。</li>
 <li><b>看板当前推荐的「探索候选规则」（换手≥3% 且 量比≤1.0 且 活跃度≥3）经检验无效</b>：
-样本内 +15.1pp，但 14 折逐折样本外 <b>-1.7pp</b>（仅 4/9 折胜出，单日占比 29%）。建议停止展示或改注「样本内、未通过前向检验」。</li>
-<li><b>真正稳定的仍是规则A</b>（涨幅≤0.6% 且 换手≥2%）：样本内 +7.8pp → 样本外 <b>-0.0pp</b>，
+样本内 +15.1pp，但 14 折逐折样本外 <b>0.6pp</b>（仅 4/9 折胜出，单日占比 29%）。建议停止展示或改注「样本内、未通过前向检验」。</li>
+<li><b>真正稳定的仍是规则A</b>（涨幅≤0.6% 且 换手≥2%）：样本内 +7.8pp → 样本外 <b>0.6pp</b>，
 且波动最小（std 14.6）、集中度最低（单日占比 12%）、胜出 9/14 折。它是本数据集中<b>风险调整后最可信</b>的规则。</li>
 <li><b>真实可预期超额约为样本内的一半</b>：所有未经搜索的固定规则，样本外稳定落在 <b>+4~8pp</b> 区间；
 任何声称 +20pp 以上的规则都应先怀疑过拟合。</li>
@@ -56,10 +56,10 @@ ul{margin:6px 0 6px 18px;padding:0}li{margin:5px 0}
 
 <div class='kpi'>
 <div class='b'><div class='n'>17,587</div><div class='l'>枚举候选规则</div></div>
-<div class='b'><div class='n'>46581</div><div class='l'>样本量（64 天）</div></div>
-<div class='b'><div class='n'>41.8%</div><div class='l'>基准次日收涨率</div></div>
-<div class='b'><div class='n'>13,285</div><div class='l'>过稳健门槛的规则</div></div>
-<div class='b'><div class='n'>-1.7pp</div><div class='l'>当前best 样本外（负=失效）</div></div>
+<div class='b'><div class='n'>60686</div><div class='l'>样本量（84 天）</div></div>
+<div class='b'><div class='n'>40.5%</div><div class='l'>基准次日收涨率</div></div>
+<div class='b'><div class='n'>13,478</div><div class='l'>过稳健门槛的规则</div></div>
+<div class='b'><div class='n'>0.6pp</div><div class='l'>当前best 样本外（负=失效）</div></div>
 </div>
 
 <h2>一、方法与本次升级</h2>
@@ -70,9 +70,9 @@ ul{margin:6px 0 6px 18px;padding:0}li{margin:5px 0}
 <ul>
 <li><b>搜索空间扩大约 1000 倍</b>：连续变量细网格阈值（涨幅/换手/量比/振幅/活跃度/股价），
 自动枚举全部 1~3 条件组合（每维度至多一个条件），共 17,587 条。</li>
-<li><b>Walk-Forward 滚动检验</b>：前 i 天训练选规则 → 第 i 天检验，共 59 折。
+<li><b>Walk-Forward 滚动检验</b>：前 i 天训练选规则 → 第 i 天检验，共 79 折。
 这是估计「自动选规则」真实效果的唯一正确方式。</li>
-<li><b>时序 Holdout</b>：前 32 天训练、后 32 天测试，训练期完全不含测试期信息。</li>
+<li><b>时序 Holdout</b>：前 42 天训练、后 42 天测试，训练期完全不含测试期信息。</li>
 <li><b>三口径交叉验证超额</b>：①汇总 pool（传统口径）②按日平均 dayavg（剔除日期混淆）
 ③regime 分层 strat（同大盘环境内对比）。</li>
 <li><b>过拟合直接证据</b>：命中天数、最大单日占比（某规则有多少样本来自同一天）。</li>
@@ -80,14 +80,14 @@ ul{margin:6px 0 6px 18px;padding:0}li{margin:5px 0}
 </ul>
 </div>
 
-<h2>二、决定性证据：时序 Holdout（前 32 天训练 → 后 32 天测试）</h2>
+<h2>二、决定性证据：时序 Holdout（前 42 天训练 → 后 42 天测试）</h2>
 <div class='card'>
-<p class='small'>训练期基准 40.5%（n=23,551） → 测试期基准 43.2%（n=23,030）。
+<p class='small'>训练期基准 38.1%（n=29,777） → 测试期基准 42.7%（n=30,909）。
 「训练n／测试n」=规则在两段各命中多少只；橙底=自动搜索选出的规则，绿底=未经搜索的固定规则。</p>
 <table>
 <tr><th>选法</th><th>规则</th><th>训练n</th><th>训练超额</th><th>训练分层</th>
 <th>测试n</th><th>测试超额</th><th>测试分层</th><th>测试期命中天</th></tr>
-<tr class='hl'><td>训练期·pool最高（贪婪）</td><td>涨幅≥3.0% 且 量比≤1.0 且 振幅≤3%</td><td>47</td><td><span class='up'>+40.4</span></td><td><span class='up'>+37.9</span></td><td>52</td><td><b><span class='up'>+28.0</span></b></td><td><b><span class='up'>+26.6</span></b></td><td>11/32</td></tr><tr class='hl'><td>训练期·稳健门槛下strat最高</td><td>换手≥6% 且 量比≥1.2 且 股价≥50</td><td>198</td><td><span class='up'>+13.5</span></td><td><span class='up'>+13.8</span></td><td>166</td><td><b><span class='up'>+6.2</span></b></td><td><b><span class='up'>+4.3</span></b></td><td>24/32</td></tr><tr class='ok'><td>固定·规则A</td><td>涨幅≤0.6% 且 换手≥2%</td><td>1339</td><td><span class='up'>+0.6</span></td><td><span class='up'>+1.0</span></td><td>967</td><td><b><span class='dn'>-0.7</span></b></td><td><b><span class='dn'>-2.1</span></b></td><td>32/32</td></tr><tr class='ok'><td>固定·当前best</td><td>换手≥3% 且 量比≤1.0 且 活跃度≥3</td><td>2954</td><td><span class='up'>+5.4</span></td><td><span class='up'>+2.9</span></td><td>1650</td><td><b><span class='up'>+1.2</span></b></td><td><b><span class='dn'>-1.4</span></b></td><td>31/32</td></tr><tr class='ok'><td>固定·股价≥50</td><td>股价≥50</td><td>1774</td><td><span class='up'>+6.9</span></td><td><span class='up'>+5.1</span></td><td>1331</td><td><b><span class='up'>+3.3</span></b></td><td><b><span class='up'>+1.4</span></b></td><td>32/32</td></tr><tr class='ok'><td>固定·股价≥20</td><td>股价≥20</td><td>6080</td><td><span class='up'>+2.6</span></td><td><span class='up'>+2.0</span></td><td>5464</td><td><b><span class='up'>+2.2</span></b></td><td><b><span class='up'>+1.0</span></b></td><td>32/32</td></tr>
+<tr class='hl'><td>训练期·pool最高（贪婪）</td><td>涨幅≥3.0% 且 量比≤0.7 且 振幅≤2%</td><td>41</td><td><span class='up'>+44.8</span></td><td><span class='up'>+44.6</span></td><td>19</td><td><b><span class='up'>+36.3</span></b></td><td><b><span class='up'>+32.1</span></b></td><td>14/42</td></tr><tr class='hl'><td>训练期·稳健门槛下strat最高</td><td>涨幅≥3.0% 且 量比≤0.7 且 股价≤20</td><td>240</td><td><span class='up'>+20.2</span></td><td><span class='up'>+18.4</span></td><td>354</td><td><b><span class='up'>+12.1</span></b></td><td><b><span class='up'>+7.9</span></b></td><td>35/42</td></tr><tr class='ok'><td>固定·规则A</td><td>涨幅≤0.6% 且 换手≥2%</td><td>1889</td><td><span class='up'>+0.2</span></td><td><span class='up'>+1.6</span></td><td>1358</td><td><b><span class='up'>+0.5</span></b></td><td><b><span class='up'>+0.2</span></b></td><td>42/42</td></tr><tr class='ok'><td>固定·当前best</td><td>换手≥3% 且 量比≤1.0 且 活跃度≥3</td><td>4032</td><td><span class='up'>+5.6</span></td><td><span class='up'>+5.1</span></td><td>2380</td><td><b><span class='up'>+0.9</span></b></td><td><b><span class='dn'>-2.2</span></b></td><td>41/42</td></tr><tr class='ok'><td>固定·股价≥50</td><td>股价≥50</td><td>2393</td><td><span class='up'>+7.6</span></td><td><span class='up'>+8.0</span></td><td>1866</td><td><b><span class='up'>+0.7</span></b></td><td><b><span class='dn'>-1.2</span></b></td><td>42/42</td></tr><tr class='ok'><td>固定·股价≥20</td><td>股价≥20</td><td>8319</td><td><span class='up'>+3.5</span></td><td><span class='up'>+4.0</span></td><td>7283</td><td><b><span class='up'>+0.7</span></b></td><td><b><span class='dn'>-0.6</span></b></td><td>42/42</td></tr>
 </table>
 <p class='small' style='margin-top:10px'><b>读法：</b>上两行（橙底）是「用训练期数据自动搜出来的最优规则」——
 训练期 +56pp／+35pp，到测试期变成 −8.5pp／−16.8pp，而且测试期命中数暴跌到个位数（说明它只是恰好拟合了训练期的少数样本）。
@@ -101,16 +101,16 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 <table>
 <tr><th>规则</th><th>n</th><th>样本内</th><th>分层</th><th>OOS均值</th><th>std</th>
 <th>胜出折</th><th>最大单日占比</th><th>日均命中</th><th>z</th></tr>
-<tr class=''><td>换手≥3%且股价≥50</td><td>1710</td><td><span class='up'>+8.0</span></td><td><span class='up'>+5.6</span></td><td><b><span class='up'>+5.8</span></b></td><td>32.6</td><td>32/53</td><td>5%</td><td>26.7</td><td>6.8</td></tr><tr class=''><td>涨幅≥3%且换手≥3%且股价≥20</td><td>2709</td><td><span class='up'>+7.0</span></td><td><span class='up'>+4.4</span></td><td><b><span class='up'>+2.6</span></b></td><td>26.8</td><td>32/57</td><td>7%</td><td>42.3</td><td>7.6</td></tr><tr class=''><td>股价≥50</td><td>3105</td><td><span class='up'>+5.2</span></td><td><span class='up'>+3.4</span></td><td><b><span class='up'>+0.8</span></b></td><td>21.8</td><td>33/58</td><td>4%</td><td>48.5</td><td>6.1</td></tr><tr class=''><td>规则A+股价≥20</td><td>775</td><td><span class='up'>+0.8</span></td><td><span class='up'>+1.0</span></td><td><b><span class='up'>+0.6</span></b></td><td>23.4</td><td>24/52</td><td>4%</td><td>12.1</td><td>0.4</td></tr><tr class=''><td>规则A 涨幅≤0.6%且换手≥2%</td><td>2306</td><td><span class='dn'>-0.1</span></td><td><span class='dn'>-0.3</span></td><td><b><span class=''>-0.0</span></b></td><td>16.0</td><td>24/58</td><td>4%</td><td>36.0</td><td>-0.1</td></tr><tr class=''><td>股价≥20</td><td>11544</td><td><span class='up'>+2.4</span></td><td><span class='up'>+1.5</span></td><td><b><span class='dn'>-0.1</span></b></td><td>11.2</td><td>34/59</td><td>4%</td><td>180.4</td><td>6.0</td></tr><tr class=''><td>规则A+股价≥50</td><td>220</td><td><span class='up'>+4.6</span></td><td><span class='up'>+4.7</span></td><td><b><span class='dn'>-1.5</span></b></td><td>32.5</td><td>15/33</td><td>5%</td><td>3.4</td><td>1.4</td></tr><tr class='bad'><td>当前best 换手≥3%且量比≤1.0且活跃度≥3</td><td>4604</td><td><span class='up'>+3.6</span></td><td><span class='up'>+1.3</span></td><td><b><span class='dn'>-1.7</span></b></td><td>16.5</td><td>25/54</td><td>7%</td><td>71.9</td><td>5.2</td></tr>
+<tr class=''><td>换手≥3%且股价≥50</td><td>2355</td><td><span class='up'>+7.1</span></td><td><span class='up'>+5.9</span></td><td><b><span class='up'>+6.9</span></b></td><td>29.5</td><td>47/73</td><td>4%</td><td>28.0</td><td>7.1</td></tr><tr class=''><td>涨幅≥3%且换手≥3%且股价≥20</td><td>3595</td><td><span class='up'>+7.2</span></td><td><span class='up'>+5.7</span></td><td><b><span class='up'>+4.0</span></b></td><td>24.1</td><td>47/77</td><td>5%</td><td>42.8</td><td>9.1</td></tr><tr class=''><td>股价≥50</td><td>4259</td><td><span class='up'>+4.2</span></td><td><span class='up'>+3.4</span></td><td><b><span class='up'>+1.7</span></b></td><td>20.3</td><td>45/78</td><td>3%</td><td>50.7</td><td>5.8</td></tr><tr class=''><td>规则A+股价≥20</td><td>1091</td><td><span class='up'>+1.1</span></td><td><span class='up'>+1.5</span></td><td><b><span class='up'>+1.7</span></b></td><td>21.4</td><td>36/72</td><td>3%</td><td>13.0</td><td>0.7</td></tr><tr class=''><td>规则A+股价≥50</td><td>312</td><td><span class='up'>+2.8</span></td><td><span class='up'>+3.3</span></td><td><b><span class='up'>+0.9</span></b></td><td>30.3</td><td>26/51</td><td>3%</td><td>3.7</td><td>1.0</td></tr><tr class=''><td>规则A 涨幅≤0.6%且换手≥2%</td><td>3247</td><td><span class='dn'>-0.1</span></td><td><span class=''>+0.0</span></td><td><b><span class='up'>+0.6</span></b></td><td>14.6</td><td>36/78</td><td>3%</td><td>38.7</td><td>-0.1</td></tr><tr class='bad'><td>当前best 换手≥3%且量比≤1.0且活跃度≥3</td><td>6412</td><td><span class='up'>+3.2</span></td><td><span class='up'>+1.6</span></td><td><b><span class='up'>+0.6</span></b></td><td>15.5</td><td>41/74</td><td>5%</td><td>76.3</td><td>5.6</td></tr><tr class=''><td>股价≥20</td><td>15602</td><td><span class='up'>+2.0</span></td><td><span class='up'>+1.5</span></td><td><b><span class='up'>+0.3</span></b></td><td>10.6</td><td>47/79</td><td>3%</td><td>185.7</td><td>5.9</td></tr>
 </table>
 <div class='alert' style='margin-top:12px'>
-<b>当前 best（红底行）必须处理</b>：样本内 +15.1pp 看似优秀，样本外 <b>-1.7pp</b>、仅 4/9 折胜出、
-单日占比 29%（样本集中）。相比之下规则A 样本外 -0.0pp、9/14 折胜出、单日占比仅 12%。
+<b>当前 best（红底行）必须处理</b>：样本内 +15.1pp 看似优秀，样本外 <b>0.6pp</b>、仅 4/9 折胜出、
+单日占比 29%（样本集中）。相比之下规则A 样本外 0.6pp、9/14 折胜出、单日占比仅 12%。
 </div>
 <div class='good'>
 <b>可选替代方案（按风险偏好）</b>
 <ul>
-<li><b>稳健优先</b>：<code>涨幅≤0.6% 且 换手≥2%</code>（规则A）——OOS -0.0pp，std 最低 14.6，集中度最低。</li>
+<li><b>稳健优先</b>：<code>涨幅≤0.6% 且 换手≥2%</code>（规则A）——OOS 0.6pp，std 最低 14.6，集中度最低。</li>
 <li><b>收益优先</b>：<code>换手≥3% 且 股价≥50</code>——OOS 最高 +7.6pp，但 std 达 30.1、日均仅 18.9 只，波动大。</li>
 <li><b>折中</b>：<code>规则A + 股价≥20</code>——OOS +5.0pp，n=199，集中度 13%。</li>
 </ul>
@@ -120,12 +120,12 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 <h2>四、样本内 Top 榜的解剖：为什么它们不可信</h2>
 <div class='card'>
 <p class='small'>下表是「按传统汇总口径」排出的样本内前 12 名。请重点看最后两列——
-<b>命中天数</b>与<b>最大单日占比</b>：这些规则在 64 天里只有 3~7 天命中，且 43%~78% 的样本来自<b>同一天</b>。
+<b>命中天数</b>与<b>最大单日占比</b>：这些规则在 84 天里只有 3~7 天命中，且 43%~78% 的样本来自<b>同一天</b>。
 它们不是规则，是「某一天的一组股票」。红底=命中≤8天或单日占比≥40%（判定为过拟合）。</p>
 <table>
 <tr><th>规则</th><th>n</th><th>汇总</th><th>按日</th><th>按日稳</th><th>分层</th>
 <th>命中天</th><th>最大单日占比</th><th>日均</th></tr>
-<tr class=''><td>涨幅≥3.0% 且 量比≤0.7 且 振幅≤2%</td><td>44</td><td><span class='up'>+44.6</span></td><td><span class='up'>+30.3</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+42.9</span></td><td>27/64</td><td><b>11%</b></td><td>0.7</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.1 且 振幅≤2%</td><td>50</td><td><span class='up'>+42.2</span></td><td><span class='up'>+38.3</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+40.8</span></td><td>28/64</td><td><b>10%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.0 且 振幅≤2%</td><td>49</td><td><span class='up'>+41.9</span></td><td><span class='up'>+38.3</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+40.4</span></td><td>28/64</td><td><b>10%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.2 且 振幅≤2%</td><td>53</td><td><span class='up'>+41.2</span></td><td><span class='up'>+41.3</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+39.6</span></td><td>28/64</td><td><b>13%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.8 且 振幅≤2%</td><td>47</td><td><span class='up'>+41.2</span></td><td><span class='up'>+37.6</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+39.8</span></td><td>28/64</td><td><b>11%</b></td><td>0.7</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.9 且 振幅≤2%</td><td>47</td><td><span class='up'>+41.2</span></td><td><span class='up'>+37.6</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+39.8</span></td><td>28/64</td><td><b>11%</b></td><td>0.7</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤0.7 且 振幅≤2%</td><td>53</td><td><span class='up'>+39.3</span></td><td><span class='up'>+19.0</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+36.9</span></td><td>27/64</td><td><b>13%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.4 且 振幅≤2%</td><td>59</td><td><span class='up'>+37.8</span></td><td><span class='up'>+40.1</span></td><td><span class='dn'>-25.8</span></td><td><span class='up'>+36.9</span></td><td>30/64</td><td><b>14%</b></td><td>0.9</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤0.8 且 振幅≤2%</td><td>58</td><td><span class='up'>+37.5</span></td><td><span class='up'>+29.2</span></td><td><span class='up'>+4.2</span></td><td><span class='up'>+35.4</span></td><td>28/64</td><td><b>17%</b></td><td>0.9</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.7 且 振幅≤3%</td><td>57</td><td><span class='up'>+37.1</span></td><td><span class='up'>+24.1</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+34.6</span></td><td>28/64</td><td><b>12%</b></td><td>0.9</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤0.9 且 振幅≤2%</td><td>66</td><td><span class='up'>+37.0</span></td><td><span class='up'>+30.6</span></td><td><span class='up'>+10.9</span></td><td><span class='up'>+35.3</span></td><td>30/64</td><td><b>23%</b></td><td>1.0</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤1.0 且 振幅≤2%</td><td>74</td><td><span class='up'>+36.6</span></td><td><span class='up'>+23.7</span></td><td><span class='up'>+14.2</span></td><td><span class='up'>+34.8</span></td><td>30/64</td><td><b>27%</b></td><td>1.2</td></tr><tr class=''><td>涨幅≥3.0% 且 换手≤2% 且 振幅≤2%</td><td>41</td><td><span class='up'>+36.2</span></td><td><span class='up'>+33.4</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+36.2</span></td><td>27/64</td><td><b>10%</b></td><td>0.6</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤1.1 且 振幅≤2%</td><td>85</td><td><span class='up'>+35.8</span></td><td><span class='up'>+24.0</span></td><td><span class='up'>+12.7</span></td><td><span class='up'>+34.2</span></td><td>30/64</td><td><b>31%</b></td><td>1.3</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤1.2 且 振幅≤2%</td><td>93</td><td><span class='up'>+35.6</span></td><td><span class='up'>+27.7</span></td><td><span class='up'>+10.9</span></td><td><span class='up'>+34.0</span></td><td>32/64</td><td><b>32%</b></td><td>1.5</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.6 且 振幅≤2%</td><td>61</td><td><span class='up'>+35.2</span></td><td><span class='up'>+35.9</span></td><td><span class='dn'>-25.8</span></td><td><span class='up'>+34.3</span></td><td>31/64</td><td><b>13%</b></td><td>1.0</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.1 且 振幅≤3%</td><td>122</td><td><span class='up'>+35.2</span></td><td><span class='up'>+27.8</span></td><td><span class='up'>+8.3</span></td><td><span class='up'>+33.7</span></td><td>32/64</td><td><b>36%</b></td><td>1.9</td></tr><tr class='bad'><td>涨幅≥3.0% 且 量比≤1.2 且 振幅≤3%</td><td>143</td><td><span class='up'>+35.1</span></td><td><span class='up'>+28.5</span></td><td><span class='up'>+9.2</span></td><td><span class='up'>+33.7</span></td><td>32/64</td><td><b>42%</b></td><td>2.2</td></tr><tr class=''><td>涨幅≥3.0% 且 振幅≤2% 且 股价≤20</td><td>54</td><td><span class='up'>+34.1</span></td><td><span class='up'>+31.0</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+33.7</span></td><td>28/64</td><td><b>9%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.0 且 振幅≤3%</td><td>99</td><td><span class='up'>+33.9</span></td><td><span class='up'>+27.4</span></td><td><span class='up'>+6.4</span></td><td><span class='up'>+32.6</span></td><td>31/64</td><td><b>28%</b></td><td>1.5</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.9 且 振幅≤3%</td><td>86</td><td><span class='up'>+33.8</span></td><td><span class='up'>+27.6</span></td><td><span class='up'>+0.4</span></td><td><span class='up'>+32.1</span></td><td>31/64</td><td><b>24%</b></td><td>1.3</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤1.4 且 振幅≤2%</td><td>103</td><td><span class='up'>+32.9</span></td><td><span class='up'>+30.7</span></td><td><span class='up'>+4.4</span></td><td><span class='up'>+31.9</span></td><td>33/64</td><td><b>32%</b></td><td>1.6</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.8 且 振幅≤3%</td><td>70</td><td><span class='up'>+32.5</span></td><td><span class='up'>+31.7</span></td><td><span class='dn'>-3.0</span></td><td><span class='up'>+30.4</span></td><td>30/64</td><td><b>16%</b></td><td>1.1</td></tr><tr class=''><td>涨幅≥3.0% 且 振幅≤2% 且 股价≤10</td><td>31</td><td><span class='up'>+32.4</span></td><td><span class='up'>+16.1</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+33.8</span></td><td>22/64</td><td><b>10%</b></td><td>0.5</td></tr><tr class=''><td>涨幅≥3.0% 且 振幅≤2% 且 股价≤30</td><td>58</td><td><span class='up'>+32.3</span></td><td><span class='up'>+30.5</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+31.8</span></td><td>30/64</td><td><b>10%</b></td><td>0.9</td></tr>
+<tr class=''><td>涨幅≥3.0% 且 量比≤0.7 且 振幅≤2%</td><td>60</td><td><span class='up'>+41.2</span></td><td><span class='up'>+27.3</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+40.1</span></td><td>39/84</td><td><b>8%</b></td><td>0.7</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.1 且 振幅≤2%</td><td>70</td><td><span class='up'>+39.5</span></td><td><span class='up'>+36.0</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+39.0</span></td><td>40/84</td><td><b>7%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.2 且 振幅≤2%</td><td>74</td><td><span class='up'>+39.3</span></td><td><span class='up'>+38.6</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+38.6</span></td><td>41/84</td><td><b>9%</b></td><td>0.9</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.8 且 振幅≤2%</td><td>64</td><td><span class='up'>+39.2</span></td><td><span class='up'>+33.8</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+38.4</span></td><td>40/84</td><td><b>8%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.0 且 振幅≤2%</td><td>68</td><td><span class='up'>+38.9</span></td><td><span class='up'>+34.8</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+38.3</span></td><td>40/84</td><td><b>7%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.9 且 振幅≤2%</td><td>66</td><td><span class='up'>+38.3</span></td><td><span class='up'>+33.8</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+37.8</span></td><td>40/84</td><td><b>8%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤0.7 且 振幅≤2%</td><td>70</td><td><span class='up'>+36.7</span></td><td><span class='up'>+18.9</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+35.2</span></td><td>39/84</td><td><b>10%</b></td><td>0.8</td></tr><tr class=''><td>涨幅≥3.0% 且 换手≤2% 且 振幅≤2%</td><td>52</td><td><span class='up'>+36.5</span></td><td><span class='up'>+33.4</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+36.7</span></td><td>37/84</td><td><b>8%</b></td><td>0.6</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.4 且 振幅≤2%</td><td>81</td><td><span class='up'>+36.1</span></td><td><span class='up'>+37.7</span></td><td><span class='dn'>-25.8</span></td><td><span class='up'>+35.8</span></td><td>43/84</td><td><b>10%</b></td><td>1.0</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.7 且 振幅≤3%</td><td>77</td><td><span class='up'>+34.9</span></td><td><span class='up'>+25.5</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+33.0</span></td><td>40/84</td><td><b>9%</b></td><td>0.9</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤0.8 且 振幅≤2%</td><td>77</td><td><span class='up'>+34.9</span></td><td><span class='up'>+26.9</span></td><td><span class='up'>+4.2</span></td><td><span class='up'>+33.7</span></td><td>40/84</td><td><b>13%</b></td><td>0.9</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤1.0 且 振幅≤2%</td><td>95</td><td><span class='up'>+34.3</span></td><td><span class='up'>+23.5</span></td><td><span class='up'>+14.2</span></td><td><span class='up'>+33.6</span></td><td>42/84</td><td><b>21%</b></td><td>1.1</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤0.9 且 振幅≤2%</td><td>87</td><td><span class='up'>+34.3</span></td><td><span class='up'>+27.7</span></td><td><span class='up'>+10.9</span></td><td><span class='up'>+33.6</span></td><td>42/84</td><td><b>17%</b></td><td>1.0</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.2 且 振幅≤3%</td><td>181</td><td><span class='up'>+34.1</span></td><td><span class='up'>+26.5</span></td><td><span class='up'>+9.2</span></td><td><span class='up'>+33.5</span></td><td>46/84</td><td><b>33%</b></td><td>2.2</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.1 且 振幅≤3%</td><td>157</td><td><span class='up'>+34.1</span></td><td><span class='up'>+29.6</span></td><td><span class='up'>+8.3</span></td><td><span class='up'>+33.3</span></td><td>46/84</td><td><b>28%</b></td><td>1.9</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤1.1 且 振幅≤2%</td><td>108</td><td><span class='up'>+33.6</span></td><td><span class='up'>+24.4</span></td><td><span class='up'>+12.7</span></td><td><span class='up'>+33.0</span></td><td>43/84</td><td><b>24%</b></td><td>1.3</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤1.2 且 振幅≤2%</td><td>119</td><td><span class='up'>+32.6</span></td><td><span class='up'>+27.2</span></td><td><span class='up'>+10.9</span></td><td><span class='up'>+31.9</span></td><td>46/84</td><td><b>25%</b></td><td>1.4</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.6 且 振幅≤2%</td><td>85</td><td><span class='up'>+32.5</span></td><td><span class='up'>+34.6</span></td><td><span class='dn'>-25.8</span></td><td><span class='up'>+32.0</span></td><td>44/84</td><td><b>9%</b></td><td>1.0</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.0 且 振幅≤3%</td><td>131</td><td><span class='up'>+32.1</span></td><td><span class='up'>+28.8</span></td><td><span class='up'>+6.4</span></td><td><span class='up'>+31.3</span></td><td>45/84</td><td><b>21%</b></td><td>1.6</td></tr><tr class=''><td>涨幅≥3.0% 且 振幅≤2% 且 股价≥15</td><td>36</td><td><span class='up'>+31.8</span></td><td><span class='up'>+20.1</span></td><td><span class=''>+0.0</span></td><td><span class='up'>+32.8</span></td><td>24/84</td><td><b>14%</b></td><td>0.4</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.9 且 振幅≤3%</td><td>115</td><td><span class='up'>+31.7</span></td><td><span class='up'>+28.4</span></td><td><span class='up'>+0.4</span></td><td><span class='up'>+30.9</span></td><td>45/84</td><td><b>18%</b></td><td>1.4</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤0.8 且 振幅≤3%</td><td>94</td><td><span class='up'>+30.8</span></td><td><span class='up'>+32.2</span></td><td><span class='dn'>-3.0</span></td><td><span class='up'>+29.5</span></td><td>44/84</td><td><b>12%</b></td><td>1.1</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.4 且 振幅≤3%</td><td>229</td><td><span class='up'>+30.7</span></td><td><span class='up'>+27.6</span></td><td><span class='up'>+11.2</span></td><td><span class='up'>+30.4</span></td><td>48/84</td><td><b>38%</b></td><td>2.7</td></tr><tr class=''><td>涨幅≥3.0% 且 量比≤1.6 且 振幅≤3%</td><td>243</td><td><span class='up'>+29.5</span></td><td><span class='up'>+26.3</span></td><td><span class='up'>+8.5</span></td><td><span class='up'>+29.3</span></td><td>49/84</td><td><b>37%</b></td><td>2.9</td></tr><tr class=''><td>涨幅≥2.0% 且 量比≤1.4 且 振幅≤2%</td><td>132</td><td><span class='up'>+29.2</span></td><td><span class='up'>+25.3</span></td><td><span class='up'>+4.4</span></td><td><span class='up'>+28.8</span></td><td>47/84</td><td><b>25%</b></td><td>1.6</td></tr>
 </table>
 <p class='small' style='margin-top:10px'><b>三口径含义：</b>「汇总」=传统口径（会被押中高基准日抬高）；
 「按日」=各日超额等权平均（剔除大盘影响，但会被命中 1 只就 ±100% 的小样本天扭曲）；
@@ -138,21 +138,21 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 <div class='card'>
 <table>
 <tr><th>选择策略</th><th>训练期超额</th><th>样本外超额</th><th>std</th><th>胜出折</th><th>衰减</th></tr>
-<tr><td>贪婪·汇总口径</td><td><span class='up'>+37.1</span></td><td><b><span class='up'>+13.4</span></b></td><td>28.6</td><td>18/25</td><td>衰减64%</td></tr><tr><td>贪婪·按日口径</td><td><span class='up'>+37.0</span></td><td><b><span class='up'>+9.4</span></b></td><td>31.6</td><td>13/20</td><td>衰减75%</td></tr><tr><td>稳健·按日口径</td><td><span class='up'>+28.1</span></td><td><b><span class='up'>+11.5</span></b></td><td>27.3</td><td>22/31</td><td>衰减59%</td></tr><tr><td>收缩·按日口径</td><td><span class='up'>+25.1</span></td><td><b><span class='up'>+6.8</span></b></td><td>23.9</td><td>25/39</td><td>衰减73%</td></tr><tr><td>Top5 分散</td><td><span class='na'>n/a</span></td><td><b><span class='up'>+11.5</span></b></td><td>27.7</td><td>18/26</td><td>—</td></tr><tr><td>全规则中位数</td><td><span class='na'>n/a</span></td><td><b><span class='dn'>-1.2</span></b></td><td>7.8</td><td>27/59</td><td>—</td></tr><tr><td>固定·规则A</td><td><span class='na'>n/a</span></td><td><b><span class=''>-0.0</span></b></td><td>16.0</td><td>24/58</td><td>—</td></tr><tr><td>固定·当前best</td><td><span class='na'>n/a</span></td><td><b><span class='dn'>-1.7</span></b></td><td>16.5</td><td>25/54</td><td>—</td></tr>
+<tr><td>贪婪·汇总口径</td><td><span class='up'>+35.8</span></td><td><b><span class='up'>+13.2</span></b></td><td>24.5</td><td>17/23</td><td>衰减63%</td></tr><tr><td>贪婪·按日口径</td><td><span class='up'>+37.8</span></td><td><b><span class='up'>+14.9</span></b></td><td>23.6</td><td>17/24</td><td>衰减61%</td></tr><tr><td>稳健·按日口径</td><td><span class='up'>+24.7</span></td><td><b><span class='up'>+7.3</span></b></td><td>20.1</td><td>25/38</td><td>衰减70%</td></tr><tr><td>收缩·按日口径</td><td><span class='up'>+23.8</span></td><td><b><span class='up'>+8.1</span></b></td><td>19.0</td><td>33/49</td><td>衰减66%</td></tr><tr><td>Top5 分散</td><td><span class='na'>n/a</span></td><td><b><span class='up'>+10.1</span></b></td><td>18.4</td><td>23/32</td><td>—</td></tr><tr><td>全规则中位数</td><td><span class='na'>n/a</span></td><td><b><span class='dn'>-0.2</span></b></td><td>7.0</td><td>41/79</td><td>—</td></tr><tr><td>固定·规则A</td><td><span class='na'>n/a</span></td><td><b><span class='up'>+0.6</span></b></td><td>14.6</td><td>36/78</td><td>—</td></tr><tr><td>固定·当前best</td><td><span class='na'>n/a</span></td><td><b><span class='up'>+0.6</span></b></td><td>15.4</td><td>41/74</td><td>—</td></tr>
 </table>
 <p class='small' style='margin-top:10px'>
 无论用贪婪、稳健门槛还是收缩惩罚，「自动选出来的规则」衰减都在 <b>67%~114%</b>；
-而<b>不参与选择的固定规则A</b>保持 -0.0pp 且 std 最小。这直接说明：
+而<b>不参与选择的固定规则A</b>保持 0.6pp 且 std 最小。这直接说明：
 <b>问题不在选择方法不够聪明，而在于「从大量候选中挑最优」这件事本身就是偏差来源</b>。</p>
 </div>
 
 <h2>六、施加稳健门槛后的幸存规则</h2>
 <div class='card'>
-<p class='small'>门槛：命中天 ≥ 38/64、最大单日占比 ≤ 30%、日均命中 ≥ 5、分层超额 &gt; 0、样本外 &gt; 0。</p>
+<p class='small'>门槛：命中天 ≥ 50/84、最大单日占比 ≤ 30%、日均命中 ≥ 5、分层超额 &gt; 0、样本外 &gt; 0。</p>
 <table>
 <tr><th>规则</th><th>n</th><th>分层超额</th><th>样本外</th><th>命中天</th><th>最大单日占比</th>
 <th>日均</th><th>z</th></tr>
-<tr><td>涨幅≥2.0% 且 量比≤1.2 且 振幅≤3%</td><td>887</td><td><span class='up'>+13.1</span></td><td><span class='up'>+15.0</span></td><td>48/64</td><td>22%</td><td>13.9</td><td>8.7</td></tr><tr><td>涨幅≥2.0% 且 量比≤1.1 且 振幅≤3%</td><td>779</td><td><span class='up'>+12.6</span></td><td><span class='up'>+9.2</span></td><td>46/64</td><td>21%</td><td>12.2</td><td>7.8</td></tr><tr><td>涨幅≥2.0% 且 换手≥1% 且 振幅≤3%</td><td>849</td><td><span class='up'>+9.3</span></td><td><span class='up'>+12.7</span></td><td>49/64</td><td>25%</td><td>13.3</td><td>5.2</td></tr><tr><td>涨幅≥1.5% 且 换手≥6% 且 股价≥50</td><td>666</td><td><span class='up'>+8.6</span></td><td><span class='up'>+58.9</span></td><td>59/64</td><td>6%</td><td>10.4</td><td>5.8</td></tr><tr><td>涨幅≥2.0% 且 量比≤0.8 且 振幅≤3%</td><td>318</td><td><span class='up'>+8.6</span></td><td><span class='up'>+31.9</span></td><td>39/64</td><td>29%</td><td>5.0</td><td>3.9</td></tr><tr><td>量比≤1.6 且 活跃度≥5 且 股价≥15</td><td>456</td><td><span class='up'>+8.4</span></td><td><span class='up'>+30.8</span></td><td>55/64</td><td>10%</td><td>7.1</td><td>4.1</td></tr><tr><td>涨幅≥2.0% 且 振幅≤3%</td><td>1388</td><td><span class='up'>+8.3</span></td><td><span class='up'>+15.8</span></td><td>56/64</td><td>21%</td><td>21.7</td><td>5.7</td></tr><tr><td>涨幅≥3.0% 且 量比≤0.7</td><td>726</td><td><span class='up'>+8.2</span></td><td><span class='up'>+27.9</span></td><td>58/64</td><td>26%</td><td>11.3</td><td>6.6</td></tr><tr><td>涨幅≥3.0% 且 换手≥5% 且 股价≥50</td><td>659</td><td><span class='up'>+7.7</span></td><td><span class='up'>+18.6</span></td><td>58/64</td><td>7%</td><td>10.3</td><td>5.6</td></tr><tr><td>涨幅≥3.0% 且 换手≥3.5% 且 股价≥50</td><td>904</td><td><span class='up'>+6.9</span></td><td><span class='up'>+19.5</span></td><td>59/64</td><td>7%</td><td>14.1</td><td>6.3</td></tr>
+<tr><td>涨幅≥3.0% 且 量比≤0.7 且 股价≤20</td><td>594</td><td><span class='up'>+13.4</span></td><td><span class='up'>+11.5</span></td><td>69/84</td><td>25%</td><td>7.1</td><td>7.9</td></tr><tr><td>涨幅≥3.0% 且 量比≤0.7 且 股价≤15</td><td>509</td><td><span class='up'>+12.5</span></td><td><span class='up'>+21.8</span></td><td>68/84</td><td>24%</td><td>6.1</td><td>6.7</td></tr><tr><td>涨幅≥3.0% 且 量比≤0.7</td><td>891</td><td><span class='up'>+11.0</span></td><td><span class='up'>+6.2</span></td><td>78/84</td><td>21%</td><td>10.6</td><td>8.4</td></tr><tr><td>涨幅≥3.0% 且 量比≤0.9 且 股价≤5</td><td>439</td><td><span class='up'>+10.4</span></td><td><span class='up'>+12.5</span></td><td>64/84</td><td>24%</td><td>5.2</td><td>4.7</td></tr><tr><td>涨幅≥3.0% 且 量比≤0.7 且 振幅≥1%</td><td>840</td><td><span class='up'>+9.2</span></td><td><span class='up'>+34.2</span></td><td>76/84</td><td>22%</td><td>10.0</td><td>7.2</td></tr><tr><td>涨幅≥3.0% 且 量比≤1.0 且 股价≤8</td><td>1262</td><td><span class='up'>+9.0</span></td><td><span class='up'>+10.9</span></td><td>76/84</td><td>23%</td><td>15.0</td><td>7.6</td></tr><tr><td>涨幅≥3.0% 且 量比≤1.1 且 股价≤8</td><td>1628</td><td><span class='up'>+8.5</span></td><td><span class='up'>+10.2</span></td><td>79/84</td><td>21%</td><td>19.4</td><td>8.1</td></tr><tr><td>涨幅≥3.0% 且 量比≤1.0 且 股价≤10</td><td>1584</td><td><span class='up'>+8.4</span></td><td><span class='up'>+15.5</span></td><td>77/84</td><td>24%</td><td>18.9</td><td>8.1</td></tr><tr><td>涨幅≥3.0% 且 量比≤1.2 且 股价≤8</td><td>2032</td><td><span class='up'>+7.9</span></td><td><span class='up'>+8.3</span></td><td>79/84</td><td>18%</td><td>24.2</td><td>8.4</td></tr><tr><td>涨幅≥3.0% 且 量比≤1.4 且 股价≤8</td><td>2656</td><td><span class='up'>+6.7</span></td><td><span class='up'>+0.8</span></td><td>81/84</td><td>14%</td><td>31.6</td><td>8.2</td></tr>
 </table>
 <p class='small' style='margin-top:10px'>幸存规则<b>高度一致地包含「股价≥20/50」</b>，
 说明价格是本数据集中一个<b>真实且此前被低估</b>的维度（原分析报告曾判定「价格维度区分度弱」，
@@ -161,10 +161,10 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 
 <h2>七、分 regime 定制（留一天交叉验证）</h2>
 <div class='card'>
-<p class='chip-row'><span class='chip'>平 n=9576 基准31.7%</span><span class='chip'>弱跌 n=6221 基准31.2%</span><span class='chip'>强涨 n=17020 基准51.1%</span><span class='chip'>涨 n=7976 基准44.1%</span><span class='chip'>跌 n=5595 基准39.7%</span><span class='chip'>震荡 n=193 基准32.6%</span></p>
+<p class='chip-row'><span class='chip'>平 n=13121 基准31.8%</span><span class='chip'>弱跌 n=7507 基准32.6%</span><span class='chip'>强涨 n=22019 基准47.7%</span><span class='chip'>涨 n=9846 基准40.6%</span><span class='chip'>跌 n=8000 基准42.1%</span><span class='chip'>震荡 n=193 基准32.6%</span></p>
 <table>
 <tr><th>regime</th><th>天数</th><th>n</th><th>基准</th><th>LOO样本外</th><th>胜出折</th></tr>
-<tr><td>强涨</td><td>17</td><td>17020</td><td>51.1%</td><td><span class='up'>+33.2</span></td><td>6/7 折</td></tr><tr><td>弱跌</td><td>16</td><td>6221</td><td>31.2%</td><td><span class='up'>+24.1</span></td><td>3/3 折</td></tr><tr><td>平</td><td>12</td><td>9576</td><td>31.7%</td><td><span class='up'>+15.4</span></td><td>4/4 折</td></tr><tr><td>涨</td><td>10</td><td>7976</td><td>44.1%</td><td><span class='up'>+5.1</span></td><td>1/1 折</td></tr><tr><td>跌</td><td>8</td><td>5595</td><td>39.7%</td><td><span class='dn'>-1.5</span></td><td>4/6 折</td></tr><tr><td>震荡</td><td>1</td><td>193</td><td>32.6%</td><td><span class='na'>n/a</span></td><td>天数<3，无法做留一天检验</td></tr>
+<tr><td>强涨</td><td>22</td><td>22019</td><td>47.7%</td><td><span class='up'>+29.0</span></td><td>8/10 折</td></tr><tr><td>弱跌</td><td>19</td><td>7507</td><td>32.6%</td><td><span class='dn'>-27.2</span></td><td>0/6 折</td></tr><tr><td>平</td><td>17</td><td>13121</td><td>31.8%</td><td><span class='dn'>-3.6</span></td><td>4/6 折</td></tr><tr><td>涨</td><td>13</td><td>9846</td><td>40.6%</td><td><span class='up'>+6.5</span></td><td>2/2 折</td></tr><tr><td>跌</td><td>12</td><td>8000</td><td>42.1%</td><td><span class='up'>+23.7</span></td><td>6/6 折</td></tr><tr><td>震荡</td><td>1</td><td>193</td><td>32.6%</td><td><span class='na'>n/a</span></td><td>天数<3，无法做留一天检验</td></tr>
 </table>
 <p class='small' style='margin-top:10px'>
 「平」档样本最充足（6 天 n=5414），留一天检验 +5.2pp 且 3/4 折胜出，是唯一有一定说服力的分档结论；
@@ -178,8 +178,8 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 但实际数据中存在第六档 <b>「震荡」</b>（2026-08-18，n=193）。该日样本<b>不会进入 regime_table.json 的任何一档</b>，
 导致分档样本合计比 overall 少 193 只。建议改为动态提取档位。<br><br>
 <b>2. 样本量口径变化</b><br>
-本次运行 N=46581（64 天），与当日 10:30 自动化运行时的 N=11533（18 天）不同——
-2026-08-28 的四信号已回填并纳入，属正常增长；但因 08-27 尚未回填次日结果，它<b>未</b>进入本次样本。
+本次运行 N=60686（84 天），与当日 10:30 自动化运行时的 N=11533（18 天）不同——
+2026-09-01 的四信号已回填并纳入，属正常增长；但因 08-27 尚未回填次日结果，它<b>未</b>进入本次样本。
 </div>
 
 
@@ -192,7 +192,7 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 <li><b>横截面 alpha</b>：目标 = 个股次日收益 − 当日全样本均值。先在每一天内部中心化，
 <b>大盘与日期效应被完全剔除</b>，模型只需学「同一天里哪些票相对更强」。</li>
 <li><b>以「天」为独立观测</b>：原先把 1.2 万只个股当独立样本做比例检验，但同日个股高度同向，
-有效样本量其实只有 63（天数），这会严重高估显著性。本节改用
+有效样本量其实只有 83（天数），这会严重高估显著性。本节改用
 <b>每日等权组合的 alpha 序列</b> 做 t 检验，推断单位才是正确的。</li>
 <li><b>新增两个从未使用的特征</b>：
 <code>tail</code>=14:30→收盘的尾盘走势（尾盘拉升/跳水）；
@@ -202,7 +202,7 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 <h3>8.1 单特征信息系数 IC（与横截面 alpha 的相关，|t|≥2 才算有信息）</h3>
 <table>
 <tr><th>特征</th><th>IC</th><th>t值</th><th>天数</th><th>IC&gt;0天数</th><th>判定</th></tr>
-<tr><td>chg</td><td>+0.0524</td><td class='up'>+2.51</td><td>63</td><td>38</td><td><b style='color:#cf1322'>有信息</b></td></tr><tr><td>rs</td><td>+0.0524</td><td class='up'>+2.51</td><td>63</td><td>38</td><td><b style='color:#cf1322'>有信息</b></td></tr><tr><td>tail</td><td>-0.0496</td><td class='dn'>-3.20</td><td>62</td><td>23</td><td><b style='color:#cf1322'>有信息</b></td></tr><tr><td>day_chg</td><td>+0.0390</td><td class='up'>+1.88</td><td>63</td><td>35</td><td>不显著</td></tr><tr><td>turnover</td><td>-0.0187</td><td class='dn'>-0.89</td><td>63</td><td>27</td><td>不显著</td></tr><tr><td>activity</td><td>-0.0183</td><td class='dn'>-0.89</td><td>63</td><td>25</td><td>不显著</td></tr><tr><td>vr</td><td>-0.0105</td><td class='dn'>-0.91</td><td>63</td><td>27</td><td>不显著</td></tr><tr><td>logprice</td><td>+0.0090</td><td class='up'>+0.38</td><td>63</td><td>35</td><td>不显著</td></tr><tr><td>amplitude</td><td>-0.0049</td><td class='dn'>-0.21</td><td>63</td><td>30</td><td>不显著</td></tr>
+<tr><td>chg</td><td>+0.0558</td><td class='up'>+3.32</td><td>83</td><td>53</td><td><b style='color:#cf1322'>有信息</b></td></tr><tr><td>rs</td><td>+0.0558</td><td class='up'>+3.32</td><td>83</td><td>53</td><td><b style='color:#cf1322'>有信息</b></td></tr><tr><td>tail</td><td>-0.0495</td><td class='dn'>-4.10</td><td>82</td><td>28</td><td><b style='color:#cf1322'>有信息</b></td></tr><tr><td>day_chg</td><td>+0.0430</td><td class='up'>+2.58</td><td>83</td><td>50</td><td><b style='color:#cf1322'>有信息</b></td></tr><tr><td>turnover</td><td>-0.0114</td><td class='dn'>-0.66</td><td>83</td><td>38</td><td>不显著</td></tr><tr><td>activity</td><td>-0.0110</td><td class='dn'>-0.65</td><td>83</td><td>36</td><td>不显著</td></tr><tr><td>vr</td><td>-0.0076</td><td class='dn'>-0.80</td><td>83</td><td>39</td><td>不显著</td></tr><tr><td>logprice</td><td>-0.0011</td><td class='dn'>-0.05</td><td>83</td><td>43</td><td>不显著</td></tr><tr><td>amplitude</td><td>+0.0010</td><td class='up'>+0.05</td><td>83</td><td>42</td><td>不显著</td></tr>
 </table>
 <p class='small' style='margin-top:8px'>
 <b>没有任何一个特征达到统计显著</b>（|t| 全部 &lt; 1.4）。相对最强的是
@@ -212,12 +212,12 @@ OOS 均值 = 14 个测试折上「当日命中收涨率 − 当日基准」的�
 <h3>8.2 各规则的同口径组合 alpha（这才是可信的对照）</h3>
 <table>
 <tr><th>规则</th><th>日均 alpha</th><th>t值</th><th>胜出天</th><th>判定</th></tr>
-<tr class=''><td>新特征·相对强度 rs≥0</td><td>+0.043%</td><td class='up'>+1.48</td><td>38/63</td><td>未达显著</td></tr><tr class=''><td>全样本（买所有）</td><td>+0.000%</td><td class='up'>+0.72</td><td>35/63</td><td>未达显著</td></tr><tr class=''><td>股价≥50</td><td>+0.100%</td><td class='up'>+0.48</td><td>35/62</td><td>未达显著</td></tr><tr class='bad'><td>当前best 换手≥3%且量比≤1.0且活跃度≥3</td><td>-0.222%</td><td class='dn'>-1.41</td><td>28/55</td><td>未达显著</td></tr><tr class='bad'><td>规则A 涨幅≤0.6%且换手≥2%</td><td>-0.172%</td><td class='dn'>-1.46</td><td>23/61</td><td>未达显著</td></tr><tr class='bad'><td>新特征·尾盘走强 tail≥0</td><td>-0.065%</td><td class='dn'>-1.93</td><td>27/63</td><td>未达显著</td></tr>
+<tr class=''><td>动量S 涨幅≥2%且振幅≤3%</td><td>+0.721%</td><td class='up'>+3.02</td><td>29/44</td><td>显著</td></tr><tr class=''><td>新特征·相对强度 rs≥0</td><td>+0.042%</td><td class='up'>+1.81</td><td>51/83</td><td>未达显著</td></tr><tr class=''><td>全样本（买所有）</td><td>+0.000%</td><td class='up'>+0.27</td><td>47/83</td><td>未达显著</td></tr><tr class=''><td>股价≥50</td><td>+0.034%</td><td class='up'>+0.20</td><td>43/82</td><td>未达显著</td></tr><tr class='bad'><td>规则A 涨幅≤0.6%且换手≥2%</td><td>-0.098%</td><td class='dn'>-1.01</td><td>36/81</td><td>未达显著</td></tr><tr class='bad'><td>当前best 换手≥3%且量比≤1.0且活跃度≥3</td><td>-0.124%</td><td class='dn'>-1.01</td><td>40/74</td><td>未达显著</td></tr><tr class='bad'><td>新特征·尾盘走强 tail≥0</td><td>-0.070%</td><td class='dn'>-2.57</td><td>33/83</td><td>显著</td></tr>
 </table>
 <div class='alert' style='margin-top:10px'>
 <b>必须正视的结论：所有规则的 t 值都远小于 2，均未达统计显著。</b><br>
 此前在「以个股为单位」的口径下看到的规则A 样本外 +4.5pp，在以<b>天</b>为单位做正确推断后
-t 仅 <b>-1.46</b>——方向为正、且 12/18 天胜出，但<b>无法排除是运气</b>。
+t 仅 <b>-1.01</b>——方向为正、且 12/18 天胜出，但<b>无法排除是运气</b>。
 当前 best 仍为负（t=−0.26），与前面所有检验一致。
 </div>
 
@@ -225,7 +225,7 @@ t 仅 <b>-1.46</b>——方向为正、且 12/18 天胜出，但<b>无法排除�
 <p class='small'>t = 均值/(std/√天数)。放宽 k 会降低 std（分散化），但也会稀释 alpha。下表看净效果。</p>
 <table>
 <tr><th>k（等权买入只数）</th><th>日均 alpha</th><th>std</th><th>t值</th><th>胜出天</th></tr>
-<tr><td>10</td><td>+0.042%</td><td>2.407</td><td class='up'>+0.14</td><td>30/63</td></tr><tr><td>20</td><td>+0.052%</td><td>1.953</td><td class='up'>+0.21</td><td>33/63</td></tr><tr><td>30</td><td>+0.028%</td><td>1.703</td><td class='up'>+0.13</td><td>34/63</td></tr><tr><td>50</td><td>+0.028%</td><td>1.456</td><td class='up'>+0.15</td><td>32/63</td></tr><tr><td>100</td><td>-0.007%</td><td>1.130</td><td class='dn'>-0.05</td><td>30/59</td></tr><tr><td>200</td><td>-0.037%</td><td>0.817</td><td class='dn'>-0.33</td><td>30/55</td></tr><tr><td>400</td><td>-0.119%</td><td>0.592</td><td class='dn'>-1.21</td><td>17/36</td></tr>
+<tr><td>10</td><td>-0.001%</td><td>2.222</td><td class=''>-0.00</td><td>41/83</td></tr><tr><td>20</td><td>+0.026%</td><td>1.788</td><td class='up'>+0.13</td><td>42/83</td></tr><tr><td>30</td><td>-0.001%</td><td>1.576</td><td class='dn'>-0.01</td><td>42/83</td></tr><tr><td>50</td><td>-0.006%</td><td>1.346</td><td class='dn'>-0.04</td><td>39/83</td></tr><tr><td>100</td><td>-0.033%</td><td>1.058</td><td class='dn'>-0.28</td><td>37/79</td></tr><tr><td>200</td><td>-0.036%</td><td>0.762</td><td class='dn'>-0.41</td><td>40/75</td></tr><tr><td>400</td><td>-0.103%</td><td>0.545</td><td class='dn'>-1.30</td><td>23/48</td></tr>
 </table>
 <p class='small' style='margin-top:8px'>
 std 随 k 单调下降（1.474 → 0.496），但 alpha 也被稀释，<b>净效果在 k≈30~200 区间最佳</b>。
@@ -237,7 +237,7 @@ std 随 k 单调下降（1.474 → 0.496），但 alpha 也被稀释，<b>净效
 <p class='small'>按 t ∝ √n 外推：还需天数 = 当前天数 × (2/当前|t|)² − 当前天数。</p>
 <table>
 <tr><th>规则</th><th>约需总天数</th><th>还需增加</th></tr>
-<tr><td>多因子top30</td><td>11</td><td><b>0</b></td></tr><tr><td>新特征·尾盘走强 tail≥0</td><td>68</td><td><b>5</b></td></tr><tr><td>当前best 换手≥3%且量比≤1.0且活跃度≥3</td><td>111</td><td><b>48</b></td></tr><tr><td>规则A 涨幅≤0.6%且换手≥2%</td><td>115</td><td><b>52</b></td></tr><tr><td>新特征·相对强度 rs≥0</td><td>116</td><td><b>53</b></td></tr><tr><td>全样本（买所有）</td><td>487</td><td><b>424</b></td></tr><tr><td>股价≥50</td><td>1077</td><td><b>1014</b></td></tr>
+<tr><td>多因子top30</td><td>10</td><td><b>0</b></td></tr><tr><td>动量S 涨幅≥2%且振幅≤3%</td><td>20</td><td><b>0</b></td></tr><tr><td>新特征·尾盘走强 tail≥0</td><td>51</td><td><b>0</b></td></tr><tr><td>新特征·相对强度 rs≥0</td><td>102</td><td><b>19</b></td></tr><tr><td>当前best 换手≥3%且量比≤1.0且活跃度≥3</td><td>291</td><td><b>208</b></td></tr><tr><td>规则A 涨幅≤0.6%且换手≥2%</td><td>318</td><td><b>235</b></td></tr><tr><td>全样本（买所有）</td><td>4555</td><td><b>4472</b></td></tr><tr><td>股价≥50</td><td>8200</td><td><b>8117</b></td></tr>
 </table>
 <div class='good'>
 <b>这才是「提升有效性」最诚实也最有效的答案</b>
@@ -249,15 +249,15 @@ std 随 k 单调下降（1.474 → 0.496），但 alpha 也被稀释，<b>净效
 ③聚焦 rs／股价这两个相对最强的信号；④停止自动规则搜索。</b></li>
 </ul>
 </div>
-<p class='small'>多因子 IC 加权模型的 walk-forward 结果：日均 alpha <b>0.882%</b>，
-t=4.77，胜出 40/57 天——19 天样本下多因子必然过拟合，暂不可用。
+<p class='small'>多因子 IC 加权模型的 walk-forward 结果：日均 alpha <b>0.902%</b>，
+t=5.60，胜出 58/77 天——19 天样本下多因子必然过拟合，暂不可用。
 完整数据见 <code>site/analysis/alpha_explore.json</code>。</p>
 </div>
 
 <h2>九、局限与使用建议</h2>
 <div class='note'>
 <ul>
-<li><b>样本仍然很小</b>：只有 64 个交易日、N=46581，且全部来自 2026-08 单月行情。
+<li><b>样本仍然很小</b>：只有 84 个交易日、N=60686，且全部来自 2026-08 单月行情。
 14 折 OOS 的 std 普遍在 15~30pp，意味着<b>单日超额极不稳定</b>，“+5pp”是均值意义上的。</li>
 <li><b>结论是「否定性」的、也因此更可靠</b>：本次最有价值的产出不是找到更强的规则，
 而是<b>证伪</b>了「自动搜索更优规则」这条路——样本内刷得越高，样本外反而越差。</li>
