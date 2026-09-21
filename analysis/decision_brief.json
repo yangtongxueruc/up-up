@@ -1,0 +1,372 @@
+{
+ "meta": {
+  "D": 112,
+  "N": 82170,
+  "start": "2026-04-10",
+  "end": "2026-09-18",
+  "zt_n": 3134,
+  "buy_n": 79036,
+  "cost": 0.2,
+  "zt_thr": 9.5,
+  "generated_at": "2026-09-21 15:28",
+  "elapsed": 0.5
+ },
+ "benchmark": [
+  {
+   "label": "① 全池（符合条件即买，含涨停）",
+   "days": 112,
+   "n": 82170,
+   "per_day": 733.7,
+   "day_mean": -0.035,
+   "cum_gross": -4.6,
+   "cum_net": -23.8,
+   "win": 41.9,
+   "payoff": 1.2,
+   "breakeven": 45.5
+  },
+  {
+   "label": "② 可直买组（14:30 未涨停，市价可成交）",
+   "days": 112,
+   "n": 79036,
+   "per_day": 705.7,
+   "day_mean": -0.089,
+   "cum_gross": -10.2,
+   "cum_net": -28.2,
+   "win": 41.3,
+   "payoff": 1.15,
+   "breakeven": 46.5
+  },
+  {
+   "label": "③ 14:30 涨停组（需挂单排队，非市价可得）",
+   "days": 112,
+   "n": 3134,
+   "per_day": 28.0,
+   "day_mean": 1.083,
+   "cum_gross": 226.4,
+   "cum_net": 161.4,
+   "win": 55.9,
+   "payoff": 1.48,
+   "breakeven": 40.3
+  }
+ ],
+ "mf": {
+  "zt_share": 71.6
+ },
+ "forward": {
+  "checked_at": "2026-09-21 10:33",
+  "method": "时序holdout：前66天重新探索 → 后45天检验",
+  "best_oos_excess": 2.6,
+  "best_oos_pos_folds": "16/34",
+  "passed": false,
+  "verdict": "未通过前向检验（胜出天数不足(16/34)），不提升为主规则",
+  "source": "validate_rule.forward_gate"
+ },
+ "rulesA": [
+  {
+   "name": "chg≥2",
+   "days": 112,
+   "alpha": -0.0413,
+   "t": -1.16,
+   "port_alpha": -0.0413,
+   "port_t": -1.16,
+   "oos_alpha": -0.1024,
+   "oos_t": -1.69,
+   "oos_days": 45,
+   "jk": 0.93
+  },
+  {
+   "name": "chg 2~5",
+   "days": 112,
+   "alpha": -0.0628,
+   "t": -1.99,
+   "port_alpha": -0.0628,
+   "port_t": -1.99,
+   "oos_alpha": -0.0916,
+   "oos_t": -1.78,
+   "oos_days": 45,
+   "jk": 1.72
+  },
+  {
+   "name": "chg≥2 且 换手≥4",
+   "days": 111,
+   "alpha": -0.1111,
+   "t": -1.38,
+   "port_alpha": -0.1412,
+   "port_t": -1.65,
+   "oos_alpha": -0.1995,
+   "oos_t": -1.54,
+   "oos_days": 44,
+   "jk": 1.11
+  },
+  {
+   "name": "chg≥2 且 振幅≤3",
+   "days": 57,
+   "alpha": 0.0324,
+   "t": 0.39,
+   "port_alpha": -0.0999,
+   "port_t": -0.91,
+   "oos_alpha": -0.1938,
+   "oos_t": -1.53,
+   "oos_days": 25,
+   "jk": 0.01
+  },
+  {
+   "name": "rs≥0",
+   "days": 112,
+   "alpha": 0.0138,
+   "t": 0.78,
+   "port_alpha": 0.0138,
+   "port_t": 0.78,
+   "oos_alpha": 0.0231,
+   "oos_t": 0.82,
+   "oos_days": 45,
+   "jk": 0.39
+  },
+  {
+   "name": "chg≥3 且 振幅≤3",
+   "days": 9,
+   "alpha": 0.5466,
+   "t": 1.7,
+   "port_alpha": 0.1498,
+   "port_t": 0.97,
+   "oos_alpha": 0.0365,
+   "oos_t": 0.05,
+   "oos_days": 3,
+   "jk": 1.23
+  }
+ ],
+ "rulesB": [
+  {
+   "name": "drift>0.19",
+   "days": 111,
+   "alpha": -0.2173,
+   "t": -6.82,
+   "abs_ret": -0.473
+  },
+  {
+   "name": "drift<-0.10",
+   "days": 111,
+   "alpha": 0.1309,
+   "t": 4.22,
+   "abs_ret": -0.121
+  },
+  {
+   "name": "day_chg>2.23",
+   "days": 112,
+   "alpha": -0.1226,
+   "t": -3.07,
+   "abs_ret": -0.279
+  },
+  {
+   "name": "activity>3.00",
+   "days": 112,
+   "alpha": -0.0616,
+   "t": -1.25,
+   "abs_ret": -0.314
+  },
+  {
+   "name": "amplitude<2.74",
+   "days": 110,
+   "alpha": -0.0018,
+   "t": -0.03,
+   "abs_ret": -0.201
+  }
+ ],
+ "zt": {
+  "name": "涨停 且 活跃度≤3",
+  "days": 67,
+  "alpha": 1.7093,
+  "t": 4.91,
+  "abs": 3.064
+ },
+ "winrate_base": {
+  "all_win": 41.9,
+  "buy_win": 41.3,
+  "zt_win": 55.9,
+  "buy_close_win": 40.3
+ },
+ "winrate_buy": [
+  {
+   "n": 4880,
+   "days": 112,
+   "per_day": 43.6,
+   "win": 46.3,
+   "mean_ret": 0.14,
+   "day_mean": -0.12,
+   "day_win": 49.1,
+   "is_win": 45.4,
+   "is_n": 3104,
+   "oos_win": 47.9,
+   "oos_n": 1776,
+   "oos_mean": 0.252,
+   "rule": "直买·涨幅≥5"
+  },
+  {
+   "n": 5212,
+   "days": 112,
+   "per_day": 46.5,
+   "win": 45.0,
+   "mean_ret": -0.044,
+   "day_mean": -0.06,
+   "day_win": 54.5,
+   "is_win": 45.1,
+   "is_n": 3326,
+   "oos_win": 44.8,
+   "oos_n": 1886,
+   "oos_mean": -0.145,
+   "rule": "直买·股价≥50"
+  },
+  {
+   "n": 15639,
+   "days": 112,
+   "per_day": 139.6,
+   "win": 44.7,
+   "mean_ret": -0.094,
+   "day_mean": -0.11,
+   "day_win": 45.5,
+   "is_win": 43.6,
+   "is_n": 9409,
+   "oos_win": 46.3,
+   "oos_n": 6230,
+   "oos_mean": 0.039,
+   "rule": "直买·涨幅≥3"
+  },
+  {
+   "n": 28143,
+   "days": 112,
+   "per_day": 251.3,
+   "win": 43.7,
+   "mean_ret": -0.141,
+   "day_mean": -0.13,
+   "day_win": 45.5,
+   "is_win": 42.8,
+   "is_n": 16625,
+   "oos_win": 45.0,
+   "oos_n": 11518,
+   "oos_mean": -0.002,
+   "rule": "直买·涨幅≥2"
+  },
+  {
+   "n": 20228,
+   "days": 112,
+   "per_day": 180.6,
+   "win": 43.2,
+   "mean_ret": -0.16,
+   "day_mean": -0.114,
+   "day_win": 49.1,
+   "is_win": 42.0,
+   "is_n": 12504,
+   "oos_win": 45.2,
+   "oos_n": 7724,
+   "oos_mean": -0.058,
+   "rule": "直买·股价≥20"
+  },
+  {
+   "n": 14519,
+   "days": 112,
+   "per_day": 129.6,
+   "win": 40.6,
+   "mean_ret": -0.229,
+   "day_mean": -0.076,
+   "day_win": 46.4,
+   "is_win": 37.1,
+   "is_n": 8760,
+   "oos_win": 45.9,
+   "oos_n": 5759,
+   "oos_mean": -0.003,
+   "rule": "直买·涨幅≤0.5"
+  }
+ ],
+ "winrate_board": [
+  {
+   "n": 28,
+   "days": 23,
+   "per_day": 1.2,
+   "win": 82.1,
+   "mean_ret": 6.104,
+   "day_mean": 6.88,
+   "day_win": 91.3,
+   "is_win": 78.3,
+   "is_n": 23,
+   "oos_win": 100.0,
+   "oos_n": 5,
+   "oos_mean": 6.676,
+   "rule": "打板·活跃≤1"
+  },
+  {
+   "n": 90,
+   "days": 52,
+   "per_day": 1.7,
+   "win": 72.2,
+   "mean_ret": 4.395,
+   "day_mean": 4.533,
+   "day_win": 80.8,
+   "is_win": 76.1,
+   "is_n": 71,
+   "oos_win": 57.9,
+   "oos_n": 19,
+   "oos_mean": 2.354,
+   "rule": "打板·活跃≤2"
+  },
+  {
+   "n": 90,
+   "days": 52,
+   "per_day": 1.7,
+   "win": 72.2,
+   "mean_ret": 4.395,
+   "day_mean": 4.533,
+   "day_win": 80.8,
+   "is_win": 76.1,
+   "is_n": 71,
+   "oos_win": 57.9,
+   "oos_n": 19,
+   "oos_mean": 2.354,
+   "rule": "打板·活跃≤2 且 振幅≤11"
+  },
+  {
+   "n": 356,
+   "days": 88,
+   "per_day": 4.0,
+   "win": 67.1,
+   "mean_ret": 3.064,
+   "day_mean": 3.444,
+   "day_win": 77.3,
+   "is_win": 68.4,
+   "is_n": 253,
+   "oos_win": 64.1,
+   "oos_n": 103,
+   "oos_mean": 2.666,
+   "rule": "打板·活跃≤3"
+  },
+  {
+   "n": 319,
+   "days": 83,
+   "per_day": 3.8,
+   "win": 67.1,
+   "mean_ret": 3.0,
+   "day_mean": 3.331,
+   "day_win": 73.5,
+   "is_win": 68.0,
+   "is_n": 228,
+   "oos_win": 64.8,
+   "oos_n": 91,
+   "oos_mean": 2.627,
+   "rule": "打板·活跃≤3 且 量比≤1.2"
+  },
+  {
+   "n": 303,
+   "days": 86,
+   "per_day": 3.5,
+   "win": 66.3,
+   "mean_ret": 3.027,
+   "day_mean": 3.642,
+   "day_win": 77.9,
+   "is_win": 67.0,
+   "is_n": 215,
+   "oos_win": 64.8,
+   "oos_n": 88,
+   "oos_mean": 2.734,
+   "rule": "打板·活跃≤3 且 换手≤4"
+  }
+ ]
+}

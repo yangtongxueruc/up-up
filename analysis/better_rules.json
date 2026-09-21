@@ -1,0 +1,533 @@
+{
+ "generated_at": "2026-09-21 14:46",
+ "sample": {
+  "D": 112,
+  "N": 82170,
+  "start": "2026-04-10",
+  "end": "2026-09-18"
+ },
+ "base": {
+  "execA_mean": -0.147,
+  "fwdB_mean": -0.217,
+  "buyable_n": 79036,
+  "zt_n": 3134,
+  "buyable_execA_mean": -0.204,
+  "buyable_up_rate": 41.32
+ },
+ "mf_top30": {
+  "zt_share_pct": 71.6,
+  "all_fullbase": {
+   "n": 112,
+   "alpha": 0.8685,
+   "t": 7.63,
+   "pos": 85
+  },
+  "zt_fullbase": {
+   "n": 110,
+   "alpha": 1.1428,
+   "t": 7.33,
+   "pos": 84
+  },
+  "buyable_fullbase": {
+   "n": 63,
+   "alpha": 0.0554,
+   "t": 0.35,
+   "pos": 32
+  },
+  "buyable_buybase": {
+   "n": 63,
+   "alpha": 0.0937,
+   "t": 0.6,
+   "pos": 30
+  },
+  "buyable_portfolio_buybase": {
+   "n": 112,
+   "alpha": 0.1679,
+   "t": 1.3,
+   "pos": 36
+  }
+ },
+ "candidates": {
+  "基线·全可直买": {
+   "cond_buybase": {
+    "n": 112,
+    "alpha": 0.0,
+    "t": 1.09,
+    "pos": 53
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": 0.0,
+    "t": 1.09,
+    "pos": 53
+   },
+   "cond_fullbase": {
+    "n": 112,
+    "alpha": -0.0534,
+    "t": -5.48,
+    "pos": 27
+   },
+   "oos": {
+    "n": 45,
+    "alpha": 0.0,
+    "t": 0.32,
+    "pos": 19
+   },
+   "jackknife": {
+    "worst_abs_t": 0.6,
+    "drop_day": 78
+   }
+  },
+  "chg≥2": {
+   "cond_buybase": {
+    "n": 112,
+    "alpha": -0.0413,
+    "t": -1.16,
+    "pos": 45
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.0413,
+    "t": -1.16,
+    "pos": 45
+   },
+   "cond_fullbase": {
+    "n": 112,
+    "alpha": -0.0947,
+    "t": -2.79,
+    "pos": 39
+   },
+   "oos": {
+    "n": 45,
+    "alpha": -0.1024,
+    "t": -1.69,
+    "pos": 16
+   },
+   "jackknife": {
+    "worst_abs_t": 0.93,
+    "drop_day": 88
+   }
+  },
+  "chg≥3": {
+   "cond_buybase": {
+    "n": 111,
+    "alpha": -0.0599,
+    "t": -1.13,
+    "pos": 50
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.0212,
+    "t": -0.33,
+    "pos": 51
+   },
+   "cond_fullbase": {
+    "n": 111,
+    "alpha": -0.1148,
+    "t": -2.29,
+    "pos": 47
+   },
+   "oos": {
+    "n": 44,
+    "alpha": -0.2029,
+    "t": -2.14,
+    "pos": 15
+   },
+   "jackknife": {
+    "worst_abs_t": 0.87,
+    "drop_day": 88
+   }
+  },
+  "chg 2~5": {
+   "cond_buybase": {
+    "n": 112,
+    "alpha": -0.0628,
+    "t": -1.99,
+    "pos": 49
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.0628,
+    "t": -1.99,
+    "pos": 49
+   },
+   "cond_fullbase": {
+    "n": 112,
+    "alpha": -0.1161,
+    "t": -3.54,
+    "pos": 39
+   },
+   "oos": {
+    "n": 45,
+    "alpha": -0.0916,
+    "t": -1.78,
+    "pos": 21
+   },
+   "jackknife": {
+    "worst_abs_t": 1.72,
+    "drop_day": 58
+   }
+  },
+  "chg≥2 且 换手≥3": {
+   "cond_buybase": {
+    "n": 111,
+    "alpha": -0.059,
+    "t": -0.91,
+    "pos": 53
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.0717,
+    "t": -1.1,
+    "pos": 53
+   },
+   "cond_fullbase": {
+    "n": 111,
+    "alpha": -0.1149,
+    "t": -1.87,
+    "pos": 48
+   },
+   "oos": {
+    "n": 44,
+    "alpha": -0.1162,
+    "t": -1.11,
+    "pos": 15
+   },
+   "jackknife": {
+    "worst_abs_t": 0.66,
+    "drop_day": 62
+   }
+  },
+  "chg≥2 且 换手≥4": {
+   "cond_buybase": {
+    "n": 111,
+    "alpha": -0.1111,
+    "t": -1.38,
+    "pos": 56
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.1412,
+    "t": -1.65,
+    "pos": 56
+   },
+   "cond_fullbase": {
+    "n": 111,
+    "alpha": -0.1671,
+    "t": -2.16,
+    "pos": 49
+   },
+   "oos": {
+    "n": 44,
+    "alpha": -0.1995,
+    "t": -1.54,
+    "pos": 15
+   },
+   "jackknife": {
+    "worst_abs_t": 1.11,
+    "drop_day": 62
+   }
+  },
+  "chg≥2 且 量比≤1.0": {
+   "cond_buybase": {
+    "n": 101,
+    "alpha": 0.0927,
+    "t": 1.08,
+    "pos": 58
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": 0.0436,
+    "t": 0.47,
+    "pos": 62
+   },
+   "cond_fullbase": {
+    "n": 101,
+    "alpha": 0.0397,
+    "t": 0.46,
+    "pos": 54
+   },
+   "oos": {
+    "n": 35,
+    "alpha": 0.0681,
+    "t": 0.42,
+    "pos": 21
+   },
+   "jackknife": {
+    "worst_abs_t": 0.75,
+    "drop_day": 38
+   }
+  },
+  "chg≥2 且 振幅≤3": {
+   "cond_buybase": {
+    "n": 57,
+    "alpha": 0.0324,
+    "t": 0.39,
+    "pos": 32
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.0999,
+    "t": -0.91,
+    "pos": 49
+   },
+   "cond_fullbase": {
+    "n": 57,
+    "alpha": -0.0178,
+    "t": -0.21,
+    "pos": 29
+   },
+   "oos": {
+    "n": 25,
+    "alpha": -0.1938,
+    "t": -1.53,
+    "pos": 10
+   },
+   "jackknife": {
+    "worst_abs_t": 0.01,
+    "drop_day": 31
+   }
+  },
+  "chg≥3 且 振幅≤3": {
+   "cond_buybase": {
+    "n": 9,
+    "alpha": 0.5466,
+    "t": 1.7,
+    "pos": 7
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": 0.1498,
+    "t": 0.97,
+    "pos": 30
+   },
+   "cond_fullbase": {
+    "n": 9,
+    "alpha": 0.4718,
+    "t": 1.53,
+    "pos": 7
+   },
+   "oos": {
+    "n": 3,
+    "alpha": 0.0365,
+    "t": 0.05,
+    "pos": 2
+   },
+   "jackknife": {
+    "worst_abs_t": 1.23,
+    "drop_day": 28
+   }
+  },
+  "chg≥3 且 换手≥4 且 量比≤2": {
+   "cond_buybase": {
+    "n": 103,
+    "alpha": -0.0589,
+    "t": -0.51,
+    "pos": 49
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": 0.0073,
+    "t": 0.05,
+    "pos": 53
+   },
+   "cond_fullbase": {
+    "n": 103,
+    "alpha": -0.116,
+    "t": -1.02,
+    "pos": 47
+   },
+   "oos": {
+    "n": 36,
+    "alpha": -0.1744,
+    "t": -0.72,
+    "pos": 14
+   },
+   "jackknife": {
+    "worst_abs_t": 0.26,
+    "drop_day": 51
+   }
+  },
+  "rs≥0": {
+   "cond_buybase": {
+    "n": 112,
+    "alpha": 0.0138,
+    "t": 0.78,
+    "pos": 55
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": 0.0138,
+    "t": 0.78,
+    "pos": 55
+   },
+   "cond_fullbase": {
+    "n": 112,
+    "alpha": -0.0396,
+    "t": -2.28,
+    "pos": 40
+   },
+   "oos": {
+    "n": 45,
+    "alpha": 0.0231,
+    "t": 0.82,
+    "pos": 21
+   },
+   "jackknife": {
+    "worst_abs_t": 0.39,
+    "drop_day": 68
+   }
+  },
+  "rs≥1": {
+   "cond_buybase": {
+    "n": 112,
+    "alpha": 0.016,
+    "t": 0.6,
+    "pos": 60
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": 0.016,
+    "t": 0.6,
+    "pos": 60
+   },
+   "cond_fullbase": {
+    "n": 112,
+    "alpha": -0.0374,
+    "t": -1.5,
+    "pos": 44
+   },
+   "oos": {
+    "n": 45,
+    "alpha": 0.0091,
+    "t": 0.2,
+    "pos": 21
+   },
+   "jackknife": {
+    "worst_abs_t": 0.24,
+    "drop_day": 68
+   }
+  },
+  "股价≥50": {
+   "cond_buybase": {
+    "n": 109,
+    "alpha": 0.01,
+    "t": 0.09,
+    "pos": 57
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": 0.0284,
+    "t": 0.24,
+    "pos": 59
+   },
+   "cond_fullbase": {
+    "n": 109,
+    "alpha": -0.0444,
+    "t": -0.39,
+    "pos": 57
+   },
+   "oos": {
+    "n": 42,
+    "alpha": -0.2195,
+    "t": -1.21,
+    "pos": 20
+   },
+   "jackknife": {
+    "worst_abs_t": 0.0,
+    "drop_day": 107
+   }
+  },
+  "换手≥5": {
+   "cond_buybase": {
+    "n": 112,
+    "alpha": -0.1355,
+    "t": -1.48,
+    "pos": 53
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.1355,
+    "t": -1.48,
+    "pos": 53
+   },
+   "cond_fullbase": {
+    "n": 112,
+    "alpha": -0.1888,
+    "t": -2.12,
+    "pos": 52
+   },
+   "oos": {
+    "n": 45,
+    "alpha": -0.2297,
+    "t": -1.66,
+    "pos": 19
+   },
+   "jackknife": {
+    "worst_abs_t": 1.17,
+    "drop_day": 62
+   }
+  },
+  "振幅≤2 且 换手≥3": {
+   "cond_buybase": {
+    "n": 15,
+    "alpha": -0.0785,
+    "t": -0.36,
+    "pos": 6
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.0281,
+    "t": -0.26,
+    "pos": 22
+   },
+   "cond_fullbase": {
+    "n": 15,
+    "alpha": -0.1243,
+    "t": -0.56,
+    "pos": 6
+   },
+   "oos": {
+    "n": 5,
+    "alpha": 0.2838,
+    "t": 0.56,
+    "pos": 2
+   },
+   "jackknife": {
+    "worst_abs_t": 0.01,
+    "drop_day": 8
+   }
+  },
+  "chg≥2 且 rs≥1 且 换手≥3": {
+   "cond_buybase": {
+    "n": 111,
+    "alpha": -0.0573,
+    "t": -0.86,
+    "pos": 55
+   },
+   "portfolio_buybase": {
+    "n": 112,
+    "alpha": -0.07,
+    "t": -1.04,
+    "pos": 55
+   },
+   "cond_fullbase": {
+    "n": 111,
+    "alpha": -0.1132,
+    "t": -1.8,
+    "pos": 48
+   },
+   "oos": {
+    "n": 44,
+    "alpha": -0.1084,
+    "t": -1.01,
+    "pos": 15
+   },
+   "jackknife": {
+    "worst_abs_t": 0.62,
+    "drop_day": 62
+   }
+  }
+ },
+ "split_date": "2026-07-20"
+}

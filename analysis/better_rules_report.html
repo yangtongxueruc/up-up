@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>更优选股规则探索报告 · 2026-09-21</title>
+<style>
+:root{--red:#cf1322;--green:#389e0d;--ink:#1a1a1a;--mut:#6b7280;--line:#e5e7eb;--card:#f8fafc}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:14px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:32px 22px 60px}
+h1{font-size:24px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px;margin-bottom:18px}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;background:#eef2f7;color:#475569;margin-right:6px}
+h2{font-size:18px;margin:30px 0 10px;padding-left:10px;border-left:4px solid var(--red)}
+h3{font-size:15px;margin:20px 0 6px}
+.k{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.k ul{margin:6px 0 0;padding-left:20px}
+.k li{margin:5px 0}
+.warn{background:#fff7f7;border-color:#ffccc7}
+.ok{background:#f6ffed;border-color:#b7eb8f}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left}
+th{background:#fafafa;font-weight:600;color:#374151}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.pos{color:var(--red);font-weight:600}.neg{color:var(--green);font-weight:600}
+.legend{font-size:12px;color:var(--mut);margin-top:4px}
+svg{max-width:100%;height:auto;display:block;margin:8px 0;border:1px solid var(--line);border-radius:10px}
+.foot{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:var(--mut);font-size:12px}
+code{background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12.5px}
+</style></head><body><div class="wrap">
+
+<h1>「更优选股规则」探索报告</h1>
+<div class="sub">
+  <span class="tag">A股主板 · 前一日跌 &amp; 当日14:30涨 池</span>
+  <span class="tag">样本 D=112 天 / N=82,170</span>
+  <span class="tag">2026-04-10 ~ 2026-09-18</span>
+  <span class="tag">生成 2026-09-21 14:55</span>
+</div>
+
+<div class="k warn">
+<b>结论先行（TL;DR）</b>
+<ul>
+<li><b>① 现行「MF top30」选出的票有 71.6% 在 14:30 已封涨停、根本买不进</b>；去掉涨停后，可直买部分的 alpha 仅 <b>+0.055%（t=0.35，不显著）</b>。这是「质量不好」的直接原因——你看到的是打板名单，不是可买名单。</li>
+<li><b>② 14:30 可执行的可直买规则，无一达到统计显著</b>（全部 |t|&lt;2，留一日 jackknife 后更弱）。「涨幅大/换手高/量比高/振幅大」方向<u>系统性为负</u>。</li>
+<li><b>③ 此前被当作「强买入信号」的「尾盘走强 drift&gt;1%」是前视伪影</b>：drift 用收盘价才能算出，却拿 14:30 入场收益去评估，白吃了那段尾盘拉升。用正确口径（收盘入场）重测为 <b>−0.472%（t=−4.19，显著为负）</b>——照此交易是亏的。</li>
+<li><b>④ 池内唯一绝对收益为正的是「14:30 涨停组」</b>（+1.29%、次日收涨率 55.9%），但它正在衰减：9 月降至 <b>+0.74% / 48.0%</b>（≈抛硬币）；且需要打板/排队成交能力。</li>
+<li><b>⑤ 若具备打板能力，涨停组内存在可用的 14:30 规则</b>：优先 <b>低活跃度 / 早板</b>（activity≤3，换成内部 alpha <b>+1.71% t=4.91</b>，绝对 execA <b>+3.06%</b>、收涨率 67.1%）——样本小（约 3 只/天），样本外仅弱正（t=1.41）。</li>
+</ul>
+</div>
+
+<h2>1. 数据与口径</h2>
+<p>取 <code>site/data/*.json</code> 中已回填（<code>list_filled</code>）的全部锚点日。每只股票两条可执行收益口径，严格区分「信号何时可知」：</p>
+<table>
+<tr><th>口径</th><th>下单时点</th><th>信号可用信息</th><th>收益定义</th><th>全样本均值</th></tr>
+<tr><td><b>A</b></td><td>当日 14:30</td><td>仅 14:30 快照 + T-1 及之前</td><td>次日11:30 / 14:30 − 1</td><td class="num neg">−0.147%</td></tr>
+<tr><td><b>B</b></td><td>当日收盘 14:57</td><td>可用当日收盘信息</td><td>次日11:30 / 收盘 − 1</td><td class="num neg">−0.217%</td></tr>
+</table>
+<p class="legend">alpha = 个股收益 − 当日（同口径）全样本均值，剔除大盘/日期效应；t 检验以「天」为独立观测单位。可买策略的基准为<b>可直买子集</b>（涨停股买不进，不应进基准）。</p>
+<p><b>关键结构：</b>全池 82,170 只中，可直买 79,036（96.2%），14:30 涨停 3,134（3.8%）。<b>可直买组绝对收益 −0.204%（收涨率 41.3%）；涨停组 +1.286%（收涨率 55.9%）。</b>——即「前一日跌 &amp; 当日14:30涨」这个池子整体是负期望的，唯一的正 EV 藏在涨停组里。</p>
+
+<h2>2. 现行生产信号 MF top30 的真实质量</h2>
+<p>MF top30 = 池内 14:30 涨幅降序取前 30（涨停优先）。它看起来很强（全体 alpha +0.869%，t=7.63），但拆开看：</p>
+<svg viewBox="0 0 400 270" width="620"><text x="40" y="82" font-size="13" font-weight="700" fill="#1a1a1a">MF top30 分组 14:30 口径 alpha (%)</text><text x="180" y="114.0" font-size="11" fill="#6b7280" text-anchor="end">全体</text><rect x="182.8" y="98.8" width="103.4" height="22.4" fill="#cf1322" rx="2"/><text x="290.2" y="114.0" font-size="11" fill="#cf1322" text-anchor="start" font-weight="600">+0.87%</text><text x="180" y="154.0" font-size="11" fill="#6b7280" text-anchor="end">其中·涨停子集(排队)</text><rect x="182.8" y="138.8" width="136.0" height="22.4" fill="#cf1322" rx="2"/><text x="322.8" y="154.0" font-size="11" fill="#cf1322" text-anchor="start" font-weight="600">+1.14%</text><text x="180" y="194.0" font-size="11" fill="#6b7280" text-anchor="end">其中·可直买子集</text><rect x="182.8" y="178.8" width="6.5" height="22.4" fill="#6b7280" rx="2"/><text x="193.3" y="194.0" font-size="11" fill="#6b7280" text-anchor="start" font-weight="600">+0.06%</text><text x="180" y="234.0" font-size="11" fill="#6b7280" text-anchor="end">可直买子集(组合)</text><rect x="182.8" y="218.8" width="17.3" height="22.4" fill="#6b7280" rx="2"/><text x="204.1" y="234.0" font-size="11" fill="#6b7280" text-anchor="start" font-weight="600">+0.14%</text></svg>
+<p><b>alpha 几乎全部来自涨停子集</b>（+1.143%，t=7.33），而那部分需要打板排队才能成交；<b>占比 71.6% 的涨停票 + 剩下可直买部分 alpha≈0</b>。用户实际能买到的部分没有超额。</p>
+
+<h3>近两月「可直买部分」转负——与你的体感一致</h3>
+<svg viewBox="0 0 400 560" width="620"><text x="40" y="392" font-size="13" font-weight="700" fill="#1a1a1a">MF top30「可直买部分」月度 alpha (%) — 近两月转负</text><rect x="52.6" y="488.6" width="31.5" height="31.4" fill="#389e0d" rx="2"/><text x="68.3" y="485.6" font-size="10.5" fill="#389e0d" text-anchor="middle" font-weight="600">-0.06</text><text x="68.3" y="534" font-size="10.5" fill="#6b7280" text-anchor="middle">04</text><rect x="109.3" y="505.2" width="31.5" height="14.8" fill="#389e0d" rx="2"/><text x="125.0" y="502.2" font-size="10.5" fill="#389e0d" text-anchor="middle" font-weight="600">-0.24</text><text x="125.0" y="534" font-size="10.5" fill="#6b7280" text-anchor="middle">05</text><rect x="165.9" y="401.8" width="31.5" height="118.2" fill="#cf1322" rx="2"/><text x="181.7" y="398.8" font-size="10.5" fill="#cf1322" text-anchor="middle" font-weight="600">0.88</text><text x="181.7" y="534" font-size="10.5" fill="#6b7280" text-anchor="middle">06</text><rect x="222.6" y="429.5" width="31.5" height="90.5" fill="#cf1322" rx="2"/><text x="238.3" y="426.5" font-size="10.5" fill="#cf1322" text-anchor="middle" font-weight="600">0.58</text><text x="238.3" y="534" font-size="10.5" fill="#6b7280" text-anchor="middle">07</text><rect x="279.3" y="497.8" width="31.5" height="22.2" fill="#389e0d" rx="2"/><text x="295.0" y="494.8" font-size="10.5" fill="#389e0d" text-anchor="middle" font-weight="600">-0.16</text><text x="295.0" y="534" font-size="10.5" fill="#6b7280" text-anchor="middle">08</text><rect x="335.9" y="513.5" width="31.5" height="6.5" fill="#389e0d" rx="2"/><text x="351.7" y="510.5" font-size="10.5" fill="#389e0d" text-anchor="middle" font-weight="600">-0.33</text><text x="351.7" y="534" font-size="10.5" fill="#6b7280" text-anchor="middle">09</text></svg><p class="legend">MF top30 可直买部分月度 alpha：4 月 −0.06% / 5 月 −0.24% / 6 月 +0.88% / 7 月 +0.58% / <b>8 月 −0.16% / 9 月 −0.33%</b>。近两个月为负。</p>
+
+<h2>3. 14:30 可执行规则（口径A）——无一显著</h2>
+<p>在可直买子集上，用 14:30 可知特征扫描单条件与组合（alpha 相对可买基准，IS/OOS 切点 2026-07-20）：</p>
+<table>
+<tr><th>规则</th><th>全样本 alpha</th><th>t</th><th>OOS alpha</th><th>OOS t</th></tr>
+<tr><td>基线·全可直买</td><td class='num'>0.000%</td><td class='num'>+1.09</td><td class='num'>—%</td><td class='num'>—</td></tr><tr><td>chg≥2</td><td class='num'>-0.041%</td><td class='num'>-1.16</td><td class='num'>-0.102%</td><td class='num'>-1.69</td></tr><tr><td>chg≥2 且 量比≤1.0</td><td class='num'><b>+0.093</b>%</td><td class='num'>+1.08</td><td class='num'>+0.068%</td><td class='num'>+0.42</td></tr><tr><td>chg≥3 且 振幅≤3</td><td class='num'>+0.547%</td><td class='num'>+1.70</td><td class='num'>+0.036%</td><td class='num'>+0.05</td></tr><tr><td>rs≥0（相对强度≥0）</td><td class='num'>+0.014%</td><td class='num'>+0.78</td><td class='num'>+0.023%</td><td class='num'>+0.82</td></tr><tr><td>股价≥50</td><td class='num'>+0.010%</td><td class='num'>+0.09</td><td class='num'>-0.220%</td><td class='num'>-1.21</td></tr><tr><td>换手≥5</td><td class='num'>-0.136%</td><td class='num'>-1.48</td><td class='num'>-0.230%</td><td class='num'>-1.66</td></tr>
+</table>
+<p>最好的一条（chg≥2 且 量比≤1.0）也只有 +0.093%、t=1.08（不显著，jackknife 最坏 |t|=0.75）。<b>结论：14:30 直买方向上，没有找到比「什么都不买」更好的规则。</b></p>
+
+<h2>4. 前视伪影：此前的「尾盘走强」信号是假的</h2>
+<p><code>drift = 收盘 / 14:30 − 1</code>（尾盘涨跌）。它<b>只能收盘后才知道</b>。此前的做法是拿 14:30 入场收益去评估它——等于免费获得「14:30→收盘」那段涨幅。同一批票、两种口径对照：</p>
+<svg viewBox="0 0 400 330" width="620"><text x="40" y="82" font-size="13" font-weight="700" fill="#1a1a1a">drift 规则：错口径 vs 正确口径 alpha (%)</text><text x="180" y="112.3" font-size="11" fill="#6b7280" text-anchor="end">drift>0（14:30口径·错）</text><rect x="182.8" y="98.1" width="30.1" height="20.5" fill="#cf1322" rx="2"/><text x="216.9" y="112.3" font-size="11" fill="#cf1322" text-anchor="start" font-weight="600">+0.24%</text><text x="180" y="149.0" font-size="11" fill="#6b7280" text-anchor="end">drift>0（收盘口径·对）</text><rect x="166.2" y="134.7" width="16.6" height="20.5" fill="#389e0d" rx="2"/><text x="162.2" y="149.0" font-size="11" fill="#389e0d" text-anchor="end" font-weight="600">-0.13%</text><text x="180" y="185.7" font-size="11" fill="#6b7280" text-anchor="end">drift>0.3（错）</text><rect x="182.8" y="171.4" width="47.7" height="20.5" fill="#cf1322" rx="2"/><text x="234.5" y="185.7" font-size="11" fill="#cf1322" text-anchor="start" font-weight="600">+0.38%</text><text x="180" y="222.3" font-size="11" fill="#6b7280" text-anchor="end">drift>0.3（对）</text><rect x="149.8" y="208.1" width="33.0" height="20.5" fill="#389e0d" rx="2"/><text x="145.8" y="222.3" font-size="11" fill="#389e0d" text-anchor="end" font-weight="600">-0.27%</text><text x="180" y="259.0" font-size="11" fill="#6b7280" text-anchor="end">drift>1.0（错）</text><rect x="182.8" y="244.7" width="134.5" height="20.5" fill="#cf1322" rx="2"/><text x="321.3" y="259.0" font-size="11" fill="#cf1322" text-anchor="start" font-weight="600">+1.08%</text><text x="180" y="295.7" font-size="11" fill="#6b7280" text-anchor="end">drift>1.0（对）</text><rect x="124.2" y="281.4" width="58.6" height="20.5" fill="#389e0d" rx="2"/><text x="120.2" y="295.7" font-size="11" fill="#389e0d" text-anchor="end" font-weight="600">-0.47%</text></svg>
+<p class="legend">红=错误口径（从 14:30 入场，把尾盘涨幅算进收益，虚高）；绿=正确口径（从收盘入场）。drift 与次日收益的真实相关为 <b>IC=−0.052（t=−4.87）</b>——尾盘越强，次日越弱。</p>
+<div class="k warn"><b>含义：</b>号称「14:30 可买且显著（t≈8）」的尾盘选股，用能真实成交的口径重测是 <b>−0.47%/t=−4.19</b>。若照它下单，是在<b>系统性地买在尾盘高点</b>。</div>
+
+<h2>5. 若允许收盘下单（口径B）——真实有效的是「反向」</h2>
+<p>收盘下单时 drift 已可知。全量扫描后，唯一经 BH 多重检验仍显著的正向规则，恰是<b>反向</b>：</p>
+<table>
+<tr><th>规则（可直买）</th><th>alpha</th><th>t</th><th>绝对收益</th><th>OOS alpha</th><th>OOS t</th></tr>
+<tr><td>drift&lt;-0.10（尾盘走弱）</td><td class='num pos'>+0.131%</td><td class='num'>+4.22</td><td class='num'>-0.121%</td><td class='num'>+0.101%</td><td class='num'>+1.71</td></tr><tr><td>drift&gt;+0.19（尾盘走强）</td><td class='num pos'>-0.217%</td><td class='num'>-6.82</td><td class='num'>-0.473%</td><td class='num'>-0.194%</td><td class='num'>-3.65</td></tr><tr><td>day_chg&gt;2.23</td><td class='num pos'>-0.123%</td><td class='num'>-3.07</td><td class='num'>-0.279%</td><td class='num'>-0.221%</td><td class='num'>-3.19</td></tr><tr><td>vr&gt;1.27</td><td class='num pos'>-0.083%</td><td class='num'>-2.39</td><td class='num'>-0.177%</td><td class='num'>-0.050%</td><td class='num'>-1.15</td></tr>
+</table>
+<p><b>drift&lt;−0.10（买「尾盘走弱」的票）</b>：alpha +0.131%、t=+4.22（|t| 大于 Bonferroni 阈值 3.69），样本外 +0.101%（t=1.71）。但<b>绝对收益仍是 −0.121%</b>，扣 0.20% 往返成本后为负——它是「少亏」，不是「能赚」。</p>
+
+<h2>6. 唯一正 EV：涨停组（需打板能力），且正在衰减</h2>
+<svg viewBox="0 0 400 300" width="620"><text x="40" y="82" font-size="13" font-weight="700" fill="#1a1a1a">涨停组绝对 execA 月度 (%)</text><rect x="52.6" y="104.2" width="31.5" height="135.8" fill="#cf1322" rx="2"/><text x="68.3" y="101.2" font-size="10.5" fill="#cf1322" text-anchor="middle" font-weight="600">1.63</text><text x="68.3" y="254" font-size="10.5" fill="#6b7280" text-anchor="middle">04</text><rect x="109.3" y="131.7" width="31.5" height="108.3" fill="#cf1322" rx="2"/><text x="125.0" y="128.7" font-size="10.5" fill="#cf1322" text-anchor="middle" font-weight="600">1.3</text><text x="125.0" y="254" font-size="10.5" fill="#6b7280" text-anchor="middle">05</text><rect x="165.9" y="139.2" width="31.5" height="100.8" fill="#cf1322" rx="2"/><text x="181.7" y="136.2" font-size="10.5" fill="#cf1322" text-anchor="middle" font-weight="600">1.21</text><text x="181.7" y="254" font-size="10.5" fill="#6b7280" text-anchor="middle">06</text><rect x="222.6" y="125.8" width="31.5" height="114.2" fill="#cf1322" rx="2"/><text x="238.3" y="122.8" font-size="10.5" fill="#cf1322" text-anchor="middle" font-weight="600">1.37</text><text x="238.3" y="254" font-size="10.5" fill="#6b7280" text-anchor="middle">07</text><rect x="279.3" y="125.0" width="31.5" height="115.0" fill="#cf1322" rx="2"/><text x="295.0" y="122.0" font-size="10.5" fill="#cf1322" text-anchor="middle" font-weight="600">1.38</text><text x="295.0" y="254" font-size="10.5" fill="#6b7280" text-anchor="middle">08</text><rect x="335.9" y="178.3" width="31.5" height="61.7" fill="#d48806" rx="2"/><text x="351.7" y="175.3" font-size="10.5" fill="#d48806" text-anchor="middle" font-weight="600">0.74</text><text x="351.7" y="254" font-size="10.5" fill="#6b7280" text-anchor="middle">09</text></svg>
+<p>涨停组绝对 execA：4 月 +1.63% → 9 月 <b>+0.74%</b>；次日收涨率 59.8% → <b>48.0%</b>。历史累计封住率约 97.7%（见 <code>seal_verify.json</code>），炸板风险在放大。</p>
+
+<h3>涨停组内择股：低活跃度 / 早板更强</h3>
+<p><code>activity</code>（活跃度，由 14:30 前的换手/量比/振幅合成，1 低→5 高）在涨停组内与次日延续<b>单调负相关</b>：</p>
+<table>
+<tr><th>活跃度档</th><th>样本</th><th>次日 execA</th><th>次日收涨率</th></tr>
+<tr><td>activity = 1</td><td class='num'>28</td><td class='num pos'>+6.10%</td><td class='num pos'>82.1%</td></tr><tr><td>activity = 2</td><td class='num'>62</td><td class='num pos'>+3.62%</td><td class='num pos'>67.7%</td></tr><tr><td>activity = 3</td><td class='num'>266</td><td class='num pos'>+2.61%</td><td class='num pos'>65.4%</td></tr><tr><td>activity = 4</td><td class='num'>1587</td><td class='num pos'>+1.24%</td><td class='num pos'>55.8%</td></tr><tr><td>activity = 5</td><td class='num'>1191</td><td class='num pos'>+0.82%</td><td class='num pos'>52.7%</td></tr><tr><td>全部涨停组（对照）</td><td class='num'>3134</td><td class='num pos'>+1.29%</td><td class='num pos'>55.9%</td></tr>
+</table>
+<svg viewBox="0 0 400 260" width="620"><text x="40" y="82" font-size="13" font-weight="700" fill="#1a1a1a">涨停组内：按活跃度分档 execA (%)</text><text x="180" y="110.0" font-size="11" fill="#6b7280" text-anchor="end">activity=1 (n=28)</text><rect x="182.8" y="97.0" width="134.0" height="17.9" fill="#cf1322" rx="2"/><text x="320.8" y="110.0" font-size="11" fill="#cf1322" text-anchor="start" font-weight="600">+6.10%</text><text x="180" y="142.0" font-size="11" fill="#6b7280" text-anchor="end">=2 (n=62)</text><rect x="182.8" y="129.0" width="79.5" height="17.9" fill="#cf1322" rx="2"/><text x="266.3" y="142.0" font-size="11" fill="#cf1322" text-anchor="start" font-weight="600">+3.62%</text><text x="180" y="174.0" font-size="11" fill="#6b7280" text-anchor="end">=3 (n=266)</text><rect x="182.8" y="161.0" width="57.3" height="17.9" fill="#cf1322" rx="2"/><text x="244.1" y="174.0" font-size="11" fill="#cf1322" text-anchor="start" font-weight="600">+2.61%</text><text x="180" y="206.0" font-size="11" fill="#6b7280" text-anchor="end">=4 (n=1587)</text><rect x="182.8" y="193.0" width="27.2" height="17.9" fill="#d48806" rx="2"/><text x="214.0" y="206.0" font-size="11" fill="#d48806" text-anchor="start" font-weight="600">+1.24%</text><text x="180" y="238.0" font-size="11" fill="#6b7280" text-anchor="end">=5 (n=1191)</text><rect x="182.8" y="225.0" width="18.0" height="17.9" fill="#d48806" rx="2"/><text x="204.8" y="238.0" font-size="11" fill="#d48806" text-anchor="start" font-weight="600">+0.82%</text></svg>
+<p><b>候选规则（打板口径）</b>：<code>14:30 涨停(chg≥9.5) 且 activity≤3</code> —— 组内 alpha <b>+1.71%（t=4.91）</b>、jackknife 最坏 |t|=4.74、绝对 execA <b>+3.06%</b>、收涨率 <b>67.1%</b>（n=356，约 3 只/天）。<b>但</b>样本外（后 15 天）+1.33%（t=1.41，未达显著），且该子集随月份缩小（占涨停组 14%→4%）。经济含义：涨停来得越早、换手/振幅越小＝封得越稳、越少分歧，次日承接越强。</p>
+
+<h2>7. 建议（按可否打板分岔）</h2>
+<div class="k ok">
+<b>A. 若只能市价直买（不能打板）</b>
+<ul>
+<li><b>把 MF top30 里的涨停票标记为「不可直买」</b>，可直买部分不构成买入依据（alpha≈0）。</li>
+<li>直买方向上<b>没有找到正 EV 规则</b>；本池整体负期望，最优是「不买」或极低频。若坚持参与，只能靠<b>反向过滤</b>：回避涨幅大 / 换手高 / 量比高 / 尾盘走强的票（这些方向显著为负）。</li>
+<li><b>不要采用</b>任何以 <code>drift/尾盘</code> 为买入依据的规则——那是前视伪影。</li>
+</ul>
+</div>
+<div class="k ok">
+<b>B. 若具备打板/排队能力</b>
+<ul>
+<li>焦点放在<b>涨停组</b>：唯一正 EV 子集（+1.29%/55.9%），并接受其近月衰减。</li>
+<li>组内优先<b>低活跃度/早板</b>（<code>activity≤3</code>）：绝对 execA +3.06%、收涨率 67.1%（样本小、样本外未达显著，需持续跟踪）。</li>
+<li>用 <code>seal_verify.json</code> 的逐日封住率做风控监控。</li>
+</ul>
+</div>
+
+<h2>8. 局限（务必阅读）</h2>
+<ul>
+<li>样本 112 个交易日（2026-04-10 ~ 09-18），单一年度区间，未覆盖完整牛熊；OOS 仅 45 天（涨停组内候选仅 15 天）。</li>
+<li>涨停组假设「能在涨停价排队成交」，未建模队列位置与成交概率；实际成交率会显著影响结果。</li>
+<li>口径A 收益为次日 11:30 卖出，未含次日盘中更深回撤/更高冲高的路径依赖。</li>
+<li>成本假设往返 0.20%（佣金+印花税+滑点）；口径B 最优规则扣成本后仍为负。</li>
+<li>所有「显著」均以「天」为独立观测的 t 检验；多重检验已用 BH/Bonferroni 交叉核对。</li>
+</ul>
+
+<div class="foot">
+数据来源：<code>site/data/*.json</code>（沪深主板，前一日跌 &amp; 当日14:30涨池，逐日回填快照）；
+产物：<code>site/analysis/better_rules.json</code>、<code>closebuy_rules.json</code>、<code>zt_select.json</code>；
+脚本：<code>research_better_rules.py</code>、<code>research_closebuy.py</code>、<code>research_zt.py</code>。
+生成时间 2026-09-21 14:55。<br>
+<b>免责声明：</b>本报告为量化研究记录，非投资建议。历史统计不代表未来表现，A 股 T+1 与涨跌停制度、流动性与冲击成本均可能使实盘结果显著劣于回测。据此操作，风险自负。
+</div>
+</div></body></html>
