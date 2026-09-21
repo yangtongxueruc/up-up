@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-18 10:41",
- "baseline": 40.3,
- "n": 80555,
+ "generated_at": "2026-09-21 10:33",
+ "baseline": 40.4,
+ "n": 80928,
  "best": null,
  "forward_gate": {
   "name": "换手≥3% 且 量比≤1.0 且 活跃度≥3",
@@ -23,22 +23,22 @@
    ]
   ],
   "train_excess": 4.4,
-  "test_n": 1684,
+  "test_n": 1686,
   "test_hr": 45.1,
-  "test_base": 42.2,
-  "oos_excess": 2.9,
+  "test_base": 42.5,
+  "oos_excess": 2.6,
   "pos_days": 34,
   "beat_days": 16,
   "passed": false,
   "reason": "胜出天数不足(16/34)",
   "split": 66,
   "train_days": 66,
-  "test_days": 44
+  "test_days": 45
  },
  "forward_validation": {
-  "checked_at": "2026-09-18 10:41",
-  "method": "时序holdout：前66天重新探索 → 后44天检验",
-  "best_oos_excess": 2.9,
+  "checked_at": "2026-09-21 10:33",
+  "method": "时序holdout：前66天重新探索 → 后45天检验",
+  "best_oos_excess": 2.6,
   "best_oos_pos_folds": "16/34",
   "passed": false,
   "verdict": "未通过前向检验（胜出天数不足(16/34)），不提升为主规则",
@@ -55,12 +55,12 @@
      50
     ]
    ],
-   "n": 5590,
+   "n": 5610,
    "hr": 45.0,
    "mean_ret": 0.03,
-   "excess": 4.7,
+   "excess": 4.6,
    "days_beat": 62,
-   "days_total": 109
+   "days_total": 110
   },
   {
    "name": "换手≥5%",
@@ -72,12 +72,12 @@
      5
     ]
    ],
-   "n": 10748,
-   "hr": 44.3,
+   "n": 10800,
+   "hr": 44.4,
    "mean_ret": -0.09,
    "excess": 4.0,
    "days_beat": 62,
-   "days_total": 110
+   "days_total": 111
   },
   {
    "name": "换手≥4%",
@@ -89,12 +89,12 @@
      4
     ]
    ],
-   "n": 15020,
-   "hr": 44.0,
-   "mean_ret": -0.12,
+   "n": 15088,
+   "hr": 44.1,
+   "mean_ret": -0.11,
    "excess": 3.7,
    "days_beat": 64,
-   "days_total": 110
+   "days_total": 111
   },
   {
    "name": "换手≥3% 且 量比≤1.0 且 活跃度≥3",
@@ -116,10 +116,10 @@
      3
     ]
    ],
-   "n": 7693,
+   "n": 7695,
    "hr": 43.8,
    "mean_ret": -0.17,
-   "excess": 3.5,
+   "excess": 3.4,
    "days_beat": 58,
    "days_total": 100
   },
@@ -133,12 +133,12 @@
      3
     ]
    ],
-   "n": 21684,
-   "hr": 43.6,
-   "mean_ret": -0.14,
-   "excess": 3.4,
+   "n": 21775,
+   "hr": 43.7,
+   "mean_ret": -0.13,
+   "excess": 3.3,
    "days_beat": 64,
-   "days_total": 110
+   "days_total": 111
   },
   {
    "name": "股价≥20",
@@ -150,12 +150,29 @@
      20
     ]
    ],
-   "n": 21097,
-   "hr": 42.9,
-   "mean_ret": -0.16,
+   "n": 21187,
+   "hr": 43.0,
+   "mean_ret": -0.15,
    "excess": 2.6,
-   "days_beat": 68,
-   "days_total": 110
+   "days_beat": 69,
+   "days_total": 111
+  },
+  {
+   "name": "活跃度≥4",
+   "known": false,
+   "conds": [
+    [
+     "activity",
+     ">=",
+     4
+    ]
+   ],
+   "n": 27202,
+   "hr": 42.7,
+   "mean_ret": -0.19,
+   "excess": 2.3,
+   "days_beat": 64,
+   "days_total": 111
   },
   {
    "name": "换手≥3% 且 量比≤1.0 且 活跃度≥3 且 股价≤20",
@@ -182,29 +199,12 @@
      20
     ]
    ],
-   "n": 4580,
+   "n": 4582,
    "hr": 42.7,
    "mean_ret": -0.25,
-   "excess": 2.4,
+   "excess": 2.3,
    "days_beat": 57,
    "days_total": 100
-  },
-  {
-   "name": "活跃度≥4",
-   "known": false,
-   "conds": [
-    [
-     "activity",
-     ">=",
-     4
-    ]
-   ],
-   "n": 27054,
-   "hr": 42.6,
-   "mean_ret": -0.2,
-   "excess": 2.3,
-   "days_beat": 64,
-   "days_total": 110
   },
   {
    "name": "换手≥2%",
@@ -216,12 +216,12 @@
      2
     ]
    ],
-   "n": 33967,
-   "hr": 42.5,
+   "n": 34095,
+   "hr": 42.6,
    "mean_ret": -0.19,
    "excess": 2.2,
    "days_beat": 60,
-   "days_total": 110
+   "days_total": 111
   },
   {
    "name": "涨幅≤0.3% 且 换手≥3% 且 股价≤20",
@@ -246,7 +246,7 @@
    "n": 632,
    "hr": 42.4,
    "mean_ret": -0.43,
-   "excess": 2.1,
+   "excess": 2.0,
    "days_beat": 49,
    "days_total": 91
   },
@@ -265,12 +265,12 @@
      3
     ]
    ],
-   "n": 2241,
-   "hr": 42.2,
+   "n": 2247,
+   "hr": 42.3,
    "mean_ret": -0.31,
    "excess": 1.9,
-   "days_beat": 57,
-   "days_total": 108
+   "days_beat": 58,
+   "days_total": 109
   },
   {
    "name": "振幅≥4%",
@@ -282,12 +282,12 @@
      4
     ]
    ],
-   "n": 35262,
-   "hr": 41.9,
+   "n": 35387,
+   "hr": 42.0,
    "mean_ret": -0.26,
-   "excess": 1.7,
+   "excess": 1.6,
    "days_beat": 66,
-   "days_total": 110
+   "days_total": 111
   },
   {
    "name": "涨幅≤0.6% 且 换手≥2% 且 振幅≥3%",
@@ -309,29 +309,12 @@
      3
     ]
    ],
-   "n": 2991,
-   "hr": 41.8,
-   "mean_ret": -0.33,
+   "n": 3002,
+   "hr": 41.9,
+   "mean_ret": -0.32,
    "excess": 1.5,
-   "days_beat": 51,
-   "days_total": 108
-  },
-  {
-   "name": "振幅≥3%",
-   "known": false,
-   "conds": [
-    [
-     "amplitude",
-     ">=",
-     3
-    ]
-   ],
-   "n": 50741,
-   "hr": 41.5,
-   "mean_ret": -0.26,
-   "excess": 1.3,
-   "days_beat": 68,
-   "days_total": 110
+   "days_beat": 52,
+   "days_total": 109
   },
   {
    "name": "活跃度≥3",
@@ -343,12 +326,12 @@
      3
     ]
    ],
-   "n": 60759,
-   "hr": 41.6,
-   "mean_ret": -0.23,
+   "n": 61061,
+   "hr": 41.7,
+   "mean_ret": -0.22,
    "excess": 1.3,
-   "days_beat": 66,
-   "days_total": 110
+   "days_beat": 67,
+   "days_total": 111
   },
   {
    "name": "涨幅≤0.3% 且 换手≥2%",
@@ -365,12 +348,29 @@
      2
     ]
    ],
-   "n": 2031,
-   "hr": 41.6,
-   "mean_ret": -0.3,
+   "n": 2036,
+   "hr": 41.7,
+   "mean_ret": -0.29,
    "excess": 1.3,
-   "days_beat": 52,
-   "days_total": 106
+   "days_beat": 53,
+   "days_total": 107
+  },
+  {
+   "name": "振幅≥3%",
+   "known": false,
+   "conds": [
+    [
+     "amplitude",
+     ">=",
+     3
+    ]
+   ],
+   "n": 50944,
+   "hr": 41.6,
+   "mean_ret": -0.25,
+   "excess": 1.2,
+   "days_beat": 68,
+   "days_total": 111
   },
   {
    "name": "涨幅≤0.3% 且 换手≥3% 且 量比≤1.2",
@@ -395,7 +395,7 @@
    "n": 744,
    "hr": 41.4,
    "mean_ret": -0.42,
-   "excess": 1.1,
+   "excess": 1.0,
    "days_beat": 36,
    "days_total": 78
   },
@@ -419,12 +419,12 @@
      3
     ]
    ],
-   "n": 4095,
-   "hr": 41.1,
-   "mean_ret": -0.32,
+   "n": 4108,
+   "hr": 41.2,
+   "mean_ret": -0.31,
    "excess": 0.8,
-   "days_beat": 51,
-   "days_total": 109
+   "days_beat": 52,
+   "days_total": 110
   },
   {
    "name": "振幅≥2%",
@@ -436,12 +436,12 @@
      2
     ]
    ],
-   "n": 68487,
-   "hr": 41.0,
-   "mean_ret": -0.25,
+   "n": 68783,
+   "hr": 41.1,
+   "mean_ret": -0.24,
    "excess": 0.7,
    "days_beat": 63,
-   "days_total": 110
+   "days_total": 111
   },
   {
    "name": "换手≥1%",
@@ -453,12 +453,12 @@
      1
     ]
    ],
-   "n": 58239,
-   "hr": 40.9,
-   "mean_ret": -0.25,
+   "n": 58452,
+   "hr": 41.0,
+   "mean_ret": -0.24,
    "excess": 0.6,
-   "days_beat": 65,
-   "days_total": 110
+   "days_beat": 66,
+   "days_total": 111
   },
   {
    "name": "涨幅≤0.6% 且 换手≥2% 且 振幅≥3% 且 股价≤20",
@@ -485,12 +485,12 @@
      20
     ]
    ],
-   "n": 1893,
-   "hr": 40.7,
-   "mean_ret": -0.38,
-   "excess": 0.5,
-   "days_beat": 50,
-   "days_total": 106
+   "n": 1902,
+   "hr": 41.0,
+   "mean_ret": -0.37,
+   "excess": 0.6,
+   "days_beat": 51,
+   "days_total": 107
   },
   {
    "name": "涨幅≤1.0% 且 换手≥2%",
@@ -507,12 +507,12 @@
      2
     ]
    ],
-   "n": 7413,
-   "hr": 40.7,
-   "mean_ret": -0.33,
+   "n": 7439,
+   "hr": 40.9,
+   "mean_ret": -0.32,
    "excess": 0.4,
-   "days_beat": 52,
-   "days_total": 110
+   "days_beat": 53,
+   "days_total": 111
   },
   {
    "name": "涨幅≤0.6% 且 换手≥2% 且 股价≤20",
@@ -534,12 +534,12 @@
      20
     ]
    ],
-   "n": 2870,
-   "hr": 39.7,
-   "mean_ret": -0.36,
+   "n": 2880,
+   "hr": 39.9,
+   "mean_ret": -0.35,
    "excess": -0.5,
-   "days_beat": 45,
-   "days_total": 108
+   "days_beat": 46,
+   "days_total": 109
   },
   {
    "name": "股价≤20",
@@ -551,15 +551,15 @@
      20
     ]
    ],
-   "n": 59474,
-   "hr": 39.3,
+   "n": 59757,
+   "hr": 39.5,
    "mean_ret": -0.27,
    "excess": -0.9,
    "days_beat": 42,
-   "days_total": 110
+   "days_total": 111
   },
   {
-   "name": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "name": "涨幅≤0.6% 且 换手≥2% 且 股价≤10",
    "known": false,
    "conds": [
     [
@@ -573,17 +573,17 @@
      2
     ],
     [
-     "vr",
+     "price",
      "<=",
-     1.0
+     10
     ]
    ],
-   "n": 2554,
-   "hr": 39.2,
-   "mean_ret": -0.4,
+   "n": 1542,
+   "hr": 39.4,
+   "mean_ret": -0.32,
    "excess": -1.0,
-   "days_beat": 37,
-   "days_total": 86
+   "days_beat": 43,
+   "days_total": 102
   }
  ]
 }
