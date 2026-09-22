@@ -161,9 +161,15 @@ font-size:14px;line-height:1;padding:0;font-family:inherit}
 #uptip b{color:#ffd666}
 @media (max-width:720px){.calwrap{gap:12px}.mcard{flex:1 1 100%;max-width:none}}
 
+.dpfloat .dpbtn{background:#fff;box-shadow:0 6px 20px rgba(0,0,0,.13);border-color:#e3e6eb}
+.dpfloat .dpbtn:hover{box-shadow:0 8px 24px rgba(47,84,235,.20)}
+.dpfloat .dplab{background:#fff;border:1px solid #eef0f3;padding:1px 7px;border-radius:6px}
+.dpfloat{pointer-events:none}
+.dpfloat .dpbox{pointer-events:auto}
+.dprow.dpfloat{position:sticky;top:14px;z-index:300;margin:0 0 10px}
 .tchgb{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;font-weight:700;margin-left:3px;letter-spacing:-.2px;cursor:help;white-space:nowrap;opacity:.95}
 body.themehead .tchgb-more{display:none}</style></head><body class='themehead'>
-<div class='dprow'><span class='dplab'>切换日期</span><div class='dpbox' id='dpbox'><button type='button' class='dpbtn' id='dpbtn' title='切换 / 查询日期'><span class='cal'>📅</span><span class='cur'>2026-09-22</span><span class='arw'>▾</span></button><div class='dppop' id='dppop'></div></div></div>
+<div class='dprow dpfloat'><span class='dplab'>切换日期</span><div class='dpbox' id='dpbox'><button type='button' class='dpbtn' id='dpbtn' title='切换 / 查询日期'><span class='cal'>📅</span><span class='cur'>2026-09-22</span><span class='arw'>▾</span></button><div class='dppop' id='dppop'></div></div></div>
 <h1>A股主板（2026-09-22 锚点）：2026-09-22 14:30 上涨 且 2026-09-21 收跌 的个股</h1>
 <div class='sub'>筛选条件（通用，按锚点日平移）：① <b>2026-09-22</b> 下午14:30 股价 &gt; <b>2026-09-21</b> 收盘（当日上涨）；② <b>2026-09-21</b> 收盘 &lt; <b>2026-09-18</b> 收盘（前交易日收跌）。<br>
 列出：<b>2026-09-23</b> 上午收盘（11:30）。数据来源：日线取自新浪财经，分时取自新浪财经（5分钟K线）。本页 14:30快照，待次日回填。</div>
