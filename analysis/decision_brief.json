@@ -8,8 +8,8 @@
   "buy_n": 79727,
   "cost": 0.2,
   "zt_thr": 9.5,
-  "generated_at": "2026-09-22 14:10",
-  "elapsed": 0.6
+  "generated_at": "2026-09-22 14:14",
+  "elapsed": 0.7
  },
  "benchmark": [
   {
@@ -53,15 +53,13 @@
   "zt_share": 71.6
  },
  "forward": {
-  "checked_at": "2026-09-22 14:09",
-  "method": "时序holdout：前67天重新探索 → 后45天检验",
-  "best_oos_excess": 2.2,
-  "best_oos_pos_folds": "17/34",
+  "checked_at": "2026-09-22 14:14",
+  "method": "时序holdout：前67天重新探索 → 后46天检验",
+  "best_oos_excess": 2.1,
+  "best_oos_pos_folds": "17/35",
   "passed": false,
-  "verdict": "未通过前向检验（胜出天数边界 50.0% 虽满足 raw gate，但全样本无候选达 +8pp 提升阈值），不提升为主规则",
-  "source": "validate_rule.forward_gate",
-  "boundary_note": "门禁边界通过（胜出 17/34 恰为 50.0%），但全样本无候选达 +8pp 提升阈值 → 无可提升规则",
-  "raw_gate_passed": true
+  "verdict": "未通过前向检验（胜出天数不足(17/35)），不提升为主规则",
+  "source": "validate_rule.forward_gate"
  },
  "rulesA": [
   {
