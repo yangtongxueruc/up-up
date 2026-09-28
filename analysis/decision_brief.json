@@ -8,7 +8,7 @@
   "buy_n": 80386,
   "cost": 0.2,
   "zt_thr": 9.5,
-  "generated_at": "2026-09-25 10:33",
+  "generated_at": "2026-09-28 10:32",
   "elapsed": 0.5
  },
  "benchmark": [
@@ -53,7 +53,7 @@
   "zt_share": 71.6
  },
  "forward": {
-  "checked_at": "2026-09-25 10:33",
+  "checked_at": "2026-09-28 10:31",
   "method": "时序holdout：前69天重新探索 → 后46天检验",
   "best_oos_excess": 2.7,
   "best_oos_pos_folds": "17/34",
