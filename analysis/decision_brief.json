@@ -1,67 +1,65 @@
 {
  "meta": {
-  "D": 115,
-  "N": 83554,
+  "D": 116,
+  "N": 84151,
   "start": "2026-04-10",
-  "end": "2026-09-23",
-  "zt_n": 3168,
-  "buy_n": 80386,
+  "end": "2026-09-24",
+  "zt_n": 3187,
+  "buy_n": 80964,
   "cost": 0.2,
   "zt_thr": 9.5,
-  "generated_at": "2026-09-28 10:32",
-  "elapsed": 0.5
+  "generated_at": "2026-09-29 10:33",
+  "elapsed": 0.6
  },
  "benchmark": [
   {
    "label": "① 全池（符合条件即买，含涨停）",
-   "days": 115,
-   "n": 83554,
-   "per_day": 726.6,
-   "day_mean": -0.048,
-   "cum_gross": -6.1,
-   "cum_net": -25.4,
-   "win": 41.8,
+   "days": 116,
+   "n": 84151,
+   "per_day": 725.4,
+   "day_mean": -0.06,
+   "cum_gross": -7.4,
+   "cum_net": -26.6,
+   "win": 41.6,
    "payoff": 1.2,
    "breakeven": 45.5
   },
   {
    "label": "② 可直买组（14:30 未涨停，市价可成交）",
-   "days": 115,
-   "n": 80386,
-   "per_day": 699.0,
-   "day_mean": -0.1,
-   "cum_gross": -11.5,
-   "cum_net": -29.7,
-   "win": 41.2,
+   "days": 116,
+   "n": 80964,
+   "per_day": 698.0,
+   "day_mean": -0.111,
+   "cum_gross": -12.7,
+   "cum_net": -30.8,
+   "win": 41.1,
    "payoff": 1.15,
-   "breakeven": 46.5
+   "breakeven": 46.6
   },
   {
    "label": "③ 14:30 涨停组（需挂单排队，非市价可得）",
-   "days": 115,
-   "n": 3168,
+   "days": 116,
+   "n": 3187,
    "per_day": 27.5,
-   "day_mean": 1.037,
-   "cum_gross": 219.4,
-   "cum_net": 154.3,
-   "win": 55.7,
-   "payoff": 1.48,
-   "breakeven": 40.3
+   "day_mean": 1.003,
+   "cum_gross": 210.2,
+   "cum_net": 146.4,
+   "win": 55.6,
+   "payoff": 1.47,
+   "breakeven": 40.5
   }
  ],
  "mf": {
   "zt_share": 71.6
  },
  "forward": {
-  "checked_at": "2026-09-28 10:31",
-  "method": "时序holdout：前69天重新探索 → 后46天检验",
-  "best_oos_excess": 2.7,
-  "best_oos_pos_folds": "17/34",
+  "checked_at": "2026-09-29 10:33",
+  "method": "时序holdout：前69天重新探索 → 后47天检验",
+  "best_oos_excess": 3.0,
+  "best_oos_pos_folds": "17/35",
   "passed": false,
-  "verdict": "未通过前向检验（胜出天数边界 50.0% 虽满足 raw gate，但全样本无候选达 +8pp 提升阈值），不提升为主规则",
-  "source": "validate_rule.forward_gate",
-  "boundary_note": "门禁边界通过（胜出 17/34 恰为 50.0%），但全样本无候选达 +8pp 提升阈值 → 无可提升规则",
-  "raw_gate_passed": true
+  "verdict": "未通过前向检验（胜出天数不足(17/35)），不提升为主规则",
+  "source": "validate_rule.forward_gate"
  },
  "rulesA": [
   {
