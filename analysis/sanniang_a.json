@@ -1,0 +1,229 @@
+{
+ "rule": {
+  "name": "三娘验证A",
+  "scope": "A股主板（600/601/603/605/000/001/002/003）· 不要求前一日下跌",
+  "basis": "14:30",
+  "criteria": {
+   "chg_pct": [
+    3.0,
+    5.0
+   ],
+   "vol_ratio_min": 1.0,
+   "turnover_pct": [
+    5.0,
+    10.0
+   ],
+   "float_mktcap_yi": [
+    50.0,
+    200.0
+   ]
+  },
+  "display": "14:30 涨幅 3%~5% ＆ 量比>1 ＆ 换手率 5%~10% ＆ 流通市值 50亿~200亿",
+  "note": "全市场独立筛选，与「前收跌 ∩ 14:30 上涨」主池近乎正交。历史期望未验证为正，按「前向验证」跟踪，不作为买入信号。"
+ },
+ "latest": {
+  "date": "2026-10-14",
+  "members": [
+   {
+    "code": "002667",
+    "sym": "sz002667",
+    "name": "*ST威领",
+    "p1430": 28.18,
+    "chg1430": 4.95,
+    "chg_close": 8.04,
+    "turnover1430": 8.93,
+    "float_mktcap_yi": 68.64,
+    "vol_ratio": 1.18
+   },
+   {
+    "code": "601116",
+    "sym": "sh601116",
+    "name": "三江购物",
+    "p1430": 10.85,
+    "chg1430": 4.93,
+    "chg_close": 5.9,
+    "turnover1430": 6.94,
+    "float_mktcap_yi": 59.97,
+    "vol_ratio": 3.65
+   },
+   {
+    "code": "001283",
+    "sym": "sz001283",
+    "name": "豪鹏科技",
+    "p1430": 49.53,
+    "chg1430": 4.91,
+    "chg_close": 5.4,
+    "turnover1430": 5.39,
+    "float_mktcap_yi": 51.45,
+    "vol_ratio": 1.65
+   },
+   {
+    "code": "600403",
+    "sym": "sh600403",
+    "name": "大有能源",
+    "p1430": 7.55,
+    "chg1430": 4.28,
+    "chg_close": 5.39,
+    "turnover1430": 5.05,
+    "float_mktcap_yi": 182.42,
+    "vol_ratio": 1.36
+   },
+   {
+    "code": "603124",
+    "sym": "sh603124",
+    "name": "江南新材",
+    "p1430": 113.72,
+    "chg1430": 4.19,
+    "chg_close": 3.92,
+    "turnover1430": 7.78,
+    "float_mktcap_yi": 88.03,
+    "vol_ratio": 1.4
+   },
+   {
+    "code": "603216",
+    "sym": "sh603216",
+    "name": "梦天家居",
+    "p1430": 25.9,
+    "chg1430": 4.1,
+    "chg_close": 5.31,
+    "turnover1430": 5.65,
+    "float_mktcap_yi": 58.34,
+    "vol_ratio": 1.58
+   },
+   {
+    "code": "601566",
+    "sym": "sh601566",
+    "name": "九牧王",
+    "p1430": 10.18,
+    "chg1430": 4.09,
+    "chg_close": 4.7,
+    "turnover1430": 8.35,
+    "float_mktcap_yi": 58.84,
+    "vol_ratio": 1.95
+   },
+   {
+    "code": "600792",
+    "sym": "sh600792",
+    "name": "云煤能源",
+    "p1430": 4.99,
+    "chg1430": 3.74,
+    "chg_close": 3.95,
+    "turnover1430": 8.61,
+    "float_mktcap_yi": 55.5,
+    "vol_ratio": 1.22
+   }
+  ],
+  "diag": {
+   "all_a": 5573,
+   "base_n": 1282,
+   "fetched": 1281,
+   "band_3_5": 24,
+   "band_turn": 8,
+   "final": 8
+  }
+ },
+ "history": [
+  {
+   "date": "2026-10-14",
+   "members": [
+    {
+     "code": "002667",
+     "sym": "sz002667",
+     "name": "*ST威领",
+     "p1430": 28.18,
+     "chg1430": 4.95,
+     "chg_close": 8.04,
+     "turnover1430": 8.93,
+     "float_mktcap_yi": 68.64,
+     "vol_ratio": 1.18
+    },
+    {
+     "code": "601116",
+     "sym": "sh601116",
+     "name": "三江购物",
+     "p1430": 10.85,
+     "chg1430": 4.93,
+     "chg_close": 5.9,
+     "turnover1430": 6.94,
+     "float_mktcap_yi": 59.97,
+     "vol_ratio": 3.65
+    },
+    {
+     "code": "001283",
+     "sym": "sz001283",
+     "name": "豪鹏科技",
+     "p1430": 49.53,
+     "chg1430": 4.91,
+     "chg_close": 5.4,
+     "turnover1430": 5.39,
+     "float_mktcap_yi": 51.45,
+     "vol_ratio": 1.65
+    },
+    {
+     "code": "600403",
+     "sym": "sh600403",
+     "name": "大有能源",
+     "p1430": 7.55,
+     "chg1430": 4.28,
+     "chg_close": 5.39,
+     "turnover1430": 5.05,
+     "float_mktcap_yi": 182.42,
+     "vol_ratio": 1.36
+    },
+    {
+     "code": "603124",
+     "sym": "sh603124",
+     "name": "江南新材",
+     "p1430": 113.72,
+     "chg1430": 4.19,
+     "chg_close": 3.92,
+     "turnover1430": 7.78,
+     "float_mktcap_yi": 88.03,
+     "vol_ratio": 1.4
+    },
+    {
+     "code": "603216",
+     "sym": "sh603216",
+     "name": "梦天家居",
+     "p1430": 25.9,
+     "chg1430": 4.1,
+     "chg_close": 5.31,
+     "turnover1430": 5.65,
+     "float_mktcap_yi": 58.34,
+     "vol_ratio": 1.58
+    },
+    {
+     "code": "601566",
+     "sym": "sh601566",
+     "name": "九牧王",
+     "p1430": 10.18,
+     "chg1430": 4.09,
+     "chg_close": 4.7,
+     "turnover1430": 8.35,
+     "float_mktcap_yi": 58.84,
+     "vol_ratio": 1.95
+    },
+    {
+     "code": "600792",
+     "sym": "sh600792",
+     "name": "云煤能源",
+     "p1430": 4.99,
+     "chg1430": 3.74,
+     "chg_close": 3.95,
+     "turnover1430": 8.61,
+     "float_mktcap_yi": 55.5,
+     "vol_ratio": 1.22
+    }
+   ],
+   "diag": {
+    "all_a": 5573,
+    "base_n": 1282,
+    "fetched": 1281,
+    "band_3_5": 24,
+    "band_turn": 8,
+    "final": 8
+   }
+  }
+ ],
+ "generated_at": "2026-10-14 15:38:30"
+}
