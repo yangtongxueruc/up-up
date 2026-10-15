@@ -35,7 +35,9 @@
     "chg_close": 8.04,
     "turnover1430": 8.93,
     "float_mktcap_yi": 68.64,
-    "vol_ratio": 1.18
+    "vol_ratio": 1.18,
+    "p_next": 29.23,
+    "r_next": 3.73
    },
    {
     "code": "601116",
@@ -48,7 +50,9 @@
     "chg_close": 5.9,
     "turnover1430": 6.94,
     "float_mktcap_yi": 59.97,
-    "vol_ratio": 3.65
+    "vol_ratio": 3.65,
+    "p_next": 10.47,
+    "r_next": -3.5
    },
    {
     "code": "001283",
@@ -61,7 +65,9 @@
     "chg_close": 5.4,
     "turnover1430": 5.39,
     "float_mktcap_yi": 51.45,
-    "vol_ratio": 1.65
+    "vol_ratio": 1.65,
+    "p_next": 48.75,
+    "r_next": -1.57
    },
    {
     "code": "600403",
@@ -74,7 +80,9 @@
     "chg_close": 5.39,
     "turnover1430": 5.05,
     "float_mktcap_yi": 182.42,
-    "vol_ratio": 1.36
+    "vol_ratio": 1.36,
+    "p_next": 7.12,
+    "r_next": -5.7
    },
    {
     "code": "603124",
@@ -87,7 +95,9 @@
     "chg_close": 3.92,
     "turnover1430": 7.78,
     "float_mktcap_yi": 88.03,
-    "vol_ratio": 1.4
+    "vol_ratio": 1.4,
+    "p_next": 106.62,
+    "r_next": -6.24
    },
    {
     "code": "603216",
@@ -100,7 +110,9 @@
     "chg_close": 5.31,
     "turnover1430": 5.65,
     "float_mktcap_yi": 58.34,
-    "vol_ratio": 1.58
+    "vol_ratio": 1.58,
+    "p_next": 25.42,
+    "r_next": -1.85
    },
    {
     "code": "601566",
@@ -113,7 +125,9 @@
     "chg_close": 4.7,
     "turnover1430": 8.35,
     "float_mktcap_yi": 58.84,
-    "vol_ratio": 1.95
+    "vol_ratio": 1.95,
+    "p_next": 9.77,
+    "r_next": -4.03
    },
    {
     "code": "600792",
@@ -126,7 +140,9 @@
     "chg_close": 3.95,
     "turnover1430": 8.61,
     "float_mktcap_yi": 55.5,
-    "vol_ratio": 1.22
+    "vol_ratio": 1.22,
+    "p_next": 4.59,
+    "r_next": -8.02
    }
   ],
   "diag": {
@@ -136,7 +152,9 @@
    "band_3_5": 24,
    "band_turn": 8,
    "final": 8
-  }
+  },
+  "mean_r_next": -3.4,
+  "n_r_next": 8
  },
  "history": [
   {
@@ -153,7 +171,9 @@
      "chg_close": 8.04,
      "turnover1430": 8.93,
      "float_mktcap_yi": 68.64,
-     "vol_ratio": 1.18
+     "vol_ratio": 1.18,
+     "p_next": 29.23,
+     "r_next": 3.73
     },
     {
      "code": "601116",
@@ -166,7 +186,9 @@
      "chg_close": 5.9,
      "turnover1430": 6.94,
      "float_mktcap_yi": 59.97,
-     "vol_ratio": 3.65
+     "vol_ratio": 3.65,
+     "p_next": 10.47,
+     "r_next": -3.5
     },
     {
      "code": "001283",
@@ -179,7 +201,9 @@
      "chg_close": 5.4,
      "turnover1430": 5.39,
      "float_mktcap_yi": 51.45,
-     "vol_ratio": 1.65
+     "vol_ratio": 1.65,
+     "p_next": 48.75,
+     "r_next": -1.57
     },
     {
      "code": "600403",
@@ -192,7 +216,9 @@
      "chg_close": 5.39,
      "turnover1430": 5.05,
      "float_mktcap_yi": 182.42,
-     "vol_ratio": 1.36
+     "vol_ratio": 1.36,
+     "p_next": 7.12,
+     "r_next": -5.7
     },
     {
      "code": "603124",
@@ -205,7 +231,9 @@
      "chg_close": 3.92,
      "turnover1430": 7.78,
      "float_mktcap_yi": 88.03,
-     "vol_ratio": 1.4
+     "vol_ratio": 1.4,
+     "p_next": 106.62,
+     "r_next": -6.24
     },
     {
      "code": "603216",
@@ -218,7 +246,9 @@
      "chg_close": 5.31,
      "turnover1430": 5.65,
      "float_mktcap_yi": 58.34,
-     "vol_ratio": 1.58
+     "vol_ratio": 1.58,
+     "p_next": 25.42,
+     "r_next": -1.85
     },
     {
      "code": "601566",
@@ -231,7 +261,9 @@
      "chg_close": 4.7,
      "turnover1430": 8.35,
      "float_mktcap_yi": 58.84,
-     "vol_ratio": 1.95
+     "vol_ratio": 1.95,
+     "p_next": 9.77,
+     "r_next": -4.03
     },
     {
      "code": "600792",
@@ -244,7 +276,9 @@
      "chg_close": 3.95,
      "turnover1430": 8.61,
      "float_mktcap_yi": 55.5,
-     "vol_ratio": 1.22
+     "vol_ratio": 1.22,
+     "p_next": 4.59,
+     "r_next": -8.02
     }
    ],
    "diag": {
@@ -254,8 +288,11 @@
     "band_3_5": 24,
     "band_turn": 8,
     "final": 8
-   }
+   },
+   "mean_r_next": -3.4,
+   "n_r_next": 8
   }
  ],
- "generated_at": "2026-10-14 15:55:09"
+ "generated_at": "2026-10-14 15:55:09",
+ "backfilled_at": "2026-10-15 13:12:48"
 }
