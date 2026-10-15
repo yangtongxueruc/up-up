@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-15 11:33",
- "baseline": 40.5,
- "n": 90235,
+ "generated_at": "2026-10-14 10:36",
+ "baseline": 40.7,
+ "n": 88866,
  "best": null,
  "forward_gate": {
   "name": "换手≥3% 且 量比≤1.0 且 活跃度≥3",
@@ -23,27 +23,27 @@
    ]
   ],
   "train_excess": 2.8,
-  "test_n": 1085,
-  "test_hr": 52.9,
-  "test_base": 42.1,
-  "oos_excess": 10.8,
-  "pos_days": 35,
+  "test_n": 1079,
+  "test_hr": 53.2,
+  "test_base": 42.7,
+  "oos_excess": 10.5,
+  "pos_days": 34,
   "beat_days": 18,
   "passed": true,
   "reason": "通过",
   "split": 73,
   "train_days": 73,
-  "test_days": 50
+  "test_days": 49
  },
  "forward_validation": {
-  "checked_at": "2026-10-15 11:33",
-  "method": "时序holdout：前73天重新探索 → 后50天检验",
-  "best_oos_excess": 10.8,
-  "best_oos_pos_folds": "18/35",
+  "checked_at": "2026-10-14 10:36",
+  "method": "时序holdout：前73天重新探索 → 后49天检验",
+  "best_oos_excess": 10.5,
+  "best_oos_pos_folds": "18/34",
   "passed": false,
-  "verdict": "未通过前向检验（raw gate 胜出 18/35 虽满足 ≥50%，但全样本无候选达 +8pp 提升阈值），不提升为主规则",
+  "verdict": "未通过前向检验（raw gate 胜出 18/34 虽满足 ≥50%，但全样本无候选达 +8pp 提升阈值），不提升为主规则",
   "source": "validate_rule.forward_gate",
-  "boundary_note": "raw gate 通过（胜出 18/35 = 51.4%），但全样本无候选达 +8pp 提升阈值 → 无可提升规则",
+  "boundary_note": "raw gate 通过（胜出 18/34 = 52.9%），但全样本无候选达 +8pp 提升阈值 → 无可提升规则",
   "raw_gate_passed": true
  },
  "candidates": [
@@ -57,12 +57,12 @@
      50
     ]
    ],
-   "n": 6099,
-   "hr": 44.2,
-   "mean_ret": -0.04,
+   "n": 6038,
+   "hr": 44.4,
+   "mean_ret": -0.03,
    "excess": 3.7,
-   "days_beat": 67,
-   "days_total": 122
+   "days_beat": 66,
+   "days_total": 121
   },
   {
    "name": "换手≥5%",
@@ -74,12 +74,29 @@
      5
     ]
    ],
-   "n": 11814,
+   "n": 11637,
+   "hr": 44.0,
+   "mean_ret": -0.13,
+   "excess": 3.3,
+   "days_beat": 66,
+   "days_total": 122
+  },
+  {
+   "name": "换手≥4%",
+   "known": false,
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     4
+    ]
+   ],
+   "n": 16173,
    "hr": 43.8,
-   "mean_ret": -0.14,
-   "excess": 3.4,
-   "days_beat": 67,
-   "days_total": 123
+   "mean_ret": -0.15,
+   "excess": 3.1,
+   "days_beat": 70,
+   "days_total": 122
   },
   {
    "name": "换手≥3% 且 量比≤1.0 且 活跃度≥3",
@@ -101,29 +118,12 @@
      3
     ]
    ],
-   "n": 7762,
+   "n": 7756,
    "hr": 43.8,
    "mean_ret": -0.17,
-   "excess": 3.3,
-   "days_beat": 61,
-   "days_total": 108
-  },
-  {
-   "name": "换手≥4%",
-   "known": false,
-   "conds": [
-    [
-     "turnover",
-     ">=",
-     4
-    ]
-   ],
-   "n": 16421,
-   "hr": 43.6,
-   "mean_ret": -0.15,
    "excess": 3.1,
-   "days_beat": 71,
-   "days_total": 123
+   "days_beat": 61,
+   "days_total": 107
   },
   {
    "name": "换手≥3%",
@@ -135,12 +135,12 @@
      3
     ]
    ],
-   "n": 23744,
-   "hr": 43.1,
-   "mean_ret": -0.17,
+   "n": 23359,
+   "hr": 43.4,
+   "mean_ret": -0.16,
    "excess": 2.7,
-   "days_beat": 72,
-   "days_total": 123
+   "days_beat": 71,
+   "days_total": 122
   },
   {
    "name": "股价≥20",
@@ -152,12 +152,12 @@
      20
     ]
    ],
-   "n": 23277,
-   "hr": 42.7,
+   "n": 23005,
+   "hr": 42.8,
    "mean_ret": -0.18,
-   "excess": 2.2,
-   "days_beat": 76,
-   "days_total": 123
+   "excess": 2.1,
+   "days_beat": 75,
+   "days_total": 122
   },
   {
    "name": "换手≥3% 且 量比≤1.0 且 活跃度≥3 且 股价≤20",
@@ -184,29 +184,12 @@
      20
     ]
    ],
-   "n": 4646,
+   "n": 4640,
    "hr": 42.7,
    "mean_ret": -0.25,
-   "excess": 2.2,
+   "excess": 2.0,
    "days_beat": 60,
-   "days_total": 108
-  },
-  {
-   "name": "换手≥2%",
-   "known": false,
-   "conds": [
-    [
-     "turnover",
-     ">=",
-     2
-    ]
-   ],
-   "n": 37292,
-   "hr": 41.9,
-   "mean_ret": -0.22,
-   "excess": 1.4,
-   "days_beat": 64,
-   "days_total": 123
+   "days_total": 107
   },
   {
    "name": "涨幅≤0.3% 且 换手≥3% 且 股价≤20",
@@ -228,12 +211,29 @@
      20
     ]
    ],
-   "n": 703,
-   "hr": 41.8,
-   "mean_ret": -0.47,
-   "excess": 1.3,
+   "n": 692,
+   "hr": 42.5,
+   "mean_ret": -0.43,
+   "excess": 1.8,
    "days_beat": 55,
-   "days_total": 101
+   "days_total": 100
+  },
+  {
+   "name": "换手≥2%",
+   "known": false,
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     2
+    ]
+   ],
+   "n": 36641,
+   "hr": 42.1,
+   "mean_ret": -0.21,
+   "excess": 1.5,
+   "days_beat": 64,
+   "days_total": 122
   },
   {
    "name": "活跃度≥4",
@@ -245,12 +245,12 @@
      4
     ]
    ],
-   "n": 31238,
-   "hr": 41.4,
-   "mean_ret": -0.25,
-   "excess": 0.9,
+   "n": 30286,
+   "hr": 41.9,
+   "mean_ret": -0.24,
+   "excess": 1.2,
    "days_beat": 68,
-   "days_total": 123
+   "days_total": 122
   },
   {
    "name": "涨幅≤0.6% 且 换手≥3%",
@@ -267,12 +267,12 @@
      3
     ]
    ],
-   "n": 2489,
-   "hr": 41.4,
-   "mean_ret": -0.37,
-   "excess": 0.9,
+   "n": 2448,
+   "hr": 41.7,
+   "mean_ret": -0.36,
+   "excess": 1.0,
    "days_beat": 62,
-   "days_total": 121
+   "days_total": 120
   },
   {
    "name": "活跃度≥3",
@@ -284,12 +284,29 @@
      3
     ]
    ],
-   "n": 68665,
-   "hr": 41.3,
-   "mean_ret": -0.24,
-   "excess": 0.8,
+   "n": 67359,
+   "hr": 41.5,
+   "mean_ret": -0.23,
+   "excess": 0.9,
    "days_beat": 70,
-   "days_total": 123
+   "days_total": 122
+  },
+  {
+   "name": "振幅≥4%",
+   "known": false,
+   "conds": [
+    [
+     "amplitude",
+     ">=",
+     4
+    ]
+   ],
+   "n": 37924,
+   "hr": 41.5,
+   "mean_ret": -0.28,
+   "excess": 0.8,
+   "days_beat": 69,
+   "days_total": 122
   },
   {
    "name": "涨幅≤0.3% 且 换手≥3% 且 量比≤1.2",
@@ -311,29 +328,12 @@
      1.2
     ]
    ],
-   "n": 748,
-   "hr": 41.3,
+   "n": 747,
+   "hr": 41.4,
    "mean_ret": -0.42,
-   "excess": 0.8,
+   "excess": 0.7,
    "days_beat": 36,
    "days_total": 78
-  },
-  {
-   "name": "振幅≥4%",
-   "known": false,
-   "conds": [
-    [
-     "amplitude",
-     ">=",
-     4
-    ]
-   ],
-   "n": 38962,
-   "hr": 41.0,
-   "mean_ret": -0.29,
-   "excess": 0.5,
-   "days_beat": 69,
-   "days_total": 123
   },
   {
    "name": "振幅≥3%",
@@ -345,29 +345,12 @@
      3
     ]
    ],
-   "n": 56079,
-   "hr": 40.8,
-   "mean_ret": -0.28,
-   "excess": 0.3,
+   "n": 54835,
+   "hr": 41.2,
+   "mean_ret": -0.27,
+   "excess": 0.5,
    "days_beat": 71,
-   "days_total": 123
-  },
-  {
-   "name": "振幅≥2%",
-   "known": false,
-   "conds": [
-    [
-     "amplitude",
-     ">=",
-     2
-    ]
-   ],
-   "n": 76098,
-   "hr": 40.7,
-   "mean_ret": -0.25,
-   "excess": 0.2,
-   "days_beat": 66,
-   "days_total": 123
+   "days_total": 122
   },
   {
    "name": "涨幅≤0.3% 且 换手≥2%",
@@ -384,29 +367,29 @@
      2
     ]
    ],
-   "n": 2258,
-   "hr": 40.6,
-   "mean_ret": -0.36,
-   "excess": 0.1,
+   "n": 2221,
+   "hr": 41.1,
+   "mean_ret": -0.34,
+   "excess": 0.4,
    "days_beat": 56,
-   "days_total": 119
+   "days_total": 118
   },
   {
-   "name": "换手≥1%",
+   "name": "振幅≥2%",
    "known": false,
    "conds": [
     [
-     "turnover",
+     "amplitude",
      ">=",
-     1
+     2
     ]
    ],
-   "n": 64223,
-   "hr": 40.4,
-   "mean_ret": -0.26,
-   "excess": -0.0,
-   "days_beat": 69,
-   "days_total": 123
+   "n": 74750,
+   "hr": 41.0,
+   "mean_ret": -0.25,
+   "excess": 0.3,
+   "days_beat": 66,
+   "days_total": 122
   },
   {
    "name": "涨幅≤0.6% 且 换手≥2% 且 振幅≥3%",
@@ -428,12 +411,29 @@
      3
     ]
    ],
-   "n": 3358,
-   "hr": 40.3,
-   "mean_ret": -0.41,
-   "excess": -0.2,
+   "n": 3270,
+   "hr": 40.8,
+   "mean_ret": -0.4,
+   "excess": 0.1,
    "days_beat": 56,
-   "days_total": 121
+   "days_total": 120
+  },
+  {
+   "name": "换手≥1%",
+   "known": false,
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     1
+    ]
+   ],
+   "n": 63119,
+   "hr": 40.7,
+   "mean_ret": -0.26,
+   "excess": 0.0,
+   "days_beat": 69,
+   "days_total": 122
   },
   {
    "name": "涨幅≤0.6% 且 换手≥2% 且 活跃度≥3",
@@ -455,12 +455,12 @@
      3
     ]
    ],
-   "n": 4597,
-   "hr": 40.0,
-   "mean_ret": -0.38,
-   "excess": -0.5,
+   "n": 4508,
+   "hr": 40.4,
+   "mean_ret": -0.37,
+   "excess": -0.3,
    "days_beat": 56,
-   "days_total": 122
+   "days_total": 121
   },
   {
    "name": "涨幅≤1.0% 且 换手≥2%",
@@ -477,46 +477,12 @@
      2
     ]
    ],
-   "n": 8266,
-   "hr": 39.9,
-   "mean_ret": -0.38,
-   "excess": -0.6,
+   "n": 8090,
+   "hr": 40.3,
+   "mean_ret": -0.37,
+   "excess": -0.4,
    "days_beat": 57,
-   "days_total": 123
-  },
-  {
-   "name": "股价≤20",
-   "known": false,
-   "conds": [
-    [
-     "price",
-     "<=",
-     20
-    ]
-   ],
-   "n": 66976,
-   "hr": 39.7,
-   "mean_ret": -0.26,
-   "excess": -0.8,
-   "days_beat": 47,
-   "days_total": 123
-  },
-  {
-   "name": "量比≤1.2",
-   "known": false,
-   "conds": [
-    [
-     "vr",
-     "<=",
-     1.2
-    ]
-   ],
-   "n": 52792,
-   "hr": 39.5,
-   "mean_ret": -0.28,
-   "excess": -1.0,
-   "days_beat": 57,
-   "days_total": 123
+   "days_total": 122
   },
   {
    "name": "涨幅≤0.6% 且 换手≥2% 且 振幅≥3% 且 股价≤20",
@@ -543,15 +509,49 @@
      20
     ]
    ],
-   "n": 2143,
-   "hr": 39.4,
-   "mean_ret": -0.44,
-   "excess": -1.1,
+   "n": 2076,
+   "hr": 40.1,
+   "mean_ret": -0.42,
+   "excess": -0.6,
    "days_beat": 55,
-   "days_total": 119
+   "days_total": 118
   },
   {
-   "name": "涨幅≤0.6% 且 换手≥2% 且 量比≤1.0",
+   "name": "股价≤20",
+   "known": false,
+   "conds": [
+    [
+     "price",
+     "<=",
+     20
+    ]
+   ],
+   "n": 65878,
+   "hr": 39.9,
+   "mean_ret": -0.25,
+   "excess": -0.7,
+   "days_beat": 47,
+   "days_total": 122
+  },
+  {
+   "name": "量比≤1.2",
+   "known": false,
+   "conds": [
+    [
+     "vr",
+     "<=",
+     1.2
+    ]
+   ],
+   "n": 52604,
+   "hr": 39.6,
+   "mean_ret": -0.28,
+   "excess": -1.1,
+   "days_beat": 56,
+   "days_total": 122
+  },
+  {
+   "name": "涨幅≤0.6% 且 换手≥2% 且 股价≤20",
    "known": false,
    "conds": [
     [
@@ -565,17 +565,17 @@
      2
     ],
     [
-     "vr",
+     "price",
      "<=",
-     1.0
+     20
     ]
    ],
-   "n": 2575,
-   "hr": 39.2,
-   "mean_ret": -0.4,
-   "excess": -1.3,
-   "days_beat": 38,
-   "days_total": 89
+   "n": 3144,
+   "hr": 39.6,
+   "mean_ret": -0.37,
+   "excess": -1.1,
+   "days_beat": 50,
+   "days_total": 120
   }
  ]
 }
