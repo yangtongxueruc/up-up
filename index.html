@@ -191,8 +191,8 @@ body.themehead .tchgb-more{display:none}</style></head><body>
   <div class='dash-title'>两市成交额（沪 + 深）</div>
   <div class='cards'>
     <div class='stat'><div class='n'>12830 亿</div><div class='l'>2026-10-19 成交额<br>(截止14:30)</div></div>
-    <div class='stat'><div class='n'>— 亿</div><div class='l'>2026-10-16 成交额<br>(待补齐)</div></div>
-    <div class='stat'><div class='n'>待次日补齐</div><div class='l'>上一交易日<br>成交额</div></div>
+    <div class='stat'><div class='n'>13248 亿</div><div class='l'>2026-10-16 成交额<br>(14:30)</div></div>
+    <div class='stat grn'><div class='n'>-418 亿</div><div class='l'>较上一交易日<br>绝对值变化</div></div><div class='stat grn'><div class='n'>-3.16%</div><div class='l'>较上一交易日<br>百分比变化</div></div>
   </div>
   <div class='note'>口径：上证指数成交额 + 深证成指成交额（东方财富“两市”口径）。当日与上一交易日均为「截止14:30」同口径，可直接相减比较；正值=放量，负值=缩量。颜色：红=放量，绿=缩量。</div>
 </div>
@@ -205,15 +205,15 @@ body.themehead .tchgb-more{display:none}</style></head><body>
 
 <div class='legend' style='margin-top:6px;font-weight:600'>主信号（样本外验证有效）</div>
 <div class='cards'>
-<div class='stat' style='background:#fff7f6;border:1px solid #ffa39e'><div class='n' style='color:#d4380d'>4</div><div class='l'>动量 S 命中<br>(涨幅≥2% 且 振幅≤3%)</div></div>
+<div class='stat' style='background:#fff7f6;border:1px solid #ffa39e'><div class='n' style='color:#d4380d'>6</div><div class='l'>动量 S 命中<br>(涨幅≥2% 且 振幅≤3%)</div></div>
 <div class='stat' style='background:#e6f7ff;border:1px solid #91caff'><div class='n' style='color:#2f54eb'>30</div><div class='l'>动量 MF Top30 命中<br>(涨幅排序 涨停优先)</div></div>
 <div class='stat' style='background:#f6ffed;border:1px solid #b7eb8f'><div class='n' style='color:#389e0d'>1</div><div class='l'>同时命中 S + MF<br>(双主信号共振)</div></div>
 </div>
 <div class='legend' style='margin-top:6px;color:#b7b7b7;font-size:12px'>已证伪规则（仅参考计数，不作为推荐）</div>
 <div class='cards'>
-<div class='stat' style='background:#fafafa'><div class='n' style='color:#b7b7b7'>37</div><div class='l'>规则 A（已证伪）</div></div>
-<div class='stat' style='background:#fafafa'><div class='n' style='color:#b7b7b7'>0</div><div class='l'>规则 C（已证伪）</div></div>
-<div class='stat' style='background:#fafafa'><div class='n' style='color:#b7b7b7'>0</div><div class='l'>同时命中 A 与 C（已证伪）</div></div>
+<div class='stat' style='background:#fafafa'><div class='n' style='color:#b7b7b7'>41</div><div class='l'>规则 A（已证伪）</div></div>
+<div class='stat' style='background:#fafafa'><div class='n' style='color:#b7b7b7'>1</div><div class='l'>规则 C（已证伪）</div></div>
+<div class='stat' style='background:#fafafa'><div class='n' style='color:#b7b7b7'>1</div><div class='l'>同时命中 A 与 C（已证伪）</div></div>
 </div>
 <div class='stat'><div class='n' style='font-size:17px'>涨</div><div class='l'>今日大盘 regime<br>(沪深300 +0.31%)</div></div><div class='stat grn'><div class='n'>显著</div><div class='l' style='color:#d4380d'>动量 S 可信度<br>截至此前 72天：alpha +0.66%，t=+3.8，胜出 48/72</div></div><div class='stat grn'><div class='n'>显著</div><div class='l' style='color:#2f54eb'>动量 MF 可信度<br>截至此前 119天：alpha +0.89%，t=+7.4，胜出 90/119</div></div><div class='legend' style='margin-top:6px'>主信号可信度＝横截面 alpha（个股次日收益−当日均值），t 以「天」为独立观测：|t|≥2 显著、|t|&lt;0.5 未证实、其余按方向标正/负。数字为<b>截止当日 14:30 筛选时点</b>的历史滚动统计（只含此前命中日，无前视），随日期累积演化。⚠️ 规则A 经 64 锚点全量重验<b>整体超额≈0，已证伪</b>，不再展示。详见分析页。</div><div class='stat grn' title='尾盘SC 用真实 P&L(exec=T+1 11:30/T 14:30−1) 口径；因其由 drift 定义，fwd(对收盘)会被 drift 系统性压低呈假阴性，故不沿用动量S/MF 的 fwd-alpha。全样本上涨率 +57.0%(基准 41.5%) 超额 +15.1pp；OOS(后40%日) exec-alpha +0.83% t=+3.8 胜出 24/32。截至此前 79 天滚动。'><div class='n'>显著</div><div class='l' style='color:#08979c'>尾盘SC 可信度（exec口径）<br>截至此前 79天：exec-alpha +1.08%，t=+8.5，胜出 66/79</div></div><div class='legend' style='margin-top:6px'>尾盘SC 可信度＝横截面 <b>exec-alpha</b>（个股次日收益−当日均值，真实 14:30→次早 P&L），t 以「天」为独立观测。⚠️ 与上方动量S/MF 的 fwd-alpha 不同口径：SC 由「尾盘走强(drift)」定义，fwd(对收盘)会被 drift 系统性压低而呈假阴性，故 SC 用 exec 才反映真实择优能力。全样本 exec-alpha +1.08%、上涨率超额 +15.1pp；OOS 仍显著（后40%日 exec-alpha +0.83% t=+3.8）。</div><div class='cards'><div class='stat' style='flex:1 1 100%;background:#fff1f0;border:1px solid #ffa39e'><div class='n' style='font-size:15px;color:#cf1322'>⚠️ 换手≥3% 且 量比≤1.0 且 活跃度≥3</div><div class='l' style='color:#5a6068'><b style='color:#cf1322'>未通过前向检验 · 不作为推荐规则</b><br>样本内 <b>+3.5pp</b>（n=7781），但留出期检验样本外 <b style='color:#389e0d'>+13.8pp</b>（胜出 19/35 天）<br><span style='font-size:12px'>样本内超额主要来自选择偏差。</span></div><div style='margin-top:6px'><a href='deep_report.html' style='color:#2f54eb;font-size:12px'>查看完整样本外验证报告 →</a></div></div></div></div>
 <a class='fab fab-top' href='javascript:void(0)' onclick='window.scrollTo({top:0,behavior:"smooth"})' title='返回顶部' aria-label='返回顶部'><svg viewBox='0 0 24 24' width='22' height='22' fill='#2f54eb'><path d='M12 4l8 8h-5v8h-6v-8H4z'/></svg></a>
