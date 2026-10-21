@@ -35,7 +35,9 @@
     "chg_close": 4.92,
     "turnover1430": 5.75,
     "float_mktcap_yi": 69.15,
-    "vol_ratio": 1.93
+    "vol_ratio": 1.93,
+    "p_next": 16.67,
+    "r_next": 1.52
    },
    {
     "code": "002141",
@@ -48,7 +50,9 @@
     "chg_close": 4.34,
     "turnover1430": 9.63,
     "float_mktcap_yi": 57.22,
-    "vol_ratio": 1.05
+    "vol_ratio": 1.05,
+    "p_next": 5.58,
+    "r_next": 0.72
    },
    {
     "code": "001389",
@@ -61,7 +65,9 @@
     "chg_close": 4.53,
     "turnover1430": 5.57,
     "float_mktcap_yi": 191.14,
-    "vol_ratio": 1.08
+    "vol_ratio": 1.08,
+    "p_next": 123.62,
+    "r_next": -1.36
    },
    {
     "code": "603990",
@@ -74,7 +80,9 @@
     "chg_close": 3.92,
     "turnover1430": 5.18,
     "float_mktcap_yi": 61.54,
-    "vol_ratio": 1.29
+    "vol_ratio": 1.29,
+    "p_next": 20.55,
+    "r_next": 1.73
    },
    {
     "code": "002975",
@@ -87,7 +95,9 @@
     "chg_close": 4.08,
     "turnover1430": 6.0,
     "float_mktcap_yi": 121.61,
-    "vol_ratio": 1.1
+    "vol_ratio": 1.1,
+    "p_next": 90.06,
+    "r_next": 2.49
    },
    {
     "code": "002368",
@@ -100,7 +110,9 @@
     "chg_close": 3.69,
     "turnover1430": 6.35,
     "float_mktcap_yi": 82.17,
-    "vol_ratio": 4.94
+    "vol_ratio": 4.94,
+    "p_next": 14.67,
+    "r_next": 10.88
    },
    {
     "code": "002708",
@@ -113,7 +125,9 @@
     "chg_close": 3.89,
     "turnover1430": 7.06,
     "float_mktcap_yi": 76.29,
-    "vol_ratio": 1.96
+    "vol_ratio": 1.96,
+    "p_next": 14.67,
+    "r_next": -1.61
    },
    {
     "code": "603859",
@@ -126,7 +140,9 @@
     "chg_close": 3.71,
     "turnover1430": 8.02,
     "float_mktcap_yi": 98.49,
-    "vol_ratio": 4.97
+    "vol_ratio": 4.97,
+    "p_next": 41.86,
+    "r_next": 4.36
    },
    {
     "code": "002315",
@@ -139,7 +155,9 @@
     "chg_close": 3.22,
     "turnover1430": 5.29,
     "float_mktcap_yi": 67.73,
-    "vol_ratio": 1.64
+    "vol_ratio": 1.64,
+    "p_next": 25.35,
+    "r_next": -1.05
    }
   ],
   "diag": {
@@ -149,7 +167,9 @@
    "band_3_5": 69,
    "band_turn": 14,
    "final": 9
-  }
+  },
+  "mean_r_next": 1.96,
+  "n_r_next": 9
  },
  "history": [
   {
@@ -631,7 +651,9 @@
      "chg_close": 4.92,
      "turnover1430": 5.75,
      "float_mktcap_yi": 69.15,
-     "vol_ratio": 1.93
+     "vol_ratio": 1.93,
+     "p_next": 16.67,
+     "r_next": 1.52
     },
     {
      "code": "002141",
@@ -644,7 +666,9 @@
      "chg_close": 4.34,
      "turnover1430": 9.63,
      "float_mktcap_yi": 57.22,
-     "vol_ratio": 1.05
+     "vol_ratio": 1.05,
+     "p_next": 5.58,
+     "r_next": 0.72
     },
     {
      "code": "001389",
@@ -657,7 +681,9 @@
      "chg_close": 4.53,
      "turnover1430": 5.57,
      "float_mktcap_yi": 191.14,
-     "vol_ratio": 1.08
+     "vol_ratio": 1.08,
+     "p_next": 123.62,
+     "r_next": -1.36
     },
     {
      "code": "603990",
@@ -670,7 +696,9 @@
      "chg_close": 3.92,
      "turnover1430": 5.18,
      "float_mktcap_yi": 61.54,
-     "vol_ratio": 1.29
+     "vol_ratio": 1.29,
+     "p_next": 20.55,
+     "r_next": 1.73
     },
     {
      "code": "002975",
@@ -683,7 +711,9 @@
      "chg_close": 4.08,
      "turnover1430": 6.0,
      "float_mktcap_yi": 121.61,
-     "vol_ratio": 1.1
+     "vol_ratio": 1.1,
+     "p_next": 90.06,
+     "r_next": 2.49
     },
     {
      "code": "002368",
@@ -696,7 +726,9 @@
      "chg_close": 3.69,
      "turnover1430": 6.35,
      "float_mktcap_yi": 82.17,
-     "vol_ratio": 4.94
+     "vol_ratio": 4.94,
+     "p_next": 14.67,
+     "r_next": 10.88
     },
     {
      "code": "002708",
@@ -709,7 +741,9 @@
      "chg_close": 3.89,
      "turnover1430": 7.06,
      "float_mktcap_yi": 76.29,
-     "vol_ratio": 1.96
+     "vol_ratio": 1.96,
+     "p_next": 14.67,
+     "r_next": -1.61
     },
     {
      "code": "603859",
@@ -722,7 +756,9 @@
      "chg_close": 3.71,
      "turnover1430": 8.02,
      "float_mktcap_yi": 98.49,
-     "vol_ratio": 4.97
+     "vol_ratio": 4.97,
+     "p_next": 41.86,
+     "r_next": 4.36
     },
     {
      "code": "002315",
@@ -735,7 +771,9 @@
      "chg_close": 3.22,
      "turnover1430": 5.29,
      "float_mktcap_yi": 67.73,
-     "vol_ratio": 1.64
+     "vol_ratio": 1.64,
+     "p_next": 25.35,
+     "r_next": -1.05
     }
    ],
    "diag": {
@@ -745,8 +783,11 @@
     "band_3_5": 69,
     "band_turn": 14,
     "final": 9
-   }
+   },
+   "mean_r_next": 1.96,
+   "n_r_next": 9
   }
  ],
- "generated_at": "2026-10-20 14:34:32"
+ "generated_at": "2026-10-20 14:34:32",
+ "backfilled_at": "2026-10-21 11:50:00"
 }
