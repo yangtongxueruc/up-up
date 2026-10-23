@@ -4,23 +4,23 @@
  "prevprev_date": "2026-10-20",
  "anchor_close_date": "2026-10-22",
  "list_date": "2026-10-23",
- "list_filled": false,
- "snap_at": "2026-10-22 14:31:09",
+ "list_filled": true,
+ "snap_at": "2026-10-22 14:33:42",
  "snap_basis": "1430",
  "snap_basis_label": "14:30",
- "snap_dev_min": 1.2,
+ "snap_dev_min": 3.7,
  "snap_basis_ok": true,
  "down_total": 1796,
- "matched": 229,
- "market_change": -1.51,
+ "matched": 215,
+ "market_change": -1.56,
  "market_regime": "弱跌",
  "stocks": [
   {
    "code": "600004",
    "baseline": 7.72,
-   "anchor_close": null,
+   "anchor_close": 7.7,
    "t1430": 7.73,
-   "list_price": null,
+   "list_price": 7.75,
    "name": "白云机场",
    "theme": "机场航运",
    "business": "以航空地面客货过港服务为主业，以与航空主业相关的延伸服务为辅助，形成以客货过港为主线，配合客货代理、航空配餐、场所出租、住宿餐饮、广告、商贸等业务的立体服务系统。",
@@ -44,20 +44,55 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.39,
+   "pct_vs_anchor": 0.65
+  },
+  {
+   "code": "600009",
+   "baseline": 22.61,
+   "anchor_close": 22.66,
+   "t1430": 22.62,
+   "list_price": 22.84,
+   "name": "上海机场",
+   "theme": "机场航运 / 举牌,同花顺漂亮100,同花顺中特估100",
+   "business": "机场建设、施工、运营管理和与国内外航空运输有关的地面服务。",
+   "activity": 2,
+   "turn_raw": {
+    "turnover": 0.2,
+    "vr": 1.33,
+    "amplitude": 1.5479876160990775
+   },
+   "shape": {
+    "redraw": 0,
+    "pos_1130": 0.886,
+    "vol_trend": -0.139,
+    "amp_am": 1.548,
+    "chg_1130": 0.575,
+    "high_am": 0.752,
+    "low_am": -0.796,
+    "src": "live"
+   },
+   "risk": 0,
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 1.02,
+   "pct_vs_anchor": 0.79
   },
   {
    "code": "600012",
    "baseline": 17.1,
-   "anchor_close": null,
-   "t1430": 17.53,
-   "list_price": null,
+   "anchor_close": 17.42,
+   "t1430": 17.52,
+   "list_price": 17.59,
    "name": "皖通高速",
    "theme": "公路铁路运输",
    "business": "持有、经营及开发安徽省境内外的收费高速公路及公路。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.41,
+    "turnover": 0.42,
     "vr": 2.38,
     "amplitude": 3.625730994152052
    },
@@ -72,14 +107,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.87,
+   "pct_vs_anchor": 0.98
   },
   {
    "code": "600030",
    "baseline": 25.01,
-   "anchor_close": null,
-   "t1430": 25.16,
-   "list_price": null,
+   "anchor_close": 25.28,
+   "t1430": 25.18,
+   "list_price": 25.19,
    "name": "中信证券",
    "theme": "资本市场服务",
    "business": "主要从事证券承销和上市推荐证券自营买卖资产管理和证券代理买卖等业务。",
@@ -100,21 +137,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.72,
+   "pct_vs_anchor": -0.36
   },
   {
    "code": "600031",
    "baseline": 17.69,
-   "anchor_close": null,
-   "t1430": 17.76,
-   "list_price": null,
+   "anchor_close": 17.82,
+   "t1430": 17.81,
+   "list_price": 18.02,
    "name": "三一重工",
    "theme": "工程机械 / 同花顺出海50",
    "business": "工程机械产品及配件的开发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.48,
-    "vr": 1.77,
+    "turnover": 0.49,
+    "vr": 1.78,
     "amplitude": 2.148106274731501
    },
    "shape": {
@@ -128,17 +167,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 1.87,
+   "pct_vs_anchor": 1.12
   },
   {
    "code": "600084",
    "baseline": 4.09,
-   "anchor_close": null,
+   "anchor_close": 4.18,
    "t1430": 4.22,
-   "list_price": null,
+   "list_price": 4.12,
    "name": "*ST尼雅",
    "theme": "酒、饮料和精制茶制造业",
    "business": "葡萄酒的生产、销售；农业开发；货物及技术的进出口经营。",
@@ -159,20 +197,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.73,
+   "pct_vs_anchor": -1.44
   },
   {
    "code": "600089",
    "baseline": 17.25,
-   "anchor_close": null,
-   "t1430": 17.33,
-   "list_price": null,
+   "anchor_close": 17.38,
+   "t1430": 17.34,
+   "list_price": 17.51,
    "name": "特变电工",
    "theme": "电气机械和器材制造业",
    "business": "变压器、电线电缆及辅助设备的制造和销售。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.72,
+    "turnover": 0.73,
     "vr": 1.24,
     "amplitude": 1.6231884057970873
    },
@@ -187,20 +227,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.51,
+   "pct_vs_anchor": 0.75
   },
   {
    "code": "600171",
    "baseline": 20.86,
-   "anchor_close": null,
-   "t1430": 20.95,
-   "list_price": null,
+   "anchor_close": 20.8,
+   "t1430": 20.96,
+   "list_price": 20.42,
    "name": "上海贝岭",
    "theme": "MCU芯片",
    "business": "提供模拟和数模混合集成电路及系统解决方案。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.03,
+    "turnover": 1.04,
     "vr": 3.26,
     "amplitude": 2.588686481303927
    },
@@ -215,20 +257,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.11,
+   "pct_vs_anchor": -1.83
   },
   {
    "code": "600192",
    "baseline": 7.57,
-   "anchor_close": null,
+   "anchor_close": 8.33,
    "t1430": 8.33,
-   "list_price": null,
+   "list_price": 8.56,
    "name": "长城电工",
    "theme": "电气机械和器材制造业",
    "business": "高中低压开关成套设备、高中低压电器元件、电气传动自动化装置、新能源装备等电工电器类产品的研发、生产与销售，以及水电运营与管理等业务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 9.65,
+    "turnover": 9.67,
     "vr": 5.44,
     "amplitude": 10.96433289299868
    },
@@ -243,21 +287,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 13.08,
+   "pct_vs_anchor": 2.76
   },
   {
    "code": "600206",
    "baseline": 39.7,
-   "anchor_close": null,
-   "t1430": 42.24,
-   "list_price": null,
+   "anchor_close": 41.35,
+   "t1430": 42.01,
+   "list_price": 41.8,
    "name": "有研新材",
    "theme": "有色金属冶炼和压延加工业",
    "business": "微电子光电子用薄膜材料、超高纯金属及稀贵金属材料、高端稀土功能材料、红外光学及光纤材料、生物医用材料等新材料的研发与制备。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 9.3,
-    "vr": 7.99,
+    "turnover": 9.41,
+    "vr": 7.95,
     "amplitude": 12.569269521410584
    },
    "shape": {
@@ -271,20 +317,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 5.29,
+   "pct_vs_anchor": 1.09
   },
   {
    "code": "600233",
    "baseline": 16.79,
-   "anchor_close": null,
-   "t1430": 16.95,
-   "list_price": null,
+   "anchor_close": 16.84,
+   "t1430": 16.92,
+   "list_price": 17.3,
    "name": "圆通速递",
    "theme": "物流",
    "business": "以快递服务为核心，围绕客户需求提供代收货款、仓配一体等物流延伸服务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.49,
+    "turnover": 0.5,
     "vr": 1.52,
     "amplitude": 4.050029779630731
    },
@@ -299,20 +347,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 3.04,
+   "pct_vs_anchor": 2.73
   },
   {
    "code": "600237",
    "baseline": 9.02,
-   "anchor_close": null,
-   "t1430": 9.05,
-   "list_price": null,
+   "anchor_close": 9.0,
+   "t1430": 9.03,
+   "list_price": 8.3,
    "name": "铜峰电子",
    "theme": "计算机、通信和其他电子设备制造业",
    "business": "薄膜电容器及其薄膜材料的研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 5.15,
+    "turnover": 5.19,
     "vr": 2.88,
     "amplitude": 3.5476718403547705
    },
@@ -331,20 +381,22 @@
     "A",
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -7.98,
+   "pct_vs_anchor": -7.78
   },
   {
    "code": "600295",
    "baseline": 14.18,
-   "anchor_close": null,
-   "t1430": 14.37,
-   "list_price": null,
+   "anchor_close": 14.34,
+   "t1430": 14.35,
+   "list_price": 14.04,
    "name": "鄂尔多斯",
    "theme": "钢铁 / 水泥概念",
    "business": "羊绒服装、电力冶金化工。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.44,
+    "turnover": 0.45,
     "vr": 1.88,
     "amplitude": 3.737658674188994
    },
@@ -359,20 +411,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.99,
+   "pct_vs_anchor": -2.09
   },
   {
    "code": "600323",
    "baseline": 30.56,
-   "anchor_close": null,
-   "t1430": 30.69,
-   "list_price": null,
+   "anchor_close": 30.64,
+   "t1430": 30.71,
+   "list_price": 30.8,
    "name": "瀚蓝环境",
    "theme": "生态保护和环境治理业",
    "business": "固废业务、供水业务、排水业务以及燃气业务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.68,
+    "turnover": 0.69,
     "vr": 1.67,
     "amplitude": 2.2251308900523554
    },
@@ -387,20 +441,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.79,
+   "pct_vs_anchor": 0.52
   },
   {
    "code": "600366",
    "baseline": 10.07,
-   "anchor_close": null,
-   "t1430": 10.17,
-   "list_price": null,
+   "anchor_close": 10.1,
+   "t1430": 10.16,
+   "list_price": 9.86,
    "name": "宁波韵升",
    "theme": "金属新材料",
    "business": "稀土永磁材料的研发、制造和销售；研发伺服电机及伺服驱动器相关产品；投资业务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.83,
+    "turnover": 1.84,
     "vr": 1.74,
     "amplitude": 3.376365441906652
    },
@@ -415,20 +471,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.09,
+   "pct_vs_anchor": -2.38
   },
   {
    "code": "600406",
    "baseline": 22.74,
-   "anchor_close": null,
-   "t1430": 23.24,
-   "list_price": null,
+   "anchor_close": 23.28,
+   "t1430": 23.23,
+   "list_price": 23.49,
    "name": "国电南瑞",
    "theme": "同花顺漂亮100",
    "business": "电网调度自动化、变电站自动化、火电厂以及工业控制自动化系统的软硬件开发生产和系统集成服务；继电保护及柔性输电、电力信息通信等领域的业务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.82,
+    "turnover": 0.83,
     "vr": 3.67,
     "amplitude": 3.034300791556734
    },
@@ -443,20 +501,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 3.3,
+   "pct_vs_anchor": 0.9
   },
   {
    "code": "600416",
    "baseline": 8.04,
-   "anchor_close": null,
+   "anchor_close": 8.04,
    "t1430": 8.08,
-   "list_price": null,
+   "list_price": 7.83,
    "name": "湘电股份",
    "theme": "电机",
    "business": "大中型交直流电机（含特种电机）的开发、生产和销售业务；地铁、轻轨、新型城市轨道交通车辆牵引电器成套设备及整车的开发、生产和销售业务；3、百吨级电动轮自卸车、电力机车、特种车辆等电动车辆的开发、生产和销售业务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.81,
+    "turnover": 0.82,
     "vr": 1.23,
     "amplitude": 2.363184079601984
    },
@@ -471,115 +531,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "600435",
-   "baseline": 12.62,
-   "anchor_close": null,
-   "t1430": 12.65,
-   "list_price": null,
-   "name": "北方导航",
-   "theme": "军工装备",
-   "business": "导航控制和弹药信息化技术和专用车等高新技术产品研发及生产。",
-   "activity": 4,
-   "turn_raw": {
-    "turnover": 2.48,
-    "vr": 6.74,
-    "amplitude": 3.8827258320126803
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.388,
-    "vol_trend": -0.0367,
-    "amp_am": 3.883,
-    "chg_1130": 0.396,
-    "high_am": 2.773,
-    "low_am": -1.109,
-    "src": "live"
-   },
-   "risk": 1,
-   "rules": [
-    "A",
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
-  },
-  {
-   "code": "600460",
-   "baseline": 25.81,
-   "anchor_close": null,
-   "t1430": 25.89,
-   "list_price": null,
-   "name": "士兰微",
-   "theme": "半导体 / MCU芯片",
-   "business": "电子元器件、电子零部件及其他电子产品设计、制造、销售；机电产品进出口。",
-   "activity": 4,
-   "turn_raw": {
-    "turnover": 2.88,
-    "vr": 3.49,
-    "amplitude": 4.106935296396754
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.303,
-    "vol_trend": -0.1118,
-    "amp_am": 2.945,
-    "chg_1130": -0.697,
-    "high_am": 1.356,
-    "low_am": -1.589,
-    "src": "live"
-   },
-   "risk": 1,
-   "rules": [
-    "A",
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
-  },
-  {
-   "code": "600482",
-   "baseline": 30.4,
-   "anchor_close": null,
-   "t1430": 30.46,
-   "list_price": null,
-   "name": "中国动力",
-   "theme": "其他电源设备",
-   "business": "燃气轮机集成产品、汽轮机组及余热锅炉、高性能铅酸动力电池、车用起动电池、电力推进系统集成及配套设备、专用电力系统集成及配套设备、柴油机动力产品、民用核电工程安全监测系统、热气机动力产品等。",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 0.41,
-    "vr": 1.69,
-    "amplitude": 2.960526315789469
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.638,
-    "vol_trend": -0.1218,
-    "amp_am": 1.908,
-    "chg_1130": 0.296,
-    "high_am": 0.987,
-    "low_am": -0.921,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": -2.61,
+   "pct_vs_anchor": -2.61
   },
   {
    "code": "600483",
    "baseline": 10.48,
-   "anchor_close": null,
-   "t1430": 10.69,
-   "list_price": null,
+   "anchor_close": 10.68,
+   "t1430": 10.68,
+   "list_price": 10.52,
    "name": "福能股份",
    "theme": "电力",
    "business": "电力、热力生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.42,
+    "turnover": 0.43,
     "vr": 1.08,
     "amplitude": 3.435114503816805
    },
@@ -594,21 +561,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.38,
+   "pct_vs_anchor": -1.5
   },
   {
    "code": "600487",
    "baseline": 51.45,
-   "anchor_close": null,
-   "t1430": 51.79,
-   "list_price": null,
+   "anchor_close": 51.42,
+   "t1430": 51.69,
+   "list_price": 49.4,
    "name": "亨通光电",
    "theme": "通信设备 / 水利,太赫兹,特高压,同花顺出海50",
    "business": "提供通信网络和能源互联综合解决方案。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 5.88,
-    "vr": 3.79,
+    "turnover": 5.92,
+    "vr": 3.78,
     "amplitude": 5.189504373177846
    },
    "shape": {
@@ -622,20 +591,24 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [
+    "A"
+   ],
+   "pct_vs_baseline": -3.98,
+   "pct_vs_anchor": -3.93
   },
   {
    "code": "600495",
    "baseline": 4.07,
-   "anchor_close": null,
+   "anchor_close": 4.11,
    "t1430": 4.12,
-   "list_price": null,
+   "list_price": 3.91,
    "name": "晋西车轴",
    "theme": "轨交设备",
    "business": "各类车轴的生产及销售，合金钢等精密锻件生产、销售或委托加工。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.31,
+    "turnover": 1.33,
     "vr": 1.52,
     "amplitude": 2.948402948402951
    },
@@ -650,21 +623,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -3.93,
+   "pct_vs_anchor": -4.87
   },
   {
    "code": "600519",
    "baseline": 1309.69,
-   "anchor_close": null,
-   "t1430": 1313.59,
-   "list_price": null,
+   "anchor_close": 1318.49,
+   "t1430": 1315.8,
+   "list_price": 1339.14,
    "name": "贵州茅台",
    "theme": "白酒",
    "business": "贵州茅台酒系列产品的产品研制、酿造生产、包装和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.24,
-    "vr": 6.54,
+    "turnover": 0.25,
+    "vr": 6.55,
     "amplitude": 1.9852026051966496
    },
    "shape": {
@@ -678,23 +653,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 2.25,
+   "pct_vs_anchor": 1.57
   },
   {
    "code": "600580",
    "baseline": 24.36,
-   "anchor_close": null,
-   "t1430": 24.87,
-   "list_price": null,
+   "anchor_close": 24.83,
+   "t1430": 24.84,
+   "list_price": 24.12,
    "name": "卧龙电驱",
    "theme": "电机",
    "business": "电机及控制、电源电池、光伏电站、贸易",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.95,
+    "turnover": 2.96,
     "vr": 3.56,
     "amplitude": 5.788177339901479
    },
@@ -709,21 +683,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.99,
+   "pct_vs_anchor": -2.86
   },
   {
    "code": "600584",
    "baseline": 57.23,
-   "anchor_close": null,
-   "t1430": 59.06,
-   "list_price": null,
+   "anchor_close": 59.0,
+   "t1430": 58.83,
+   "list_price": 56.95,
    "name": "长电科技",
    "theme": "计算机、通信和其他电子设备制造业",
    "business": "集成电路、分立器件的封装与测试以及分立器件的芯片设计、制造；为海内外客户提供涵盖封装设计、焊锡凸块、针探、组装、测试、配送等一整套半导体封装测试解决方案",
    "activity": 5,
    "turn_raw": {
-    "turnover": 4.48,
-    "vr": 3.66,
+    "turnover": 4.57,
+    "vr": 3.65,
     "amplitude": 9.278350515463922
    },
    "shape": {
@@ -737,20 +713,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.49,
+   "pct_vs_anchor": -3.47
   },
   {
    "code": "600612",
    "baseline": 31.92,
-   "anchor_close": null,
-   "t1430": 32.11,
-   "list_price": null,
+   "anchor_close": 31.99,
+   "t1430": 32.06,
+   "list_price": 32.13,
    "name": "老凤祥",
    "theme": "服装家纺",
    "business": "黄金珠宝首饰、工艺美术品、笔类文具制品的生产经营及销售",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.33,
+    "turnover": 0.34,
     "vr": 1.28,
     "amplitude": 2.5689223057644117
    },
@@ -765,20 +743,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.66,
+   "pct_vs_anchor": 0.44
   },
   {
    "code": "600621",
    "baseline": 13.92,
-   "anchor_close": null,
-   "t1430": 14.4,
-   "list_price": null,
+   "anchor_close": 14.34,
+   "t1430": 14.42,
+   "list_price": 14.95,
    "name": "华鑫股份",
    "theme": "资本市场服务",
    "business": "证券服务业务、少量持有型物业及其他业务。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 5.66,
+    "turnover": 5.68,
     "vr": 1.69,
     "amplitude": 7.758620689655173
    },
@@ -793,21 +773,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 7.4,
+   "pct_vs_anchor": 4.25
   },
   {
    "code": "600660",
    "baseline": 51.28,
-   "anchor_close": null,
-   "t1430": 51.59,
-   "list_price": null,
+   "anchor_close": 51.95,
+   "t1430": 51.63,
+   "list_price": 52.5,
    "name": "福耀玻璃",
    "theme": "同花顺出海50",
    "business": "为各种交通运输工具提供安全玻璃全解决方案，包括汽车级浮法玻璃、汽车玻璃、机车玻璃相关的设计、生产、销售及服务",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.71,
-    "vr": 3.59,
+    "turnover": 0.72,
+    "vr": 3.6,
     "amplitude": 2.691107644305777
    },
    "shape": {
@@ -821,20 +803,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.38,
+   "pct_vs_anchor": 1.06
   },
   {
    "code": "600674",
    "baseline": 17.13,
-   "anchor_close": null,
-   "t1430": 17.43,
-   "list_price": null,
+   "anchor_close": 17.37,
+   "t1430": 17.4,
+   "list_price": 17.48,
    "name": "川投能源",
    "theme": "电力",
    "business": "以清洁能源为主业，研发轨道交通电气自动化系统，生产经营光纤光缆等高新技术产业。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.53,
+    "turnover": 0.55,
     "vr": 1.82,
     "amplitude": 2.3934617629889092
    },
@@ -849,20 +833,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.04,
+   "pct_vs_anchor": 0.63
   },
   {
    "code": "600694",
    "baseline": 14.47,
-   "anchor_close": null,
+   "anchor_close": 14.45,
    "t1430": 14.5,
-   "list_price": null,
+   "list_price": 14.49,
    "name": "大商股份",
    "theme": "零售",
    "business": "商业零售业务，涉及百货、超市、电器等经营业态。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.75,
+    "turnover": 0.76,
     "vr": 0.62,
     "amplitude": 2.349689011748456
    },
@@ -880,20 +866,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.14,
+   "pct_vs_anchor": 0.28
   },
   {
    "code": "600698",
    "baseline": 6.9,
-   "anchor_close": null,
+   "anchor_close": 7.59,
    "t1430": 7.59,
-   "list_price": null,
+   "list_price": 7.22,
    "name": "湖南天雁",
    "theme": "汽车制造业",
    "business": "废气涡轮增压器、发动机进排气门及冷却风扇等发动机零部件的设计、开发、生产、销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 8.85,
+    "turnover": 8.87,
     "vr": 10.95,
     "amplitude": 12.173913043478258
    },
@@ -908,14 +896,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 4.64,
+   "pct_vs_anchor": -4.87
   },
   {
    "code": "600761",
    "baseline": 14.94,
-   "anchor_close": null,
-   "t1430": 14.99,
-   "list_price": null,
+   "anchor_close": 14.93,
+   "t1430": 15.0,
+   "list_price": 15.04,
    "name": "安徽合力",
    "theme": "工程机械",
    "business": "工业车辆及关键零部件等产品的研发、制造和销售",
@@ -936,23 +926,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 0.67,
+   "pct_vs_anchor": 0.74
   },
   {
    "code": "600775",
    "baseline": 9.23,
-   "anchor_close": null,
-   "t1430": 9.3,
-   "list_price": null,
+   "anchor_close": 9.19,
+   "t1430": 9.29,
+   "list_price": 8.81,
    "name": "南京熊猫",
    "theme": "通信设备",
    "business": "智能制造、智慧城市和电子制造服务",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.73,
+    "turnover": 2.74,
     "vr": 2.75,
     "amplitude": 5.0920910075839725
    },
@@ -967,20 +956,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -4.55,
+   "pct_vs_anchor": -4.13
   },
   {
    "code": "600801",
    "baseline": 21.84,
-   "anchor_close": null,
-   "t1430": 22.0,
-   "list_price": null,
+   "anchor_close": 21.94,
+   "t1430": 21.97,
+   "list_price": 23.0,
    "name": "华新建材",
    "theme": "建筑材料 / 水泥概念",
    "business": "水泥制造和销售,水泥技术服务,水泥设备的研究、制造、安装及维修,水泥进出口贸易；以及商品混凝土、骨料、水泥窑协同处置废弃物的环保业务、国内国际水泥工程总承包、水泥窑协同处置技术的装备与工程承包、水泥基高新建筑材料等",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.53,
+    "turnover": 0.54,
     "vr": 1.38,
     "amplitude": 3.159340659340649
    },
@@ -995,14 +986,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 5.31,
+   "pct_vs_anchor": 4.83
   },
   {
    "code": "600803",
    "baseline": 19.83,
-   "anchor_close": null,
-   "t1430": 19.92,
-   "list_price": null,
+   "anchor_close": 19.92,
+   "t1430": 19.89,
+   "list_price": 19.93,
    "name": "新奥股份",
    "theme": "燃气",
    "business": "液化天然气生产/销售与投资，能源技术工程服务，甲醇等能源化工产品生产、销售与贸易，煤炭的开采、洗选与贸易，以及生物制农兽药原料药及制剂的生产与销售",
@@ -1023,20 +1016,25 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.5,
+   "pct_vs_anchor": 0.05
   },
   {
    "code": "600819",
    "baseline": 5.24,
-   "anchor_close": null,
+   "anchor_close": 5.24,
    "t1430": 5.28,
-   "list_price": null,
+   "list_price": 5.05,
    "name": "耀皮玻璃",
    "theme": "建筑材料",
    "business": "玻璃及深加工系列产品。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.77,
+    "turnover": 0.78,
     "vr": 1.33,
     "amplitude": 2.480916030534349
    },
@@ -1051,20 +1049,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -3.63,
+   "pct_vs_anchor": -3.63
   },
   {
    "code": "600827",
    "baseline": 7.53,
-   "anchor_close": null,
+   "anchor_close": 7.57,
    "t1430": 7.58,
-   "list_price": null,
+   "list_price": 7.59,
    "name": "百联股份",
    "theme": "零售",
    "business": "商品零售，主要业态有合百货、购物中心、奥特莱斯、大型综合超市、超级市场、便利店、专业连锁等",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.58,
+    "turnover": 0.59,
     "vr": 0.66,
     "amplitude": 1.992031872509965
    },
@@ -1079,20 +1079,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.8,
+   "pct_vs_anchor": 0.26
   },
   {
    "code": "600882",
    "baseline": 18.83,
-   "anchor_close": null,
-   "t1430": 18.9,
-   "list_price": null,
+   "anchor_close": 18.9,
+   "t1430": 18.93,
+   "list_price": 19.02,
    "name": "妙可蓝多",
    "theme": "食品制造业",
    "business": "以奶酪、液态奶为核心的特色乳制品的研发、生产和销售，同时公司也从事以奶粉、黄油为主的乳制品贸易业务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.05,
+    "turnover": 1.06,
     "vr": 1.98,
     "amplitude": 4.089219330855016
    },
@@ -1107,24 +1109,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 1.01,
+   "pct_vs_anchor": 0.63
   },
   {
    "code": "600884",
    "baseline": 10.41,
-   "anchor_close": null,
-   "t1430": 10.48,
-   "list_price": null,
+   "anchor_close": 10.45,
+   "t1430": 10.47,
+   "list_price": 10.24,
    "name": "杉杉股份",
    "theme": "电池 / 石墨电极",
    "business": "锂电材料的研发、生产和销售，LCD偏光片业务。服装品牌运营、类金融及创投业务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.36,
-    "vr": 1.03,
+    "turnover": 1.37,
+    "vr": 1.02,
     "amplitude": 2.8818443804034652
    },
    "shape": {
@@ -1138,20 +1139,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.63,
+   "pct_vs_anchor": -2.01
   },
   {
    "code": "600887",
    "baseline": 27.6,
-   "anchor_close": null,
-   "t1430": 27.75,
-   "list_price": null,
+   "anchor_close": 27.8,
+   "t1430": 27.79,
+   "list_price": 28.31,
    "name": "伊利股份",
    "theme": "食品制造业",
    "business": "乳制品（含婴幼儿配方乳粉）制造，食品、饮料加工。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.67,
+    "turnover": 0.69,
     "vr": 3.27,
     "amplitude": 1.7028985507246464
    },
@@ -1166,14 +1169,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.57,
+   "pct_vs_anchor": 1.83
   },
   {
    "code": "600889",
    "baseline": 12.38,
-   "anchor_close": null,
+   "anchor_close": 12.43,
    "t1430": 12.51,
-   "list_price": null,
+   "list_price": 12.07,
    "name": "*ST京化",
    "theme": "化学纤维制造业",
    "business": "滚动功能部件的研发、生产、销售。",
@@ -1194,20 +1199,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.5,
+   "pct_vs_anchor": -2.9
   },
   {
    "code": "600900",
    "baseline": 29.57,
-   "anchor_close": null,
-   "t1430": 29.82,
-   "list_price": null,
+   "anchor_close": 29.82,
+   "t1430": 29.85,
+   "list_price": 29.85,
    "name": "长江电力",
    "theme": "电力",
    "business": "大型水电运营",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.54,
+    "turnover": 0.55,
     "vr": 3.38,
     "amplitude": 2.164355765979035
    },
@@ -1222,14 +1229,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.95,
+   "pct_vs_anchor": 0.1
   },
   {
    "code": "600919",
    "baseline": 12.23,
-   "anchor_close": null,
+   "anchor_close": 12.24,
    "t1430": 12.24,
-   "list_price": null,
+   "list_price": 12.18,
    "name": "江苏银行",
    "theme": "货币金融服务",
    "business": "各项金融业务",
@@ -1253,20 +1262,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.41,
+   "pct_vs_anchor": -0.49
   },
   {
    "code": "600941",
    "baseline": 96.59,
-   "anchor_close": null,
-   "t1430": 98.93,
-   "list_price": null,
+   "anchor_close": 99.0,
+   "t1430": 99.05,
+   "list_price": 100.8,
    "name": "中国移动",
    "theme": "通信服务",
    "business": "为个人、家庭、政企、新兴市场提供全方位的通信及信息服务。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.0,
+    "turnover": 2.02,
     "vr": 1.54,
     "amplitude": 3.9030955585464295
    },
@@ -1281,20 +1292,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 4.36,
+   "pct_vs_anchor": 1.82
   },
   {
    "code": "600960",
    "baseline": 3.78,
-   "anchor_close": null,
-   "t1430": 3.83,
-   "list_price": null,
+   "anchor_close": 3.8,
+   "t1430": 3.82,
+   "list_price": 3.7,
    "name": "渤海汽车",
    "theme": "汽车制造业",
    "business": "汽车外饰零部件、汽车座椅骨架、汽车线束、活塞及组件、轻量化汽车零部件等多个产品的研发、制造及销售。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.9,
+    "turnover": 0.92,
     "vr": 1.12,
     "amplitude": 2.9100529100529187
    },
@@ -1309,20 +1322,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.12,
+   "pct_vs_anchor": -2.63
   },
   {
    "code": "600967",
    "baseline": 13.54,
-   "anchor_close": null,
-   "t1430": 14.18,
-   "list_price": null,
+   "anchor_close": 14.15,
+   "t1430": 14.19,
+   "list_price": 13.19,
    "name": "内蒙一机",
    "theme": "军工装备",
    "business": "轮履装甲车辆、火炮系列军品装备、军民融合产品、铁路车辆、车辆零部件的研发、制造、销售及资产经营",
    "activity": 5,
    "turn_raw": {
-    "turnover": 6.16,
+    "turnover": 6.19,
     "vr": 2.04,
     "amplitude": 9.231905465288035
    },
@@ -1337,20 +1352,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.58,
+   "pct_vs_anchor": -6.78
   },
   {
    "code": "601006",
    "baseline": 4.81,
-   "anchor_close": null,
+   "anchor_close": 4.89,
    "t1430": 4.88,
-   "list_price": null,
+   "list_price": 4.9,
    "name": "大秦铁路",
    "theme": "公路铁路运输",
    "business": "经营铁路客、货运输业务，向国内其他铁路运输企业提供服务。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.59,
+    "turnover": 0.61,
     "vr": 0.59,
     "amplitude": 2.702702702702719
    },
@@ -1365,14 +1382,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.87,
+   "pct_vs_anchor": 0.2
   },
   {
    "code": "601077",
    "baseline": 6.98,
-   "anchor_close": null,
-   "t1430": 7.08,
-   "list_price": null,
+   "anchor_close": 7.04,
+   "t1430": 7.07,
+   "list_price": 7.23,
    "name": "渝农商行",
    "theme": "货币金融服务",
    "business": "提供银行业及有关的金融服务。",
@@ -1393,14 +1412,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 3.58,
+   "pct_vs_anchor": 2.7
   },
   {
    "code": "601088",
    "baseline": 49.27,
-   "anchor_close": null,
-   "t1430": 49.6,
-   "list_price": null,
+   "anchor_close": 49.94,
+   "t1430": 49.67,
+   "list_price": 50.08,
    "name": "中国神华",
    "theme": "煤炭开采加工",
    "business": "煤炭、电力的生产和销售，铁路、港口和船舶运输，煤制烯烃等业务。",
@@ -1421,21 +1442,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.64,
+   "pct_vs_anchor": 0.28
   },
   {
    "code": "601096",
    "baseline": 3.96,
-   "anchor_close": null,
-   "t1430": 3.99,
-   "list_price": null,
+   "anchor_close": 3.98,
+   "t1430": 3.98,
+   "list_price": 3.93,
    "name": "宏盛华源",
    "theme": "电网设备",
    "business": "输电线路铁塔的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.62,
-    "vr": 2.26,
+    "turnover": 0.63,
+    "vr": 2.25,
     "amplitude": 1.7676767676767524
    },
    "shape": {
@@ -1449,14 +1472,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.76,
+   "pct_vs_anchor": -1.26
   },
   {
    "code": "601112",
    "baseline": 14.58,
-   "anchor_close": null,
+   "anchor_close": 14.5,
    "t1430": 14.6,
-   "list_price": null,
+   "list_price": 14.15,
    "name": "振石股份",
    "theme": "建筑材料 / 碳纤维",
    "business": "清洁能源领域纤维增强材料研发、生产及销售。",
@@ -1480,20 +1505,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -2.95,
+   "pct_vs_anchor": -2.41
   },
   {
    "code": "601117",
    "baseline": 6.84,
-   "anchor_close": null,
-   "t1430": 6.87,
-   "list_price": null,
+   "anchor_close": 6.86,
+   "t1430": 6.88,
+   "list_price": 6.78,
    "name": "中国化学",
    "theme": "土木工程建筑业",
    "business": "工程承包，勘察、设计及服务",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.83,
+    "turnover": 0.84,
     "vr": 0.6,
     "amplitude": 2.9239766081871372
    },
@@ -1508,20 +1535,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.88,
+   "pct_vs_anchor": -1.17
   },
   {
    "code": "601166",
    "baseline": 18.34,
-   "anchor_close": null,
-   "t1430": 18.42,
-   "list_price": null,
+   "anchor_close": 18.49,
+   "t1430": 18.45,
+   "list_price": 18.56,
    "name": "兴业银行",
    "theme": "货币金融服务",
    "business": "公司业务、同业业务、资金业务、零售业务四大类，电子银行为上述各类业务发展提供了重要渠道。",
    "activity": 1,
    "turn_raw": {
-    "turnover": 0.47,
+    "turnover": 0.49,
     "vr": 0.47,
     "amplitude": 1.5812431842966146
    },
@@ -1536,20 +1565,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.2,
+   "pct_vs_anchor": 0.38
   },
   {
    "code": "601177",
    "baseline": 13.23,
-   "anchor_close": null,
+   "anchor_close": 13.94,
    "t1430": 13.92,
-   "list_price": null,
+   "list_price": 14.62,
    "name": "杭齿前进",
    "theme": "通用设备制造业",
    "business": "各类齿轮传动装置、粉末冶金制品和大型精密齿轮的设计、制造和销售",
    "activity": 4,
    "turn_raw": {
-    "turnover": 6.08,
+    "turnover": 6.11,
     "vr": 1.9,
     "amplitude": 9.901738473167047
    },
@@ -1564,20 +1595,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 10.51,
+   "pct_vs_anchor": 4.88
   },
   {
    "code": "601211",
    "baseline": 15.92,
-   "anchor_close": null,
-   "t1430": 15.94,
-   "list_price": null,
+   "anchor_close": 15.91,
+   "t1430": 15.99,
+   "list_price": 16.04,
    "name": "国泰海通",
    "theme": "资本市场服务",
    "business": "主要从事证券经纪、证券信用交易、投资银行、证券交易投资、证券研究、场外市场等业务，并通过全资子公司国泰君安资管公司、国泰君安期货公司、国泰君安创投公司以及控股子公司国联安基金公司，分别从事资产管理、期货、直接投资和基金管理等业务；通过全资子公司国泰君安金融控股公司所控股的国泰君安国际及其子公司主要在香港从事经有权机关核准的与证券相关的持牌业务。此外，公司控股子公司上海证券及其下属公司从事经中国证监会批准的证券业务。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.49,
+    "turnover": 0.51,
     "vr": 0.86,
     "amplitude": 2.3241206030150705
    },
@@ -1592,17 +1625,49 @@
     "src": "live"
    },
    "risk": 0,
+   "rules": [],
+   "pct_vs_baseline": 0.75,
+   "pct_vs_anchor": 0.82
+  },
+  {
+   "code": "601229",
+   "baseline": 9.37,
+   "anchor_close": 9.38,
+   "t1430": 9.38,
+   "list_price": 9.43,
+   "name": "上海银行",
+   "theme": "货币金融服务",
+   "business": "商业银行业务。",
+   "activity": 2,
+   "turn_raw": {
+    "turnover": 0.27,
+    "vr": 0.52,
+    "amplitude": 1.3874066168623351
+   },
+   "shape": {
+    "redraw": 0,
+    "pos_1130": 0.846,
+    "vol_trend": -0.1143,
+    "amp_am": 1.387,
+    "chg_1130": 0.32,
+    "high_am": 0.534,
+    "low_am": -0.854,
+    "src": "live"
+   },
+   "risk": 0,
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.64,
+   "pct_vs_anchor": 0.53
   },
   {
    "code": "601236",
    "baseline": 6.82,
-   "anchor_close": null,
-   "t1430": 6.86,
-   "list_price": null,
+   "anchor_close": 6.83,
+   "t1430": 6.85,
+   "list_price": 6.8,
    "name": "红塔证券",
    "theme": "资本市场服务",
    "business": "证券经纪、证券自营、证券承销与保荐；证券投资咨询；与证券交易、证券投资活动有关的财务顾问；证券资产管理；融资融券；证券投资基金代销；为期货公司提供中间介绍业务；代销金融产品业务。",
@@ -1623,51 +1688,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "601567",
-   "baseline": 12.37,
-   "anchor_close": null,
-   "t1430": 12.38,
-   "list_price": null,
-   "name": "三星电气",
-   "theme": "电网设备",
-   "business": "智能配用电、医疗服务。",
-   "activity": 2,
-   "turn_raw": {
-    "turnover": 0.58,
-    "vr": 1.48,
-    "amplitude": 1.7784963621665226
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.81,
-    "vol_trend": -0.1022,
-    "amp_am": 1.698,
-    "chg_1130": 1.051,
-    "high_am": 1.374,
-    "low_am": -0.323,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": -0.29,
+   "pct_vs_anchor": -0.44
   },
   {
    "code": "601616",
    "baseline": 3.61,
-   "anchor_close": null,
+   "anchor_close": 3.63,
    "t1430": 3.64,
-   "list_price": null,
+   "list_price": 3.44,
    "name": "广电电气",
    "theme": "电网设备",
    "business": "成套设备及电力电子、元器件等产品的研发、制造、销售与服务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.39,
+    "turnover": 1.41,
     "vr": 1.33,
     "amplitude": 3.6011080332410064
    },
@@ -1682,20 +1718,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -4.71,
+   "pct_vs_anchor": -5.23
   },
   {
    "code": "601619",
    "baseline": 3.69,
-   "anchor_close": null,
+   "anchor_close": 3.73,
    "t1430": 3.76,
-   "list_price": null,
+   "list_price": 3.63,
    "name": "嘉泽新能",
    "theme": "电力",
    "business": "新能源电力的开发、投资、建设、经营和管理。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.04,
+    "turnover": 1.05,
     "vr": 1.42,
     "amplitude": 3.5230352303523005
    },
@@ -1710,21 +1748,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.63,
+   "pct_vs_anchor": -2.68
   },
   {
    "code": "601728",
    "baseline": 6.62,
-   "anchor_close": null,
-   "t1430": 6.71,
-   "list_price": null,
+   "anchor_close": 6.72,
+   "t1430": 6.72,
+   "list_price": 6.85,
    "name": "中国电信",
    "theme": "通信服务",
    "business": "为个人(To C)、家庭(To H)和政企(To B/G)客户提供灵活多样、融合便捷、品质体验、安全可靠的综合智能信息服务。",
    "activity": 3,
    "turn_raw": {
     "turnover": 0.17,
-    "vr": 1.34,
+    "vr": 1.35,
     "amplitude": 3.625377643504535
    },
    "shape": {
@@ -1738,20 +1778,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 3.47,
+   "pct_vs_anchor": 1.93
   },
   {
    "code": "601766",
    "baseline": 6.26,
-   "anchor_close": null,
+   "anchor_close": 6.33,
    "t1430": 6.33,
-   "list_price": null,
+   "list_price": 6.41,
    "name": "中国中车",
    "theme": "轨交设备 / 同花顺出海50,同花顺中特估100",
    "business": "铁路机车车辆、动车组、城市轨道交通车辆、工程机械、各类机电设备、电子设备及零部件、电子电器及环保设备产品的研发、设计、制造、修理、销售、租赁与技术服务；信息咨询；实业投资与管理；资产管理；进出口业务。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.52,
+    "turnover": 0.53,
     "vr": 1.05,
     "amplitude": 1.9169329073482444
    },
@@ -1766,45 +1808,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "601798",
-   "baseline": 7.28,
-   "anchor_close": null,
-   "t1430": 7.29,
-   "list_price": null,
-   "name": "蓝科高新",
-   "theme": "专用设备制造业",
-   "business": "石油、石化专用设备的研发、设计、生产、安装、技术服务以及石油、石化设备的质量性能检验检测服务等",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 1.4,
-    "vr": 1.94,
-    "amplitude": 3.2967032967032996
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.708,
-    "vol_trend": -0.1337,
-    "amp_am": 3.297,
-    "chg_1130": 1.511,
-    "high_am": 2.473,
-    "low_am": -0.824,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 2.4,
+   "pct_vs_anchor": 1.26
   },
   {
    "code": "601800",
    "baseline": 6.08,
-   "anchor_close": null,
+   "anchor_close": 6.1,
    "t1430": 6.1,
-   "list_price": null,
+   "list_price": 6.11,
    "name": "中国交建",
    "theme": "同花顺中特估100",
    "business": "基建设计、基建建设、疏浚及装备制造。",
@@ -1828,14 +1841,16 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.49,
+   "pct_vs_anchor": 0.16
   },
   {
    "code": "601825",
    "baseline": 8.56,
-   "anchor_close": null,
+   "anchor_close": 8.56,
    "t1430": 8.57,
-   "list_price": null,
+   "list_price": 8.69,
    "name": "沪农商行",
    "theme": "货币金融服务",
    "business": "公司银行业务、个人银行业务和金融市场业务。",
@@ -1859,14 +1874,16 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 1.52,
+   "pct_vs_anchor": 1.52
   },
   {
    "code": "601857",
    "baseline": 12.56,
-   "anchor_close": null,
-   "t1430": 12.62,
-   "list_price": null,
+   "anchor_close": 12.7,
+   "t1430": 12.63,
+   "list_price": 12.86,
    "name": "中国石油",
    "theme": "石油加工贸易",
    "business": "原油和天然气的勘探、开发、生产和销售；原油和石油产品的炼制、运输、储存和销售；基本石油化工产品、衍生化工产品及其他化工产品的生产和销售；天然气、原油和成品油的输送及天然气的销售。",
@@ -1887,14 +1904,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.39,
+   "pct_vs_anchor": 1.26
   },
   {
    "code": "601865",
    "baseline": 9.03,
-   "anchor_close": null,
-   "t1430": 9.08,
-   "list_price": null,
+   "anchor_close": 9.04,
+   "t1430": 9.07,
+   "list_price": 8.89,
    "name": "福莱特",
    "theme": "光伏设备",
    "business": "光伏玻璃、浮法玻璃、工程玻璃和家居玻璃的研发、生产和销售，以及玻璃用石英矿的开采和销售和EPC光伏电站工程建设。",
@@ -1915,20 +1934,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.55,
+   "pct_vs_anchor": -1.66
   },
   {
    "code": "601933",
    "baseline": 2.92,
-   "anchor_close": null,
+   "anchor_close": 2.92,
    "t1430": 2.93,
-   "list_price": null,
+   "list_price": 2.9,
    "name": "永辉超市",
    "theme": "零售",
    "business": "超市的连锁经营。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.11,
+    "turnover": 1.13,
     "vr": 12.06,
     "amplitude": 4.452054794520544
    },
@@ -1946,20 +1967,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.68,
+   "pct_vs_anchor": -0.68
   },
   {
    "code": "601939",
    "baseline": 11.49,
-   "anchor_close": null,
+   "anchor_close": 11.66,
    "t1430": 11.69,
-   "list_price": null,
+   "list_price": 11.57,
    "name": "建设银行",
    "theme": "同花顺中特估100",
    "business": "商业银行业务",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.28,
+    "turnover": 1.3,
     "vr": 0.85,
     "amplitude": 3.3072236727589277
    },
@@ -1974,21 +1997,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.7,
+   "pct_vs_anchor": -0.77
   },
   {
    "code": "603009",
    "baseline": 46.9,
-   "anchor_close": null,
-   "t1430": 47.18,
-   "list_price": null,
+   "anchor_close": 46.87,
+   "t1430": 47.09,
+   "list_price": 44.4,
    "name": "北特科技",
    "theme": "汽车零部件 / 特斯拉概念",
    "business": "转向减振零部件、汽车空调压缩机、高精密零部件、铝合金轻量化。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.4,
-    "vr": 8.02,
+    "turnover": 2.42,
+    "vr": 8.01,
     "amplitude": 4.690831556503205
    },
    "shape": {
@@ -2004,14 +2029,16 @@
    "risk": 1,
    "rules": [
     "A"
-   ]
+   ],
+   "pct_vs_baseline": -5.33,
+   "pct_vs_anchor": -5.27
   },
   {
    "code": "603013",
    "baseline": 14.52,
-   "anchor_close": null,
-   "t1430": 15.13,
-   "list_price": null,
+   "anchor_close": 15.3,
+   "t1430": 15.17,
+   "list_price": 14.36,
    "name": "亚普股份",
    "theme": "汽车制造业",
    "business": "汽车（主要是乘用车）燃油燃料系统的设计开发、制造和销售。",
@@ -2032,21 +2059,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.1,
+   "pct_vs_anchor": -6.14
   },
   {
    "code": "603043",
    "baseline": 13.36,
-   "anchor_close": null,
-   "t1430": 13.43,
-   "list_price": null,
+   "anchor_close": 13.37,
+   "t1430": 13.42,
+   "list_price": 13.39,
    "name": "广州酒家",
    "theme": "食品加工制造",
    "business": "食品制造业务及餐饮业务，并以食品制造业务为主。",
    "activity": 3,
    "turn_raw": {
     "turnover": 0.36,
-    "vr": 2.04,
+    "vr": 2.03,
     "amplitude": 2.3203592814371294
    },
    "shape": {
@@ -2060,20 +2089,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.22,
+   "pct_vs_anchor": 0.15
   },
   {
    "code": "603048",
    "baseline": 22.36,
-   "anchor_close": null,
-   "t1430": 22.39,
-   "list_price": null,
+   "anchor_close": 22.24,
+   "t1430": 22.38,
+   "list_price": 20.65,
    "name": "浙江黎明",
    "theme": "汽车零部件 / 数字孪生",
    "business": "从事汽车零部件的研发、生产、销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.66,
+    "turnover": 1.67,
     "vr": 2.63,
     "amplitude": 6.574239713774592
    },
@@ -2091,20 +2122,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -7.65,
+   "pct_vs_anchor": -7.15
   },
   {
    "code": "603072",
    "baseline": 28.11,
-   "anchor_close": null,
-   "t1430": 28.17,
-   "list_price": null,
+   "anchor_close": 28.0,
+   "t1430": 28.14,
+   "list_price": 27.49,
    "name": "天和磁材",
    "theme": "金属新材料",
    "business": "烧结钕铁硼、烧结钐钴等高性能稀土永磁材料研发、生产、销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.98,
+    "turnover": 0.99,
     "vr": 3.39,
     "amplitude": 1.707577374599788
    },
@@ -2122,14 +2155,49 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -2.21,
+   "pct_vs_anchor": -1.82
+  },
+  {
+   "code": "603091",
+   "baseline": 42.75,
+   "anchor_close": 42.78,
+   "t1430": 42.79,
+   "list_price": 42.1,
+   "name": "众鑫股份",
+   "theme": "家居用品",
+   "business": "自然降解植物纤维模塑产品研发、生产和销售。",
+   "activity": 3,
+   "turn_raw": {
+    "turnover": 0.7,
+    "vr": 2.69,
+    "amplitude": 2.3157894736841986
+   },
+   "shape": {
+    "redraw": 0,
+    "pos_1130": 0.667,
+    "vol_trend": -0.1704,
+    "amp_am": 2.316,
+    "chg_1130": 0.936,
+    "high_am": 1.708,
+    "low_am": -0.608,
+    "src": "live"
+   },
+   "risk": 0,
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -1.52,
+   "pct_vs_anchor": -1.59
   },
   {
    "code": "603100",
    "baseline": 18.04,
-   "anchor_close": null,
-   "t1430": 18.08,
-   "list_price": null,
+   "anchor_close": 18.01,
+   "t1430": 18.06,
+   "list_price": 17.92,
    "name": "川仪股份",
    "theme": "仪器仪表制造业",
    "business": "工业自动控制系统装置及工程成套的研发、生产、销售、技术咨询、服务等业务。",
@@ -2153,20 +2221,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.67,
+   "pct_vs_anchor": -0.5
   },
   {
    "code": "603111",
    "baseline": 5.96,
-   "anchor_close": null,
-   "t1430": 6.03,
-   "list_price": null,
+   "anchor_close": 5.99,
+   "t1430": 6.01,
+   "list_price": 5.92,
    "name": "康尼机电",
    "theme": "轨交设备",
    "business": "轨道业务、新能源汽车零部件业务、表面处理业务",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.01,
+    "turnover": 1.02,
     "vr": 1.35,
     "amplitude": 2.8523489932885893
    },
@@ -2181,20 +2251,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.67,
+   "pct_vs_anchor": -1.17
   },
   {
    "code": "603126",
    "baseline": 6.08,
-   "anchor_close": null,
+   "anchor_close": 6.45,
    "t1430": 6.52,
-   "list_price": null,
+   "list_price": 6.2,
    "name": "中材节能",
    "theme": "环境治理 / 碳交易",
    "business": "工业节能、建筑节能、垃圾、生物质、太阳能等能源综合管理",
    "activity": 5,
    "turn_raw": {
-    "turnover": 7.23,
+    "turnover": 7.27,
     "vr": 1.96,
     "amplitude": 10.36184210526317
    },
@@ -2209,46 +2281,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "603163",
-   "baseline": 68.94,
-   "anchor_close": null,
-   "t1430": 69.05,
-   "list_price": null,
-   "name": "圣晖集成",
-   "theme": "建筑装饰",
-   "business": "洁净室厂房建造规划、设计建议、设备配置、工程施工、工程管理及维护服务等。",
-   "activity": 4,
-   "turn_raw": {
-    "turnover": 3.46,
-    "vr": 5.7,
-    "amplitude": 6.324340005802147
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.155,
-    "vol_trend": -0.2052,
-    "amp_am": 5.701,
-    "chg_1130": 1.059,
-    "high_am": 5.875,
-    "low_am": 0.174,
-    "src": "live"
-   },
-   "risk": 1,
-   "rules": [
-    "A",
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 1.97,
+   "pct_vs_anchor": -3.88
   },
   {
    "code": "603166",
    "baseline": 10.22,
-   "anchor_close": null,
+   "anchor_close": 10.22,
    "t1430": 10.29,
-   "list_price": null,
+   "list_price": 9.9,
    "name": "福达股份",
    "theme": "汽车制造业",
    "business": "发动机曲轴、汽车离合器、螺旋锥齿轮、高强度螺栓等汽车零部件以及发动机曲轴毛坯、汽车前梁等精密锻件的研发、生产与销售",
@@ -2269,20 +2311,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -3.13,
+   "pct_vs_anchor": -3.13
   },
   {
    "code": "603170",
    "baseline": 12.51,
-   "anchor_close": null,
+   "anchor_close": 12.56,
    "t1430": 12.55,
-   "list_price": null,
+   "list_price": 12.68,
    "name": "宝立食品",
    "theme": "食品加工制造",
    "business": "食品调味料的研发、生产和技术服务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.69,
+    "turnover": 0.7,
     "vr": 3.51,
     "amplitude": 3.437250199840126
    },
@@ -2300,14 +2344,16 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 1.36,
+   "pct_vs_anchor": 0.96
   },
   {
    "code": "603187",
    "baseline": 10.21,
-   "anchor_close": null,
+   "anchor_close": 10.2,
    "t1430": 10.26,
-   "list_price": null,
+   "list_price": 10.06,
    "name": "海容冷链",
    "theme": "通用设备制造业",
    "business": "邵伟",
@@ -2328,21 +2374,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.47,
+   "pct_vs_anchor": -1.37
   },
   {
    "code": "603194",
    "baseline": 32.81,
-   "anchor_close": null,
-   "t1430": 33.41,
-   "list_price": null,
+   "anchor_close": 33.2,
+   "t1430": 33.44,
+   "list_price": 33.15,
    "name": "中力股份",
    "theme": "工程机械",
    "business": "电动叉车等机动工业车辆研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.76,
-    "vr": 2.39,
+    "turnover": 0.77,
+    "vr": 2.4,
     "amplitude": 3.0478512648582745
    },
    "shape": {
@@ -2356,45 +2404,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "603198",
-   "baseline": 39.02,
-   "anchor_close": null,
-   "t1430": 39.03,
-   "list_price": null,
-   "name": "迎驾贡酒",
-   "theme": "白酒",
-   "business": "从事白酒的研发、生产和销售。",
-   "activity": 4,
-   "turn_raw": {
-    "turnover": 0.62,
-    "vr": 2.95,
-    "amplitude": 5.740645822655053
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.132,
-    "vol_trend": -0.1286,
-    "amp_am": 3.87,
-    "chg_1130": -3.357,
-    "high_am": 0.0,
-    "low_am": -3.87,
-    "src": "live"
-   },
-   "risk": 1,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 1.04,
+   "pct_vs_anchor": -0.15
   },
   {
    "code": "603223",
    "baseline": 8.19,
-   "anchor_close": null,
-   "t1430": 8.31,
-   "list_price": null,
+   "anchor_close": 8.27,
+   "t1430": 8.3,
+   "list_price": 7.95,
    "name": "恒通股份",
    "theme": "石油加工贸易 / 天然气",
    "business": "LNG等燃气业务包括LNG的贸易与物流、LNG加气站的建设和运营、LPG的分销零售等",
@@ -2415,20 +2434,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.93,
+   "pct_vs_anchor": -3.87
   },
   {
    "code": "603233",
    "baseline": 18.08,
-   "anchor_close": null,
+   "anchor_close": 18.3,
    "t1430": 18.25,
-   "list_price": null,
+   "list_price": 18.46,
    "name": "大参林",
    "theme": "零售业",
    "business": "药品、中药饮片、参茸滋补品、保健品、医疗器械、个人护理、家居用品等的连锁零售业务",
-   "activity": 3,
+   "activity": 4,
    "turn_raw": {
-    "turnover": 0.99,
+    "turnover": 1.01,
     "vr": 2.94,
     "amplitude": 3.539823008849561
    },
@@ -2442,22 +2463,24 @@
     "low_am": -1.881,
     "src": "live"
    },
-   "risk": 0,
-   "rules": []
+   "risk": 1,
+   "rules": [],
+   "pct_vs_baseline": 2.1,
+   "pct_vs_anchor": 0.87
   },
   {
    "code": "603275",
    "baseline": 34.81,
-   "anchor_close": null,
-   "t1430": 35.02,
-   "list_price": null,
+   "anchor_close": 34.83,
+   "t1430": 34.98,
+   "list_price": 33.93,
    "name": "众辰科技",
    "theme": "仪器仪表制造业",
    "business": "低压变频器和伺服系统的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.8,
-    "vr": 1.71,
+    "turnover": 1.82,
+    "vr": 1.7,
     "amplitude": 2.958919850617621
    },
    "shape": {
@@ -2471,21 +2494,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.53,
+   "pct_vs_anchor": -2.58
   },
   {
    "code": "603286",
    "baseline": 45.17,
-   "anchor_close": null,
-   "t1430": 46.53,
-   "list_price": null,
+   "anchor_close": 46.26,
+   "t1430": 46.46,
+   "list_price": 44.64,
    "name": "日盈电子",
    "theme": "汽车制造业",
    "business": "汽车洗涤系统产品、汽车精密注塑件及小线束、汽车电子传感器等汽车零部件及摩托车线束等摩托车零部件的研发、生产和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 4.71,
-    "vr": 6.84,
+    "turnover": 4.74,
+    "vr": 6.83,
     "amplitude": 6.862962143015279
    },
    "shape": {
@@ -2499,21 +2524,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.17,
+   "pct_vs_anchor": -3.5
   },
   {
    "code": "603293",
    "baseline": 31.78,
-   "anchor_close": null,
-   "t1430": 31.86,
-   "list_price": null,
+   "anchor_close": 31.56,
+   "t1430": 31.8,
+   "list_price": 30.72,
    "name": "埃泰克",
    "theme": "计算机、通信和其他电子设备制造业",
    "business": "公司是一家行业领先的汽车电子智能化解决方案提供商，主要从事车身域、智能座舱域、动力域以及智能驾驶域等汽车电子产品的研发、生产及销售，同时为客户提供汽车电子EMS和技术开发服务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.67,
-    "vr": 1.94,
+    "turnover": 1.71,
+    "vr": 1.93,
     "amplitude": 1.762114537444941
    },
    "shape": {
@@ -2530,14 +2557,16 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -3.34,
+   "pct_vs_anchor": -2.66
   },
   {
    "code": "603310",
    "baseline": 14.24,
-   "anchor_close": null,
+   "anchor_close": 14.22,
    "t1430": 14.26,
-   "list_price": null,
+   "list_price": 13.96,
    "name": "巍华新材",
    "theme": "化学原料和化学制品制造业",
    "business": "氯甲苯、三氟甲基苯系列精细化工产品的研发、生产和销售。",
@@ -2561,21 +2590,23 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -1.97,
+   "pct_vs_anchor": -1.83
   },
   {
    "code": "603338",
    "baseline": 50.25,
-   "anchor_close": null,
-   "t1430": 50.58,
-   "list_price": null,
+   "anchor_close": 50.53,
+   "t1430": 50.63,
+   "list_price": 50.73,
    "name": "浙江鼎力",
    "theme": "工程机械",
    "business": "高空作业机械和工业车辆的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
     "turnover": 0.42,
-    "vr": 2.17,
+    "vr": 2.18,
     "amplitude": 2.1293532338308463
    },
    "shape": {
@@ -2589,21 +2620,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.96,
+   "pct_vs_anchor": 0.4
   },
   {
    "code": "603344",
    "baseline": 20.11,
-   "anchor_close": null,
-   "t1430": 20.4,
-   "list_price": null,
+   "anchor_close": 20.35,
+   "t1430": 20.44,
+   "list_price": 19.45,
    "name": "星德胜",
    "theme": "电机",
    "business": "微特电机及相关产品的研发、生产及销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 5.03,
-    "vr": 1.82,
+    "turnover": 5.15,
+    "vr": 1.83,
     "amplitude": 3.232222774738929
    },
    "shape": {
@@ -2617,20 +2650,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -3.28,
+   "pct_vs_anchor": -4.42
   },
   {
    "code": "603350",
    "baseline": 26.8,
-   "anchor_close": null,
+   "anchor_close": 29.48,
    "t1430": 29.48,
-   "list_price": null,
+   "list_price": 30.82,
    "name": "安乃达",
    "theme": "电机",
    "business": "电动两轮车电驱动系统研发、生产及销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 5.67,
+    "turnover": 5.68,
     "vr": 2.54,
     "amplitude": 9.701492537313436
    },
@@ -2645,14 +2680,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 15.0,
+   "pct_vs_anchor": 4.55
   },
   {
    "code": "603369",
    "baseline": 29.49,
-   "anchor_close": null,
-   "t1430": 29.56,
-   "list_price": null,
+   "anchor_close": 29.58,
+   "t1430": 29.57,
+   "list_price": 30.2,
    "name": "今世缘",
    "theme": "白酒",
    "business": "白酒生产和销售。",
@@ -2676,20 +2713,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 2.41,
+   "pct_vs_anchor": 2.1
   },
   {
    "code": "603370",
    "baseline": 26.1,
-   "anchor_close": null,
-   "t1430": 28.12,
-   "list_price": null,
+   "anchor_close": 28.71,
+   "t1430": 28.07,
+   "list_price": 29.92,
    "name": "华新精科",
    "theme": "电机",
    "business": "精密冲压领域产品的研发、生产和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 7.13,
+    "turnover": 7.24,
     "vr": 2.52,
     "amplitude": 9.003831417624527
    },
@@ -2704,20 +2743,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 14.64,
+   "pct_vs_anchor": 4.21
   },
   {
    "code": "603416",
    "baseline": 44.46,
-   "anchor_close": null,
-   "t1430": 44.55,
-   "list_price": null,
+   "anchor_close": 44.46,
+   "t1430": 44.51,
+   "list_price": 43.95,
    "name": "信捷电气",
    "theme": "仪器仪表制造业",
    "business": "工业自动化控制产品的研发、生产和销售，为OEM自动化行业提供智能控制系统解决方案。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.85,
+    "turnover": 0.86,
     "vr": 2.6,
     "amplitude": 2.4291497975708465
    },
@@ -2735,14 +2776,16 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -1.15,
+   "pct_vs_anchor": -1.15
   },
   {
    "code": "603418",
    "baseline": 47.73,
-   "anchor_close": null,
-   "t1430": 48.74,
-   "list_price": null,
+   "anchor_close": 47.82,
+   "t1430": 48.73,
+   "list_price": 43.27,
    "name": "友升股份",
    "theme": "汽车制造业",
    "business": "铝合金汽车零部件的研发、生产和销售。",
@@ -2763,21 +2806,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -9.34,
+   "pct_vs_anchor": -9.51
   },
   {
    "code": "603489",
    "baseline": 26.96,
-   "anchor_close": null,
-   "t1430": 27.61,
-   "list_price": null,
+   "anchor_close": 27.5,
+   "t1430": 27.57,
+   "list_price": 26.04,
    "name": "八方股份",
    "theme": "电机",
    "business": "电踏车电机及配套电气系统的研发、生产、销售和技术服务。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.15,
-    "vr": 2.32,
+    "turnover": 1.17,
+    "vr": 2.31,
     "amplitude": 4.4139465875370965
    },
    "shape": {
@@ -2791,21 +2836,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -3.41,
+   "pct_vs_anchor": -5.31
   },
   {
    "code": "603515",
    "baseline": 14.9,
-   "anchor_close": null,
-   "t1430": 14.95,
-   "list_price": null,
+   "anchor_close": 14.92,
+   "t1430": 15.0,
+   "list_price": 14.87,
    "name": "欧普照明",
    "theme": "电气机械和器材制造业",
    "business": "公司是一家集研发、生产和销售于一体的综合型照明企业，以“用光创造价值”为使命，在家居、办公、商业、工业照明等众多应用领域为客户提供专业照明解决方案，产品涵盖灯具、光源、照明控制及其他等相关领域。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.15,
-    "vr": 1.69,
+    "turnover": 0.16,
+    "vr": 1.7,
     "amplitude": 2.550335570469804
    },
    "shape": {
@@ -2819,23 +2866,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": -0.2,
+   "pct_vs_anchor": -0.34
   },
   {
    "code": "603528",
    "baseline": 6.73,
-   "anchor_close": null,
+   "anchor_close": 7.4,
    "t1430": 7.4,
-   "list_price": null,
+   "list_price": 7.54,
    "name": "多伦科技",
    "theme": "软件开发 / 数据安全",
    "business": "机动车驾驶人智能培训和考试系统、智能交通类产品、驾驶模拟训练系统等的研发、生产和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 6.24,
+    "turnover": 6.25,
     "vr": 2.8,
     "amplitude": 11.292719167904913
    },
@@ -2850,20 +2896,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 12.04,
+   "pct_vs_anchor": 1.89
   },
   {
    "code": "603530",
    "baseline": 34.13,
-   "anchor_close": null,
-   "t1430": 34.28,
-   "list_price": null,
+   "anchor_close": 34.0,
+   "t1430": 34.26,
+   "list_price": 33.03,
    "name": "神马电力",
    "theme": "电气机械和器材制造业",
    "business": "电力系统变电站复合外绝缘、输配电线路复合外绝缘和橡胶密封件等产品的研发、生产与销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.58,
+    "turnover": 1.59,
     "vr": 8.16,
     "amplitude": 6.533841195429231
    },
@@ -2878,20 +2926,25 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -3.22,
+   "pct_vs_anchor": -2.85
   },
   {
    "code": "603556",
    "baseline": 20.72,
-   "anchor_close": null,
-   "t1430": 20.9,
-   "list_price": null,
+   "anchor_close": 20.81,
+   "t1430": 20.86,
+   "list_price": 21.01,
    "name": "海兴电力",
    "theme": "仪器仪表制造业",
    "business": "运用物联网、边缘计算、传感、通讯、计量、大数据、云计算等技术为电力行业用户提供基于物联网架构的智能配用电整体解决方案、智能微网产品及电力行业相关工程和运维服务",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.65,
+    "turnover": 0.66,
     "vr": 1.49,
     "amplitude": 2.1718146718146687
    },
@@ -2906,21 +2959,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.4,
+   "pct_vs_anchor": 0.96
   },
   {
    "code": "603605",
    "baseline": 55.59,
-   "anchor_close": null,
-   "t1430": 56.54,
-   "list_price": null,
+   "anchor_close": 56.33,
+   "t1430": 56.58,
+   "list_price": 56.33,
    "name": "珀莱雅",
    "theme": "美容护理",
    "business": "化妆品的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
     "turnover": 0.93,
-    "vr": 3.61,
+    "vr": 3.62,
     "amplitude": 3.4538586076632516
    },
    "shape": {
@@ -2934,14 +2989,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.33,
+   "pct_vs_anchor": 0.0
   },
   {
    "code": "603607",
    "baseline": 20.03,
-   "anchor_close": null,
-   "t1430": 20.15,
-   "list_price": null,
+   "anchor_close": 20.01,
+   "t1430": 20.14,
+   "list_price": 18.76,
    "name": "京华激光",
    "theme": "包装印刷",
    "business": "激光全息模压制品、铂金浮雕光学产品制造、销售及技术开发。",
@@ -2962,21 +3019,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -6.34,
+   "pct_vs_anchor": -6.25
   },
   {
    "code": "603626",
    "baseline": 24.0,
-   "anchor_close": null,
-   "t1430": 24.48,
-   "list_price": null,
+   "anchor_close": 24.12,
+   "t1430": 24.44,
+   "list_price": 23.18,
    "name": "科森科技",
    "theme": "消费电子",
    "business": "精密金属结构件的研发、设计、生产和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 9.92,
-    "vr": 6.3,
+    "turnover": 9.99,
+    "vr": 6.29,
     "amplitude": 9.000000000000002
    },
    "shape": {
@@ -2990,45 +3049,16 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
-  },
-  {
-   "code": "603638",
-   "baseline": 17.12,
-   "anchor_close": null,
-   "t1430": 17.18,
-   "list_price": null,
-   "name": "艾迪精密",
-   "theme": "工程机械",
-   "business": "液压技术的研究及液压产品的开发、生产和销售。",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 0.83,
-    "vr": 3.11,
-    "amplitude": 3.3878504672897094
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.603,
-    "vol_trend": -0.1851,
-    "amp_am": 3.388,
-    "chg_1130": 1.227,
-    "high_am": 2.57,
-    "low_am": -0.818,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": -3.42,
+   "pct_vs_anchor": -3.9
   },
   {
    "code": "603639",
    "baseline": 10.27,
-   "anchor_close": null,
-   "t1430": 10.34,
-   "list_price": null,
+   "anchor_close": 10.28,
+   "t1430": 10.33,
+   "list_price": 10.19,
    "name": "海利尔",
    "theme": "农化制品",
    "business": "农药制剂、农药中间体、农药原药和水溶性肥料的研发、生产和销售",
@@ -3049,20 +3079,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.78,
+   "pct_vs_anchor": -0.88
   },
   {
    "code": "603658",
    "baseline": 34.07,
-   "anchor_close": null,
-   "t1430": 34.37,
-   "list_price": null,
+   "anchor_close": 34.4,
+   "t1430": 34.36,
+   "list_price": 34.86,
    "name": "安图生物",
    "theme": "医药制造业",
    "business": "体外诊断试剂及其仪器的研发、生产和销售",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.67,
+    "turnover": 0.68,
     "vr": 2.26,
     "amplitude": 3.434106251834464
    },
@@ -3077,51 +3109,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "603659",
-   "baseline": 18.94,
-   "anchor_close": null,
-   "t1430": 18.96,
-   "list_price": null,
-   "name": "璞泰来",
-   "theme": "电池 / 石墨电极",
-   "business": "锂离子电池负极材料、自动化涂布机、涂覆隔膜、铝塑包装膜、纳米氧化铝等关键材料及工艺设备研发、生产和销售，为下游客户提供专业性、高品质的新能源锂离子电池材料及专业工艺设备综合解决方案，通过渠道共享、研发合作、工艺配套等实现了关键业务价值链的产业协同。",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 0.83,
-    "vr": 1.84,
-    "amplitude": 2.481520591341071
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.66,
-    "vol_trend": -0.1372,
-    "amp_am": 2.482,
-    "chg_1130": 0.898,
-    "high_am": 1.742,
-    "low_am": -0.739,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 2.32,
+   "pct_vs_anchor": 1.34
   },
   {
    "code": "603667",
    "baseline": 44.3,
-   "anchor_close": null,
-   "t1430": 45.16,
-   "list_price": null,
+   "anchor_close": 44.66,
+   "t1430": 45.09,
+   "list_price": 43.0,
    "name": "五洲新春",
    "theme": "特钢概念",
    "business": "成品轴承、轴承零件、精密零部件及有色金属管路件的研发、生产和销售",
    "activity": 5,
    "turn_raw": {
-    "turnover": 4.27,
+    "turnover": 4.3,
     "vr": 4.33,
     "amplitude": 6.207674943566592
    },
@@ -3136,21 +3139,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.93,
+   "pct_vs_anchor": -3.72
   },
   {
    "code": "603668",
    "baseline": 7.25,
-   "anchor_close": null,
-   "t1430": 7.52,
-   "list_price": null,
+   "anchor_close": 7.38,
+   "t1430": 7.6,
+   "list_price": 6.77,
    "name": "天马科技",
    "theme": "农产品加工",
    "business": "特种水产配合饲料研发、生产、销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 10.87,
-    "vr": 1.79,
+    "turnover": 10.97,
+    "vr": 1.81,
     "amplitude": 9.93103448275863
    },
    "shape": {
@@ -3164,21 +3169,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -6.62,
+   "pct_vs_anchor": -8.27
   },
   {
    "code": "603679",
    "baseline": 20.24,
-   "anchor_close": null,
-   "t1430": 20.35,
-   "list_price": null,
+   "anchor_close": 20.09,
+   "t1430": 20.28,
+   "list_price": 19.13,
    "name": "华体科技",
    "theme": "电气机械和器材制造业",
    "business": "城市照明综合服务提供商，专注于城市照明领域的方案规划设计、产品研发制造、工程项目安装和运行管理维护服务，并致力于成为城市文化照明和绿色照明的领导者。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 3.12,
-    "vr": 4.17,
+    "turnover": 3.13,
+    "vr": 4.16,
     "amplitude": 4.743083003952574
    },
    "shape": {
@@ -3193,53 +3200,26 @@
    },
    "risk": 1,
    "rules": [
-    "A"
-   ]
-  },
-  {
-   "code": "603680",
-   "baseline": 10.19,
-   "anchor_close": null,
-   "t1430": 10.2,
-   "list_price": null,
-   "name": "今创集团",
-   "theme": "轨交设备",
-   "business": "轨道交通车辆配套产品的研发、生产、销售及服务。",
-   "activity": 2,
-   "turn_raw": {
-    "turnover": 0.42,
-    "vr": 1.33,
-    "amplitude": 1.8645731108930277
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.579,
-    "vol_trend": -0.0872,
-    "amp_am": 1.865,
-    "chg_1130": 0.098,
-    "high_am": 0.883,
-    "low_am": -0.981,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
+    "A",
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -5.48,
+   "pct_vs_anchor": -4.78
   },
   {
    "code": "603722",
    "baseline": 25.89,
-   "anchor_close": null,
-   "t1430": 26.35,
-   "list_price": null,
+   "anchor_close": 25.9,
+   "t1430": 26.23,
+   "list_price": 24.11,
    "name": "阿科力",
    "theme": "化学原料和化学制品制造业",
    "business": "聚醚胺、光学级聚合物材料用树脂、特种环氧树脂等各类化工新材料产品的研发与生产。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.31,
-    "vr": 2.92,
+    "turnover": 1.41,
+    "vr": 2.9,
     "amplitude": 4.519119351100804
    },
    "shape": {
@@ -3253,14 +3233,16 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -6.88,
+   "pct_vs_anchor": -6.91
   },
   {
    "code": "603728",
    "baseline": 49.52,
-   "anchor_close": null,
+   "anchor_close": 54.47,
    "t1430": 54.47,
-   "list_price": null,
+   "list_price": 52.72,
    "name": "鸣志电器",
    "theme": "电机",
    "business": "控制电机及其驱动系统、LED智能照明控制与驱动产品、设备状态管理产品和系统、电源电控产品的研发、制造与销售；继电器代理贸易。",
@@ -3281,20 +3263,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 6.46,
+   "pct_vs_anchor": -3.21
   },
   {
    "code": "603768",
    "baseline": 11.15,
-   "anchor_close": null,
-   "t1430": 11.18,
-   "list_price": null,
+   "anchor_close": 11.16,
+   "t1430": 11.16,
+   "list_price": 10.5,
    "name": "常青股份",
    "theme": "汽车制造业",
    "business": "汽车冲压及焊接零部件的开发、生产与销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.85,
+    "turnover": 0.86,
     "vr": 1.21,
     "amplitude": 2.3318385650224194
    },
@@ -3312,20 +3296,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -5.83,
+   "pct_vs_anchor": -5.91
   },
   {
    "code": "603809",
    "baseline": 8.41,
-   "anchor_close": null,
-   "t1430": 8.47,
-   "list_price": null,
+   "anchor_close": 8.4,
+   "t1430": 8.48,
+   "list_price": 8.26,
    "name": "豪能股份",
    "theme": "汽车制造业",
    "business": "汽车传动系统相关产品的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.8,
+    "turnover": 0.81,
     "vr": 2.1,
     "amplitude": 2.0214030915576684
    },
@@ -3340,21 +3326,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.78,
+   "pct_vs_anchor": -1.67
   },
   {
    "code": "603828",
    "baseline": 5.25,
-   "anchor_close": null,
-   "t1430": 5.3,
-   "list_price": null,
+   "anchor_close": 5.23,
+   "t1430": 5.27,
+   "list_price": 5.02,
    "name": "*ST利达",
    "theme": "建筑装饰",
    "business": "建筑幕墙与公共建筑装饰工程的设计与施工。",
    "activity": 3,
    "turn_raw": {
     "turnover": 0.36,
-    "vr": 6.81,
+    "vr": 6.78,
     "amplitude": 3.0476190476190506
    },
    "shape": {
@@ -3368,20 +3356,25 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -4.38,
+   "pct_vs_anchor": -4.02
   },
   {
    "code": "603861",
    "baseline": 11.75,
-   "anchor_close": null,
-   "t1430": 11.79,
-   "list_price": null,
+   "anchor_close": 11.77,
+   "t1430": 11.82,
+   "list_price": 10.71,
    "name": "白云电器",
    "theme": "电网设备",
    "business": "电力能源综合解决方案服务商。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 4.28,
+    "turnover": 4.3,
     "vr": 1.6,
     "amplitude": 5.8723404255319105
    },
@@ -3397,23 +3390,23 @@
    },
    "risk": 1,
    "rules": [
-    "A",
-    "R"
+    "A"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "pct_vs_baseline": -8.85,
+   "pct_vs_anchor": -9.01
   },
   {
    "code": "603926",
    "baseline": 15.93,
-   "anchor_close": null,
-   "t1430": 16.6,
-   "list_price": null,
+   "anchor_close": 16.55,
+   "t1430": 16.59,
+   "list_price": 15.89,
    "name": "铁流股份",
    "theme": "汽车零部件",
    "business": "汽车离合器的研发、生产和销售",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.95,
+    "turnover": 2.98,
     "vr": 2.2,
     "amplitude": 8.34902699309478
    },
@@ -3428,20 +3421,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.25,
+   "pct_vs_anchor": -3.99
   },
   {
    "code": "603933",
    "baseline": 17.31,
-   "anchor_close": null,
+   "anchor_close": 19.04,
    "t1430": 19.04,
-   "list_price": null,
+   "list_price": 20.94,
    "name": "睿能科技",
    "theme": "MCU芯片",
    "business": "以针织横机电脑控制系统的研发、生产和销售为主的制造业务及以IC产品分销为主的分销业务。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.33,
+    "turnover": 2.35,
     "vr": 2.92,
     "amplitude": 10.918544194107456
    },
@@ -3456,21 +3451,56 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 20.97,
+   "pct_vs_anchor": 9.98
+  },
+  {
+   "code": "603939",
+   "baseline": 25.63,
+   "anchor_close": 25.65,
+   "t1430": 25.65,
+   "list_price": 25.76,
+   "name": "益丰药房",
+   "theme": "零售业",
+   "business": "主要从事药品、保健品、医疗器械以及与健康相关的日用便利品等的连锁零售业务。",
+   "activity": 3,
+   "turn_raw": {
+    "turnover": 0.56,
+    "vr": 2.7,
+    "amplitude": 2.1069059695669106
+   },
+   "shape": {
+    "redraw": 0,
+    "pos_1130": 0.778,
+    "vol_trend": -0.0713,
+    "amp_am": 2.107,
+    "chg_1130": 0.195,
+    "high_am": 0.663,
+    "low_am": -1.444,
+    "src": "live"
+   },
+   "risk": 0,
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.51,
+   "pct_vs_anchor": 0.43
   },
   {
    "code": "603949",
    "baseline": 14.16,
-   "anchor_close": null,
-   "t1430": 14.42,
-   "list_price": null,
+   "anchor_close": 14.65,
+   "t1430": 14.39,
+   "list_price": 13.05,
    "name": "雪龙集团",
    "theme": "汽车制造业",
    "business": "汽车发动机冷却风扇总成、离合器风扇集成系统及汽车轻量化塑料件的研发、生产和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 6.25,
-    "vr": 2.81,
+    "turnover": 6.3,
+    "vr": 2.8,
     "amplitude": 6.850282485875711
    },
    "shape": {
@@ -3484,21 +3514,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -7.84,
+   "pct_vs_anchor": -10.92
   },
   {
    "code": "605009",
    "baseline": 24.36,
-   "anchor_close": null,
-   "t1430": 24.42,
-   "list_price": null,
+   "anchor_close": 24.36,
+   "t1430": 24.38,
+   "list_price": 24.32,
    "name": "豪悦护理",
    "theme": "美容护理",
    "business": "妇、幼、成人卫生护理用品的研发、制造与销售。",
    "activity": 2,
    "turn_raw": {
     "turnover": 0.32,
-    "vr": 1.56,
+    "vr": 1.55,
     "amplitude": 1.8472906403940856
    },
    "shape": {
@@ -3515,21 +3547,23 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.16,
+   "pct_vs_anchor": -0.16
   },
   {
    "code": "605089",
    "baseline": 23.19,
-   "anchor_close": null,
-   "t1430": 23.55,
-   "list_price": null,
+   "anchor_close": 23.75,
+   "t1430": 23.66,
+   "list_price": 24.68,
    "name": "XD味知香",
    "theme": "食品加工制造",
    "business": "半成品菜的研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.76,
-    "vr": 2.71,
+    "turnover": 1.79,
+    "vr": 2.72,
     "amplitude": 5.6489866321690325
    },
    "shape": {
@@ -3543,21 +3577,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 6.43,
+   "pct_vs_anchor": 3.92
   },
   {
    "code": "605117",
    "baseline": 67.45,
-   "anchor_close": null,
-   "t1430": 68.18,
-   "list_price": null,
+   "anchor_close": 67.96,
+   "t1430": 68.09,
+   "list_price": 67.95,
    "name": "德业股份",
    "theme": "光伏设备 / 同花顺出海50",
    "business": "逆变器、热交换器、除湿机产品。",
    "activity": 3,
    "turn_raw": {
     "turnover": 0.77,
-    "vr": 9.19,
+    "vr": 9.17,
     "amplitude": 2.1793921423276483
    },
    "shape": {
@@ -3571,84 +3607,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "605123",
-   "baseline": 75.48,
-   "anchor_close": null,
-   "t1430": 75.51,
-   "list_price": null,
-   "name": "派克新材",
-   "theme": "军工装备",
-   "business": "金属锻件的研发、生产和销售。",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 0.79,
-    "vr": 1.96,
-    "amplitude": 3.285638579756213
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.34,
-    "vol_trend": -0.1412,
-    "amp_am": 3.153,
-    "chg_1130": 0.437,
-    "high_am": 2.517,
-    "low_am": -0.636,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
-  },
-  {
-   "code": "605133",
-   "baseline": 27.58,
-   "anchor_close": null,
-   "t1430": 27.63,
-   "list_price": null,
-   "name": "嵘泰股份",
-   "theme": "汽车制造业",
-   "business": "铝合金精密压铸件的研发、生产与销售。",
-   "activity": 4,
-   "turn_raw": {
-    "turnover": 2.59,
-    "vr": 2.06,
-    "amplitude": 3.6620739666424873
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.597,
-    "vol_trend": -0.1376,
-    "amp_am": 2.611,
-    "chg_1130": 1.269,
-    "high_am": 2.321,
-    "low_am": -0.29,
-    "src": "live"
-   },
-   "risk": 1,
-   "rules": [
-    "A",
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 0.74,
+   "pct_vs_anchor": -0.01
   },
   {
    "code": "605178",
    "baseline": 61.15,
-   "anchor_close": null,
-   "t1430": 62.6,
-   "list_price": null,
+   "anchor_close": 62.22,
+   "t1430": 62.4,
+   "list_price": 60.5,
    "name": "时空科技",
    "theme": "建筑装饰 / 网约车",
    "business": "照明工程系统集成服务。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.69,
-    "vr": 5.46,
+    "turnover": 2.73,
+    "vr": 5.44,
     "amplitude": 6.999182338511859
    },
    "shape": {
@@ -3662,21 +3637,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.06,
+   "pct_vs_anchor": -2.76
   },
   {
    "code": "605218",
    "baseline": 13.15,
-   "anchor_close": null,
-   "t1430": 13.3,
-   "list_price": null,
+   "anchor_close": 13.2,
+   "t1430": 13.25,
+   "list_price": 12.13,
    "name": "伟时电子",
    "theme": "光学光电子",
    "business": "背光显示模组、液晶显示模组等产品研发、生产、销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.82,
-    "vr": 1.86,
+    "turnover": 2.85,
+    "vr": 1.85,
     "amplitude": 6.6159695817490425
    },
    "shape": {
@@ -3690,21 +3667,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -7.76,
+   "pct_vs_anchor": -8.11
   },
   {
    "code": "605258",
    "baseline": 42.36,
-   "anchor_close": null,
-   "t1430": 42.85,
-   "list_price": null,
+   "anchor_close": 42.86,
+   "t1430": 43.26,
+   "list_price": 38.75,
    "name": "协和电子",
    "theme": "计算机、通信和其他电子设备制造业",
    "business": "从事刚性、挠性印制电路板的研发、生产、销售以及印制电路板的表面贴装业务(SMT)。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 16.06,
-    "vr": 3.15,
+    "turnover": 16.15,
+    "vr": 3.18,
     "amplitude": 13.338054768649666
    },
    "shape": {
@@ -3718,21 +3697,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -8.52,
+   "pct_vs_anchor": -9.59
   },
   {
    "code": "605288",
    "baseline": 57.75,
-   "anchor_close": null,
-   "t1430": 58.09,
-   "list_price": null,
+   "anchor_close": 57.7,
+   "t1430": 58.0,
+   "list_price": 53.56,
    "name": "凯迪股份",
    "theme": "电气机械和器材制造业",
    "business": "线性驱动系统产品的研发、生产与销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.36,
-    "vr": 2.65,
+    "turnover": 2.39,
+    "vr": 2.64,
     "amplitude": 8.848484848484848
    },
    "shape": {
@@ -3748,20 +3729,22 @@
    "risk": 1,
    "rules": [
     "A"
-   ]
+   ],
+   "pct_vs_baseline": -7.26,
+   "pct_vs_anchor": -7.18
   },
   {
    "code": "605333",
    "baseline": 15.64,
-   "anchor_close": null,
+   "anchor_close": 15.67,
    "t1430": 15.74,
-   "list_price": null,
+   "list_price": 15.45,
    "name": "沪光股份",
    "theme": "汽车零部件",
    "business": "汽车线束的研发、制造及销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.28,
+    "turnover": 0.29,
     "vr": 2.19,
     "amplitude": 2.3657289002557493
    },
@@ -3776,21 +3759,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.21,
+   "pct_vs_anchor": -1.4
   },
   {
    "code": "605389",
    "baseline": 55.82,
-   "anchor_close": null,
-   "t1430": 56.31,
-   "list_price": null,
+   "anchor_close": 56.52,
+   "t1430": 56.41,
+   "list_price": 56.12,
    "name": "长龄液压",
    "theme": "工程机械",
    "business": "液压元件及零部件的研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.32,
-    "vr": 5.11,
+    "turnover": 1.33,
+    "vr": 5.12,
     "amplitude": 7.93622357577929
    },
    "shape": {
@@ -3804,21 +3789,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.54,
+   "pct_vs_anchor": -0.71
   },
   {
    "code": "605499",
    "baseline": 100.65,
-   "anchor_close": null,
-   "t1430": 101.06,
-   "list_price": null,
+   "anchor_close": 101.4,
+   "t1430": 101.33,
+   "list_price": 102.14,
    "name": "东鹏饮料",
    "theme": "酒、饮料和精制茶制造业",
    "business": "饮料的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.55,
-    "vr": 4.29,
+    "turnover": 0.58,
+    "vr": 4.3,
     "amplitude": 1.9970193740685593
    },
    "shape": {
@@ -3832,20 +3819,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.48,
+   "pct_vs_anchor": 0.73
   },
   {
    "code": "605555",
    "baseline": 11.43,
-   "anchor_close": null,
-   "t1430": 11.49,
-   "list_price": null,
+   "anchor_close": 11.45,
+   "t1430": 11.48,
+   "list_price": 10.7,
    "name": "德昌股份",
    "theme": "小家电",
    "business": "小家电及汽车EPS电机的设计、制造与销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.65,
+    "turnover": 1.67,
     "vr": 1.94,
     "amplitude": 5.949256342957128
    },
@@ -3860,21 +3849,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -6.39,
+   "pct_vs_anchor": -6.55
   },
   {
    "code": "000056",
    "baseline": 2.03,
-   "anchor_close": null,
-   "t1430": 2.04,
-   "list_price": null,
+   "anchor_close": 2.05,
+   "t1430": 2.05,
+   "list_price": 2.09,
    "name": "*ST皇庭",
    "theme": "零售",
    "business": "百货的零售与批发;商业地产。",
    "activity": 3,
    "turn_raw": {
     "turnover": 2.77,
-    "vr": -0.91,
+    "vr": -0.92,
     "amplitude": 4.433497536945806
    },
    "shape": {
@@ -3888,16 +3879,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": [
-    "A"
-   ]
+   "rules": [],
+   "pct_vs_baseline": 2.96,
+   "pct_vs_anchor": 1.95
   },
   {
    "code": "000333",
    "baseline": 83.86,
-   "anchor_close": null,
-   "t1430": 84.62,
-   "list_price": null,
+   "anchor_close": 85.29,
+   "t1430": 84.68,
+   "list_price": 85.93,
    "name": "美的集团",
    "theme": "白色家电 / 同花顺出海50",
    "business": "以家电产业为主，涉足电机、物流等领域，旗下分为四大业务板块，分别为大家电、小家电、电机及物流。",
@@ -3918,20 +3909,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.47,
+   "pct_vs_anchor": 0.75
   },
   {
    "code": "000400",
    "baseline": 22.17,
-   "anchor_close": null,
-   "t1430": 22.84,
-   "list_price": null,
+   "anchor_close": 22.8,
+   "t1430": 22.83,
+   "list_price": 22.83,
    "name": "许继电气",
    "theme": "电网设备",
    "business": "提供高端能源和电力技术装备，为清洁能源生产、传输、配送以及高效使用提供全面的技术、产品和服务支撑。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.41,
+    "turnover": 2.46,
     "vr": 1.91,
     "amplitude": 4.0144339197113235
    },
@@ -3946,20 +3939,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.98,
+   "pct_vs_anchor": 0.13
   },
   {
    "code": "000410",
    "baseline": 4.84,
-   "anchor_close": null,
-   "t1430": 4.91,
-   "list_price": null,
+   "anchor_close": 4.91,
+   "t1430": 4.9,
+   "list_price": 4.72,
    "name": "沈阳机床",
    "theme": "通用设备",
    "business": "金属切削机床制造。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.34,
+    "turnover": 1.36,
     "vr": 3.1,
     "amplitude": 5.578512396694225
    },
@@ -3974,20 +3969,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.48,
+   "pct_vs_anchor": -3.87
   },
   {
    "code": "000528",
    "baseline": 7.79,
-   "anchor_close": null,
-   "t1430": 7.99,
-   "list_price": null,
+   "anchor_close": 7.96,
+   "t1430": 7.98,
+   "list_price": 8.38,
    "name": "柳 工",
    "theme": "工程机械 / 碳纤维",
    "business": "建筑机械、农业机械、混凝土机械及工程机械的研发、生产、销售和服务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 2.11,
+    "turnover": 2.12,
     "vr": 0.87,
     "amplitude": 2.053915275994856
    },
@@ -4002,20 +3999,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 7.57,
+   "pct_vs_anchor": 5.28
   },
   {
    "code": "000543",
    "baseline": 7.44,
-   "anchor_close": null,
+   "anchor_close": 7.43,
    "t1430": 7.48,
-   "list_price": null,
+   "list_price": 6.94,
    "name": "皖能电力",
    "theme": "电力",
    "business": "电力、节能及相关项目的投资与经营。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.86,
+    "turnover": 0.88,
     "vr": 0.95,
     "amplitude": 3.225806451612894
    },
@@ -4030,21 +4029,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -6.72,
+   "pct_vs_anchor": -6.59
   },
   {
    "code": "000559",
    "baseline": 10.29,
-   "anchor_close": null,
-   "t1430": 10.58,
-   "list_price": null,
+   "anchor_close": 10.5,
+   "t1430": 10.55,
+   "list_price": 10.37,
    "name": "万向钱潮",
    "theme": "汽车制造业",
    "business": "汽车零配件及汽车总成。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.95,
-    "vr": 4.23,
+    "turnover": 1.96,
+    "vr": 4.22,
     "amplitude": 6.122448979591845
    },
    "shape": {
@@ -4058,20 +4059,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.78,
+   "pct_vs_anchor": -1.24
   },
   {
    "code": "000570",
    "baseline": 5.39,
-   "anchor_close": null,
+   "anchor_close": 5.51,
    "t1430": 5.5,
-   "list_price": null,
+   "list_price": 5.67,
    "name": "苏常柴Ａ",
    "theme": "通用设备",
    "business": "以“常柴牌”为商标的中小型单缸和多缸柴油机的生产及销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 4.54,
+    "turnover": 4.58,
     "vr": 1.1,
     "amplitude": 6.307977736549162
    },
@@ -4086,14 +4089,16 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 5.19,
+   "pct_vs_anchor": 2.9
   },
   {
    "code": "000610",
    "baseline": 6.48,
-   "anchor_close": null,
+   "anchor_close": 6.52,
    "t1430": 6.56,
-   "list_price": null,
+   "list_price": 6.16,
    "name": "*ST西旅",
    "theme": "旅游及酒店",
    "business": "旅游商业、饮食供应、物资供销等。",
@@ -4114,21 +4119,56 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -4.94,
+   "pct_vs_anchor": -5.52
+  },
+  {
+   "code": "000629",
+   "baseline": 2.67,
+   "anchor_close": 2.66,
+   "t1430": 2.68,
+   "list_price": 2.64,
+   "name": "钒钛股份",
+   "theme": "钢铁 / 钛白粉概念",
+   "business": "钒钛制品生产和加工、钒钛延伸产品的研发和应用。",
+   "activity": 2,
+   "turn_raw": {
+    "turnover": 0.65,
+    "vr": 1.98,
+    "amplitude": 1.4981273408239715
+   },
+   "shape": {
+    "redraw": 1,
+    "pos_1130": 0.75,
+    "vol_trend": -0.0944,
+    "amp_am": 1.498,
+    "chg_1130": 0.375,
+    "high_am": 0.749,
+    "low_am": -0.749,
+    "src": "live"
+   },
+   "risk": 0,
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -1.12,
+   "pct_vs_anchor": -0.75
   },
   {
    "code": "000637",
    "baseline": 3.93,
-   "anchor_close": null,
-   "t1430": 3.97,
-   "list_price": null,
+   "anchor_close": 4.01,
+   "t1430": 3.95,
+   "list_price": 3.73,
    "name": "茂化实华",
    "theme": "石油加工贸易",
    "business": "石油化工产品。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 13.03,
-    "vr": 4.35,
+    "turnover": 13.19,
+    "vr": 4.33,
     "amplitude": 9.669211195928762
    },
    "shape": {
@@ -4142,20 +4182,24 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [
+    "A"
+   ],
+   "pct_vs_baseline": -5.09,
+   "pct_vs_anchor": -6.98
   },
   {
    "code": "000651",
    "baseline": 37.13,
-   "anchor_close": null,
+   "anchor_close": 37.43,
    "t1430": 37.35,
-   "list_price": null,
+   "list_price": 37.6,
    "name": "格力电器",
    "theme": "白色家电",
    "business": "空调、干衣机等家用电器。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.96,
+    "turnover": 0.97,
     "vr": 1.41,
     "amplitude": 1.6428763802854816
    },
@@ -4170,20 +4214,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.27,
+   "pct_vs_anchor": 0.45
   },
   {
    "code": "000678",
    "baseline": 10.94,
-   "anchor_close": null,
+   "anchor_close": 12.03,
    "t1430": 12.03,
-   "list_price": null,
+   "list_price": 13.23,
    "name": "襄阳轴承",
    "theme": "汽车零部件",
    "business": "汽车轴承及零部件。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 15.63,
+    "turnover": 15.64,
     "vr": 7.11,
     "amplitude": 9.506398537477141
    },
@@ -4198,20 +4244,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 20.93,
+   "pct_vs_anchor": 9.98
   },
   {
    "code": "000680",
    "baseline": 8.71,
-   "anchor_close": null,
-   "t1430": 8.73,
-   "list_price": null,
+   "anchor_close": 8.71,
+   "t1430": 8.72,
+   "list_price": 8.86,
    "name": "山推股份",
    "theme": "工程机械",
    "business": "推土机、挖掘机等。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.9,
+    "turnover": 0.91,
     "vr": 2.01,
     "amplitude": 2.870264064293915
    },
@@ -4229,84 +4277,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
-  },
-  {
-   "code": "000690",
-   "baseline": 5.48,
-   "anchor_close": null,
-   "t1430": 5.49,
-   "list_price": null,
-   "name": "宝新能源",
-   "theme": "电力",
-   "business": "新能源发电、金融投资。",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 3.8,
-    "vr": 0.92,
-    "amplitude": 4.562043795620438
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.143,
-    "vol_trend": -0.0574,
-    "amp_am": 3.832,
-    "chg_1130": -3.285,
-    "high_am": 0.0,
-    "low_am": -3.832,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "A",
-    "C",
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
-  },
-  {
-   "code": "000733",
-   "baseline": 37.59,
-   "anchor_close": null,
-   "t1430": 37.64,
-   "list_price": null,
-   "name": "振华科技",
-   "theme": "军工电子",
-   "business": "机械电子产品。",
-   "activity": 2,
-   "turn_raw": {
-    "turnover": 0.96,
-    "vr": 1.32,
-    "amplitude": 1.5429635541367528
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.642,
-    "vol_trend": -0.0639,
-    "amp_am": 1.41,
-    "chg_1130": 0.266,
-    "high_am": 0.771,
-    "low_am": -0.638,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 1.72,
+   "pct_vs_anchor": 1.72
   },
   {
    "code": "000795",
    "baseline": 8.23,
-   "anchor_close": null,
-   "t1430": 8.26,
-   "list_price": null,
+   "anchor_close": 8.22,
+   "t1430": 8.27,
+   "list_price": 8.14,
    "name": "英洛华",
    "theme": "金属新材料",
    "business": "稀土永磁材料与制品、电机系列产品与消防智能装备。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.73,
+    "turnover": 0.74,
     "vr": 3.56,
     "amplitude": 1.3365735115431279
    },
@@ -4321,23 +4307,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": -1.09,
+   "pct_vs_anchor": -0.97
   },
   {
    "code": "000826",
    "baseline": 1.78,
-   "anchor_close": null,
+   "anchor_close": 1.81,
    "t1430": 1.82,
-   "list_price": null,
+   "list_price": 1.82,
    "name": "*ST启环",
    "theme": "公共设施管理业",
    "business": "市政给水、污水处理项目投资及运营；城市垃圾及工业固体废弃物处置及危险废弃物处置及回收利用相关配套设施设计。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.13,
+    "turnover": 1.14,
     "vr": -0.97,
     "amplitude": 7.865168539325837
    },
@@ -4352,14 +4337,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.25,
+   "pct_vs_anchor": 0.55
   },
   {
    "code": "000852",
    "baseline": 5.31,
-   "anchor_close": null,
-   "t1430": 5.34,
-   "list_price": null,
+   "anchor_close": 5.33,
+   "t1430": 5.33,
+   "list_price": 5.07,
    "name": "石化机械",
    "theme": "专用设备制造业",
    "business": "石油天然气及矿用钻头、石油机械配件等。",
@@ -4380,21 +4367,26 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -4.52,
+   "pct_vs_anchor": -4.88
   },
   {
    "code": "000881",
    "baseline": 6.38,
-   "anchor_close": null,
-   "t1430": 6.46,
-   "list_price": null,
+   "anchor_close": 6.43,
+   "t1430": 6.47,
+   "list_price": 6.15,
    "name": "中广核技",
    "theme": "化学原料和化学制品制造业",
    "business": "远洋运输、房地产开发、国际工程承包、国际劳务合作、远洋渔业和进出口贸易及线缆用改性高分子材料、改性工程塑料、电子加速器的生产和销售以及辐照加工业务等核技术应用业务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.25,
-    "vr": 1.24,
+    "turnover": 1.26,
+    "vr": 1.25,
     "amplitude": 4.388714733542324
    },
    "shape": {
@@ -4408,14 +4400,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -3.61,
+   "pct_vs_anchor": -4.35
   },
   {
    "code": "000895",
    "baseline": 23.6,
-   "anchor_close": null,
-   "t1430": 23.77,
-   "list_price": null,
+   "anchor_close": 23.82,
+   "t1430": 23.78,
+   "list_price": 23.98,
    "name": "双汇发展",
    "theme": "食品加工制造",
    "business": "食品加工及销售，生物工程，畜牧养殖，化工、包装制品的生产与销售。",
@@ -4436,20 +4430,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.61,
+   "pct_vs_anchor": 0.67
   },
   {
    "code": "000928",
    "baseline": 5.37,
-   "anchor_close": null,
-   "t1430": 5.4,
-   "list_price": null,
+   "anchor_close": 5.39,
+   "t1430": 5.39,
+   "list_price": 5.42,
    "name": "中钢国际",
    "theme": "同花顺中特估100",
    "business": "以工程总承包为主的工程技术服务业务和以机电设备及备品备件贸易为主的设备集成及备品备件供应服务业务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 2.35,
+    "turnover": 2.37,
     "vr": 0.91,
     "amplitude": 3.724394785847303
    },
@@ -4465,15 +4461,19 @@
    },
    "risk": 0,
    "rules": [
-    "A"
-   ]
+    "A",
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.93,
+   "pct_vs_anchor": 0.56
   },
   {
    "code": "000951",
    "baseline": 19.93,
-   "anchor_close": null,
-   "t1430": 19.95,
-   "list_price": null,
+   "anchor_close": 19.92,
+   "t1430": 19.96,
+   "list_price": 20.19,
    "name": "中国重汽",
    "theme": "汽车整车",
    "business": "载重汽车、专用汽车、重型专用车底盘、客车底盘、汽车配件制造和销售。",
@@ -4497,21 +4497,23 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 1.3,
+   "pct_vs_anchor": 1.36
   },
   {
    "code": "000970",
    "baseline": 10.73,
-   "anchor_close": null,
-   "t1430": 10.84,
-   "list_price": null,
+   "anchor_close": 10.76,
+   "t1430": 10.83,
+   "list_price": 10.54,
    "name": "中科三环",
    "theme": "金属新材料",
    "business": "稀土永磁材料和新型磁性材料及其应用产品的研究开发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.23,
-    "vr": 2.02,
+    "turnover": 1.24,
+    "vr": 2.01,
     "amplitude": 1.8639328984156502
    },
    "shape": {
@@ -4525,20 +4527,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.77,
+   "pct_vs_anchor": -2.04
   },
   {
    "code": "001225",
    "baseline": 28.13,
-   "anchor_close": null,
-   "t1430": 28.5,
-   "list_price": null,
+   "anchor_close": 28.49,
+   "t1430": 28.45,
+   "list_price": 26.42,
    "name": "和泰机电",
    "theme": "水泥概念",
    "business": "物料输送设备的研发、设计、制造和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 3.38,
+    "turnover": 3.4,
     "vr": 1.89,
     "amplitude": 7.0031994312122245
    },
@@ -4553,20 +4557,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -6.08,
+   "pct_vs_anchor": -7.27
   },
   {
    "code": "001233",
    "baseline": 53.02,
-   "anchor_close": null,
-   "t1430": 53.8,
-   "list_price": null,
+   "anchor_close": 53.5,
+   "t1430": 53.65,
+   "list_price": 52.9,
    "name": "海安集团",
    "theme": "橡胶和塑料制品业",
    "business": "巨型全钢工程机械子午线轮胎的研发、生产与销售，以及矿用轮胎运营管理业务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 10.81,
+    "turnover": 11.0,
     "vr": 2.06,
     "amplitude": 3.9041870992078467
    },
@@ -4581,20 +4587,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.23,
+   "pct_vs_anchor": -1.12
   },
   {
    "code": "001282",
    "baseline": 16.07,
-   "anchor_close": null,
-   "t1430": 16.27,
-   "list_price": null,
+   "anchor_close": 16.16,
+   "t1430": 16.24,
+   "list_price": 15.5,
    "name": "三联锻造",
    "theme": "汽车零部件",
    "business": "汽车锻造零部件的研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.81,
+    "turnover": 2.83,
     "vr": 2.19,
     "amplitude": 5.600497822028617
    },
@@ -4609,51 +4617,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
-  },
-  {
-   "code": "001287",
-   "baseline": 19.18,
-   "anchor_close": null,
-   "t1430": 19.19,
-   "list_price": null,
-   "name": "中电港",
-   "theme": "其他电子",
-   "business": "电子元器件分销、设计链服务、供应链协同配套和产业数据服务。",
-   "activity": 4,
-   "turn_raw": {
-    "turnover": 1.61,
-    "vr": 2.51,
-    "amplitude": 3.1803962460896735
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.438,
-    "vol_trend": -0.1118,
-    "amp_am": 2.503,
-    "chg_1130": -0.574,
-    "high_am": 0.834,
-    "low_am": -1.668,
-    "src": "live"
-   },
-   "risk": 1,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": -3.55,
+   "pct_vs_anchor": -4.08
   },
   {
    "code": "001288",
    "baseline": 29.66,
-   "anchor_close": null,
-   "t1430": 30.27,
-   "list_price": null,
+   "anchor_close": 29.92,
+   "t1430": 30.2,
+   "list_price": 29.53,
    "name": "运机集团",
    "theme": "通用设备制造业",
    "business": "以带式输送机为主的节能环保型输送机械成套设备的研发、设计、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 3.26,
+    "turnover": 3.31,
     "vr": 3.1,
     "amplitude": 5.8327714093054635
    },
@@ -4668,20 +4647,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.44,
+   "pct_vs_anchor": -1.3
   },
   {
    "code": "001312",
    "baseline": 16.84,
-   "anchor_close": null,
-   "t1430": 16.98,
-   "list_price": null,
+   "anchor_close": 16.98,
+   "t1430": 16.99,
+   "list_price": 16.61,
    "name": "福恩股份",
    "theme": "纺织制造",
    "business": "公司主要从事生态环保面料的研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.55,
+    "turnover": 2.59,
     "vr": 1.69,
     "amplitude": 3.5629453681710297
    },
@@ -4696,14 +4677,16 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.37,
+   "pct_vs_anchor": -2.18
   },
   {
    "code": "001360",
    "baseline": 16.89,
-   "anchor_close": null,
+   "anchor_close": 18.58,
    "t1430": 18.58,
-   "list_price": null,
+   "list_price": 17.16,
    "name": "南矿集团",
    "theme": "专用设备制造业",
    "business": "砂石骨料和金属矿山相关的破碎、筛分设备的研发、设计、生产、销售及后市场服务。",
@@ -4724,20 +4707,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.6,
+   "pct_vs_anchor": -7.64
   },
   {
    "code": "001380",
    "baseline": 15.36,
-   "anchor_close": null,
-   "t1430": 15.4,
-   "list_price": null,
+   "anchor_close": 15.28,
+   "t1430": 15.37,
+   "list_price": 14.97,
    "name": "华纬科技",
    "theme": "通用设备制造业",
    "business": "弹簧的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.76,
+    "turnover": 0.77,
     "vr": 2.06,
     "amplitude": 1.822916666666674
    },
@@ -4755,20 +4740,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -2.54,
+   "pct_vs_anchor": -2.03
   },
   {
    "code": "001965",
    "baseline": 10.31,
-   "anchor_close": null,
+   "anchor_close": 10.32,
    "t1430": 10.32,
-   "list_price": null,
+   "list_price": 10.32,
    "name": "招商公路",
    "theme": "公路铁路运输",
    "business": "公路相关的经营收费公路业务和交通科技业务。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.19,
+    "turnover": 0.2,
     "vr": 1.02,
     "amplitude": 2.036857419980592
    },
@@ -4786,21 +4773,23 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.1,
+   "pct_vs_anchor": 0.0
   },
   {
    "code": "002023",
    "baseline": 8.93,
-   "anchor_close": null,
-   "t1430": 9.11,
-   "list_price": null,
+   "anchor_close": 9.03,
+   "t1430": 9.09,
+   "list_price": 8.63,
    "name": "海特高新",
    "theme": "军工装备 / 太赫兹",
    "business": "航空小型发动机维修；飞机机载无线电、仪表、电气设备的研制和维修；航空培训；航空器材维修交换及租赁一体化服务。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.2,
-    "vr": 1.83,
+    "turnover": 2.21,
+    "vr": 1.82,
     "amplitude": 3.4714445688689866
    },
    "shape": {
@@ -4814,20 +4803,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -3.36,
+   "pct_vs_anchor": -4.43
   },
   {
    "code": "002031",
    "baseline": 5.03,
-   "anchor_close": null,
+   "anchor_close": 5.0,
    "t1430": 5.05,
-   "list_price": null,
+   "list_price": 5.06,
    "name": "巨轮智能",
    "theme": "减速器",
    "business": "轮胎模具、液压式硫化机和机器人及智能装备的生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.83,
+    "turnover": 2.84,
     "vr": 5.84,
     "amplitude": 2.5844930417495005
    },
@@ -4846,20 +4837,55 @@
     "A",
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": 0.6,
+   "pct_vs_anchor": 1.2
+  },
+  {
+   "code": "002032",
+   "baseline": 42.37,
+   "anchor_close": 42.4,
+   "t1430": 42.39,
+   "list_price": 42.19,
+   "name": "苏 泊 尔",
+   "theme": "小家电",
+   "business": "设计、生产、销售各种压力锅、铝制品炊具及小家电等，主要产品为压力锅、奶锅、汤锅、炒锅、蒸锅、真空保鲜锅、电水壶、电磁炉、电火锅、电饭煲、榨汁机等。",
+   "activity": 3,
+   "turn_raw": {
+    "turnover": 0.22,
+    "vr": 7.27,
+    "amplitude": 2.24215246636772
+   },
+   "shape": {
+    "redraw": 1,
+    "pos_1130": 0.989,
+    "vol_trend": -0.0448,
+    "amp_am": 2.242,
+    "chg_1130": 0.873,
+    "high_am": 0.897,
+    "low_am": -1.345,
+    "src": "live"
+   },
+   "risk": 0,
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.42,
+   "pct_vs_anchor": -0.5
   },
   {
    "code": "002043",
    "baseline": 12.43,
-   "anchor_close": null,
-   "t1430": 12.83,
-   "list_price": null,
+   "anchor_close": 12.75,
+   "t1430": 12.84,
+   "list_price": 12.83,
    "name": "兔 宝 宝",
    "theme": "建筑材料",
    "business": "室内装饰材料的研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.08,
+    "turnover": 2.1,
     "vr": 3.34,
     "amplitude": 5.470635559131132
    },
@@ -4874,52 +4900,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "002048",
-   "baseline": 17.67,
-   "anchor_close": null,
-   "t1430": 17.71,
-   "list_price": null,
-   "name": "宁波华翔",
-   "theme": "汽车零部件",
-   "business": "汽车非金属类（主要为橡塑类）零部件的开发、生产、销售，产品主要应用于发动机附件系统、底盘系统、电器及空调系统、内外饰件系统等。",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 1.64,
-    "vr": 1.23,
-    "amplitude": 3.565365025466887
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.698,
-    "vol_trend": -0.1242,
-    "amp_am": 3.565,
-    "chg_1130": 1.698,
-    "high_am": 2.773,
-    "low_am": -0.792,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": 3.22,
+   "pct_vs_anchor": 0.63
   },
   {
    "code": "002050",
    "baseline": 32.93,
-   "anchor_close": null,
-   "t1430": 33.14,
-   "list_price": null,
+   "anchor_close": 32.89,
+   "t1430": 33.06,
+   "list_price": 32.54,
    "name": "三花智控",
    "theme": "白色家电 / 同花顺出海50",
    "business": "冷热转换、智能控制的环境热管理解决方案开发，建筑暖通、电器设备和汽车热管理领域的专业化经营。",
    "activity": 4,
    "turn_raw": {
     "turnover": 1.23,
-    "vr": 4.35,
+    "vr": 4.34,
     "amplitude": 3.249316732462801
    },
    "shape": {
@@ -4933,20 +4930,25 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -1.18,
+   "pct_vs_anchor": -1.06
   },
   {
    "code": "002073",
    "baseline": 5.48,
-   "anchor_close": null,
-   "t1430": 5.51,
-   "list_price": null,
+   "anchor_close": 5.49,
+   "t1430": 5.5,
+   "list_price": 5.46,
    "name": "软控股份",
    "theme": "专用设备制造业",
    "business": "根据轮胎橡胶企业各生产工序的需要提供软硬结合的智能化设备系统和软件。",
    "activity": 2,
    "turn_raw": {
-    "turnover": 0.96,
+    "turnover": 0.97,
     "vr": 0.88,
     "amplitude": 1.6423357664233549
    },
@@ -4961,21 +4963,26 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.36,
+   "pct_vs_anchor": -0.55
   },
   {
    "code": "002077",
    "baseline": 11.54,
-   "anchor_close": null,
-   "t1430": 11.93,
-   "list_price": null,
+   "anchor_close": 11.89,
+   "t1430": 11.89,
+   "list_price": 13.08,
    "name": "大港股份",
    "theme": "半导体",
    "business": "集成电路和园区环保服务",
    "activity": 5,
    "turn_raw": {
-    "turnover": 5.77,
-    "vr": 2.04,
+    "turnover": 5.88,
+    "vr": 2.03,
     "amplitude": 10.658578856152518
    },
    "shape": {
@@ -4989,14 +4996,16 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 13.34,
+   "pct_vs_anchor": 10.01
   },
   {
    "code": "002096",
    "baseline": 9.05,
-   "anchor_close": null,
-   "t1430": 9.08,
-   "list_price": null,
+   "anchor_close": 9.05,
+   "t1430": 9.07,
+   "list_price": 9.0,
    "name": "易普力",
    "theme": "化学原料和化学制品制造业",
    "business": "民爆器材、军品的生产、研发与销售",
@@ -5020,20 +5029,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.55,
+   "pct_vs_anchor": -0.55
   },
   {
    "code": "002097",
    "baseline": 6.6,
-   "anchor_close": null,
+   "anchor_close": 7.26,
    "t1430": 7.26,
-   "list_price": null,
+   "list_price": 7.48,
    "name": "山河智能",
    "theme": "工程机械",
    "business": "工程机械制造业。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 4.9,
+    "turnover": 4.91,
     "vr": 1.69,
     "amplitude": 10.3030303030303
    },
@@ -5048,21 +5059,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 13.33,
+   "pct_vs_anchor": 3.03
   },
   {
    "code": "002121",
    "baseline": 4.15,
-   "anchor_close": null,
-   "t1430": 4.2,
-   "list_price": null,
+   "anchor_close": 4.17,
+   "t1430": 4.19,
+   "list_price": 4.12,
    "name": "科陆电子",
    "theme": "电网设备",
    "business": "智能电网业务、新能源业务、综合能源服务。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.25,
-    "vr": 36.02,
+    "turnover": 1.26,
+    "vr": 35.94,
     "amplitude": 1.6867469879517927
    },
    "shape": {
@@ -5076,21 +5089,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.72,
+   "pct_vs_anchor": -1.2
   },
   {
    "code": "002134",
    "baseline": 23.25,
-   "anchor_close": null,
-   "t1430": 24.7,
-   "list_price": null,
+   "anchor_close": 24.5,
+   "t1430": 24.62,
+   "list_price": 22.05,
    "name": "天津普林",
    "theme": "天津自贸区",
    "business": "生产、销售双面和多层印刷电路板。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 14.59,
-    "vr": 10.82,
+    "turnover": 14.72,
+    "vr": 10.79,
     "amplitude": 8.645161290322587
    },
    "shape": {
@@ -5104,21 +5119,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -5.16,
+   "pct_vs_anchor": -10.0
   },
   {
    "code": "002156",
    "baseline": 47.67,
-   "anchor_close": null,
-   "t1430": 48.23,
-   "list_price": null,
+   "anchor_close": 47.8,
+   "t1430": 48.02,
+   "list_price": 45.56,
    "name": "通富微电",
    "theme": "计算机、通信和其他电子设备制造业",
    "business": "主要从事集成电路的封装测试业务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 4.91,
-    "vr": 3.65,
+    "turnover": 4.96,
+    "vr": 3.64,
     "amplitude": 8.13929095867421
    },
    "shape": {
@@ -5132,21 +5149,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -4.43,
+   "pct_vs_anchor": -4.69
   },
   {
    "code": "002164",
    "baseline": 15.58,
-   "anchor_close": null,
-   "t1430": 16.71,
-   "list_price": null,
+   "anchor_close": 16.6,
+   "t1430": 16.5,
+   "list_price": 15.87,
    "name": "宁波东力",
    "theme": "通用设备 / 减速器",
    "business": "传动设备、门控系统等通用设备的制造、加工和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 18.01,
-    "vr": 5.77,
+    "turnover": 18.13,
+    "vr": 5.7,
     "amplitude": 13.54300385109114
    },
    "shape": {
@@ -5160,20 +5179,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.86,
+   "pct_vs_anchor": -4.4
   },
   {
    "code": "002173",
    "baseline": 16.44,
-   "anchor_close": null,
-   "t1430": 16.47,
-   "list_price": null,
+   "anchor_close": 16.24,
+   "t1430": 16.46,
+   "list_price": 15.12,
    "name": "创新医疗",
    "theme": "卫生",
    "business": "提供高品质医疗服务",
    "activity": 4,
    "turn_raw": {
-    "turnover": 3.3,
+    "turnover": 3.34,
     "vr": 4.4,
     "amplitude": 2.615571776155716
    },
@@ -5192,20 +5213,22 @@
     "A",
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -8.03,
+   "pct_vs_anchor": -6.9
   },
   {
    "code": "002180",
    "baseline": 15.64,
-   "anchor_close": null,
-   "t1430": 15.86,
-   "list_price": null,
+   "anchor_close": 15.8,
+   "t1430": 15.84,
+   "list_price": 15.34,
    "name": "奔图科技",
    "theme": "计算机设备",
    "business": "集成电路业务（芯片业务）、打印机全产业链业务",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.54,
+    "turnover": 0.55,
     "vr": 2.46,
     "amplitude": 2.74936061381074
    },
@@ -5220,20 +5243,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.92,
+   "pct_vs_anchor": -2.91
   },
   {
    "code": "002185",
    "baseline": 14.25,
-   "anchor_close": null,
+   "anchor_close": 15.55,
    "t1430": 15.68,
-   "list_price": null,
+   "list_price": 16.24,
    "name": "华天科技",
    "theme": "半导体",
    "business": "集成电路的封装与测试业务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 5.34,
+    "turnover": 5.39,
     "vr": 2.74,
     "amplitude": 12.070175438596484
    },
@@ -5248,20 +5273,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 13.96,
+   "pct_vs_anchor": 4.44
   },
   {
    "code": "002196",
    "baseline": 9.64,
-   "anchor_close": null,
+   "anchor_close": 10.16,
    "t1430": 10.12,
-   "list_price": null,
+   "list_price": 10.04,
    "name": "方正电机",
    "theme": "电机",
    "business": "家用缝纫机电机、汽车电机、汽车电子、智能控制器生产和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 11.21,
+    "turnover": 11.26,
     "vr": 3.49,
     "amplitude": 9.543568464730289
    },
@@ -5276,20 +5303,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 4.15,
+   "pct_vs_anchor": -1.18
   },
   {
    "code": "002212",
    "baseline": 7.01,
-   "anchor_close": null,
-   "t1430": 7.11,
-   "list_price": null,
+   "anchor_close": 6.99,
+   "t1430": 7.09,
+   "list_price": 6.48,
    "name": "天融信",
    "theme": "数字水印",
    "business": "电线电缆业务、网络安全业务",
    "activity": 4,
    "turn_raw": {
-    "turnover": 15.44,
+    "turnover": 15.52,
     "vr": 0.9,
     "amplitude": 9.129814550641937
    },
@@ -5304,20 +5333,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -7.56,
+   "pct_vs_anchor": -7.3
   },
   {
    "code": "002223",
    "baseline": 25.15,
-   "anchor_close": null,
-   "t1430": 25.63,
-   "list_price": null,
+   "anchor_close": 25.58,
+   "t1430": 25.6,
+   "list_price": 26.81,
    "name": "鱼跃医疗",
    "theme": "专用设备制造业",
    "business": "研发、制造和销售医疗器械产品及提供相关解决方案。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.67,
+    "turnover": 1.68,
     "vr": 2.0,
     "amplitude": 4.0159045725646045
    },
@@ -5332,20 +5363,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 6.6,
+   "pct_vs_anchor": 4.81
   },
   {
    "code": "002241",
    "baseline": 21.04,
-   "anchor_close": null,
-   "t1430": 21.2,
-   "list_price": null,
+   "anchor_close": 21.01,
+   "t1430": 21.15,
+   "list_price": 21.23,
    "name": "歌尔股份",
    "theme": "消费电子",
    "business": "精密零组件业务、智能声学整机业务和智能硬件业务",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.51,
+    "turnover": 1.52,
     "vr": 1.99,
     "amplitude": 2.3288973384030514
    },
@@ -5360,14 +5393,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.9,
+   "pct_vs_anchor": 1.05
   },
   {
    "code": "002265",
    "baseline": 19.39,
-   "anchor_close": null,
-   "t1430": 19.73,
-   "list_price": null,
+   "anchor_close": 19.56,
+   "t1430": 19.74,
+   "list_price": 18.32,
    "name": "建设工业",
    "theme": "军工装备",
    "business": "军品和民品。",
@@ -5388,21 +5423,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -5.52,
+   "pct_vs_anchor": -6.34
   },
   {
    "code": "002270",
    "baseline": 18.73,
-   "anchor_close": null,
-   "t1430": 18.95,
-   "list_price": null,
+   "anchor_close": 18.81,
+   "t1430": 18.92,
+   "list_price": 18.65,
    "name": "华明装备",
    "theme": "电网设备",
    "business": "电力设备业务、数控设备业务、电力工程业务",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.21,
-    "vr": 5.42,
+    "turnover": 1.22,
+    "vr": 5.41,
     "amplitude": 3.256807261078481
    },
    "shape": {
@@ -5416,21 +5453,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.43,
+   "pct_vs_anchor": -0.85
   },
   {
    "code": "002318",
    "baseline": 17.33,
-   "anchor_close": null,
-   "t1430": 17.46,
-   "list_price": null,
+   "anchor_close": 17.35,
+   "t1430": 17.45,
+   "list_price": 17.38,
    "name": "久立特材",
    "theme": "钢铁 / 特钢概念,同花顺出海50",
    "business": "工业用不锈钢无缝管、不锈钢焊接管的生产、销售",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.71,
-    "vr": 2.13,
+    "turnover": 0.73,
+    "vr": 2.12,
     "amplitude": 3.2313906520484847
    },
    "shape": {
@@ -5444,20 +5483,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.29,
+   "pct_vs_anchor": 0.17
   },
   {
    "code": "002334",
    "baseline": 6.41,
-   "anchor_close": null,
+   "anchor_close": 6.42,
    "t1430": 6.43,
-   "list_price": null,
+   "list_price": 6.15,
    "name": "英威腾",
    "theme": "电气机械和器材制造业",
    "business": "工业自动化、新能源汽车、网络能源及轨道交通",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.12,
+    "turnover": 1.13,
     "vr": 1.73,
     "amplitude": 1.7160686427457148
    },
@@ -5475,20 +5516,22 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -4.06,
+   "pct_vs_anchor": -4.21
   },
   {
    "code": "002337",
    "baseline": 4.52,
-   "anchor_close": null,
+   "anchor_close": 4.75,
    "t1430": 4.74,
-   "list_price": null,
+   "list_price": 4.61,
    "name": "赛象科技",
    "theme": "天津自贸区",
    "business": "子午线轮胎生产成套装备和检测设备的研发、生产和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 6.73,
+    "turnover": 6.77,
     "vr": 2.08,
     "amplitude": 10.619469026548662
    },
@@ -5503,21 +5546,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.99,
+   "pct_vs_anchor": -2.95
   },
   {
    "code": "002363",
    "baseline": 6.7,
-   "anchor_close": null,
-   "t1430": 6.96,
-   "list_price": null,
+   "anchor_close": 6.96,
+   "t1430": 6.94,
+   "list_price": 7.14,
    "name": "隆基机械",
    "theme": "汽车制造业",
    "business": "公司主要从事制动毂、制动盘及刹车片等汽车零部件产品的生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 4.8,
-    "vr": 1.35,
+    "turnover": 4.83,
+    "vr": 1.34,
     "amplitude": 11.044776119402988
    },
    "shape": {
@@ -5531,21 +5576,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 6.57,
+   "pct_vs_anchor": 2.59
   },
   {
    "code": "002415",
    "baseline": 32.34,
-   "anchor_close": null,
-   "t1430": 32.52,
-   "list_price": null,
+   "anchor_close": 32.42,
+   "t1430": 32.48,
+   "list_price": 33.01,
    "name": "海康威视",
    "theme": "计算机设备 / 同花顺出海50,同花顺漂亮100",
    "business": "提供以视频为核心的智能物联网解决方案和大数据服务",
    "activity": 3,
    "turn_raw": {
     "turnover": 0.43,
-    "vr": 3.54,
+    "vr": 3.53,
     "amplitude": 2.164502164502151
    },
    "shape": {
@@ -5559,20 +5606,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.07,
+   "pct_vs_anchor": 1.82
   },
   {
    "code": "002434",
    "baseline": 5.94,
-   "anchor_close": null,
-   "t1430": 6.02,
-   "list_price": null,
+   "anchor_close": 5.99,
+   "t1430": 6.01,
+   "list_price": 5.57,
    "name": "万里扬",
    "theme": "汽车零部件 / 减速器,碳交易,碳中和",
    "business": "研发、生产、销售汽车变速器、汽车内饰件和新能源汽车传动系统产品",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.26,
+    "turnover": 1.27,
     "vr": 1.35,
     "amplitude": 3.1986531986531905
    },
@@ -5587,14 +5636,16 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -6.23,
+   "pct_vs_anchor": -7.01
   },
   {
    "code": "002459",
    "baseline": 6.46,
-   "anchor_close": null,
-   "t1430": 6.51,
-   "list_price": null,
+   "anchor_close": 6.47,
+   "t1430": 6.5,
+   "list_price": 6.36,
    "name": "晶澳科技",
    "theme": "光伏设备 / TOPCON电池",
    "business": "硅片、太阳能电池片及太阳能电池组件的研发、生产和销售，以及太阳能光伏电站的开发、建设、运营等。",
@@ -5615,21 +5666,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.55,
+   "pct_vs_anchor": -1.7
   },
   {
    "code": "002476",
    "baseline": 4.56,
-   "anchor_close": null,
-   "t1430": 4.64,
-   "list_price": null,
+   "anchor_close": 4.69,
+   "t1430": 4.63,
+   "list_price": 4.29,
    "name": "新叶股份",
    "theme": "石油加工贸易",
    "business": "三次采油和水处理用聚丙烯酰胺及相关化学品生产和销售、环保水处理等业务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 4.17,
-    "vr": 2.92,
+    "turnover": 4.2,
+    "vr": 2.91,
     "amplitude": 10.087719298245613
    },
    "shape": {
@@ -5643,21 +5696,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -5.92,
+   "pct_vs_anchor": -8.53
   },
   {
    "code": "002490",
    "baseline": 7.41,
-   "anchor_close": null,
-   "t1430": 7.71,
-   "list_price": null,
+   "anchor_close": 7.71,
+   "t1430": 7.7,
+   "list_price": 8.03,
    "name": "山东墨龙",
    "theme": "专用设备制造业",
    "business": "从事能源装备行业所需产品的研发、生产与销售",
    "activity": 5,
    "turn_raw": {
-    "turnover": 12.55,
-    "vr": 13.15,
+    "turnover": 12.64,
+    "vr": 13.13,
     "amplitude": 10.796221322537109
    },
    "shape": {
@@ -5671,51 +5726,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "002506",
-   "baseline": 2.27,
-   "anchor_close": null,
-   "t1430": 2.28,
-   "list_price": null,
-   "name": "协鑫集成",
-   "theme": "光伏设备 / 碳交易,碳中和,TOPCON电池",
-   "business": "高效电池、差异化高效组件、能源工程、储能系统集成等相关产品的研发、设计、生产、销售及其一站式服务。",
-   "activity": 4,
-   "turn_raw": {
-    "turnover": 2.18,
-    "vr": 19.11,
-    "amplitude": 2.2026431718061596
-   },
-   "shape": {
-    "redraw": 1,
-    "pos_1130": 0.75,
-    "vol_trend": -0.0676,
-    "amp_am": 1.762,
-    "chg_1130": 0.441,
-    "high_am": 0.881,
-    "low_am": -0.881,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "A"
-   ]
+   "rules": [],
+   "pct_vs_baseline": 8.37,
+   "pct_vs_anchor": 4.15
   },
   {
    "code": "002520",
    "baseline": 5.66,
-   "anchor_close": null,
-   "t1430": 6.09,
-   "list_price": null,
+   "anchor_close": 6.1,
+   "t1430": 6.07,
+   "list_price": 6.02,
    "name": "日发精机",
    "theme": "通用设备 / 减速器,军民融合,数字经济",
    "business": "数控机床、航空航天设备、航空航天零部件以及相关生产系统管理软件的研发、生产与销售；直升机MRO、直升机租赁运营以及货机租赁运营业务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 13.48,
-    "vr": 14.69,
+    "turnover": 13.56,
+    "vr": 14.64,
     "amplitude": 9.893992932862199
    },
    "shape": {
@@ -5729,20 +5756,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 6.36,
+   "pct_vs_anchor": -1.31
   },
   {
    "code": "002526",
    "baseline": 2.63,
-   "anchor_close": null,
+   "anchor_close": 2.7,
    "t1430": 2.71,
-   "list_price": null,
+   "list_price": 2.7,
    "name": "山东矿机",
    "theme": "手机游戏,网络游戏",
    "business": "煤机生产、煤炭销售及采煤服务，网络游戏及互联网服务。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 4.42,
+    "turnover": 4.48,
     "vr": 1.5,
     "amplitude": 9.125475285171111
    },
@@ -5757,21 +5786,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 2.66,
+   "pct_vs_anchor": 0.0
   },
   {
    "code": "002527",
    "baseline": 10.66,
-   "anchor_close": null,
-   "t1430": 10.7,
-   "list_price": null,
+   "anchor_close": 10.61,
+   "t1430": 10.67,
+   "list_price": 10.57,
    "name": "新时达",
    "theme": "通用设备制造业",
    "business": "工业自动化控制产品的研发、生产、销售",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.24,
-    "vr": 5.75,
+    "turnover": 1.25,
+    "vr": 5.73,
     "amplitude": 2.345215759849906
    },
    "shape": {
@@ -5788,21 +5819,23 @@
    "rules": [
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.84,
+   "pct_vs_anchor": -0.38
   },
   {
    "code": "002553",
    "baseline": 15.12,
-   "anchor_close": null,
-   "t1430": 15.27,
-   "list_price": null,
+   "anchor_close": 15.14,
+   "t1430": 15.22,
+   "list_price": 14.94,
    "name": "南方精工",
    "theme": "汽车制造业",
    "business": "从事滚针轴承、超越离合器、单向滑轮总成等的研发、制造和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 3.63,
-    "vr": 3.39,
+    "turnover": 3.65,
+    "vr": 3.38,
     "amplitude": 3.968253968253966
    },
    "shape": {
@@ -5816,20 +5849,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.19,
+   "pct_vs_anchor": -1.32
   },
   {
    "code": "002576",
    "baseline": 14.4,
-   "anchor_close": null,
-   "t1430": 15.02,
-   "list_price": null,
+   "anchor_close": 15.33,
+   "t1430": 15.05,
+   "list_price": 15.42,
    "name": "通达动力",
    "theme": "电机",
    "business": "从事电动机、发电机、新能源汽车定转子铁芯的研发、生产、销售和服务",
    "activity": 5,
    "turn_raw": {
-    "turnover": 8.03,
+    "turnover": 8.1,
     "vr": 1.9,
     "amplitude": 7.08333333333333
    },
@@ -5844,21 +5879,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 7.08,
+   "pct_vs_anchor": 0.59
   },
   {
    "code": "002585",
    "baseline": 10.2,
-   "anchor_close": null,
-   "t1430": 10.42,
-   "list_price": null,
+   "anchor_close": 10.34,
+   "t1430": 10.48,
+   "list_price": 9.68,
    "name": "双星新材",
    "theme": "塑料制品",
    "business": "先进高分子复合材料、光电新材料、光学膜、太阳能电池背板、聚酯电容膜、信息材料、热收缩材料等聚酯薄膜的研发、生产和销售",
    "activity": 5,
    "turn_raw": {
-    "turnover": 16.75,
-    "vr": 1.42,
+    "turnover": 16.84,
+    "vr": 1.43,
     "amplitude": 9.019607843137255
    },
    "shape": {
@@ -5872,21 +5909,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -5.1,
+   "pct_vs_anchor": -6.38
   },
   {
    "code": "002586",
    "baseline": 3.23,
-   "anchor_close": null,
-   "t1430": 3.26,
-   "list_price": null,
+   "anchor_close": 3.23,
+   "t1430": 3.24,
+   "list_price": 3.12,
    "name": "围海股份",
    "theme": "土木工程建筑业",
    "business": "生态环保工程、河道工程、水库工程、城市防洪工程及其他水利工程。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.41,
-    "vr": 1.17,
+    "turnover": 1.42,
+    "vr": 1.16,
     "amplitude": 7.120743034055726
    },
    "shape": {
@@ -5900,21 +5939,26 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -3.41,
+   "pct_vs_anchor": -3.41
   },
   {
    "code": "002600",
    "baseline": 10.85,
-   "anchor_close": null,
-   "t1430": 10.92,
-   "list_price": null,
+   "anchor_close": 10.9,
+   "t1430": 10.89,
+   "list_price": 10.77,
    "name": "领益智造",
    "theme": "消费电子 / 同花顺出海50",
    "business": "精密功能及结构件、显示及触控模组、材料、贸易及物流业务等",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.85,
-    "vr": 2.84,
+    "turnover": 0.86,
+    "vr": 2.83,
     "amplitude": 2.672811059907826
    },
    "shape": {
@@ -5928,20 +5972,25 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -0.74,
+   "pct_vs_anchor": -1.19
   },
   {
    "code": "002611",
    "baseline": 13.05,
-   "anchor_close": null,
-   "t1430": 13.18,
-   "list_price": null,
+   "anchor_close": 13.09,
+   "t1430": 13.16,
+   "list_price": 12.92,
    "name": "东方精工",
    "theme": "专用设备制造业",
    "business": "智能包装设备业务和舷外机业务，汽车核心零部件业务",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.65,
+    "turnover": 1.66,
     "vr": 1.74,
     "amplitude": 2.9885057471264407
    },
@@ -5956,21 +6005,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.0,
+   "pct_vs_anchor": -1.3
   },
   {
    "code": "002612",
    "baseline": 14.79,
-   "anchor_close": null,
-   "t1430": 15.39,
-   "list_price": null,
+   "anchor_close": 15.39,
+   "t1430": 15.42,
+   "list_price": 16.41,
    "name": "朗姿股份",
    "theme": "美容护理",
    "business": "品牌女装的设计、生产与销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 4.33,
-    "vr": 2.42,
+    "turnover": 4.36,
+    "vr": 2.43,
     "amplitude": 7.302231237322516
    },
    "shape": {
@@ -5984,21 +6035,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 10.95,
+   "pct_vs_anchor": 6.63
   },
   {
    "code": "002634",
    "baseline": 3.61,
-   "anchor_close": null,
-   "t1430": 3.64,
-   "list_price": null,
+   "anchor_close": 3.61,
+   "t1430": 3.63,
+   "list_price": 3.38,
    "name": "*ST棒杰",
    "theme": "服装家纺",
    "business": "无缝服装系列产品的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.2,
-    "vr": -4.75,
+    "turnover": 1.21,
+    "vr": -4.73,
     "amplitude": 7.4792243767313025
    },
    "shape": {
@@ -6012,51 +6065,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "002698",
-   "baseline": 10.94,
-   "anchor_close": null,
-   "t1430": 10.95,
-   "list_price": null,
-   "name": "博实股份",
-   "theme": "黑龙江自贸区",
-   "business": "研发、生产和销售大型智能成套装备产品，并向客户提供产品服务。",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 0.67,
-    "vr": 2.7,
-    "amplitude": 1.919561243144416
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.667,
-    "vol_trend": -0.1325,
-    "amp_am": 1.92,
-    "chg_1130": 0.731,
-    "high_am": 1.371,
-    "low_am": -0.548,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": -6.37,
+   "pct_vs_anchor": -6.37
   },
   {
    "code": "002747",
    "baseline": 26.08,
-   "anchor_close": null,
-   "t1430": 26.55,
-   "list_price": null,
+   "anchor_close": 26.53,
+   "t1430": 26.53,
+   "list_price": 25.59,
    "name": "埃斯顿",
    "theme": "通用设备制造业",
    "business": "自动化核心部件及运动控制系统、工业机器人及智能制造系统",
    "activity": 5,
    "turn_raw": {
-    "turnover": 8.09,
+    "turnover": 8.13,
     "vr": 7.8,
     "amplitude": 8.243865030674842
    },
@@ -6071,20 +6095,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -1.88,
+   "pct_vs_anchor": -3.54
   },
   {
    "code": "002765",
    "baseline": 6.52,
-   "anchor_close": null,
-   "t1430": 6.62,
-   "list_price": null,
+   "anchor_close": 6.6,
+   "t1430": 6.61,
+   "list_price": 6.34,
    "name": "蓝黛科技",
    "theme": "汽车零部件",
    "business": "乘用车变速器齿轮及壳体等零部件、变速器总成、摩托车主副轴组件的研发、生产与销售；触摸屏及触控显示一体化相关产品的研发、生产和销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 1.58,
+    "turnover": 1.6,
     "vr": 1.66,
     "amplitude": 3.527607361963197
    },
@@ -6099,20 +6125,22 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -2.76,
+   "pct_vs_anchor": -3.94
   },
   {
    "code": "002801",
    "baseline": 25.26,
-   "anchor_close": null,
-   "t1430": 25.53,
-   "list_price": null,
+   "anchor_close": 25.44,
+   "t1430": 25.52,
+   "list_price": 25.11,
    "name": "微光股份",
    "theme": "电机",
    "business": "从事应用于HVAC（采暖、通风、空调、制冷）领域微电机、风机的研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.14,
+    "turnover": 1.17,
     "vr": 2.96,
     "amplitude": 3.879651623119558
    },
@@ -6127,20 +6155,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.59,
+   "pct_vs_anchor": -1.3
   },
   {
    "code": "002823",
    "baseline": 12.04,
-   "anchor_close": null,
-   "t1430": 12.52,
-   "list_price": null,
+   "anchor_close": 12.46,
+   "t1430": 12.5,
+   "list_price": 12.13,
    "name": "凯中精密",
    "theme": "电机",
    "business": "核心精密零组件的研发、设计、制造及销售",
    "activity": 5,
    "turn_raw": {
-    "turnover": 4.16,
+    "turnover": 4.23,
     "vr": 2.02,
     "amplitude": 7.475083056478408
    },
@@ -6155,20 +6185,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.75,
+   "pct_vs_anchor": -2.65
   },
   {
    "code": "002832",
    "baseline": 26.6,
-   "anchor_close": null,
-   "t1430": 26.96,
-   "list_price": null,
+   "anchor_close": 26.8,
+   "t1430": 26.93,
+   "list_price": 26.42,
    "name": "比音勒芬",
    "theme": "服装家纺",
    "business": "服装的研发设计、品牌推广、营销网络建设及供应链管理",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.04,
+    "turnover": 2.06,
     "vr": 2.71,
     "amplitude": 4.47368421052632
    },
@@ -6183,21 +6215,23 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -0.68,
+   "pct_vs_anchor": -1.42
   },
   {
    "code": "002833",
    "baseline": 18.73,
-   "anchor_close": null,
-   "t1430": 18.9,
-   "list_price": null,
+   "anchor_close": 18.85,
+   "t1430": 18.88,
+   "list_price": 19.02,
    "name": "弘亚数控",
    "theme": "专用设备制造业",
    "business": "数控板式家具机械专用设备研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.04,
-    "vr": 2.89,
+    "turnover": 2.06,
+    "vr": 2.88,
     "amplitude": 4.538174052322485
    },
    "shape": {
@@ -6211,21 +6245,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.55,
+   "pct_vs_anchor": 0.9
   },
   {
    "code": "002845",
    "baseline": 12.55,
-   "anchor_close": null,
-   "t1430": 12.6,
-   "list_price": null,
+   "anchor_close": 12.5,
+   "t1430": 12.56,
+   "list_price": 11.94,
    "name": "同兴达",
    "theme": "光学光电子",
    "business": "研发、设计、生产和销售中小尺寸液晶显示模组。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 2.5,
-    "vr": 1.64,
+    "turnover": 2.52,
+    "vr": 1.63,
     "amplitude": 4.143426294820728
    },
    "shape": {
@@ -6243,52 +6279,23 @@
     "A",
     "R"
    ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
-  },
-  {
-   "code": "002850",
-   "baseline": 145.04,
-   "anchor_close": null,
-   "t1430": 145.13,
-   "list_price": null,
-   "name": "科达利",
-   "theme": "金属制品业",
-   "business": "锂电池精密结构件和汽车结构件的研发及制造。",
-   "activity": 4,
-   "turn_raw": {
-    "turnover": 1.89,
-    "vr": 2.75,
-    "amplitude": 4.398786541643681
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.679,
-    "vol_trend": -0.1419,
-    "amp_am": 4.399,
-    "chg_1130": 0.765,
-    "high_am": 2.179,
-    "low_am": -2.22,
-    "src": "live"
-   },
-   "risk": 1,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -4.86,
+   "pct_vs_anchor": -4.48
   },
   {
    "code": "002856",
    "baseline": 19.58,
-   "anchor_close": null,
-   "t1430": 19.7,
-   "list_price": null,
+   "anchor_close": 19.62,
+   "t1430": 19.69,
+   "list_price": 18.91,
    "name": "*ST美芝",
    "theme": "建筑装饰、装修和其他建筑业",
    "business": "建筑装饰工程设计与施工。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 2.65,
-    "vr": -35.88,
+    "turnover": 2.67,
+    "vr": -35.87,
     "amplitude": 4.290091930541369
    },
    "shape": {
@@ -6302,14 +6309,18 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [
+    "A"
+   ],
+   "pct_vs_baseline": -3.42,
+   "pct_vs_anchor": -3.62
   },
   {
    "code": "002867",
    "baseline": 10.03,
-   "anchor_close": null,
+   "anchor_close": 10.08,
    "t1430": 10.11,
-   "list_price": null,
+   "list_price": 10.17,
    "name": "周大生",
    "theme": "服装家纺",
    "business": "”周大生”品牌珠宝首饰的设计、推广和连锁经营。",
@@ -6330,21 +6341,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 1.4,
+   "pct_vs_anchor": 0.89
   },
   {
    "code": "002876",
    "baseline": 28.45,
-   "anchor_close": null,
-   "t1430": 29.23,
-   "list_price": null,
+   "anchor_close": 28.85,
+   "t1430": 29.18,
+   "list_price": 29.41,
    "name": "三利谱",
    "theme": "光学光电子",
    "business": "偏光片产品的研发、生产和销售。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 4.01,
-    "vr": 2.09,
+    "turnover": 4.04,
+    "vr": 2.08,
     "amplitude": 6.045694200351503
    },
    "shape": {
@@ -6358,20 +6371,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 3.37,
+   "pct_vs_anchor": 1.94
   },
   {
    "code": "002877",
    "baseline": 7.2,
-   "anchor_close": null,
+   "anchor_close": 7.61,
    "t1430": 7.64,
-   "list_price": null,
+   "list_price": 7.84,
    "name": "智能自控",
    "theme": "通用设备制造业",
    "business": "智能控制阀及其配件的研发、生产和销售以及检维修服务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 11.01,
+    "turnover": 11.15,
     "vr": 2.24,
     "amplitude": 10.694444444444438
    },
@@ -6386,21 +6401,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 8.89,
+   "pct_vs_anchor": 3.02
   },
   {
    "code": "002886",
    "baseline": 23.25,
-   "anchor_close": null,
-   "t1430": 23.43,
-   "list_price": null,
+   "anchor_close": 23.31,
+   "t1430": 23.32,
+   "list_price": 20.98,
    "name": "沃特股份",
    "theme": "塑料制品 / 合成生物,石墨烯,碳纤维,特高压,特斯拉概念",
    "business": "改性工程塑料合金、改性通用塑料以及高性能功能高分子材料的研发、生产、销售和技术服务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 14.23,
-    "vr": 3.33,
+    "turnover": 14.41,
+    "vr": 3.31,
     "amplitude": 6.924731182795696
    },
    "shape": {
@@ -6414,21 +6431,27 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [
+    "A",
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -9.76,
+   "pct_vs_anchor": -10.0
   },
   {
    "code": "002889",
    "baseline": 13.83,
-   "anchor_close": null,
-   "t1430": 13.98,
-   "list_price": null,
+   "anchor_close": 13.3,
+   "t1430": 13.88,
+   "list_price": 13.51,
    "name": "东方嘉盛",
    "theme": "物流 / 统一大市场",
    "business": "提供综合供应链管理服务。",
    "activity": 5,
    "turn_raw": {
-    "turnover": 17.36,
-    "vr": 1.98,
+    "turnover": 17.44,
+    "vr": 1.97,
     "amplitude": 12.72595806218367
    },
    "shape": {
@@ -6442,20 +6465,26 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [
+    "A",
+    "R"
+   ],
+   "regime_rule": "涨幅≤0.4%（低涨幅）",
+   "pct_vs_baseline": -2.31,
+   "pct_vs_anchor": 1.58
   },
   {
    "code": "002892",
    "baseline": 8.62,
-   "anchor_close": null,
-   "t1430": 8.75,
-   "list_price": null,
+   "anchor_close": 8.74,
+   "t1430": 8.74,
+   "list_price": 8.89,
    "name": "科力尔",
    "theme": "电机",
    "business": "微特电机的开发、生产与销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.99,
+    "turnover": 2.0,
     "vr": 3.65,
     "amplitude": 3.712296983758704
    },
@@ -6470,21 +6499,23 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 3.13,
+   "pct_vs_anchor": 1.72
   },
   {
    "code": "002896",
    "baseline": 55.33,
-   "anchor_close": null,
-   "t1430": 56.6,
-   "list_price": null,
+   "anchor_close": 56.21,
+   "t1430": 56.57,
+   "list_price": 55.79,
    "name": "中大力德",
    "theme": "通用设备制造业",
    "business": "机械传动与控制应用领域关键零部件的研发、生产、销售和服务。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 3.67,
-    "vr": 9.31,
+    "turnover": 3.69,
+    "vr": 9.3,
     "amplitude": 4.4821977227543774
    },
    "shape": {
@@ -6498,20 +6529,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": 0.83,
+   "pct_vs_anchor": -0.75
   },
   {
    "code": "002977",
    "baseline": 16.49,
-   "anchor_close": null,
+   "anchor_close": 16.55,
    "t1430": 16.71,
-   "list_price": null,
+   "list_price": 15.81,
    "name": "*ST天箭",
    "theme": "军工电子",
    "business": "高波段、大功率固态微波前端研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.93,
+    "turnover": 1.94,
     "vr": 2.38,
     "amplitude": 7.883565797453008
    },
@@ -6526,20 +6559,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -4.12,
+   "pct_vs_anchor": -4.47
   },
   {
    "code": "003015",
    "baseline": 11.47,
-   "anchor_close": null,
-   "t1430": 11.57,
-   "list_price": null,
+   "anchor_close": 11.48,
+   "t1430": 11.55,
+   "list_price": 11.03,
    "name": "日久光电",
    "theme": "光学光电子",
    "business": "柔性光学导电材料的研发、生产和销售。",
    "activity": 4,
    "turn_raw": {
-    "turnover": 1.32,
+    "turnover": 1.34,
     "vr": 2.94,
     "amplitude": 3.0514385353095
    },
@@ -6554,20 +6589,22 @@
     "src": "live"
    },
    "risk": 1,
-   "rules": []
+   "rules": [],
+   "pct_vs_baseline": -3.84,
+   "pct_vs_anchor": -3.92
   },
   {
    "code": "003025",
    "baseline": 11.69,
-   "anchor_close": null,
-   "t1430": 11.78,
-   "list_price": null,
+   "anchor_close": 11.75,
+   "t1430": 11.8,
+   "list_price": 11.54,
    "name": "思进智能",
    "theme": "通用设备 / 数字经济",
    "business": "多工位高速自动冷成形装备和压铸设备的研发、生产与销售。",
    "activity": 3,
    "turn_raw": {
-    "turnover": 0.97,
+    "turnover": 1.0,
     "vr": 2.64,
     "amplitude": 2.1385799828913603
    },
@@ -6582,38 +6619,9 @@
     "src": "live"
    },
    "risk": 0,
-   "rules": []
-  },
-  {
-   "code": "003028",
-   "baseline": 22.74,
-   "anchor_close": null,
-   "t1430": 22.75,
-   "list_price": null,
-   "name": "振邦智能",
-   "theme": "消费电子",
-   "business": "高端智能控制器、变频驱动器、数字电源以及智能物联模块供应商。",
-   "activity": 3,
-   "turn_raw": {
-    "turnover": 1.17,
-    "vr": 1.91,
-    "amplitude": 2.9903254177660497
-   },
-   "shape": {
-    "redraw": 0,
-    "pos_1130": 0.721,
-    "vol_trend": -0.0888,
-    "amp_am": 2.99,
-    "chg_1130": 1.363,
-    "high_am": 2.199,
-    "low_am": -0.792,
-    "src": "live"
-   },
-   "risk": 0,
-   "rules": [
-    "R"
-   ],
-   "regime_rule": "涨幅≤0.4%（低涨幅）"
+   "rules": [],
+   "pct_vs_baseline": -1.28,
+   "pct_vs_anchor": -1.79
   }
  ],
  "promoted_rule": null,
@@ -6636,5 +6644,6 @@
   "cur_date": "2026-10-22",
   "prev_date": "2026-10-21",
   "prev_as_of": "14:30"
- }
+ },
+ "list_filled_count": 215
 }
