@@ -2,7 +2,7 @@
  "date": "2026-10-23",
  "basis": "1430",
  "basis_label": "14:30",
- "captured_at": "2026-10-23 14:31:11",
+ "captured_at": "2026-10-23 14:31:41",
  "target_basis": "1430",
  "basis_ok": true,
  "universe": "A股主板（600/601/603/605/000/001/002/003）",
@@ -11,151 +11,151 @@
  "note": "题材名与日页「题材」列同源（site/themes.json）；涨跌幅=该题材主板成分股等权算术平均。",
  "themes": {
   "货币金融服务": {
-   "chg": -0.54,
-   "median": -0.46,
+   "chg": -0.513,
+   "median": -0.359,
    "n": 40,
-   "up": 12,
-   "down": 25,
+   "up": 13,
+   "down": 26,
    "leader_chg": 1.768
   },
   "机场航运": {
-   "chg": 0.794,
-   "median": 0.618,
+   "chg": 0.874,
+   "median": 0.662,
    "n": 13,
    "up": 13,
    "down": 0,
-   "leader_chg": 2.065
+   "leader_chg": 2.283
   },
   "汽车整车": {
-   "chg": 1.674,
-   "median": 1.765,
+   "chg": 1.741,
+   "median": 1.796,
    "n": 22,
    "up": 21,
    "down": 1,
-   "leader_chg": 8.421
+   "leader_chg": 8.772
   },
   "房地产": {
-   "chg": 0.987,
-   "median": 0.735,
+   "chg": 1.017,
+   "median": 0.803,
    "n": 87,
-   "up": 64,
-   "down": 16,
+   "up": 66,
+   "down": 12,
    "leader_chg": 10.025
   },
   "同花顺中特估100": {
-   "chg": 0.962,
-   "median": 1.121,
+   "chg": 1.022,
+   "median": 1.185,
    "n": 47,
    "up": 36,
    "down": 10,
-   "leader_chg": 5.197
+   "leader_chg": 5.512
   },
   "环境治理": {
-   "chg": 0.57,
+   "chg": 0.634,
    "median": 0.323,
    "n": 49,
-   "up": 28,
-   "down": 17,
+   "up": 26,
+   "down": 16,
    "leader_chg": 10.476
   },
   "举牌": {
-   "chg": 2.565,
-   "median": 1.468,
+   "chg": 2.653,
+   "median": 1.567,
    "n": 9,
    "up": 8,
    "down": 1,
    "leader_chg": 9.976
   },
   "同花顺漂亮100": {
-   "chg": 1.981,
-   "median": 1.834,
+   "chg": 2.043,
+   "median": 1.908,
    "n": 39,
    "up": 35,
    "down": 4,
    "leader_chg": 8.675
   },
   "钢铁": {
-   "chg": -0.166,
-   "median": 0.154,
+   "chg": -0.123,
+   "median": 0.246,
    "n": 43,
    "up": 22,
-   "down": 12,
-   "leader_chg": 3.077
+   "down": 14,
+   "leader_chg": 3.269
   },
   "特钢概念": {
-   "chg": 0.604,
-   "median": 0.421,
+   "chg": 0.638,
+   "median": 0.483,
    "n": 35,
    "up": 19,
-   "down": 9,
+   "down": 10,
    "leader_chg": 10.052
   },
   "电力": {
-   "chg": -0.634,
-   "median": -0.191,
+   "chg": -0.556,
+   "median": -0.139,
    "n": 95,
    "up": 39,
-   "down": 54,
-   "leader_chg": 1.46
+   "down": 49,
+   "leader_chg": 1.503
   },
   "公路铁路运输": {
-   "chg": -0.237,
+   "chg": -0.164,
    "median": 0.0,
    "n": 32,
-   "up": 11,
+   "up": 13,
    "down": 16,
-   "leader_chg": 1.467
+   "leader_chg": 1.711
   },
   "港口航运": {
-   "chg": -0.078,
-   "median": -0.19,
+   "chg": -0.011,
+   "median": -0.096,
    "n": 34,
-   "up": 12,
-   "down": 19,
-   "leader_chg": 2.292
+   "up": 14,
+   "down": 18,
+   "leader_chg": 2.416
   },
   "石墨电极": {
-   "chg": 0.908,
-   "median": 1.027,
+   "chg": 0.992,
+   "median": 1.232,
    "n": 17,
-   "up": 13,
+   "up": 12,
    "down": 4,
    "leader_chg": 10.012
   },
   "航运概念": {
-   "chg": 2.105,
-   "median": 2.292,
+   "chg": 2.227,
+   "median": 2.408,
    "n": 8,
-   "up": 7,
+   "up": 8,
    "down": 0,
-   "leader_chg": 5.032
+   "leader_chg": 5.318
   },
   "天然气": {
-   "chg": 0.5,
-   "median": 0.376,
+   "chg": 0.583,
+   "median": 0.505,
    "n": 30,
-   "up": 19,
-   "down": 11,
-   "leader_chg": 2.779
+   "up": 18,
+   "down": 10,
+   "leader_chg": 2.953
   },
   "石油加工贸易": {
-   "chg": -0.123,
+   "chg": -0.057,
    "median": 0.262,
    "n": 24,
    "up": 12,
-   "down": 10,
+   "down": 8,
    "leader_chg": 10.0
   },
   "资本市场服务": {
-   "chg": 1.187,
-   "median": 1.053,
+   "chg": 1.27,
+   "median": 1.128,
    "n": 41,
-   "up": 35,
-   "down": 5,
+   "up": 36,
+   "down": 4,
    "leader_chg": 10.029
   },
   "工程机械": {
-   "chg": 2.895,
+   "chg": 2.994,
    "median": 2.315,
    "n": 22,
    "up": 20,
@@ -163,255 +163,255 @@
    "leader_chg": 10.014
   },
   "同花顺出海50": {
-   "chg": 2.416,
+   "chg": 2.5,
    "median": 2.189,
    "n": 40,
-   "up": 36,
-   "down": 4,
-   "leader_chg": 6.415
+   "up": 37,
+   "down": 3,
+   "leader_chg": 6.659
   },
   "文化传媒": {
-   "chg": 0.24,
-   "median": 0.98,
+   "chg": 0.456,
+   "median": 1.071,
    "n": 57,
-   "up": 32,
-   "down": 23,
+   "up": 34,
+   "down": 22,
    "leader_chg": 10.037
   },
   "军工装备": {
-   "chg": 0.756,
-   "median": 1.313,
+   "chg": 0.889,
+   "median": 1.463,
    "n": 39,
-   "up": 32,
-   "down": 7,
-   "leader_chg": 4.03
+   "up": 33,
+   "down": 6,
+   "leader_chg": 3.835
   },
   "土木工程建筑业": {
-   "chg": -0.079,
-   "median": 0.0,
+   "chg": 0.1,
+   "median": 0.285,
    "n": 18,
-   "up": 8,
-   "down": 8,
-   "leader_chg": 1.591
+   "up": 10,
+   "down": 7,
+   "leader_chg": 1.818
   },
   "通信服务": {
-   "chg": 1.759,
-   "median": 1.953,
+   "chg": 1.899,
+   "median": 1.979,
    "n": 20,
    "up": 18,
    "down": 2,
-   "leader_chg": 6.577
+   "leader_chg": 6.699
   },
   "批发业": {
-   "chg": 0.618,
-   "median": 0.62,
+   "chg": 0.722,
+   "median": 0.696,
    "n": 22,
    "up": 17,
-   "down": 5,
-   "leader_chg": 3.117
+   "down": 4,
+   "leader_chg": 3.37
   },
   "体育产业": {
-   "chg": 1.017,
-   "median": 1.185,
+   "chg": 1.137,
+   "median": 1.246,
    "n": 29,
    "up": 24,
    "down": 4,
-   "leader_chg": 3.463
+   "leader_chg": 3.568
   },
   "多元金融": {
-   "chg": 1.28,
-   "median": 1.293,
+   "chg": 1.381,
+   "median": 1.447,
    "n": 25,
    "up": 22,
    "down": 3,
    "leader_chg": 4.427
   },
   "旅游及酒店": {
-   "chg": 0.684,
-   "median": 0.735,
+   "chg": 0.794,
+   "median": 0.962,
    "n": 32,
    "up": 27,
-   "down": 5,
-   "leader_chg": 2.088
+   "down": 4,
+   "leader_chg": 2.296
   },
   "专用设备制造业": {
-   "chg": 1.641,
+   "chg": 1.732,
    "median": 1.277,
    "n": 65,
-   "up": 51,
-   "down": 11,
+   "up": 54,
+   "down": 10,
    "leader_chg": 10.182
   },
   "物流": {
-   "chg": 0.724,
-   "median": 0.528,
+   "chg": 0.799,
+   "median": 0.662,
    "n": 45,
    "up": 30,
-   "down": 14,
+   "down": 13,
    "leader_chg": 10.0
   },
   "土地流转": {
-   "chg": 0.989,
-   "median": 0.839,
+   "chg": 1.011,
+   "median": 0.87,
    "n": 24,
-   "up": 16,
-   "down": 4,
-   "leader_chg": 6.792
+   "up": 15,
+   "down": 3,
+   "leader_chg": 6.604
   },
   "贸易": {
-   "chg": 0.178,
-   "median": 0.498,
+   "chg": 0.249,
+   "median": 0.435,
    "n": 14,
-   "up": 8,
-   "down": 5,
-   "leader_chg": 1.763
+   "up": 9,
+   "down": 4,
+   "leader_chg": 2.015
   },
   "统一大市场": {
-   "chg": 0.789,
-   "median": 0.267,
+   "chg": 0.863,
+   "median": 0.448,
    "n": 37,
    "up": 22,
-   "down": 14,
+   "down": 12,
    "leader_chg": 10.0
   },
   "酒、饮料和精制茶制造业": {
-   "chg": 0.613,
-   "median": 0.374,
+   "chg": 0.752,
+   "median": 0.499,
    "n": 21,
-   "up": 13,
-   "down": 7,
-   "leader_chg": 5.817
+   "up": 14,
+   "down": 6,
+   "leader_chg": 5.993
   },
   "黑色家电": {
-   "chg": 2.305,
-   "median": 1.054,
+   "chg": 2.378,
+   "median": 1.229,
    "n": 6,
    "up": 5,
    "down": 1,
    "leader_chg": 9.989
   },
   "医药制造业": {
-   "chg": 0.78,
-   "median": 0.795,
+   "chg": 0.876,
+   "median": 0.904,
    "n": 90,
-   "up": 68,
-   "down": 19,
-   "leader_chg": 4.561
+   "up": 71,
+   "down": 17,
+   "leader_chg": 4.74
   },
   "化学纤维": {
-   "chg": 0.712,
-   "median": 1.05,
+   "chg": 0.667,
+   "median": 1.053,
    "n": 23,
-   "up": 18,
-   "down": 4,
+   "up": 16,
+   "down": 5,
    "leader_chg": 2.233
   },
   "水泥概念": {
-   "chg": 0.602,
-   "median": 0.469,
+   "chg": 0.626,
+   "median": 0.562,
    "n": 43,
-   "up": 29,
+   "up": 27,
    "down": 11,
-   "leader_chg": 5.197
+   "leader_chg": 5.512
   },
   "电网设备": {
-   "chg": 0.888,
-   "median": 0.911,
+   "chg": 0.983,
+   "median": 1.001,
    "n": 61,
-   "up": 48,
-   "down": 12,
+   "up": 50,
+   "down": 11,
    "leader_chg": 7.946
   },
   "光学光电子": {
-   "chg": 1.379,
-   "median": 1.385,
+   "chg": 1.503,
+   "median": 1.512,
    "n": 48,
-   "up": 37,
-   "down": 10,
-   "leader_chg": 9.902
+   "up": 38,
+   "down": 9,
+   "leader_chg": 9.991
   },
   "太赫兹": {
-   "chg": 1.346,
-   "median": 1.25,
+   "chg": 1.479,
+   "median": 1.484,
    "n": 12,
    "up": 11,
    "down": 1,
-   "leader_chg": 2.933
+   "leader_chg": 3.043
   },
   "风电设备": {
-   "chg": 1.604,
-   "median": 1.512,
+   "chg": 1.713,
+   "median": 1.628,
    "n": 13,
    "up": 11,
-   "down": 2,
-   "leader_chg": 5.032
+   "down": 1,
+   "leader_chg": 5.318
   },
   "食品加工制造": {
-   "chg": 0.924,
-   "median": 0.721,
+   "chg": 1.009,
+   "median": 0.889,
    "n": 56,
-   "up": 40,
+   "up": 44,
    "down": 11,
    "leader_chg": 6.579
   },
   "化学原料": {
-   "chg": -0.346,
-   "median": 0.193,
+   "chg": -0.285,
+   "median": 0.281,
    "n": 50,
-   "up": 29,
-   "down": 16,
-   "leader_chg": 4.973
+   "up": 30,
+   "down": 15,
+   "leader_chg": 5.071
   },
   "包装印刷": {
-   "chg": 0.69,
-   "median": 0.697,
+   "chg": 0.775,
+   "median": 0.781,
    "n": 32,
-   "up": 25,
+   "up": 26,
    "down": 5,
-   "leader_chg": 6.181
+   "leader_chg": 6.427
   },
   "碳交易": {
-   "chg": 0.184,
+   "chg": 0.31,
    "median": 0.0,
    "n": 27,
-   "up": 13,
-   "down": 12,
-   "leader_chg": 2.681
+   "up": 12,
+   "down": 11,
+   "leader_chg": 2.88
   },
   "碳中和": {
-   "chg": 1.171,
-   "median": 0.921,
+   "chg": 1.259,
+   "median": 0.968,
    "n": 30,
-   "up": 21,
+   "up": 20,
    "down": 8,
    "leader_chg": 9.936
   },
   "农化制品": {
-   "chg": 0.814,
-   "median": 0.966,
+   "chg": 0.894,
+   "median": 0.937,
    "n": 50,
    "up": 37,
    "down": 12,
-   "leader_chg": 2.775
+   "leader_chg": 3.072
   },
   "化学制药": {
-   "chg": 0.747,
-   "median": 0.63,
+   "chg": 0.853,
+   "median": 0.704,
    "n": 56,
-   "up": 42,
-   "down": 13,
+   "up": 44,
+   "down": 10,
    "leader_chg": 7.882
   },
   "汽车制造业": {
-   "chg": 1.856,
-   "median": 1.759,
+   "chg": 1.941,
+   "median": 1.805,
    "n": 64,
    "up": 53,
-   "down": 11,
+   "down": 10,
    "leader_chg": 10.0
   },
   "天津自贸区": {
-   "chg": 0.325,
+   "chg": 0.393,
    "median": 0.623,
    "n": 16,
    "up": 10,
@@ -419,23 +419,23 @@
    "leader_chg": 4.429
   },
   "广播、电视、电影和录音制作业": {
-   "chg": 1.318,
-   "median": 1.391,
+   "chg": 1.631,
+   "median": 1.517,
    "n": 6,
    "up": 3,
    "down": 3,
-   "leader_chg": 6.406
+   "leader_chg": 6.672
   },
   "电气机械和器材制造业": {
-   "chg": 1.699,
-   "median": 1.653,
+   "chg": 1.764,
+   "median": 1.717,
    "n": 30,
    "up": 25,
    "down": 5,
    "leader_chg": 9.96
   },
   "渔业": {
-   "chg": -0.5,
+   "chg": -0.432,
    "median": -0.295,
    "n": 5,
    "up": 2,
@@ -443,159 +443,159 @@
    "leader_chg": 0.406
   },
   "汽车服务及其他": {
-   "chg": 0.769,
-   "median": 0.59,
+   "chg": 0.797,
+   "median": 0.885,
    "n": 17,
    "up": 12,
-   "down": 4,
-   "leader_chg": 3.686
+   "down": 5,
+   "leader_chg": 3.859
   },
   "计算机设备": {
-   "chg": 1.523,
-   "median": 2.258,
+   "chg": 1.652,
+   "median": 2.466,
    "n": 28,
    "up": 24,
    "down": 4,
-   "leader_chg": 7.833
+   "leader_chg": 8.033
   },
   "网约车": {
-   "chg": 0.976,
-   "median": 0.915,
+   "chg": 1.043,
+   "median": 1.016,
    "n": 18,
    "up": 15,
    "down": 3,
-   "leader_chg": 3.14
+   "leader_chg": 3.382
   },
   "通信设备": {
-   "chg": 0.951,
-   "median": 0.883,
+   "chg": 1.106,
+   "median": 1.047,
    "n": 35,
-   "up": 26,
-   "down": 9,
-   "leader_chg": 4.376
+   "up": 27,
+   "down": 8,
+   "leader_chg": 4.486
   },
   "可控核聚变": {
-   "chg": -0.775,
-   "median": -0.61,
+   "chg": -0.508,
+   "median": -0.395,
    "n": 3,
    "up": 1,
    "down": 2,
-   "leader_chg": 0.231
+   "leader_chg": 0.346
   },
   "数据安全": {
-   "chg": 1.454,
-   "median": 1.648,
+   "chg": 1.494,
+   "median": 1.816,
    "n": 26,
    "up": 19,
    "down": 7,
    "leader_chg": 10.0
   },
   "数据中心(AIDC)": {
-   "chg": 1.319,
-   "median": 1.184,
+   "chg": 1.468,
+   "median": 1.248,
    "n": 21,
    "up": 14,
-   "down": 7,
+   "down": 5,
    "leader_chg": 9.936
   },
   "服装家纺": {
-   "chg": -0.591,
-   "median": 0.61,
+   "chg": -0.509,
+   "median": 0.663,
    "n": 64,
    "up": 40,
    "down": 22,
    "leader_chg": 9.935
   },
   "电池": {
-   "chg": 2.781,
-   "median": 2.2,
+   "chg": 2.884,
+   "median": 2.108,
    "n": 27,
    "up": 27,
    "down": 0,
-   "leader_chg": 8.99
+   "leader_chg": 9.028
   },
   "小金属": {
-   "chg": 1.077,
-   "median": 1.186,
+   "chg": 1.152,
+   "median": 1.293,
    "n": 17,
-   "up": 13,
-   "down": 4,
-   "leader_chg": 5.224
+   "up": 14,
+   "down": 2,
+   "leader_chg": 5.261
   },
   "零售": {
-   "chg": 1.795,
-   "median": 1.134,
+   "chg": 1.89,
+   "median": 1.268,
    "n": 65,
-   "up": 57,
+   "up": 59,
    "down": 3,
    "leader_chg": 10.0
   },
   "金属制品业": {
-   "chg": 1.22,
-   "median": 1.876,
+   "chg": 1.27,
+   "median": 1.987,
    "n": 12,
    "up": 7,
    "down": 4,
-   "leader_chg": 8.31
+   "leader_chg": 8.151
   },
   "水利": {
-   "chg": 0.591,
-   "median": 0.996,
+   "chg": 0.656,
+   "median": 1.111,
    "n": 26,
-   "up": 20,
+   "up": 19,
    "down": 4,
-   "leader_chg": 3.21
+   "leader_chg": 3.457
   },
   "卫星导航": {
-   "chg": 0.394,
-   "median": 0.749,
+   "chg": 0.527,
+   "median": 0.898,
    "n": 18,
    "up": 11,
-   "down": 7,
-   "leader_chg": 5.224
+   "down": 6,
+   "leader_chg": 5.261
   },
   "金属铜": {
-   "chg": 0.418,
-   "median": 0.538,
+   "chg": 0.49,
+   "median": 0.597,
    "n": 43,
-   "up": 29,
+   "up": 28,
    "down": 13,
    "leader_chg": 4.622
   },
   "煤炭开采加工": {
-   "chg": 0.114,
+   "chg": 0.11,
    "median": 0.0,
    "n": 34,
    "up": 16,
    "down": 13,
-   "leader_chg": 2.353
+   "leader_chg": 2.316
   },
   "农产品加工": {
-   "chg": 0.149,
-   "median": 0.243,
+   "chg": 0.208,
+   "median": 0.245,
    "n": 32,
-   "up": 16,
+   "up": 17,
    "down": 15,
    "leader_chg": 10.027
   },
   "消费电子": {
-   "chg": 3.006,
-   "median": 2.575,
+   "chg": 3.091,
+   "median": 2.684,
    "n": 39,
    "up": 36,
-   "down": 2,
+   "down": 3,
    "leader_chg": 9.995
   },
   "IT服务": {
-   "chg": 1.851,
-   "median": 2.406,
+   "chg": 1.978,
+   "median": 2.408,
    "n": 41,
    "up": 31,
    "down": 10,
-   "leader_chg": 9.936
+   "leader_chg": 10.02
   },
   "塑料制品": {
-   "chg": 0.311,
+   "chg": 0.405,
    "median": 1.144,
    "n": 29,
    "up": 20,
@@ -603,228 +603,228 @@
    "leader_chg": 10.006
   },
   "网络游戏": {
-   "chg": 1.376,
-   "median": 0.984,
+   "chg": 1.518,
+   "median": 1.083,
    "n": 20,
-   "up": 15,
-   "down": 4,
+   "up": 16,
+   "down": 3,
    "leader_chg": 10.0
   },
   "铜缆高速连接": {
-   "chg": 0.741,
-   "median": 0.911,
+   "chg": 0.902,
+   "median": 0.937,
    "n": 23,
    "up": 18,
    "down": 5,
-   "leader_chg": 6.169
+   "leader_chg": 6.297
   },
   "汽车零部件": {
-   "chg": 1.995,
-   "median": 1.796,
+   "chg": 2.079,
+   "median": 1.967,
    "n": 62,
-   "up": 51,
-   "down": 11,
+   "up": 50,
+   "down": 12,
    "leader_chg": 9.991
   },
   "TOPCON电池": {
-   "chg": 1.47,
-   "median": 1.77,
+   "chg": 1.522,
+   "median": 1.739,
    "n": 22,
-   "up": 18,
-   "down": 4,
-   "leader_chg": 5.109
+   "up": 19,
+   "down": 3,
+   "leader_chg": 5.092
   },
   "纺织制造": {
-   "chg": 1.011,
-   "median": 0.806,
+   "chg": 1.101,
+   "median": 1.075,
    "n": 27,
    "up": 21,
    "down": 5,
    "leader_chg": 5.221
   },
   "其他社会服务": {
-   "chg": 1.214,
-   "median": 1.78,
+   "chg": 1.346,
+   "median": 1.876,
    "n": 16,
-   "up": 12,
+   "up": 13,
    "down": 3,
-   "leader_chg": 4.655
+   "leader_chg": 4.842
   },
   "化学原料和化学制品制造业": {
-   "chg": 0.403,
-   "median": 0.512,
+   "chg": 0.462,
+   "median": 0.444,
    "n": 38,
-   "up": 26,
-   "down": 12,
-   "leader_chg": 4.405
+   "up": 27,
+   "down": 10,
+   "leader_chg": 4.846
   },
   "生物制品": {
-   "chg": 1.219,
-   "median": 1.046,
+   "chg": 1.28,
+   "median": 1.113,
    "n": 16,
    "up": 14,
    "down": 2,
-   "leader_chg": 6.448
+   "leader_chg": 6.716
   },
   "京津冀一体化": {
-   "chg": 0.67,
-   "median": 0.503,
+   "chg": 0.771,
+   "median": 0.527,
    "n": 7,
    "up": 5,
-   "down": 1,
+   "down": 0,
    "leader_chg": 2.536
   },
   "化学制品": {
-   "chg": 0.483,
-   "median": 0.642,
+   "chg": 0.566,
+   "median": 0.576,
    "n": 52,
-   "up": 32,
-   "down": 19,
-   "leader_chg": 6.348
+   "up": 34,
+   "down": 18,
+   "leader_chg": 6.409
   },
   "ST板块": {
-   "chg": 0.652,
+   "chg": 0.714,
    "median": 0.167,
    "n": 38,
    "up": 19,
-   "down": 13,
-   "leader_chg": 9.94
+   "down": 12,
+   "leader_chg": 10.015
   },
   "建筑装饰": {
-   "chg": 0.297,
-   "median": 0.431,
+   "chg": 0.316,
+   "median": 0.42,
    "n": 72,
-   "up": 43,
+   "up": 44,
    "down": 20,
-   "leader_chg": 6.166
+   "leader_chg": 6.122
   },
   "土壤修复": {
-   "chg": 0.768,
-   "median": 0.485,
+   "chg": 0.845,
+   "median": 0.809,
    "n": 24,
-   "up": 15,
+   "up": 13,
    "down": 8,
    "leader_chg": 10.014
   },
   "MCU芯片": {
-   "chg": 3.385,
-   "median": 2.533,
+   "chg": 3.483,
+   "median": 2.69,
    "n": 15,
    "up": 14,
    "down": 1,
    "leader_chg": 10.013
   },
   "非金属矿物制品业": {
-   "chg": 2.267,
+   "chg": 2.347,
    "median": 2.172,
    "n": 4,
    "up": 3,
-   "down": 1,
-   "leader_chg": 5.955
+   "down": 0,
+   "leader_chg": 6.104
   },
   "手机游戏": {
-   "chg": 2.09,
-   "median": 1.423,
+   "chg": 2.314,
+   "median": 1.571,
    "n": 19,
-   "up": 14,
-   "down": 4,
+   "up": 15,
+   "down": 3,
    "leader_chg": 10.037
   },
   "建筑材料": {
-   "chg": -0.207,
-   "median": 0.267,
+   "chg": -0.126,
+   "median": 0.283,
    "n": 57,
-   "up": 31,
-   "down": 25,
-   "leader_chg": 5.197
+   "up": 32,
+   "down": 24,
+   "leader_chg": 5.512
   },
   "黑龙江自贸区": {
-   "chg": 0.985,
-   "median": 0.539,
+   "chg": 1.091,
+   "median": 0.549,
    "n": 9,
-   "up": 8,
+   "up": 7,
    "down": 1,
-   "leader_chg": 4.424
+   "leader_chg": 4.332
   },
   "毫米波雷达": {
-   "chg": 0.941,
-   "median": 0.553,
+   "chg": 1.084,
+   "median": 0.728,
    "n": 4,
-   "up": 2,
-   "down": 2,
-   "leader_chg": 4.535
+   "up": 3,
+   "down": 1,
+   "leader_chg": 4.475
   },
   "粮食概念": {
-   "chg": -0.36,
+   "chg": -0.228,
    "median": -0.503,
    "n": 6,
-   "up": 1,
+   "up": 2,
    "down": 4,
-   "leader_chg": 1.468
+   "leader_chg": 1.677
   },
   "算力租赁": {
-   "chg": 1.439,
-   "median": 1.235,
+   "chg": 1.535,
+   "median": 1.293,
    "n": 28,
    "up": 24,
    "down": 4,
    "leader_chg": 10.0
   },
   "碳交易,土地流转": {
-   "chg": 0.874,
-   "median": 1.748,
+   "chg": 0.994,
+   "median": 1.623,
    "n": 2,
-   "up": 1,
+   "up": 2,
    "down": 0,
-   "leader_chg": 1.748
+   "leader_chg": 1.623
   },
   "白酒": {
-   "chg": 2.339,
-   "median": 1.995,
+   "chg": 2.321,
+   "median": 1.961,
    "n": 19,
    "up": 19,
    "down": 0,
-   "leader_chg": 6.53
+   "leader_chg": 6.722
   },
   "通用设备制造业": {
-   "chg": 2.036,
-   "median": 1.865,
+   "chg": 2.106,
+   "median": 1.753,
    "n": 50,
-   "up": 42,
+   "up": 43,
    "down": 7,
    "leader_chg": 10.023
   },
   "有色金属冶炼和压延加工业": {
-   "chg": 1.624,
-   "median": 1.601,
+   "chg": 1.711,
+   "median": 1.793,
    "n": 6,
    "up": 6,
    "down": 0,
    "leader_chg": 2.39
   },
   "光伏设备": {
-   "chg": 0.627,
-   "median": 0.996,
+   "chg": 0.684,
+   "median": 1.077,
    "n": 30,
-   "up": 20,
-   "down": 9,
-   "leader_chg": 5.004
+   "up": 21,
+   "down": 8,
+   "leader_chg": 5.092
   },
   "数据确权": {
-   "chg": 0.549,
-   "median": 1.03,
+   "chg": 0.702,
+   "median": 1.247,
    "n": 25,
-   "up": 14,
+   "up": 16,
    "down": 9,
    "leader_chg": 10.0
   },
   "其他电源设备": {
-   "chg": 1.049,
-   "median": 0.985,
+   "chg": 1.217,
+   "median": 1.149,
    "n": 17,
    "up": 11,
-   "down": 5,
-   "leader_chg": 5.943
+   "down": 4,
+   "leader_chg": 6.009
   },
   "数字经济,特斯拉概念": {
    "chg": 10.069,
@@ -835,364 +835,364 @@
    "leader_chg": 10.069
   },
   "合成生物": {
-   "chg": -0.556,
+   "chg": -0.37,
    "median": 0.68,
    "n": 6,
    "up": 4,
    "down": 2,
-   "leader_chg": 1.084
+   "leader_chg": 1.226
   },
   "工业金属": {
-   "chg": 0.988,
-   "median": 0.992,
+   "chg": 1.122,
+   "median": 1.19,
    "n": 51,
-   "up": 40,
-   "down": 8,
+   "up": 43,
+   "down": 7,
    "leader_chg": 10.0
   },
   "美容护理": {
-   "chg": 2.092,
-   "median": 0.903,
+   "chg": 2.161,
+   "median": 0.98,
    "n": 16,
    "up": 14,
    "down": 2,
    "leader_chg": 10.017
   },
   "文化传媒概念": {
-   "chg": 3.196,
-   "median": 3.19,
+   "chg": 3.265,
+   "median": 3.351,
    "n": 6,
    "up": 5,
    "down": 1,
    "leader_chg": 10.037
   },
   "造纸和纸制品业": {
-   "chg": 0.287,
-   "median": 0.262,
+   "chg": 0.402,
+   "median": 0.393,
    "n": 16,
    "up": 10,
    "down": 5,
-   "leader_chg": 1.91
+   "leader_chg": 2.083
   },
   "计算机、通信和其他电子设备制造业": {
-   "chg": 0.955,
-   "median": 1.12,
+   "chg": 1.077,
+   "median": 1.435,
    "n": 43,
    "up": 29,
    "down": 14,
    "leader_chg": 10.01
   },
   "特色小镇": {
-   "chg": 0.862,
-   "median": 0.694,
+   "chg": 0.966,
+   "median": 0.901,
    "n": 32,
-   "up": 23,
+   "up": 24,
    "down": 5,
-   "leader_chg": 6.166
+   "leader_chg": 6.122
   },
   "通用设备": {
-   "chg": 2.16,
-   "median": 1.894,
+   "chg": 2.241,
+   "median": 2.057,
    "n": 41,
    "up": 35,
-   "down": 5,
+   "down": 4,
    "leader_chg": 9.993
   },
   "食品安全": {
-   "chg": 0.648,
-   "median": 0.506,
+   "chg": 0.769,
+   "median": 0.749,
    "n": 15,
    "up": 12,
    "down": 3,
-   "leader_chg": 4.655
+   "leader_chg": 4.842
   },
   "数字乡村": {
-   "chg": 0.403,
-   "median": 1.02,
+   "chg": 0.486,
+   "median": 1.247,
    "n": 27,
    "up": 18,
    "down": 9,
-   "leader_chg": 3.56
+   "leader_chg": 3.715
   },
   "新疆振兴": {
-   "chg": 1.386,
-   "median": 1.199,
+   "chg": 1.39,
+   "median": 1.164,
    "n": 7,
    "up": 6,
    "down": 1,
-   "leader_chg": 2.792
+   "leader_chg": 2.855
   },
   "金属新材料": {
-   "chg": 0.477,
-   "median": 0.818,
+   "chg": 0.571,
+   "median": 1.011,
    "n": 11,
    "up": 9,
    "down": 2,
-   "leader_chg": 2.97
+   "leader_chg": 3.168
   },
   "木材加工和木、竹、藤、棕、草制品业": {
-   "chg": 2.091,
-   "median": 3.698,
+   "chg": 2.116,
+   "median": 3.846,
    "n": 2,
    "up": 2,
    "down": 0,
-   "leader_chg": 3.698
+   "leader_chg": 3.846
   },
   "数字货币": {
-   "chg": 1.697,
-   "median": 2.439,
+   "chg": 1.84,
+   "median": 2.668,
    "n": 24,
    "up": 20,
    "down": 4,
-   "leader_chg": 5.289
+   "leader_chg": 5.382
   },
   "软件开发": {
-   "chg": 3.622,
-   "median": 3.642,
+   "chg": 3.72,
+   "median": 3.715,
    "n": 23,
    "up": 20,
    "down": 3,
    "leader_chg": 10.0
   },
   "AI视频": {
-   "chg": 2.008,
-   "median": 1.942,
+   "chg": 2.209,
+   "median": 2.349,
    "n": 21,
    "up": 18,
    "down": 3,
    "leader_chg": 10.037
   },
   "生态保护和环境治理业": {
-   "chg": -0.222,
-   "median": -0.098,
+   "chg": -0.177,
+   "median": -0.065,
    "n": 3,
-   "up": 1,
+   "up": 0,
    "down": 2,
-   "leader_chg": 0.131
+   "leader_chg": 0.0
   },
   "数字经济": {
-   "chg": 1.657,
+   "chg": 1.749,
    "median": 1.464,
    "n": 25,
-   "up": 19,
-   "down": 5,
+   "up": 20,
+   "down": 4,
    "leader_chg": 10.037
   },
   "卫生": {
-   "chg": 0.267,
-   "median": 0.809,
+   "chg": 0.381,
+   "median": 0.896,
    "n": 10,
    "up": 7,
    "down": 3,
-   "leader_chg": 2.048
+   "leader_chg": 2.171
   },
   "电子化学品": {
-   "chg": 0.089,
-   "median": 0.435,
+   "chg": 0.287,
+   "median": 0.653,
    "n": 10,
    "up": 6,
    "down": 4,
-   "leader_chg": 1.969
+   "leader_chg": 2.128
   },
   "燃气": {
-   "chg": -0.235,
+   "chg": -0.181,
    "median": -0.136,
    "n": 25,
    "up": 10,
    "down": 14,
-   "leader_chg": 2.779
+   "leader_chg": 2.953
   },
   "白色家电": {
-   "chg": 1.963,
-   "median": 1.558,
+   "chg": 2.0,
+   "median": 1.607,
    "n": 30,
    "up": 22,
    "down": 8,
    "leader_chg": 9.987
   },
   "家居用品": {
-   "chg": 0.405,
-   "median": 0.567,
+   "chg": 0.505,
+   "median": 0.685,
    "n": 69,
    "up": 43,
-   "down": 24,
+   "down": 26,
    "leader_chg": 10.016
   },
   "开采专业及辅助性活动": {
-   "chg": -0.6,
-   "median": -0.239,
+   "chg": -0.474,
+   "median": -0.159,
    "n": 9,
-   "up": 0,
+   "up": 3,
    "down": 5,
-   "leader_chg": 0.0
+   "leader_chg": 0.493
   },
   "其他电子": {
-   "chg": 1.978,
-   "median": 1.865,
+   "chg": 2.119,
+   "median": 2.028,
    "n": 13,
    "up": 11,
    "down": 2,
    "leader_chg": 10.013
   },
   "网红经济,网络游戏": {
-   "chg": -0.4,
-   "median": -0.4,
+   "chg": -0.6,
+   "median": -0.6,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -0.4
+   "leader_chg": -0.6
   },
   "特色小镇,土地流转": {
-   "chg": -1.449,
-   "median": -1.449,
+   "chg": -1.288,
+   "median": -1.288,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -1.449
+   "leader_chg": -1.288
   },
   "互联网电商": {
-   "chg": 1.136,
+   "chg": 1.268,
    "median": 1.41,
    "n": 10,
    "up": 7,
    "down": 2,
-   "leader_chg": 6.194
+   "leader_chg": 6.397
   },
   "农、林、牧、渔专业及辅助性活动": {
-   "chg": -0.293,
-   "median": 0.571,
+   "chg": -0.265,
+   "median": 0.685,
    "n": 4,
    "up": 2,
    "down": 2,
    "leader_chg": 0.757
   },
   "特高压": {
-   "chg": 0.283,
-   "median": 0.73,
+   "chg": 0.401,
+   "median": 0.797,
    "n": 33,
-   "up": 22,
-   "down": 10,
+   "up": 23,
+   "down": 9,
    "leader_chg": 3.373
   },
   "环保设备": {
-   "chg": 1.434,
-   "median": 1.642,
+   "chg": 1.474,
+   "median": 1.602,
    "n": 11,
    "up": 10,
    "down": 1,
    "leader_chg": 3.373
   },
   "腾讯概念": {
-   "chg": 1.791,
-   "median": 1.471,
+   "chg": 1.94,
+   "median": 1.518,
    "n": 19,
-   "up": 15,
+   "up": 16,
    "down": 3,
    "leader_chg": 10.0
   },
   "电机": {
-   "chg": 3.667,
+   "chg": 3.692,
    "median": 2.264,
    "n": 19,
    "up": 19,
    "down": 0,
-   "leader_chg": 10.006
+   "leader_chg": 10.001
   },
   "食品制造业": {
-   "chg": 1.305,
-   "median": 1.174,
+   "chg": 1.339,
+   "median": 1.258,
    "n": 14,
    "up": 13,
    "down": 1,
-   "leader_chg": 8.353
+   "leader_chg": 8.234
   },
   "网红经济": {
-   "chg": 0.581,
-   "median": 0.61,
+   "chg": 0.708,
+   "median": 1.181,
    "n": 34,
-   "up": 21,
+   "up": 22,
    "down": 11,
    "leader_chg": 10.037
   },
   "软件和信息技术服务业": {
-   "chg": 4.613,
-   "median": 4.69,
+   "chg": 4.733,
+   "median": 4.823,
    "n": 16,
    "up": 16,
    "down": 0,
    "leader_chg": 10.062
   },
   "教育": {
-   "chg": 0.92,
-   "median": 1.585,
+   "chg": 0.846,
+   "median": 0.943,
    "n": 9,
    "up": 6,
    "down": 3,
-   "leader_chg": 2.502
+   "leader_chg": 2.701
   },
   "橡胶和塑料制品业": {
-   "chg": 0.195,
-   "median": 0.164,
+   "chg": 0.317,
+   "median": 0.217,
    "n": 15,
-   "up": 10,
-   "down": 5,
+   "up": 11,
+   "down": 4,
    "leader_chg": 5.159
   },
   "小金属概念": {
-   "chg": 1.766,
-   "median": 1.817,
+   "chg": 1.882,
+   "median": 1.907,
    "n": 7,
-   "up": 6,
-   "down": 1,
-   "leader_chg": 5.224
+   "up": 7,
+   "down": 0,
+   "leader_chg": 5.261
   },
   "半导体": {
-   "chg": 1.868,
-   "median": 1.862,
+   "chg": 2.015,
+   "median": 1.949,
    "n": 18,
-   "up": 13,
-   "down": 5,
+   "up": 14,
+   "down": 4,
    "leader_chg": 10.008
   },
   "水的生产和供应业": {
-   "chg": -0.969,
-   "median": -0.886,
+   "chg": -0.594,
+   "median": -0.253,
    "n": 2,
    "up": 0,
    "down": 2,
-   "leader_chg": -0.886
+   "leader_chg": -0.253
   },
   "数字孪生": {
-   "chg": 2.254,
+   "chg": 2.354,
    "median": 1.971,
    "n": 18,
-   "up": 14,
+   "up": 13,
    "down": 4,
    "leader_chg": 10.037
   },
   "数据要素": {
-   "chg": 1.005,
-   "median": 0.889,
+   "chg": 1.084,
+   "median": 1.111,
    "n": 24,
    "up": 17,
    "down": 7,
    "leader_chg": 10.037
   },
   "贵金属": {
-   "chg": 0.382,
-   "median": 0.066,
+   "chg": 0.488,
+   "median": 0.266,
    "n": 13,
    "up": 7,
-   "down": 6,
+   "down": 5,
    "leader_chg": 4.622
   },
   "轨交设备": {
-   "chg": 0.524,
-   "median": 0.709,
+   "chg": 0.635,
+   "median": 0.866,
    "n": 12,
-   "up": 8,
+   "up": 9,
    "down": 3,
-   "leader_chg": 2.9
+   "leader_chg": 2.923
   },
   "特高压,天然气": {
    "chg": 8.159,
@@ -1203,60 +1203,60 @@
    "leader_chg": 8.159
   },
   "石墨烯": {
-   "chg": -0.082,
-   "median": 0.39,
+   "chg": 0.019,
+   "median": 0.399,
    "n": 29,
-   "up": 18,
+   "up": 17,
    "down": 10,
    "leader_chg": 4.225
   },
   "碳纤维": {
-   "chg": 0.807,
-   "median": 1.222,
+   "chg": 0.962,
+   "median": 1.324,
    "n": 19,
    "up": 15,
    "down": 3,
-   "leader_chg": 6.784
+   "leader_chg": 7.035
   },
   "粮食概念,统一大市场,土地流转": {
-   "chg": 0.226,
-   "median": 0.226,
+   "chg": 0.452,
+   "median": 0.452,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 0.226
+   "leader_chg": 0.452
   },
   "托育服务": {
-   "chg": 0.619,
-   "median": 0.667,
+   "chg": 0.687,
+   "median": 0.778,
    "n": 10,
-   "up": 5,
+   "up": 6,
    "down": 4,
-   "leader_chg": 4.017
+   "leader_chg": 4.297
   },
   "军工电子": {
-   "chg": 1.488,
-   "median": 1.41,
+   "chg": 1.61,
+   "median": 1.551,
    "n": 24,
-   "up": 22,
+   "up": 23,
    "down": 0,
    "leader_chg": 4.315
   },
   "数字水印": {
-   "chg": 1.919,
-   "median": 2.253,
+   "chg": 2.039,
+   "median": 2.6,
    "n": 13,
-   "up": 10,
+   "up": 11,
    "down": 2,
-   "leader_chg": 4.126
+   "leader_chg": 4.224
   },
   "电力、热力生产和供应业": {
-   "chg": -0.042,
-   "median": 0.0,
+   "chg": 0.058,
+   "median": 0.142,
    "n": 8,
-   "up": 3,
+   "up": 4,
    "down": 3,
-   "leader_chg": 0.755
+   "leader_chg": 1.087
   },
   "沪股通": {
    "chg": 0.696,
@@ -1275,12 +1275,12 @@
    "leader_chg": -0.251
   },
   "纺织业": {
-   "chg": 1.456,
-   "median": 1.476,
+   "chg": 1.549,
+   "median": 1.661,
    "n": 2,
    "up": 2,
    "down": 0,
-   "leader_chg": 1.476
+   "leader_chg": 1.661
   },
   "算力租赁,消毒剂": {
    "chg": -0.899,
@@ -1291,12 +1291,12 @@
    "leader_chg": -0.899
   },
   "合成生物,新疆振兴": {
-   "chg": -1.442,
-   "median": -1.442,
+   "chg": -1.236,
+   "median": -1.236,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -1.442
+   "leader_chg": -1.236
   },
   "水泥概念,钛白粉概念": {
    "chg": -0.73,
@@ -1307,28 +1307,28 @@
    "leader_chg": -0.73
   },
   "净水概念": {
-   "chg": 0.439,
-   "median": 0.668,
+   "chg": 0.522,
+   "median": 0.755,
    "n": 4,
    "up": 4,
    "down": 0,
-   "leader_chg": 0.755
+   "leader_chg": 0.835
   },
   "手机游戏,数据安全,碳纤维,网络游戏": {
-   "chg": 1.163,
-   "median": 1.163,
+   "chg": 1.357,
+   "median": 1.357,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 1.163
+   "leader_chg": 1.357
   },
   "石油和天然气开采业": {
-   "chg": 0.698,
-   "median": 0.235,
+   "chg": 0.827,
+   "median": 0.471,
    "n": 3,
    "up": 2,
    "down": 0,
-   "leader_chg": 1.859
+   "leader_chg": 2.01
   },
   "碳交易,统一大市场": {
    "chg": 0.449,
@@ -1339,20 +1339,20 @@
    "leader_chg": 0.449
   },
   "零售业": {
-   "chg": -0.593,
-   "median": -0.52,
+   "chg": -0.515,
+   "median": -0.455,
    "n": 8,
    "up": 2,
    "down": 6,
-   "leader_chg": 1.385
+   "leader_chg": 1.423
   },
   "特斯拉概念": {
-   "chg": 1.676,
-   "median": 1.629,
+   "chg": 1.795,
+   "median": 1.503,
    "n": 19,
    "up": 15,
    "down": 4,
-   "leader_chg": 8.255
+   "leader_chg": 8.199
   },
   "沪股通,水泥概念,体育产业": {
    "chg": 1.198,
@@ -1363,28 +1363,28 @@
    "leader_chg": 1.198
   },
   "农副食品加工业": {
-   "chg": -0.674,
-   "median": -0.28,
+   "chg": -0.527,
+   "median": 0.0,
    "n": 5,
-   "up": 0,
-   "down": 3,
-   "leader_chg": 0.0
+   "up": 1,
+   "down": 2,
+   "leader_chg": 0.341
   },
   "化学纤维制造业": {
-   "chg": 2.896,
-   "median": 2.896,
+   "chg": 2.816,
+   "median": 2.816,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 2.896
+   "leader_chg": 2.816
   },
   "手机游戏,网络游戏": {
-   "chg": 3.755,
-   "median": 3.44,
+   "chg": 3.974,
+   "median": 3.784,
    "n": 6,
    "up": 6,
    "down": 0,
-   "leader_chg": 7.102
+   "leader_chg": 7.228
   },
   "粮食概念,土地流转,土壤修复": {
    "chg": 0.444,
@@ -1395,20 +1395,20 @@
    "leader_chg": 0.444
   },
   "畜牧业": {
-   "chg": 1.367,
-   "median": 0.453,
+   "chg": 1.471,
+   "median": 0.517,
    "n": 9,
    "up": 5,
-   "down": 3,
+   "down": 2,
    "leader_chg": 10.025
   },
   "腾讯概念,同花顺中特估100": {
-   "chg": 5.739,
-   "median": 5.739,
+   "chg": 5.882,
+   "median": 5.882,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 5.739
+   "leader_chg": 5.882
   },
   "特色小镇,同花顺中特估100": {
    "chg": -0.331,
@@ -1419,28 +1419,28 @@
    "leader_chg": -0.331
   },
   "保险": {
-   "chg": 1.743,
-   "median": 1.713,
+   "chg": 1.758,
+   "median": 1.772,
    "n": 5,
    "up": 5,
    "down": 0,
-   "leader_chg": 2.2
+   "leader_chg": 2.236
   },
   "互联网和相关服务": {
-   "chg": 3.37,
-   "median": 2.467,
+   "chg": 3.474,
+   "median": 2.605,
    "n": 5,
    "up": 4,
    "down": 1,
    "leader_chg": 10.0
   },
   "有色金属矿采选业": {
-   "chg": 0.811,
-   "median": 0.811,
+   "chg": 0.869,
+   "median": 0.869,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 0.811
+   "leader_chg": 0.869
   },
   "碳中和,土地流转": {
    "chg": -2.439,
@@ -1451,36 +1451,36 @@
    "leader_chg": -2.439
   },
   "可控核聚变,食品安全,特斯拉概念": {
-   "chg": 0.92,
-   "median": 0.92,
+   "chg": 1.136,
+   "median": 1.136,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 0.92
+   "leader_chg": 1.136
   },
   "仪器仪表制造业": {
-   "chg": 3.184,
-   "median": 3.027,
+   "chg": 3.346,
+   "median": 3.075,
    "n": 10,
    "up": 9,
    "down": 1,
    "leader_chg": 9.994
   },
   "橡胶制品": {
-   "chg": 1.0,
+   "chg": 1.143,
    "median": 1.273,
    "n": 9,
    "up": 8,
    "down": 1,
-   "leader_chg": 2.198
+   "leader_chg": 2.512
   },
   "钛白粉概念": {
-   "chg": 0.534,
-   "median": 0.567,
+   "chg": 0.622,
+   "median": 0.756,
    "n": 13,
-   "up": 9,
+   "up": 10,
    "down": 3,
-   "leader_chg": 1.988
+   "leader_chg": 2.064
   },
   "数字经济,体育产业": {
    "chg": 10.021,
@@ -1491,148 +1491,148 @@
    "leader_chg": 10.021
   },
   "牙科医疗": {
-   "chg": 1.295,
-   "median": 1.474,
+   "chg": 1.395,
+   "median": 1.603,
    "n": 5,
    "up": 3,
    "down": 1,
-   "leader_chg": 3.368
+   "leader_chg": 3.579
   },
   "研究和试验发展": {
-   "chg": -0.812,
-   "median": -0.812,
+   "chg": -0.637,
+   "median": -0.637,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -0.812
+   "leader_chg": -0.637
   },
   "算力租赁,牙科医疗": {
-   "chg": 0.867,
-   "median": 0.867,
+   "chg": 0.99,
+   "median": 0.99,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 0.867
+   "leader_chg": 0.99
   },
   "毫米波雷达,石墨烯": {
-   "chg": 5.361,
-   "median": 5.361,
+   "chg": 5.587,
+   "median": 5.587,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 5.361
+   "leader_chg": 5.587
   },
   "小家电": {
-   "chg": 1.727,
-   "median": 1.184,
+   "chg": 1.689,
+   "median": 1.277,
    "n": 16,
    "up": 13,
    "down": 3,
-   "leader_chg": 6.792
+   "leader_chg": 6.912
   },
   "毫米波雷达,特斯拉概念,卫星导航": {
-   "chg": -2.147,
-   "median": -2.147,
+   "chg": -2.014,
+   "median": -2.014,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -2.147
+   "leader_chg": -2.014
   },
   "无人机": {
-   "chg": 1.949,
-   "median": 2.792,
+   "chg": 2.035,
+   "median": 2.855,
    "n": 4,
    "up": 3,
-   "down": 1,
-   "leader_chg": 4.535
+   "down": 0,
+   "leader_chg": 4.475
   },
   "华为海思概念股": {
-   "chg": 0.97,
+   "chg": 1.158,
    "median": 1.464,
    "n": 3,
    "up": 2,
    "down": 1,
-   "leader_chg": 3.287
+   "leader_chg": 3.486
   },
   "军民融合": {
-   "chg": 1.047,
-   "median": 1.776,
+   "chg": 1.19,
+   "median": 1.974,
    "n": 4,
    "up": 2,
-   "down": 2,
-   "leader_chg": 4.426
+   "down": 1,
+   "leader_chg": 4.262
   },
   "特斯拉概念,无线耳机": {
-   "chg": 2.807,
-   "median": 2.807,
+   "chg": 3.07,
+   "median": 3.07,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 2.807
+   "leader_chg": 3.07
   },
   "消毒剂": {
-   "chg": 1.515,
+   "chg": 1.627,
    "median": 1.134,
    "n": 7,
    "up": 5,
    "down": 2,
-   "leader_chg": 6.718
+   "leader_chg": 6.912
   },
   "石油、煤炭及其他燃料加工业": {
-   "chg": -2.793,
-   "median": 0.723,
+   "chg": -2.552,
+   "median": 1.218,
    "n": 2,
    "up": 1,
    "down": 1,
-   "leader_chg": 0.723
+   "leader_chg": 1.218
   },
   "厨卫电器": {
-   "chg": 0.309,
-   "median": 0.668,
+   "chg": 0.362,
+   "median": 0.835,
    "n": 7,
    "up": 6,
    "down": 1,
    "leader_chg": 1.699
   },
   "燃气生产和供应业": {
-   "chg": -0.381,
-   "median": -0.381,
+   "chg": -0.254,
+   "median": -0.254,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -0.381
+   "leader_chg": -0.254
   },
   "能源金属": {
-   "chg": 2.634,
-   "median": 2.931,
+   "chg": 2.66,
+   "median": 2.795,
    "n": 9,
    "up": 8,
    "down": 1,
-   "leader_chg": 5.74
+   "leader_chg": 5.828
   },
   "非金属矿采选业": {
-   "chg": -0.245,
-   "median": -0.245,
+   "chg": -0.163,
+   "median": -0.163,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -0.245
+   "leader_chg": -0.163
   },
   "非金属材料": {
-   "chg": 1.346,
-   "median": 1.988,
+   "chg": 1.502,
+   "median": 2.064,
    "n": 8,
    "up": 7,
    "down": 1,
-   "leader_chg": 3.671
+   "leader_chg": 3.789
   },
   "磷化工": {
-   "chg": 0.935,
-   "median": 0.85,
+   "chg": 1.009,
+   "median": 1.134,
    "n": 6,
    "up": 4,
    "down": 2,
-   "leader_chg": 3.269
+   "leader_chg": 2.795
   },
   "数据确权,数据要素,AI视频,腾讯概念,体育产业,网红经济": {
    "chg": 10.005,
@@ -1643,44 +1643,44 @@
    "leader_chg": 10.005
   },
   "专业技术服务业": {
-   "chg": 0.407,
-   "median": 0.773,
+   "chg": 0.594,
+   "median": 0.951,
    "n": 3,
    "up": 2,
    "down": 1,
-   "leader_chg": 0.951
+   "leader_chg": 1.031
   },
   "数字孪生,特斯拉概念": {
-   "chg": 0.0,
-   "median": 0.0,
-   "n": 1,
-   "up": 0,
-   "down": 0,
-   "leader_chg": 0.0
-  },
-  "净水概念,水利,数据要素,数字孪生,数字乡村": {
-   "chg": -2.905,
-   "median": -2.905,
+   "chg": -0.081,
+   "median": -0.081,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -2.905
+   "leader_chg": -0.081
+  },
+  "净水概念,水利,数据要素,数字孪生,数字乡村": {
+   "chg": -2.628,
+   "median": -2.628,
+   "n": 1,
+   "up": 0,
+   "down": 1,
+   "leader_chg": -2.628
   },
   "皮革、毛皮、羽毛及其制品和制鞋业": {
-   "chg": 2.274,
-   "median": 2.274,
+   "chg": 2.436,
+   "median": 2.436,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 2.274
+   "leader_chg": 2.436
   },
   "乡村振兴": {
-   "chg": -0.084,
-   "median": 0.25,
+   "chg": 0.001,
+   "median": 0.349,
    "n": 6,
    "up": 3,
-   "down": 3,
-   "leader_chg": 0.716
+   "down": 2,
+   "leader_chg": 0.86
   },
   "文化传媒概念,乡村振兴": {
    "chg": 0.274,
@@ -1691,12 +1691,12 @@
    "leader_chg": 0.274
   },
   "同花顺出海50,同花顺漂亮100": {
-   "chg": 3.232,
-   "median": 3.232,
+   "chg": 3.329,
+   "median": 3.329,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 3.232
+   "leader_chg": 3.329
   },
   "科技推广和应用服务业": {
    "chg": -0.222,
@@ -1707,23 +1707,23 @@
    "leader_chg": -0.222
   },
   "ST板块,特色小镇": {
-   "chg": 3.064,
-   "median": 3.064,
+   "chg": 3.9,
+   "median": 3.9,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 3.064
+   "leader_chg": 3.9
   },
   "减速器": {
-   "chg": 3.713,
-   "median": 4.426,
+   "chg": 3.83,
+   "median": 4.262,
    "n": 7,
    "up": 6,
    "down": 1,
-   "leader_chg": 8.434
+   "leader_chg": 8.675
   },
   "公共设施管理业": {
-   "chg": -1.152,
+   "chg": -1.066,
    "median": 0.552,
    "n": 2,
    "up": 1,
@@ -1731,12 +1731,12 @@
    "leader_chg": 0.552
   },
   "数字孪生,特斯拉概念,铜缆高速连接": {
-   "chg": 2.491,
-   "median": 2.491,
+   "chg": 2.657,
+   "median": 2.657,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 2.491
+   "leader_chg": 2.657
   },
   "金属制品、机械和设备修理业": {
    "chg": 1.605,
@@ -1763,12 +1763,12 @@
    "leader_chg": 0.0
   },
   "数据确权,数据要素,体育产业": {
-   "chg": 1.58,
-   "median": 1.58,
+   "chg": 1.724,
+   "median": 1.724,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 1.58
+   "leader_chg": 1.724
   },
   "食品安全,土地流转": {
    "chg": 0.565,
@@ -1779,12 +1779,12 @@
    "leader_chg": 0.565
   },
   "建筑装饰、装修和其他建筑业": {
-   "chg": 0.557,
-   "median": 0.909,
+   "chg": 0.32,
+   "median": 0.0,
    "n": 3,
-   "up": 2,
+   "up": 1,
    "down": 1,
-   "leader_chg": 1.986
+   "leader_chg": 2.286
   },
   "数字经济,文化传媒概念": {
    "chg": 0.557,
@@ -1795,84 +1795,84 @@
    "leader_chg": 0.557
   },
   "土地流转,牙科医疗": {
-   "chg": 0.361,
-   "median": 0.361,
+   "chg": 0.722,
+   "median": 0.722,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 0.361
+   "leader_chg": 0.722
   },
   "航运概念,天然气": {
-   "chg": 1.259,
-   "median": 1.259,
+   "chg": 1.439,
+   "median": 1.439,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 1.259
+   "leader_chg": 1.439
   },
   "手机游戏,AI视频,网络游戏": {
-   "chg": 1.96,
-   "median": 2.729,
+   "chg": 2.067,
+   "median": 2.88,
    "n": 2,
    "up": 2,
    "down": 0,
-   "leader_chg": 2.729
+   "leader_chg": 2.88
   },
   "数字乡村,统一大市场,土地流转": {
-   "chg": 0.418,
-   "median": 0.418,
+   "chg": 0.628,
+   "median": 0.628,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 0.418
+   "leader_chg": 0.628
   },
   "统一大市场,牙科医疗": {
-   "chg": 1.053,
-   "median": 1.053,
+   "chg": 1.404,
+   "median": 1.404,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 1.053
+   "leader_chg": 1.404
   },
   "手机游戏,同花顺出海50,网络游戏": {
-   "chg": 2.883,
-   "median": 2.883,
+   "chg": 3.063,
+   "median": 3.063,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 2.883
+   "leader_chg": 3.063
   },
   "算力租赁,卫星导航": {
-   "chg": 0.989,
-   "median": 0.989,
+   "chg": 1.299,
+   "median": 1.299,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 0.989
+   "leader_chg": 1.299
   },
   "京津冀一体化,手机游戏,数据确权,腾讯概念,网络游戏,文化传媒概念": {
-   "chg": 2.985,
-   "median": 2.985,
+   "chg": 3.109,
+   "median": 3.109,
    "n": 1,
    "up": 1,
    "down": 0,
-   "leader_chg": 2.985
+   "leader_chg": 3.109
   },
   "农业": {
-   "chg": -1.665,
-   "median": -1.665,
+   "chg": -1.561,
+   "median": -1.561,
    "n": 1,
    "up": 0,
    "down": 1,
-   "leader_chg": -1.665
+   "leader_chg": -1.561
   },
   "无线耳机": {
-   "chg": 2.336,
-   "median": 3.119,
+   "chg": 2.456,
+   "median": 3.178,
    "n": 3,
-   "up": 2,
-   "down": 1,
-   "leader_chg": 3.932
+   "up": 3,
+   "down": 0,
+   "leader_chg": 4.004
   }
  }
 }

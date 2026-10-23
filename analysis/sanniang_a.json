@@ -22,49 +22,147 @@
   "note": "全市场独立筛选，与「前收跌 ∩ 14:30 上涨」主池近乎正交。历史期望未验证为正，按「前向验证」跟踪，不作为买入信号。"
  },
  "latest": {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "members": [
    {
-    "code": "002077",
-    "sym": "sz002077",
-    "name": "大港股份",
-    "prev": 11.54,
-    "p1430": 11.92,
-    "pclose": 11.89,
-    "chg1430": 3.29,
-    "chg_close": 3.03,
-    "turnover1430": 5.75,
-    "float_mktcap_yi": 68.89,
-    "vol_ratio": 2.19,
-    "p_next": 13.08,
-    "r_next": 9.73
+    "code": "603990",
+    "sym": "sh603990",
+    "name": "麦迪科技",
+    "prev": 19.46,
+    "p1430": 20.4,
+    "pclose": 20.37,
+    "chg1430": 4.83,
+    "chg_close": 4.68,
+    "turnover1430": 6.91,
+    "float_mktcap_yi": 62.21,
+    "vol_ratio": 1.43
+   },
+   {
+    "code": "002045",
+    "sym": "sz002045",
+    "name": "国光电器",
+    "prev": 8.61,
+    "p1430": 9.02,
+    "pclose": 9.07,
+    "chg1430": 4.76,
+    "chg_close": 5.34,
+    "turnover1430": 5.44,
+    "float_mktcap_yi": 50.85,
+    "vol_ratio": 2.39
+   },
+   {
+    "code": "002881",
+    "sym": "sz002881",
+    "name": "美格智能",
+    "prev": 40.8,
+    "p1430": 42.53,
+    "pclose": 42.47,
+    "chg1430": 4.24,
+    "chg_close": 4.09,
+    "turnover1430": 8.26,
+    "float_mktcap_yi": 77.95,
+    "vol_ratio": 1.05
+   },
+   {
+    "code": "002580",
+    "sym": "sz002580",
+    "name": "圣阳股份",
+    "prev": 15.61,
+    "p1430": 16.26,
+    "pclose": 16.35,
+    "chg1430": 4.16,
+    "chg_close": 4.74,
+    "turnover1430": 8.82,
+    "float_mktcap_yi": 74.0,
+    "vol_ratio": 1.15
+   },
+   {
+    "code": "002245",
+    "sym": "sz002245",
+    "name": "蔚蓝锂芯",
+    "prev": 11.3,
+    "p1430": 11.77,
+    "pclose": 11.8,
+    "chg1430": 4.16,
+    "chg_close": 4.42,
+    "turnover1430": 7.97,
+    "float_mktcap_yi": 189.71,
+    "vol_ratio": 1.18
+   },
+   {
+    "code": "000670",
+    "sym": "sz000670",
+    "name": "盈方微",
+    "prev": 6.34,
+    "p1430": 6.59,
+    "pclose": 6.6,
+    "chg1430": 3.94,
+    "chg_close": 4.1,
+    "turnover1430": 6.46,
+    "float_mktcap_yi": 54.7,
+    "vol_ratio": 2.04
+   },
+   {
+    "code": "002965",
+    "sym": "sz002965",
+    "name": "祥鑫科技",
+    "prev": 22.91,
+    "p1430": 23.81,
+    "pclose": 23.78,
+    "chg1430": 3.93,
+    "chg_close": 3.8,
+    "turnover1430": 5.07,
+    "float_mktcap_yi": 56.68,
+    "vol_ratio": 1.27
+   },
+   {
+    "code": "002300",
+    "sym": "sz002300",
+    "name": "太阳电缆",
+    "prev": 7.12,
+    "p1430": 7.4,
+    "pclose": 7.43,
+    "chg1430": 3.93,
+    "chg_close": 4.35,
+    "turnover1430": 6.98,
+    "float_mktcap_yi": 53.67,
+    "vol_ratio": 1.56
    },
    {
     "code": "600621",
     "sym": "sh600621",
     "name": "华鑫股份",
-    "prev": 13.92,
-    "p1430": 14.37,
-    "pclose": 14.36,
-    "chg1430": 3.23,
-    "chg_close": 3.16,
-    "turnover1430": 5.64,
-    "float_mktcap_yi": 152.56,
-    "vol_ratio": 1.31,
-    "p_next": 14.95,
-    "r_next": 4.04
+    "prev": 14.34,
+    "p1430": 14.83,
+    "pclose": 14.81,
+    "chg1430": 3.42,
+    "chg_close": 3.28,
+    "turnover1430": 7.29,
+    "float_mktcap_yi": 157.23,
+    "vol_ratio": 1.87
+   },
+   {
+    "code": "002279",
+    "sym": "sz002279",
+    "name": "久其软件",
+    "prev": 6.46,
+    "p1430": 6.66,
+    "pclose": 6.7,
+    "chg1430": 3.1,
+    "chg_close": 3.72,
+    "turnover1430": 5.47,
+    "float_mktcap_yi": 53.26,
+    "vol_ratio": 1.93
    }
   ],
   "diag": {
    "all_a": 5576,
-   "base_n": 1259,
-   "fetched": 1258,
-   "band_3_5": 6,
-   "band_turn": 2,
-   "final": 2
-  },
-  "mean_r_next": 6.88,
-  "n_r_next": 2
+   "base_n": 1261,
+   "fetched": 1260,
+   "band_3_5": 92,
+   "band_turn": 14,
+   "final": 10
+  }
  },
  "history": [
   {
@@ -936,8 +1034,150 @@
    },
    "mean_r_next": 6.88,
    "n_r_next": 2
+  },
+  {
+   "date": "2026-10-23",
+   "members": [
+    {
+     "code": "603990",
+     "sym": "sh603990",
+     "name": "麦迪科技",
+     "prev": 19.46,
+     "p1430": 20.4,
+     "pclose": 20.37,
+     "chg1430": 4.83,
+     "chg_close": 4.68,
+     "turnover1430": 6.91,
+     "float_mktcap_yi": 62.21,
+     "vol_ratio": 1.43
+    },
+    {
+     "code": "002045",
+     "sym": "sz002045",
+     "name": "国光电器",
+     "prev": 8.61,
+     "p1430": 9.02,
+     "pclose": 9.07,
+     "chg1430": 4.76,
+     "chg_close": 5.34,
+     "turnover1430": 5.44,
+     "float_mktcap_yi": 50.85,
+     "vol_ratio": 2.39
+    },
+    {
+     "code": "002881",
+     "sym": "sz002881",
+     "name": "美格智能",
+     "prev": 40.8,
+     "p1430": 42.53,
+     "pclose": 42.47,
+     "chg1430": 4.24,
+     "chg_close": 4.09,
+     "turnover1430": 8.26,
+     "float_mktcap_yi": 77.95,
+     "vol_ratio": 1.05
+    },
+    {
+     "code": "002580",
+     "sym": "sz002580",
+     "name": "圣阳股份",
+     "prev": 15.61,
+     "p1430": 16.26,
+     "pclose": 16.35,
+     "chg1430": 4.16,
+     "chg_close": 4.74,
+     "turnover1430": 8.82,
+     "float_mktcap_yi": 74.0,
+     "vol_ratio": 1.15
+    },
+    {
+     "code": "002245",
+     "sym": "sz002245",
+     "name": "蔚蓝锂芯",
+     "prev": 11.3,
+     "p1430": 11.77,
+     "pclose": 11.8,
+     "chg1430": 4.16,
+     "chg_close": 4.42,
+     "turnover1430": 7.97,
+     "float_mktcap_yi": 189.71,
+     "vol_ratio": 1.18
+    },
+    {
+     "code": "000670",
+     "sym": "sz000670",
+     "name": "盈方微",
+     "prev": 6.34,
+     "p1430": 6.59,
+     "pclose": 6.6,
+     "chg1430": 3.94,
+     "chg_close": 4.1,
+     "turnover1430": 6.46,
+     "float_mktcap_yi": 54.7,
+     "vol_ratio": 2.04
+    },
+    {
+     "code": "002965",
+     "sym": "sz002965",
+     "name": "祥鑫科技",
+     "prev": 22.91,
+     "p1430": 23.81,
+     "pclose": 23.78,
+     "chg1430": 3.93,
+     "chg_close": 3.8,
+     "turnover1430": 5.07,
+     "float_mktcap_yi": 56.68,
+     "vol_ratio": 1.27
+    },
+    {
+     "code": "002300",
+     "sym": "sz002300",
+     "name": "太阳电缆",
+     "prev": 7.12,
+     "p1430": 7.4,
+     "pclose": 7.43,
+     "chg1430": 3.93,
+     "chg_close": 4.35,
+     "turnover1430": 6.98,
+     "float_mktcap_yi": 53.67,
+     "vol_ratio": 1.56
+    },
+    {
+     "code": "600621",
+     "sym": "sh600621",
+     "name": "华鑫股份",
+     "prev": 14.34,
+     "p1430": 14.83,
+     "pclose": 14.81,
+     "chg1430": 3.42,
+     "chg_close": 3.28,
+     "turnover1430": 7.29,
+     "float_mktcap_yi": 157.23,
+     "vol_ratio": 1.87
+    },
+    {
+     "code": "002279",
+     "sym": "sz002279",
+     "name": "久其软件",
+     "prev": 6.46,
+     "p1430": 6.66,
+     "pclose": 6.7,
+     "chg1430": 3.1,
+     "chg_close": 3.72,
+     "turnover1430": 5.47,
+     "float_mktcap_yi": 53.26,
+     "vol_ratio": 1.93
+    }
+   ],
+   "diag": {
+    "all_a": 5576,
+    "base_n": 1261,
+    "fetched": 1260,
+    "band_3_5": 92,
+    "band_turn": 14,
+    "final": 10
+   }
   }
  ],
- "generated_at": "2026-10-22 14:38:49",
- "backfilled_at": "2026-10-23 11:38:08"
+ "generated_at": "2026-10-23 14:33:27"
 }
