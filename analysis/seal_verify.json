@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23 10:32",
+ "generated_at": "2026-10-23 11:36",
  "note": "14:30 涨停池(池内涨幅≥9.5%) → 收盘封住率(close_chg≥9.4)；由 seal_verify.py 生成，11:35 回填后自动追加最新一日",
  "days": {
   "2026-04-10": {
@@ -646,13 +646,18 @@
    "zt": 9,
    "seal": 9,
    "bomb": 0
+  },
+  "2026-10-22": {
+   "zt": 10,
+   "seal": 9,
+   "bomb": 1
   }
  },
  "stats": {
-  "days": 129,
-  "total_zt": 3469,
-  "total_seal": 3387,
-  "seal_rate_pct": 97.64,
-  "bomb_pct": 2.36
+  "days": 130,
+  "total_zt": 3479,
+  "total_seal": 3396,
+  "seal_rate_pct": 97.61,
+  "bomb_pct": 2.39
  }
 }
