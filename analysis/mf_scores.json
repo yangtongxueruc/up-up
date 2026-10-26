@@ -1,15 +1,19 @@
 {
- "generated_at": "2026-10-26 22:31",
+ "generated_at": "2026-10-26 22:38",
  "meta": {
-  "n": 96676,
-  "days": 131,
+  "n_train": 96676,
+  "n_live": 291,
+  "train_dates": 131,
   "topk": 30,
-  "min_train_days": 10
+  "min_train_days": 10,
+  "mode": "live",
+  "live_anchor": "2026-10-26",
+  "trained_upto": "2026-10-23"
  },
  "features": [
   "chg"
  ],
- "note": "动量 Top30（2026-09-02 诊断定稿）：score=z(chg)，当日14:30涨幅最高 30 只（涨停优先）；仅 chg 单一 14:30 可知特征，无未来函数；诊断证明 IC 多因子加权在非涨停池无 alpha 且劣化选股，已弃用。",
+ "note": "LIVE 当日 14:30 打分：训练=截至 2026-10-23 全部历史样本，特征=chg；全部为 14:30 时点可知量（无收盘价未来函数），打分无需 fwd，14:30 即出 top30。",
  "days": {
   "2026-04-24": {
    "top": [
@@ -93447,8 +93451,5 @@
    },
    "live": true
   }
- },
- "feat_hist": {
-  "chg": 121
  }
 }
