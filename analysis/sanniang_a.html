@@ -23,12 +23,13 @@ tbody tr:hover{background:#fafbfd}
 .kpi div{flex:1 1 150px;background:#f2f5fb;border:1px solid #dde5f5;border-radius:8px;padding:10px 12px}
 .kpi b{display:block;font-size:19px}.kpi span{font-size:12px;color:var(--sub)}
 .note{font-size:12.5px;color:var(--sub);margin-top:9px}
+.halt{display:inline-block;padding:0 5px;border-radius:4px;background:#fdf0e3;color:#b26a00;font-size:11px;font-weight:600}
 .back{display:inline-block;margin-bottom:14px;color:#2f6fed;text-decoration:none;font-size:13px}
 .disclaimer{margin-top:20px;padding-top:13px;border-top:1px dashed var(--line);color:#8a919c;font-size:12px}
 </style></head><body><div class='wrap'>
 <a class='back' href='../index.html'>← 返回站点首页</a>
 <h1>三娘验证A</h1>
-<div class='subtitle'>A股主板（600/601/603/605/000/001/002/003）· 不要求前一日下跌 ｜ 口径：全部指标取 <b>真 14:30</b> 时点 ｜ 名单生成于 2026-10-23 14:33:27</div>
+<div class='subtitle'>A股主板（600/601/603/605/000/001/002/003）· 不要求前一日下跌 ｜ 口径：全部指标取 <b>真 14:30</b> 时点 ｜ 名单生成于 2026-10-23 14:33:27 ｜ 次日早盘回填于 <b>2026-10-26 12:34:29</b></div>
 
 <div class='card'>
   <h2>规则定义</h2>
@@ -43,31 +44,34 @@ tbody tr:hover{background:#fafbfd}
 
 <div class='card'>
   <h2>当日名单（2026-10-23 · 10 只）</h2>
-  
+  <div class='kpi'><div><b class='dn'>-0.81%</b><span>当日名单 14:30→次日11:30 均值（10 只）</span></div><div><b>5</b><span>其中次日为正</span></div></div>
   <table>
     <thead><tr><th>#</th><th>代码</th><th>名称</th><th>14:30 涨幅</th><th>量比</th><th>换手率</th>
       <th>流通市值(亿)</th><th>收盘涨幅</th><th>次日11:30</th></tr></thead>
-    <tbody><tr><td>1</td><td>603990</td><td>麦迪科技</td><td class='up'>+4.83%</td><td>1.43</td><td>6.91%</td><td>62.2</td><td class='up'>+4.68%</td><td>待回填</td></tr>
-<tr><td>2</td><td>002045</td><td>国光电器</td><td class='up'>+4.76%</td><td>2.39</td><td>5.44%</td><td>50.9</td><td class='up'>+5.34%</td><td>待回填</td></tr>
-<tr><td>3</td><td>002881</td><td>美格智能</td><td class='up'>+4.24%</td><td>1.05</td><td>8.26%</td><td>78.0</td><td class='up'>+4.09%</td><td>待回填</td></tr>
-<tr><td>4</td><td>002580</td><td>圣阳股份</td><td class='up'>+4.16%</td><td>1.15</td><td>8.82%</td><td>74.0</td><td class='up'>+4.74%</td><td>待回填</td></tr>
-<tr><td>5</td><td>002245</td><td>蔚蓝锂芯</td><td class='up'>+4.16%</td><td>1.18</td><td>7.97%</td><td>189.7</td><td class='up'>+4.42%</td><td>待回填</td></tr>
-<tr><td>6</td><td>000670</td><td>盈方微</td><td class='up'>+3.94%</td><td>2.04</td><td>6.46%</td><td>54.7</td><td class='up'>+4.10%</td><td>待回填</td></tr>
-<tr><td>7</td><td>002965</td><td>祥鑫科技</td><td class='up'>+3.93%</td><td>1.27</td><td>5.07%</td><td>56.7</td><td class='up'>+3.80%</td><td>待回填</td></tr>
-<tr><td>8</td><td>002300</td><td>太阳电缆</td><td class='up'>+3.93%</td><td>1.56</td><td>6.98%</td><td>53.7</td><td class='up'>+4.35%</td><td>待回填</td></tr>
-<tr><td>9</td><td>600621</td><td>华鑫股份</td><td class='up'>+3.42%</td><td>1.87</td><td>7.29%</td><td>157.2</td><td class='up'>+3.28%</td><td>待回填</td></tr>
-<tr><td>10</td><td>002279</td><td>久其软件</td><td class='up'>+3.10%</td><td>1.93</td><td>5.47%</td><td>53.3</td><td class='up'>+3.72%</td><td>待回填</td></tr></tbody>
+    <tbody><tr><td>1</td><td>603990</td><td>麦迪科技</td><td class='up'>+4.83%</td><td>1.43</td><td>6.91%</td><td>62.2</td><td class='up'>+4.68%</td><td><b class='dn'>-5.64%</b></td></tr>
+<tr><td>2</td><td>002045</td><td>国光电器</td><td class='up'>+4.76%</td><td>2.39</td><td>5.44%</td><td>50.9</td><td class='up'>+5.34%</td><td><b class='up'>+0.67%</b></td></tr>
+<tr><td>3</td><td>002881</td><td>美格智能</td><td class='up'>+4.24%</td><td>1.05</td><td>8.26%</td><td>78.0</td><td class='up'>+4.09%</td><td><b class='dn'>-0.56%</b></td></tr>
+<tr><td>4</td><td>002580</td><td>圣阳股份</td><td class='up'>+4.16%</td><td>1.15</td><td>8.82%</td><td>74.0</td><td class='up'>+4.74%</td><td><b class='up'>+0.37%</b></td></tr>
+<tr><td>5</td><td>002245</td><td>蔚蓝锂芯</td><td class='up'>+4.16%</td><td>1.18</td><td>7.97%</td><td>189.7</td><td class='up'>+4.42%</td><td><b class='dn'>-1.19%</b></td></tr>
+<tr><td>6</td><td>000670</td><td>盈方微</td><td class='up'>+3.94%</td><td>2.04</td><td>6.46%</td><td>54.7</td><td class='up'>+4.10%</td><td><b class='dn'>-1.97%</b></td></tr>
+<tr><td>7</td><td>002965</td><td>祥鑫科技</td><td class='up'>+3.93%</td><td>1.27</td><td>5.07%</td><td>56.7</td><td class='up'>+3.80%</td><td><b class='up'>+1.18%</b></td></tr>
+<tr><td>8</td><td>002300</td><td>太阳电缆</td><td class='up'>+3.93%</td><td>1.56</td><td>6.98%</td><td>53.7</td><td class='up'>+4.35%</td><td><b class='dn'>-4.32%</b></td></tr>
+<tr><td>9</td><td>600621</td><td>华鑫股份</td><td class='up'>+3.42%</td><td>1.87</td><td>7.29%</td><td>157.2</td><td class='up'>+3.28%</td><td><b class='up'>+0.47%</b> <span class='halt' title='次日整日停牌，无成交；此价为停牌冻结价（前收盘），不可实际成交'>停牌</span></td></tr>
+<tr><td>10</td><td>002279</td><td>久其软件</td><td class='up'>+3.10%</td><td>1.93</td><td>5.47%</td><td>53.3</td><td class='up'>+3.72%</td><td><b class='up'>+2.85%</b></td></tr></tbody>
   </table>
   <div class='note'>筛选链路：全A 5576 只 → 主板 ∩ 流通市值 50~200亿 = <b>1261</b> 只
     → 14:30 涨幅在区间 = <b>92</b> 只 → 叠加换手率区间 = <b>14</b> 只 → 再要求量比&gt;1 = <b>10</b> 只。</div>
+  <div class='note'>「次日11:30」取该时点价格；若该股<b>次日整日停牌</b>（无成交），则填入
+    <b>停牌冻结价</b>（= 前收盘）并标注<span class='halt'>停牌</span>，与主池
+    「次日 11:30 价」对停牌股的口径一致；该价格<b>不可实际成交</b>，仅供参考。</div>
 </div>
 
 <div class='card'>
   <h2>前向验证（口径A：14:30 买 → 次日 11:30 卖）</h2>
-  
+  <div class='kpi'><div><b class='dn'>-0.81%</b><span>当日名单 14:30→次日11:30 均值（10 只）</span></div><div><b>5</b><span>其中次日为正</span></div></div>
   <table>
     <thead><tr><th>日期</th><th>命中只数</th><th>组合均值</th><th>当日名单（前12只）</th></tr></thead>
-    <tbody><tr><td>2026-10-23</td><td>10</td><td>待回填</td><td>603990, 002045, 002881, 002580, 002245, 000670, 002965, 002300, 600621, 002279</td></tr>
+    <tbody><tr><td>2026-10-23</td><td>10</td><td>-0.81%</td><td>603990, 002045, 002881, 002580, 002245, 000670, 002965, 002300, 600621, 002279</td></tr>
 <tr><td>2026-10-22</td><td>2</td><td>+6.88%</td><td>002077, 600621</td></tr>
 <tr><td>2026-10-21</td><td>13</td><td>-3.21%</td><td>600186, 000032, 603669, 002865, 002549, 002201, 600501, 002009, 002655, 001339, 603002, 603859</td></tr>
 <tr><td>2026-10-20</td><td>9</td><td>+1.96%</td><td>002173, 002141, 001389, 603990, 002975, 002368, 002708, 603859, 002315</td></tr>
