@@ -22,328 +22,94 @@
   "note": "全市场独立筛选，与「前收跌 ∩ 14:30 上涨」主池近乎正交。历史期望未验证为正，按「前向验证」跟踪，不作为买入信号。"
  },
  "latest": {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "members": [
    {
-    "code": "600592",
-    "sym": "sh600592",
-    "name": "龙溪股份",
-    "prev": 15.04,
-    "p1430": 15.77,
-    "pclose": 15.78,
-    "chg1430": 4.85,
-    "chg_close": 4.92,
-    "turnover1430": 5.09,
-    "float_mktcap_yi": 63.05,
-    "vol_ratio": 1.5
+    "code": "003009",
+    "sym": "sz003009",
+    "name": "中天火箭",
+    "prev": 43.27,
+    "p1430": 45.09,
+    "pclose": 45.0,
+    "chg1430": 4.21,
+    "chg_close": 4.0,
+    "turnover1430": 5.05,
+    "float_mktcap_yi": 74.09,
+    "vol_ratio": 1.79
    },
    {
-    "code": "002779",
-    "sym": "sz002779",
-    "name": "中坚科技",
-    "prev": 86.82,
-    "p1430": 90.94,
-    "pclose": 90.52,
-    "chg1430": 4.75,
-    "chg_close": 4.26,
-    "turnover1430": 5.21,
-    "float_mktcap_yi": 150.06,
-    "vol_ratio": 2.29
+    "code": "601566",
+    "sym": "sh601566",
+    "name": "九牧王",
+    "prev": 9.79,
+    "p1430": 10.17,
+    "pclose": 10.23,
+    "chg1430": 3.88,
+    "chg_close": 4.49,
+    "turnover1430": 9.47,
+    "float_mktcap_yi": 58.84,
+    "vol_ratio": 1.32
    },
    {
-    "code": "603662",
-    "sym": "sh603662",
-    "name": "柯力传感",
-    "prev": 49.58,
-    "p1430": 51.91,
-    "pclose": 51.55,
-    "chg1430": 4.7,
-    "chg_close": 3.97,
-    "turnover1430": 5.0,
-    "float_mktcap_yi": 144.88,
-    "vol_ratio": 1.29
+    "code": "002300",
+    "sym": "sz002300",
+    "name": "太阳电缆",
+    "prev": 7.58,
+    "p1430": 7.86,
+    "pclose": 7.83,
+    "chg1430": 3.69,
+    "chg_close": 3.3,
+    "turnover1430": 9.98,
+    "float_mktcap_yi": 56.48,
+    "vol_ratio": 1.36
    },
    {
-    "code": "002297",
-    "sym": "sz002297",
-    "name": "博云新材",
-    "prev": 14.72,
-    "p1430": 15.35,
-    "pclose": 15.35,
-    "chg1430": 4.28,
-    "chg_close": 4.28,
-    "turnover1430": 5.62,
-    "float_mktcap_yi": 87.97,
-    "vol_ratio": 1.12
+    "code": "002413",
+    "sym": "sz002413",
+    "name": "雷科防务",
+    "prev": 7.2,
+    "p1430": 7.44,
+    "pclose": 7.44,
+    "chg1430": 3.33,
+    "chg_close": 3.33,
+    "turnover1430": 7.41,
+    "float_mktcap_yi": 96.38,
+    "vol_ratio": 1.94
    },
    {
-    "code": "002443",
-    "sym": "sz002443",
-    "name": "金洲管道",
-    "prev": 9.38,
-    "p1430": 9.78,
-    "pclose": 9.82,
-    "chg1430": 4.26,
-    "chg_close": 4.69,
-    "turnover1430": 5.62,
-    "float_mktcap_yi": 51.12,
-    "vol_ratio": 1.35
-   },
-   {
-    "code": "002635",
-    "sym": "sz002635",
-    "name": "安洁科技",
-    "prev": 13.21,
-    "p1430": 13.77,
-    "pclose": 13.77,
-    "chg1430": 4.24,
-    "chg_close": 4.24,
-    "turnover1430": 7.02,
-    "float_mktcap_yi": 54.46,
+    "code": "002342",
+    "sym": "sz002342",
+    "name": "巨力索具",
+    "prev": 6.73,
+    "p1430": 6.95,
+    "pclose": 6.93,
+    "chg1430": 3.27,
+    "chg_close": 2.97,
+    "turnover1430": 9.22,
+    "float_mktcap_yi": 66.16,
     "vol_ratio": 1.64
    },
    {
-    "code": "002913",
-    "sym": "sz002913",
-    "name": "奥士康",
-    "prev": 59.94,
-    "p1430": 62.44,
-    "pclose": 62.8,
-    "chg1430": 4.17,
-    "chg_close": 4.77,
-    "turnover1430": 5.23,
-    "float_mktcap_yi": 191.08,
-    "vol_ratio": 1.26
-   },
-   {
-    "code": "002734",
-    "sym": "sz002734",
-    "name": "利民股份",
-    "prev": 11.52,
-    "p1430": 11.99,
-    "pclose": 12.04,
-    "chg1430": 4.08,
-    "chg_close": 4.51,
-    "turnover1430": 6.5,
-    "float_mktcap_yi": 52.01,
-    "vol_ratio": 1.44
-   },
-   {
-    "code": "605333",
-    "sym": "sh605333",
-    "name": "沪光股份",
-    "prev": 19.91,
-    "p1430": 20.71,
-    "pclose": 20.94,
-    "chg1430": 4.02,
-    "chg_close": 5.17,
-    "turnover1430": 5.79,
-    "float_mktcap_yi": 97.17,
-    "vol_ratio": 4.55
-   },
-   {
-    "code": "605577",
-    "sym": "sh605577",
-    "name": "龙版传媒",
-    "prev": 13.03,
-    "p1430": 13.55,
-    "pclose": 14.02,
-    "chg1430": 3.99,
-    "chg_close": 7.6,
-    "turnover1430": 7.38,
-    "float_mktcap_yi": 62.0,
-    "vol_ratio": 1.09
-   },
-   {
-    "code": "603366",
-    "sym": "sh603366",
-    "name": "日出东方",
-    "prev": 7.41,
-    "p1430": 7.7,
-    "pclose": 7.69,
-    "chg1430": 3.91,
-    "chg_close": 3.78,
-    "turnover1430": 7.79,
-    "float_mktcap_yi": 62.52,
-    "vol_ratio": 1.06
-   },
-   {
-    "code": "001331",
-    "sym": "sz001331",
-    "name": "胜通能源",
-    "prev": 38.52,
-    "p1430": 39.98,
-    "pclose": 39.4,
-    "chg1430": 3.79,
-    "chg_close": 2.28,
-    "turnover1430": 8.58,
-    "float_mktcap_yi": 112.53,
-    "vol_ratio": 2.54
-   },
-   {
-    "code": "603767",
-    "sym": "sh603767",
-    "name": "中马传动",
-    "prev": 16.43,
-    "p1430": 17.03,
-    "pclose": 17.09,
-    "chg1430": 3.65,
-    "chg_close": 4.02,
-    "turnover1430": 7.86,
-    "float_mktcap_yi": 52.71,
-    "vol_ratio": 1.27
-   },
-   {
-    "code": "603269",
-    "sym": "sh603269",
-    "name": "海鸥股份",
-    "prev": 15.96,
-    "p1430": 16.53,
-    "pclose": 16.47,
-    "chg1430": 3.57,
-    "chg_close": 3.2,
-    "turnover1430": 6.13,
-    "float_mktcap_yi": 71.14,
-    "vol_ratio": 1.62
-   },
-   {
-    "code": "603901",
-    "sym": "sh603901",
-    "name": "永创智能",
-    "prev": 10.45,
-    "p1430": 10.82,
-    "pclose": 10.77,
-    "chg1430": 3.54,
-    "chg_close": 3.06,
-    "turnover1430": 8.94,
-    "float_mktcap_yi": 61.21,
-    "vol_ratio": 1.87
-   },
-   {
-    "code": "002434",
-    "sym": "sz002434",
-    "name": "万里扬",
-    "prev": 6.39,
-    "p1430": 6.61,
-    "pclose": 6.64,
-    "chg1430": 3.44,
-    "chg_close": 3.91,
-    "turnover1430": 5.74,
-    "float_mktcap_yi": 87.07,
-    "vol_ratio": 2.54
-   },
-   {
-    "code": "002167",
-    "sym": "sz002167",
-    "name": "东方锆业",
-    "prev": 13.6,
-    "p1430": 14.06,
-    "pclose": 14.09,
-    "chg1430": 3.38,
-    "chg_close": 3.6,
-    "turnover1430": 7.25,
-    "float_mktcap_yi": 107.39,
-    "vol_ratio": 1.06
-   },
-   {
-    "code": "001389",
-    "sym": "sz001389",
-    "name": "广合科技",
-    "prev": 99.05,
-    "p1430": 102.31,
-    "pclose": 102.44,
-    "chg1430": 3.29,
-    "chg_close": 3.42,
-    "turnover1430": 6.54,
-    "float_mktcap_yi": 156.2,
-    "vol_ratio": 1.03
-   },
-   {
-    "code": "002097",
-    "sym": "sz002097",
-    "name": "山河智能",
-    "prev": 6.8,
-    "p1430": 7.02,
-    "pclose": 7.04,
-    "chg1430": 3.24,
-    "chg_close": 3.53,
-    "turnover1430": 5.92,
-    "float_mktcap_yi": 75.54,
-    "vol_ratio": 1.01
-   },
-   {
-    "code": "002860",
-    "sym": "sz002860",
-    "name": "星帅尔",
-    "prev": 15.95,
-    "p1430": 16.46,
-    "pclose": 16.35,
+    "code": "002173",
+    "sym": "sz002173",
+    "name": "创新医疗",
+    "prev": 16.23,
+    "p1430": 16.75,
+    "pclose": 16.66,
     "chg1430": 3.2,
-    "chg_close": 2.51,
-    "turnover1430": 5.95,
-    "float_mktcap_yi": 56.2,
-    "vol_ratio": 1.92
-   },
-   {
-    "code": "603286",
-    "sym": "sh603286",
-    "name": "日盈电子",
-    "prev": 53.01,
-    "p1430": 54.7,
-    "pclose": 54.31,
-    "chg1430": 3.19,
-    "chg_close": 2.45,
-    "turnover1430": 8.54,
-    "float_mktcap_yi": 63.5,
-    "vol_ratio": 1.4
-   },
-   {
-    "code": "002119",
-    "sym": "sz002119",
-    "name": "康强电子",
-    "prev": 19.51,
-    "p1430": 20.12,
-    "pclose": 20.23,
-    "chg1430": 3.13,
-    "chg_close": 3.69,
-    "turnover1430": 8.28,
-    "float_mktcap_yi": 75.96,
-    "vol_ratio": 1.04
-   },
-   {
-    "code": "002552",
-    "sym": "sz002552",
-    "name": "宝鼎科技",
-    "prev": 34.1,
-    "p1430": 35.16,
-    "pclose": 35.15,
-    "chg1430": 3.11,
-    "chg_close": 3.08,
-    "turnover1430": 7.49,
-    "float_mktcap_yi": 129.49,
-    "vol_ratio": 1.59
-   },
-   {
-    "code": "002419",
-    "sym": "sz002419",
-    "name": "天虹股份",
-    "prev": 4.9,
-    "p1430": 5.05,
-    "pclose": 5.0,
-    "chg1430": 3.06,
-    "chg_close": 2.04,
-    "turnover1430": 5.5,
-    "float_mktcap_yi": 57.06,
-    "vol_ratio": 2.04
+    "chg_close": 2.65,
+    "turnover1430": 8.06,
+    "float_mktcap_yi": 70.12,
+    "vol_ratio": 2.05
    }
   ],
   "diag": {
-   "all_a": 5575,
-   "base_n": 1257,
-   "fetched": 1255,
-   "band_3_5": 145,
-   "band_turn": 32,
-   "final": 24
+   "all_a": 5576,
+   "base_n": 1233,
+   "fetched": 1231,
+   "band_3_5": 27,
+   "band_turn": 6,
+   "final": 6
   }
  },
  "history": [
@@ -1622,7 +1388,9 @@
      "chg_close": 4.92,
      "turnover1430": 5.09,
      "float_mktcap_yi": 63.05,
-     "vol_ratio": 1.5
+     "vol_ratio": 1.5,
+     "p_next": 17.41,
+     "r_next": 10.4
     },
     {
      "code": "002779",
@@ -1635,7 +1403,9 @@
      "chg_close": 4.26,
      "turnover1430": 5.21,
      "float_mktcap_yi": 150.06,
-     "vol_ratio": 2.29
+     "vol_ratio": 2.29,
+     "p_next": 85.9,
+     "r_next": -5.54
     },
     {
      "code": "603662",
@@ -1648,7 +1418,9 @@
      "chg_close": 3.97,
      "turnover1430": 5.0,
      "float_mktcap_yi": 144.88,
-     "vol_ratio": 1.29
+     "vol_ratio": 1.29,
+     "p_next": 50.09,
+     "r_next": -3.51
     },
     {
      "code": "002297",
@@ -1661,7 +1433,9 @@
      "chg_close": 4.28,
      "turnover1430": 5.62,
      "float_mktcap_yi": 87.97,
-     "vol_ratio": 1.12
+     "vol_ratio": 1.12,
+     "p_next": 15.52,
+     "r_next": 1.11
     },
     {
      "code": "002443",
@@ -1674,7 +1448,9 @@
      "chg_close": 4.69,
      "turnover1430": 5.62,
      "float_mktcap_yi": 51.12,
-     "vol_ratio": 1.35
+     "vol_ratio": 1.35,
+     "p_next": 9.47,
+     "r_next": -3.17
     },
     {
      "code": "002635",
@@ -1687,7 +1463,9 @@
      "chg_close": 4.24,
      "turnover1430": 7.02,
      "float_mktcap_yi": 54.46,
-     "vol_ratio": 1.64
+     "vol_ratio": 1.64,
+     "p_next": 13.16,
+     "r_next": -4.43
     },
     {
      "code": "002913",
@@ -1700,7 +1478,9 @@
      "chg_close": 4.77,
      "turnover1430": 5.23,
      "float_mktcap_yi": 191.08,
-     "vol_ratio": 1.26
+     "vol_ratio": 1.26,
+     "p_next": 56.79,
+     "r_next": -9.05
     },
     {
      "code": "002734",
@@ -1713,7 +1493,9 @@
      "chg_close": 4.51,
      "turnover1430": 6.5,
      "float_mktcap_yi": 52.01,
-     "vol_ratio": 1.44
+     "vol_ratio": 1.44,
+     "p_next": 11.58,
+     "r_next": -3.42
     },
     {
      "code": "605333",
@@ -1726,7 +1508,9 @@
      "chg_close": 5.17,
      "turnover1430": 5.79,
      "float_mktcap_yi": 97.17,
-     "vol_ratio": 4.55
+     "vol_ratio": 4.55,
+     "p_next": 19.68,
+     "r_next": -4.97
     },
     {
      "code": "605577",
@@ -1739,7 +1523,9 @@
      "chg_close": 7.6,
      "turnover1430": 7.38,
      "float_mktcap_yi": 62.0,
-     "vol_ratio": 1.09
+     "vol_ratio": 1.09,
+     "p_next": 13.33,
+     "r_next": -1.62
     },
     {
      "code": "603366",
@@ -1752,7 +1538,9 @@
      "chg_close": 3.78,
      "turnover1430": 7.79,
      "float_mktcap_yi": 62.52,
-     "vol_ratio": 1.06
+     "vol_ratio": 1.06,
+     "p_next": 7.7,
+     "r_next": 0.0
     },
     {
      "code": "001331",
@@ -1765,7 +1553,9 @@
      "chg_close": 2.28,
      "turnover1430": 8.58,
      "float_mktcap_yi": 112.53,
-     "vol_ratio": 2.54
+     "vol_ratio": 2.54,
+     "p_next": 36.47,
+     "r_next": -8.78
     },
     {
      "code": "603767",
@@ -1778,7 +1568,9 @@
      "chg_close": 4.02,
      "turnover1430": 7.86,
      "float_mktcap_yi": 52.71,
-     "vol_ratio": 1.27
+     "vol_ratio": 1.27,
+     "p_next": 16.62,
+     "r_next": -2.41
     },
     {
      "code": "603269",
@@ -1791,7 +1583,9 @@
      "chg_close": 3.2,
      "turnover1430": 6.13,
      "float_mktcap_yi": 71.14,
-     "vol_ratio": 1.62
+     "vol_ratio": 1.62,
+     "p_next": 16.2,
+     "r_next": -2.0
     },
     {
      "code": "603901",
@@ -1804,7 +1598,9 @@
      "chg_close": 3.06,
      "turnover1430": 8.94,
      "float_mktcap_yi": 61.21,
-     "vol_ratio": 1.87
+     "vol_ratio": 1.87,
+     "p_next": 10.37,
+     "r_next": -4.16
     },
     {
      "code": "002434",
@@ -1817,7 +1613,9 @@
      "chg_close": 3.91,
      "turnover1430": 5.74,
      "float_mktcap_yi": 87.07,
-     "vol_ratio": 2.54
+     "vol_ratio": 2.54,
+     "p_next": 7.28,
+     "r_next": 10.14
     },
     {
      "code": "002167",
@@ -1830,7 +1628,9 @@
      "chg_close": 3.6,
      "turnover1430": 7.25,
      "float_mktcap_yi": 107.39,
-     "vol_ratio": 1.06
+     "vol_ratio": 1.06,
+     "p_next": 13.56,
+     "r_next": -3.56
     },
     {
      "code": "001389",
@@ -1843,7 +1643,9 @@
      "chg_close": 3.42,
      "turnover1430": 6.54,
      "float_mktcap_yi": 156.2,
-     "vol_ratio": 1.03
+     "vol_ratio": 1.03,
+     "p_next": 95.38,
+     "r_next": -6.77
     },
     {
      "code": "002097",
@@ -1856,7 +1658,9 @@
      "chg_close": 3.53,
      "turnover1430": 5.92,
      "float_mktcap_yi": 75.54,
-     "vol_ratio": 1.01
+     "vol_ratio": 1.01,
+     "p_next": 6.57,
+     "r_next": -6.41
     },
     {
      "code": "002860",
@@ -1869,7 +1673,9 @@
      "chg_close": 2.51,
      "turnover1430": 5.95,
      "float_mktcap_yi": 56.2,
-     "vol_ratio": 1.92
+     "vol_ratio": 1.92,
+     "p_next": 15.9,
+     "r_next": -3.4
     },
     {
      "code": "603286",
@@ -1882,7 +1688,9 @@
      "chg_close": 2.45,
      "turnover1430": 8.54,
      "float_mktcap_yi": 63.5,
-     "vol_ratio": 1.4
+     "vol_ratio": 1.4,
+     "p_next": 53.44,
+     "r_next": -2.3
     },
     {
      "code": "002119",
@@ -1895,7 +1703,9 @@
      "chg_close": 3.69,
      "turnover1430": 8.28,
      "float_mktcap_yi": 75.96,
-     "vol_ratio": 1.04
+     "vol_ratio": 1.04,
+     "p_next": 19.2,
+     "r_next": -4.57
     },
     {
      "code": "002552",
@@ -1908,7 +1718,9 @@
      "chg_close": 3.08,
      "turnover1430": 7.49,
      "float_mktcap_yi": 129.49,
-     "vol_ratio": 1.59
+     "vol_ratio": 1.59,
+     "p_next": 33.5,
+     "r_next": -4.72
     },
     {
      "code": "002419",
@@ -1921,7 +1733,9 @@
      "chg_close": 2.04,
      "turnover1430": 5.5,
      "float_mktcap_yi": 57.06,
-     "vol_ratio": 2.04
+     "vol_ratio": 2.04,
+     "p_next": 4.84,
+     "r_next": -4.16
     }
    ],
    "diag": {
@@ -1931,8 +1745,101 @@
     "band_3_5": 145,
     "band_turn": 32,
     "final": 24
+   },
+   "mean_r_next": -2.8,
+   "n_r_next": 24
+  },
+  {
+   "date": "2026-10-29",
+   "members": [
+    {
+     "code": "003009",
+     "sym": "sz003009",
+     "name": "中天火箭",
+     "prev": 43.27,
+     "p1430": 45.09,
+     "pclose": 45.0,
+     "chg1430": 4.21,
+     "chg_close": 4.0,
+     "turnover1430": 5.05,
+     "float_mktcap_yi": 74.09,
+     "vol_ratio": 1.79
+    },
+    {
+     "code": "601566",
+     "sym": "sh601566",
+     "name": "九牧王",
+     "prev": 9.79,
+     "p1430": 10.17,
+     "pclose": 10.23,
+     "chg1430": 3.88,
+     "chg_close": 4.49,
+     "turnover1430": 9.47,
+     "float_mktcap_yi": 58.84,
+     "vol_ratio": 1.32
+    },
+    {
+     "code": "002300",
+     "sym": "sz002300",
+     "name": "太阳电缆",
+     "prev": 7.58,
+     "p1430": 7.86,
+     "pclose": 7.83,
+     "chg1430": 3.69,
+     "chg_close": 3.3,
+     "turnover1430": 9.98,
+     "float_mktcap_yi": 56.48,
+     "vol_ratio": 1.36
+    },
+    {
+     "code": "002413",
+     "sym": "sz002413",
+     "name": "雷科防务",
+     "prev": 7.2,
+     "p1430": 7.44,
+     "pclose": 7.44,
+     "chg1430": 3.33,
+     "chg_close": 3.33,
+     "turnover1430": 7.41,
+     "float_mktcap_yi": 96.38,
+     "vol_ratio": 1.94
+    },
+    {
+     "code": "002342",
+     "sym": "sz002342",
+     "name": "巨力索具",
+     "prev": 6.73,
+     "p1430": 6.95,
+     "pclose": 6.93,
+     "chg1430": 3.27,
+     "chg_close": 2.97,
+     "turnover1430": 9.22,
+     "float_mktcap_yi": 66.16,
+     "vol_ratio": 1.64
+    },
+    {
+     "code": "002173",
+     "sym": "sz002173",
+     "name": "创新医疗",
+     "prev": 16.23,
+     "p1430": 16.75,
+     "pclose": 16.66,
+     "chg1430": 3.2,
+     "chg_close": 2.65,
+     "turnover1430": 8.06,
+     "float_mktcap_yi": 70.12,
+     "vol_ratio": 2.05
+    }
+   ],
+   "diag": {
+    "all_a": 5576,
+    "base_n": 1233,
+    "fetched": 1231,
+    "band_3_5": 27,
+    "band_turn": 6,
+    "final": 6
    }
   }
  ],
- "generated_at": "2026-10-28 14:48:10"
+ "generated_at": "2026-10-29 14:44:43"
 }
