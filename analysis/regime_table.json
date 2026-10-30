@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29 10:49",
+ "generated_at": "2026-10-30 10:38",
  "regimes": {
   "强涨": {
    "n": 29920,
@@ -10,12 +10,12 @@
    "ruleA_ret": -0.03
   },
   "涨": {
-   "n": 21405,
-   "base": 43.5,
-   "ruleA_n": 1137,
-   "ruleA_hr": 37.7,
-   "excess": -5.7,
-   "ruleA_ret": -0.56
+   "n": 23226,
+   "base": 41.1,
+   "ruleA_n": 1206,
+   "ruleA_hr": 36.4,
+   "excess": -4.7,
+   "ruleA_ret": -0.64
   },
   "平": {
    "n": 17340,
@@ -51,10 +51,10 @@
   }
  },
  "overall": {
-  "n": 97166,
-  "base": 40.7,
-  "ruleA_n": 5237,
-  "ruleA_hr": 39.8,
-  "excess": -0.9
+  "n": 98987,
+  "base": 40.2,
+  "ruleA_n": 5306,
+  "ruleA_hr": 39.4,
+  "excess": -0.7
  }
 }
