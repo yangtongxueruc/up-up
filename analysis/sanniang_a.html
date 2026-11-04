@@ -29,7 +29,7 @@ tbody tr:hover{background:#fafbfd}
 </style></head><body><div class='wrap'>
 <a class='back' href='../index.html'>← 返回站点首页</a>
 <h1>三娘验证A</h1>
-<div class='subtitle'>A股主板（600/601/603/605/000/001/002/003）· 不要求前一日下跌 ｜ 口径：全部指标取 <b>真 14:30</b> 时点 ｜ 名单生成于 2026-11-03 14:51:17</div>
+<div class='subtitle'>A股主板（600/601/603/605/000/001/002/003）· 不要求前一日下跌 ｜ 口径：全部指标取 <b>真 14:30</b> 时点 ｜ 名单生成于 2026-11-03 14:51:17 ｜ 次日早盘回填于 <b>2026-11-04 11:38:32</b></div>
 
 <div class='card'>
   <h2>规则定义</h2>
@@ -44,13 +44,13 @@ tbody tr:hover{background:#fafbfd}
 
 <div class='card'>
   <h2>当日名单（2026-11-03 · 3 只）</h2>
-  
+  <div class='kpi'><div><b class='dn'>-1.56%</b><span>当日名单 14:30→次日11:30 均值（3 只）</span></div><div><b>1</b><span>其中次日为正</span></div></div>
   <table>
     <thead><tr><th>#</th><th>代码</th><th>名称</th><th>14:30 涨幅</th><th>量比</th><th>换手率</th>
       <th>流通市值(亿)</th><th>收盘涨幅</th><th>次日11:30</th></tr></thead>
-    <tbody><tr><td>1</td><td>003010</td><td>若羽臣</td><td class='up'>+4.29%</td><td>1.59</td><td>5.17%</td><td>68.3</td><td class='up'>+4.70%</td><td>待回填</td></tr>
-<tr><td>2</td><td>002531</td><td>天顺风能</td><td class='up'>+3.94%</td><td>1.58</td><td>6.75%</td><td>132.4</td><td class='up'>+3.94%</td><td>待回填</td></tr>
-<tr><td>3</td><td>000712</td><td>锦龙股份</td><td class='up'>+3.86%</td><td>1.52</td><td>6.93%</td><td>74.7</td><td class='up'>+3.61%</td><td>待回填</td></tr></tbody>
+    <tbody><tr><td>1</td><td>003010</td><td>若羽臣</td><td class='up'>+4.29%</td><td>1.59</td><td>5.17%</td><td>68.3</td><td class='up'>+4.70%</td><td><b class='dn'>-4.58%</b></td></tr>
+<tr><td>2</td><td>002531</td><td>天顺风能</td><td class='up'>+3.94%</td><td>1.58</td><td>6.75%</td><td>132.4</td><td class='up'>+3.94%</td><td><b class='up'>+1.22%</b></td></tr>
+<tr><td>3</td><td>000712</td><td>锦龙股份</td><td class='up'>+3.86%</td><td>1.52</td><td>6.93%</td><td>74.7</td><td class='up'>+3.61%</td><td><b class='dn'>-1.32%</b></td></tr></tbody>
   </table>
   <div class='note'>筛选链路：全A 5577 只 → 主板 ∩ 流通市值 50~200亿 = <b>1228</b> 只
     → 14:30 涨幅在区间 = <b>50</b> 只 → 叠加换手率区间 = <b>3</b> 只 → 再要求量比&gt;1 = <b>3</b> 只。</div>
@@ -61,10 +61,10 @@ tbody tr:hover{background:#fafbfd}
 
 <div class='card'>
   <h2>前向验证（口径A：14:30 买 → 次日 11:30 卖）</h2>
-  
+  <div class='kpi'><div><b class='dn'>-1.56%</b><span>当日名单 14:30→次日11:30 均值（3 只）</span></div><div><b>1</b><span>其中次日为正</span></div></div>
   <table>
     <thead><tr><th>日期</th><th>命中只数</th><th>组合均值</th><th>当日名单（前12只）</th></tr></thead>
-    <tbody><tr><td>2026-11-03</td><td>3</td><td>待回填</td><td>003010, 002531, 000712</td></tr>
+    <tbody><tr><td>2026-11-03</td><td>3</td><td>-1.56%</td><td>003010, 002531, 000712</td></tr>
 <tr><td>2026-11-02</td><td>15</td><td>-0.81%</td><td>603990, 002104, 001389, 603366, 600745, 600258, 000888, 605179, 002980, 002579, 002943, 603936</td></tr>
 <tr><td>2026-10-30</td><td>5</td><td>+2.18%</td><td>002324, 002031, 605006, 002029, 603990</td></tr>
 <tr><td>2026-10-29</td><td>6</td><td>+0.15%</td><td>003009, 601566, 002300, 002413, 002342, 002173</td></tr>

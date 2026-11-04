@@ -35,7 +35,9 @@
     "chg_close": 4.7,
     "turnover1430": 5.17,
     "float_mktcap_yi": 68.32,
-    "vol_ratio": 1.59
+    "vol_ratio": 1.59,
+    "p_next": 28.56,
+    "r_next": -4.58
    },
    {
     "code": "002531",
@@ -48,7 +50,9 @@
     "chg_close": 3.94,
     "turnover1430": 6.75,
     "float_mktcap_yi": 132.41,
-    "vol_ratio": 1.58
+    "vol_ratio": 1.58,
+    "p_next": 7.48,
+    "r_next": 1.22
    },
    {
     "code": "000712",
@@ -61,7 +65,9 @@
     "chg_close": 3.61,
     "turnover1430": 6.93,
     "float_mktcap_yi": 74.7,
-    "vol_ratio": 1.52
+    "vol_ratio": 1.52,
+    "p_next": 8.24,
+    "r_next": -1.32
    }
   ],
   "diag": {
@@ -71,7 +77,9 @@
    "band_3_5": 50,
    "band_turn": 3,
    "final": 3
-  }
+  },
+  "mean_r_next": -1.56,
+  "n_r_next": 3
  },
  "history": [
   {
@@ -2159,7 +2167,9 @@
      "chg_close": 4.7,
      "turnover1430": 5.17,
      "float_mktcap_yi": 68.32,
-     "vol_ratio": 1.59
+     "vol_ratio": 1.59,
+     "p_next": 28.56,
+     "r_next": -4.58
     },
     {
      "code": "002531",
@@ -2172,7 +2182,9 @@
      "chg_close": 3.94,
      "turnover1430": 6.75,
      "float_mktcap_yi": 132.41,
-     "vol_ratio": 1.58
+     "vol_ratio": 1.58,
+     "p_next": 7.48,
+     "r_next": 1.22
     },
     {
      "code": "000712",
@@ -2185,7 +2197,9 @@
      "chg_close": 3.61,
      "turnover1430": 6.93,
      "float_mktcap_yi": 74.7,
-     "vol_ratio": 1.52
+     "vol_ratio": 1.52,
+     "p_next": 8.24,
+     "r_next": -1.32
     }
    ],
    "diag": {
@@ -2195,8 +2209,11 @@
     "band_3_5": 50,
     "band_turn": 3,
     "final": 3
-   }
+   },
+   "mean_r_next": -1.56,
+   "n_r_next": 3
   }
  ],
- "generated_at": "2026-11-03 14:51:17"
+ "generated_at": "2026-11-03 14:51:17",
+ "backfilled_at": "2026-11-04 11:38:32"
 }
