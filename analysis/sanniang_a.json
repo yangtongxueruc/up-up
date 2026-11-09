@@ -35,7 +35,9 @@
     "chg_close": 4.11,
     "turnover1430": 5.18,
     "float_mktcap_yi": 139.85,
-    "vol_ratio": 2.17
+    "vol_ratio": 2.17,
+    "p_next": 14.61,
+    "r_next": 4.66
    },
    {
     "code": "600744",
@@ -48,7 +50,9 @@
     "chg_close": 4.04,
     "turnover1430": 6.75,
     "float_mktcap_yi": 120.45,
-    "vol_ratio": 4.34
+    "vol_ratio": 4.34,
+    "p_next": 5.79,
+    "r_next": -2.53
    }
   ],
   "diag": {
@@ -58,7 +62,9 @@
    "band_3_5": 24,
    "band_turn": 3,
    "final": 2
-  }
+  },
+  "mean_r_next": 1.07,
+  "n_r_next": 2
  },
  "history": [
   {
@@ -2806,7 +2812,9 @@
      "chg_close": 4.11,
      "turnover1430": 5.18,
      "float_mktcap_yi": 139.85,
-     "vol_ratio": 2.17
+     "vol_ratio": 2.17,
+     "p_next": 14.61,
+     "r_next": 4.66
     },
     {
      "code": "600744",
@@ -2819,7 +2827,9 @@
      "chg_close": 4.04,
      "turnover1430": 6.75,
      "float_mktcap_yi": 120.45,
-     "vol_ratio": 4.34
+     "vol_ratio": 4.34,
+     "p_next": 5.79,
+     "r_next": -2.53
     }
    ],
    "diag": {
@@ -2829,8 +2839,60 @@
     "band_3_5": 24,
     "band_turn": 3,
     "final": 2
-   }
+   },
+   "mean_r_next": 1.07,
+   "n_r_next": 2
   }
  ],
- "generated_at": "2026-11-06 14:34:32"
+ "generated_at": "2026-11-06 14:34:32",
+ "backfilled_at": "2026-11-09 11:39:22",
+ "test": {
+  "generated_at": "2026-11-09 11:39:23",
+  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
+  "cost_pct": 0.2,
+  "nmc_real_rows": 621,
+  "nmc_total_rows": 103805,
+  "nmc_note": "流通市值：面板实测 621 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
+  "full4": {
+   "days": 135,
+   "n": 697,
+   "alpha": -0.2335,
+   "t": -1.07,
+   "raw": -0.3314,
+   "win": 44.5,
+   "day_win": 43.0,
+   "oos_days": 54,
+   "oos_alpha": -0.1348,
+   "oos_t": -0.39,
+   "need_days": 341
+  },
+  "pool": {
+   "days": 139,
+   "n": 1564,
+   "alpha": -0.2405,
+   "t": -1.97,
+   "raw": -0.3208,
+   "win": 43.2,
+   "day_win": 42.4,
+   "oos_days": 56,
+   "oos_alpha": -0.3067,
+   "oos_t": -1.59,
+   "need_days": 5
+  },
+  "forward": {
+   "days": 18,
+   "n": 167,
+   "mean": -0.191,
+   "mean_stock": -0.714,
+   "t": -0.28,
+   "win": 38.9,
+   "day_win": 38.9,
+   "need_days": 892
+  },
+  "coverage": {
+   "real_pairs": 167,
+   "in_panel": 76,
+   "recall": 0.4551
+  }
+ }
 }
