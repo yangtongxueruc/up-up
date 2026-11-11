@@ -35,7 +35,9 @@
     "chg_close": 4.63,
     "turnover1430": 8.37,
     "float_mktcap_yi": 97.46,
-    "vol_ratio": 1.07
+    "vol_ratio": 1.07,
+    "p_next": 28.5,
+    "r_next": -0.97
    },
    {
     "code": "601929",
@@ -48,7 +50,9 @@
     "chg_close": 4.58,
     "turnover1430": 7.8,
     "float_mktcap_yi": 87.59,
-    "vol_ratio": 1.45
+    "vol_ratio": 1.45,
+    "p_next": 2.56,
+    "r_next": 1.59
    },
    {
     "code": "002291",
@@ -61,7 +65,9 @@
     "chg_close": 4.97,
     "turnover1430": 7.88,
     "float_mktcap_yi": 51.45,
-    "vol_ratio": 1.52
+    "vol_ratio": 1.52,
+    "p_next": 6.16,
+    "r_next": 4.23
    },
    {
     "code": "002842",
@@ -74,7 +80,9 @@
     "chg_close": 4.54,
     "turnover1430": 7.5,
     "float_mktcap_yi": 66.82,
-    "vol_ratio": 1.03
+    "vol_ratio": 1.03,
+    "p_next": 24.74,
+    "r_next": -0.72
    },
    {
     "code": "603662",
@@ -87,7 +95,9 @@
     "chg_close": 4.38,
     "turnover1430": 6.18,
     "float_mktcap_yi": 161.36,
-    "vol_ratio": 1.31
+    "vol_ratio": 1.31,
+    "p_next": 57.44,
+    "r_next": -0.09
    },
    {
     "code": "600501",
@@ -100,7 +110,9 @@
     "chg_close": 4.2,
     "turnover1430": 8.07,
     "float_mktcap_yi": 76.54,
-    "vol_ratio": 1.03
+    "vol_ratio": 1.03,
+    "p_next": 17.57,
+    "r_next": -1.73
    },
    {
     "code": "002298",
@@ -113,7 +125,9 @@
     "chg_close": 3.91,
     "turnover1430": 5.75,
     "float_mktcap_yi": 54.96,
-    "vol_ratio": 1.25
+    "vol_ratio": 1.25,
+    "p_next": 8.06,
+    "r_next": -2.54
    },
    {
     "code": "002115",
@@ -126,7 +140,9 @@
     "chg_close": 3.96,
     "turnover1430": 6.2,
     "float_mktcap_yi": 72.54,
-    "vol_ratio": 1.1
+    "vol_ratio": 1.1,
+    "p_next": 9.79,
+    "r_next": 0.62
    },
    {
     "code": "600278",
@@ -139,7 +155,9 @@
     "chg_close": 4.6,
     "turnover1430": 9.69,
     "float_mktcap_yi": 70.22,
-    "vol_ratio": 2.62
+    "vol_ratio": 2.62,
+    "p_next": 7.72,
+    "r_next": -5.28
    },
    {
     "code": "603773",
@@ -152,7 +170,9 @@
     "chg_close": 3.75,
     "turnover1430": 6.16,
     "float_mktcap_yi": 131.19,
-    "vol_ratio": 1.1
+    "vol_ratio": 1.1,
+    "p_next": 58.85,
+    "r_next": 0.6
    },
    {
     "code": "600592",
@@ -165,7 +185,9 @@
     "chg_close": 3.8,
     "turnover1430": 5.12,
     "float_mktcap_yi": 65.45,
-    "vol_ratio": 1.07
+    "vol_ratio": 1.07,
+    "p_next": 16.75,
+    "r_next": 2.13
    },
    {
     "code": "000026",
@@ -178,7 +200,9 @@
     "chg_close": 3.86,
     "turnover1430": 9.0,
     "float_mktcap_yi": 76.39,
-    "vol_ratio": 3.08
+    "vol_ratio": 3.08,
+    "p_next": 23.16,
+    "r_next": 10.39
    },
    {
     "code": "603990",
@@ -191,7 +215,9 @@
     "chg_close": 3.51,
     "turnover1430": 8.06,
     "float_mktcap_yi": 72.1,
-    "vol_ratio": 1.14
+    "vol_ratio": 1.14,
+    "p_next": 23.97,
+    "r_next": 1.4
    },
    {
     "code": "603601",
@@ -204,7 +230,9 @@
     "chg_close": 3.29,
     "turnover1430": 9.28,
     "float_mktcap_yi": 96.76,
-    "vol_ratio": 1.44
+    "vol_ratio": 1.44,
+    "p_next": 8.39,
+    "r_next": -1.18
    },
    {
     "code": "000700",
@@ -217,7 +245,9 @@
     "chg_close": 3.23,
     "turnover1430": 8.84,
     "float_mktcap_yi": 146.79,
-    "vol_ratio": 1.2
+    "vol_ratio": 1.2,
+    "p_next": 17.09,
+    "r_next": 7.01
    }
   ],
   "diag": {
@@ -227,7 +257,9 @@
    "band_3_5": 132,
    "band_turn": 26,
    "final": 15
-  }
+  },
+  "mean_r_next": 1.03,
+  "n_r_next": 15
  },
  "history": [
   {
@@ -3200,7 +3232,9 @@
      "chg_close": 4.63,
      "turnover1430": 8.37,
      "float_mktcap_yi": 97.46,
-     "vol_ratio": 1.07
+     "vol_ratio": 1.07,
+     "p_next": 28.5,
+     "r_next": -0.97
     },
     {
      "code": "601929",
@@ -3213,7 +3247,9 @@
      "chg_close": 4.58,
      "turnover1430": 7.8,
      "float_mktcap_yi": 87.59,
-     "vol_ratio": 1.45
+     "vol_ratio": 1.45,
+     "p_next": 2.56,
+     "r_next": 1.59
     },
     {
      "code": "002291",
@@ -3226,7 +3262,9 @@
      "chg_close": 4.97,
      "turnover1430": 7.88,
      "float_mktcap_yi": 51.45,
-     "vol_ratio": 1.52
+     "vol_ratio": 1.52,
+     "p_next": 6.16,
+     "r_next": 4.23
     },
     {
      "code": "002842",
@@ -3239,7 +3277,9 @@
      "chg_close": 4.54,
      "turnover1430": 7.5,
      "float_mktcap_yi": 66.82,
-     "vol_ratio": 1.03
+     "vol_ratio": 1.03,
+     "p_next": 24.74,
+     "r_next": -0.72
     },
     {
      "code": "603662",
@@ -3252,7 +3292,9 @@
      "chg_close": 4.38,
      "turnover1430": 6.18,
      "float_mktcap_yi": 161.36,
-     "vol_ratio": 1.31
+     "vol_ratio": 1.31,
+     "p_next": 57.44,
+     "r_next": -0.09
     },
     {
      "code": "600501",
@@ -3265,7 +3307,9 @@
      "chg_close": 4.2,
      "turnover1430": 8.07,
      "float_mktcap_yi": 76.54,
-     "vol_ratio": 1.03
+     "vol_ratio": 1.03,
+     "p_next": 17.57,
+     "r_next": -1.73
     },
     {
      "code": "002298",
@@ -3278,7 +3322,9 @@
      "chg_close": 3.91,
      "turnover1430": 5.75,
      "float_mktcap_yi": 54.96,
-     "vol_ratio": 1.25
+     "vol_ratio": 1.25,
+     "p_next": 8.06,
+     "r_next": -2.54
     },
     {
      "code": "002115",
@@ -3291,7 +3337,9 @@
      "chg_close": 3.96,
      "turnover1430": 6.2,
      "float_mktcap_yi": 72.54,
-     "vol_ratio": 1.1
+     "vol_ratio": 1.1,
+     "p_next": 9.79,
+     "r_next": 0.62
     },
     {
      "code": "600278",
@@ -3304,7 +3352,9 @@
      "chg_close": 4.6,
      "turnover1430": 9.69,
      "float_mktcap_yi": 70.22,
-     "vol_ratio": 2.62
+     "vol_ratio": 2.62,
+     "p_next": 7.72,
+     "r_next": -5.28
     },
     {
      "code": "603773",
@@ -3317,7 +3367,9 @@
      "chg_close": 3.75,
      "turnover1430": 6.16,
      "float_mktcap_yi": 131.19,
-     "vol_ratio": 1.1
+     "vol_ratio": 1.1,
+     "p_next": 58.85,
+     "r_next": 0.6
     },
     {
      "code": "600592",
@@ -3330,7 +3382,9 @@
      "chg_close": 3.8,
      "turnover1430": 5.12,
      "float_mktcap_yi": 65.45,
-     "vol_ratio": 1.07
+     "vol_ratio": 1.07,
+     "p_next": 16.75,
+     "r_next": 2.13
     },
     {
      "code": "000026",
@@ -3343,7 +3397,9 @@
      "chg_close": 3.86,
      "turnover1430": 9.0,
      "float_mktcap_yi": 76.39,
-     "vol_ratio": 3.08
+     "vol_ratio": 3.08,
+     "p_next": 23.16,
+     "r_next": 10.39
     },
     {
      "code": "603990",
@@ -3356,7 +3412,9 @@
      "chg_close": 3.51,
      "turnover1430": 8.06,
      "float_mktcap_yi": 72.1,
-     "vol_ratio": 1.14
+     "vol_ratio": 1.14,
+     "p_next": 23.97,
+     "r_next": 1.4
     },
     {
      "code": "603601",
@@ -3369,7 +3427,9 @@
      "chg_close": 3.29,
      "turnover1430": 9.28,
      "float_mktcap_yi": 96.76,
-     "vol_ratio": 1.44
+     "vol_ratio": 1.44,
+     "p_next": 8.39,
+     "r_next": -1.18
     },
     {
      "code": "000700",
@@ -3382,7 +3442,9 @@
      "chg_close": 3.23,
      "turnover1430": 8.84,
      "float_mktcap_yi": 146.79,
-     "vol_ratio": 1.2
+     "vol_ratio": 1.2,
+     "p_next": 17.09,
+     "r_next": 7.01
     }
    ],
    "diag": {
@@ -3392,8 +3454,60 @@
     "band_3_5": 132,
     "band_turn": 26,
     "final": 15
-   }
+   },
+   "mean_r_next": 1.03,
+   "n_r_next": 15
   }
  ],
- "generated_at": "2026-11-10 14:32:38"
+ "generated_at": "2026-11-10 14:32:38",
+ "backfilled_at": "2026-11-11 11:44:41",
+ "test": {
+  "generated_at": "2026-11-11 11:44:42",
+  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
+  "cost_pct": 0.2,
+  "nmc_real_rows": 3053,
+  "nmc_total_rows": 106237,
+  "nmc_note": "流通市值：面板实测 3053 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
+  "full4": {
+   "days": 137,
+   "n": 718,
+   "alpha": -0.2299,
+   "t": -1.06,
+   "raw": -0.3143,
+   "win": 45.3,
+   "day_win": 43.1,
+   "oos_days": 55,
+   "oos_alpha": -0.1418,
+   "oos_t": -0.42,
+   "need_days": 348
+  },
+  "pool": {
+   "days": 141,
+   "n": 1610,
+   "alpha": -0.2275,
+   "t": -1.88,
+   "raw": -0.295,
+   "win": 44.2,
+   "day_win": 43.3,
+   "oos_days": 57,
+   "oos_alpha": -0.2899,
+   "oos_t": -1.52,
+   "need_days": 18
+  },
+  "forward": {
+   "days": 20,
+   "n": 193,
+   "mean": -0.121,
+   "mean_stock": -0.538,
+   "t": -0.2,
+   "win": 42.0,
+   "day_win": 40.0,
+   "need_days": 2045
+  },
+  "coverage": {
+   "real_pairs": 193,
+   "in_panel": 87,
+   "recall": 0.4508
+  }
+ }
 }
