@@ -1,50 +1,50 @@
 {
  "meta": {
-  "D": 142,
-  "N": 104970,
+  "D": 143,
+  "N": 106237,
   "start": "2026-04-10",
-  "end": "2026-11-09",
-  "zt_n": 3833,
-  "buy_n": 101137,
+  "end": "2026-11-10",
+  "zt_n": 3855,
+  "buy_n": 102382,
   "cost": 0.2,
   "zt_thr": 9.5,
-  "generated_at": "2026-11-11 10:52",
-  "elapsed": 0.8
+  "generated_at": "2026-11-12 10:34",
+  "elapsed": 0.7
  },
  "benchmark": [
   {
    "label": "① 全池（符合条件即买，含涨停）",
-   "days": 142,
-   "n": 104970,
-   "per_day": 739.2,
-   "day_mean": -0.058,
-   "cum_gross": -8.7,
-   "cum_net": -31.3,
-   "win": 42.7,
+   "days": 143,
+   "n": 106237,
+   "per_day": 742.9,
+   "day_mean": -0.054,
+   "cum_gross": -8.3,
+   "cum_net": -31.2,
+   "win": 42.8,
    "payoff": 1.18,
-   "breakeven": 45.9
+   "breakeven": 45.8
   },
   {
    "label": "② 可直买组（14:30 未涨停，市价可成交）",
-   "days": 142,
-   "n": 101137,
-   "per_day": 712.2,
-   "day_mean": -0.111,
-   "cum_gross": -15.4,
-   "cum_net": -36.4,
-   "win": 42.1,
+   "days": 143,
+   "n": 102382,
+   "per_day": 716.0,
+   "day_mean": -0.108,
+   "cum_gross": -15.0,
+   "cum_net": -36.2,
+   "win": 42.3,
    "payoff": 1.13,
-   "breakeven": 47.0
+   "breakeven": 46.9
   },
   {
    "label": "③ 14:30 涨停组（需挂单排队，非市价可得）",
-   "days": 142,
-   "n": 3833,
+   "days": 143,
+   "n": 3855,
    "per_day": 27.0,
-   "day_mean": 1.222,
-   "cum_gross": 442.4,
-   "cum_net": 309.5,
-   "win": 57.2,
+   "day_mean": 1.228,
+   "cum_gross": 453.5,
+   "cum_net": 317.1,
+   "win": 57.1,
    "payoff": 1.47,
    "breakeven": 40.5
   }
@@ -53,12 +53,12 @@
   "zt_share": 71.6
  },
  "forward": {
-  "checked_at": "2026-11-11 10:51",
-  "method": "时序holdout：前85天重新探索 → 后57天检验",
-  "best_oos_excess": -3.2,
-  "best_oos_pos_folds": "20/38",
+  "checked_at": "2026-11-12 10:34",
+  "method": "时序holdout：前85天重新探索 → 后58天检验",
+  "best_oos_excess": -3.4,
+  "best_oos_pos_folds": "20/39",
   "passed": false,
-  "verdict": "未通过前向检验（测试期超额-3.2pp≤0），不提升为主规则",
+  "verdict": "未通过前向检验（测试期超额-3.4pp≤0），不提升为主规则",
   "source": "validate_rule.forward_gate"
  },
  "rulesA": [
