@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13 11:47",
+ "generated_at": "2026-11-13 21:49",
  "regimes": {
   "强涨": {
    "n": 31185,
@@ -58,7 +58,7 @@
   "excess": -1.2
  },
  "all_rules": {
-  "generated_at": "2026-11-13 11:48",
+  "generated_at": "2026-11-13 21:51",
   "count": 35,
   "catalog": [
    {
