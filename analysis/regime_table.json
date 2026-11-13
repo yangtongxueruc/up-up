@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13 10:49",
+ "generated_at": "2026-11-13 11:47",
  "regimes": {
   "强涨": {
    "n": 31185,
@@ -26,12 +26,12 @@
    "ruleA_ret": -0.22
   },
   "跌": {
-   "n": 18548,
-   "base": 39.3,
-   "ruleA_n": 1025,
-   "ruleA_hr": 38.9,
-   "excess": -0.4,
-   "ruleA_ret": -0.28
+   "n": 18794,
+   "base": 39.5,
+   "ruleA_n": 1037,
+   "ruleA_hr": 38.6,
+   "excess": -0.9,
+   "ruleA_ret": -0.31
   },
   "弱跌": {
    "n": 10505,
@@ -51,14 +51,14 @@
   }
  },
  "overall": {
-  "n": 106508,
+  "n": 106754,
   "base": 42.0,
-  "ruleA_n": 5559,
-  "ruleA_hr": 40.9,
-  "excess": -1.1
+  "ruleA_n": 5571,
+  "ruleA_hr": 40.8,
+  "excess": -1.2
  },
  "all_rules": {
-  "generated_at": "2026-11-13 11:36",
+  "generated_at": "2026-11-13 11:48",
   "count": 35,
   "catalog": [
    {
@@ -559,9 +559,9 @@
      "n": 14,
      "hr": 71.43,
      "excess_pp": 21.34,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWZ2": {
      "n": 40,
@@ -833,25 +833,25 @@
      "n": 2,
      "hr": 100.0,
      "excess_pp": 57.39,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ2": {
      "n": 13,
      "hr": 46.15,
      "excess_pp": 3.55,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWZ3": {
      "n": 13,
      "hr": 46.15,
      "excess_pp": 3.55,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWZ4": {
      "n": 79,
@@ -1107,33 +1107,33 @@
      "n": 23,
      "hr": 69.57,
      "excess_pp": 31.58,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 2
     },
     "briefWZ1": {
      "n": 5,
      "hr": 100.0,
      "excess_pp": 62.01,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ2": {
      "n": 19,
      "hr": 84.21,
      "excess_pp": 46.22,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWZ3": {
      "n": 19,
      "hr": 84.21,
      "excess_pp": 46.22,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWZ4": {
      "n": 58,
@@ -1210,161 +1210,161 @@
    },
    "跌": {
     "E": {
-     "n": 8383,
-     "hr": 42.97,
-     "excess_pp": 1.9,
-     "alpha": 0.0418,
-     "t": 1.08,
-     "days": 28
+     "n": 8457,
+     "hr": 42.89,
+     "excess_pp": 1.66,
+     "alpha": -0.0154,
+     "t": -0.23,
+     "days": 29
     },
     "briefA1": {
-     "n": 5670,
-     "hr": 41.94,
-     "excess_pp": 0.87,
-     "alpha": -0.1898,
-     "t": -3.18,
-     "days": 28
+     "n": 5712,
+     "hr": 41.86,
+     "excess_pp": 0.63,
+     "alpha": -0.2486,
+     "t": -3.02,
+     "days": 29
     },
     "briefA2": {
-     "n": 4770,
-     "hr": 41.49,
-     "excess_pp": 0.42,
-     "alpha": -0.1677,
-     "t": -2.71,
-     "days": 28
+     "n": 4797,
+     "hr": 41.36,
+     "excess_pp": 0.13,
+     "alpha": -0.2451,
+     "t": -2.51,
+     "days": 29
     },
     "briefA3": {
-     "n": 1538,
-     "hr": 44.02,
-     "excess_pp": 2.95,
-     "alpha": -0.0837,
-     "t": -0.67,
-     "days": 28
+     "n": 1569,
+     "hr": 43.72,
+     "excess_pp": 2.49,
+     "alpha": -0.1675,
+     "t": -1.14,
+     "days": 29
     },
     "briefA4": {
      "n": 231,
      "hr": 36.36,
-     "excess_pp": -4.71,
+     "excess_pp": -4.87,
      "alpha": -0.0011,
      "t": -0.01,
      "days": 16
     },
     "briefA5": {
-     "n": 17895,
-     "hr": 40.51,
-     "excess_pp": -0.56,
-     "alpha": -0.0767,
-     "t": -5.45,
-     "days": 28
+     "n": 18133,
+     "hr": 40.69,
+     "excess_pp": -0.54,
+     "alpha": -0.0717,
+     "t": -4.95,
+     "days": 29
     },
     "briefA6": {
      "n": 13,
      "hr": 30.77,
-     "excess_pp": -10.3,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "excess_pp": -10.46,
+     "alpha": null,
+     "t": null,
+     "days": 2
     },
     "briefB1": {
-     "n": 6118,
-     "hr": 40.44,
-     "excess_pp": 1.1,
-     "alpha": -0.3283,
-     "t": -5.09,
-     "days": 28
+     "n": 6181,
+     "hr": 40.33,
+     "excess_pp": 0.82,
+     "alpha": -0.366,
+     "t": -5.03,
+     "days": 29
     },
     "briefB2": {
-     "n": 5716,
-     "hr": 38.07,
-     "excess_pp": -1.27,
-     "alpha": 0.001,
-     "t": 0.02,
-     "days": 28
+     "n": 5799,
+     "hr": 38.37,
+     "excess_pp": -1.15,
+     "alpha": 0.0232,
+     "t": 0.46,
+     "days": 29
     },
     "briefB3": {
-     "n": 5248,
-     "hr": 41.1,
-     "excess_pp": 1.76,
-     "alpha": -0.2604,
-     "t": -3.65,
-     "days": 28
+     "n": 5296,
+     "hr": 40.96,
+     "excess_pp": 1.44,
+     "alpha": -0.3153,
+     "t": -3.58,
+     "days": 29
     },
     "briefB4": {
-     "n": 6632,
-     "hr": 39.05,
-     "excess_pp": -0.29,
-     "alpha": -0.1542,
-     "t": -2.11,
-     "days": 28
+     "n": 6723,
+     "hr": 38.9,
+     "excess_pp": -0.62,
+     "alpha": -0.2032,
+     "t": -2.37,
+     "days": 29
     },
     "briefB5": {
-     "n": 5297,
-     "hr": 37.34,
-     "excess_pp": -2.0,
-     "alpha": -0.0882,
-     "t": -0.98,
-     "days": 28
+     "n": 5412,
+     "hr": 38.12,
+     "excess_pp": -1.4,
+     "alpha": -0.0421,
+     "t": -0.43,
+     "days": 29
     },
     "BUY": {
-     "n": 17895,
-     "hr": 40.51,
-     "excess_pp": -0.56,
-     "alpha": -0.0767,
-     "t": -5.45,
-     "days": 28
+     "n": 18133,
+     "hr": 40.69,
+     "excess_pp": -0.54,
+     "alpha": -0.0717,
+     "t": -4.95,
+     "days": 29
     },
     "A": {
-     "n": 1025,
-     "hr": 40.88,
-     "excess_pp": -0.19,
-     "alpha": 0.0374,
-     "t": 0.25,
-     "days": 28
+     "n": 1037,
+     "hr": 40.5,
+     "excess_pp": -0.73,
+     "alpha": -0.0493,
+     "t": -0.29,
+     "days": 29
     },
     "B": {
-     "n": 257,
-     "hr": 43.58,
-     "excess_pp": 2.51,
-     "alpha": -0.2529,
-     "t": -1.11,
-     "days": 27
+     "n": 262,
+     "hr": 42.75,
+     "excess_pp": 1.52,
+     "alpha": -0.4003,
+     "t": -1.51,
+     "days": 28
     },
     "C": {
      "n": 253,
      "hr": 45.85,
-     "excess_pp": 4.78,
+     "excess_pp": 4.62,
      "alpha": -0.0984,
      "t": -0.31,
      "days": 15
     },
     "D": {
-     "n": 1527,
-     "hr": 37.26,
-     "excess_pp": -3.81,
-     "alpha": -0.0807,
-     "t": -0.6,
-     "days": 28
+     "n": 1553,
+     "hr": 37.03,
+     "excess_pp": -4.21,
+     "alpha": -0.1044,
+     "t": -0.8,
+     "days": 29
     },
     "briefZT1": {
      "n": 61,
      "hr": 68.85,
-     "excess_pp": 27.78,
+     "excess_pp": 27.62,
      "alpha": 1.7051,
      "t": 1.45,
      "days": 9
     },
     "MF": {
-     "n": 840,
-     "hr": 53.45,
-     "excess_pp": 12.38,
-     "alpha": 0.9665,
-     "t": 5.17,
-     "days": 28
+     "n": 870,
+     "hr": 52.99,
+     "excess_pp": 11.76,
+     "alpha": 0.8834,
+     "t": 4.45,
+     "days": 29
     },
     "R": {
      "n": 391,
      "hr": 43.22,
-     "excess_pp": 2.15,
+     "excess_pp": 1.99,
      "alpha": 0.025,
      "t": 0.1,
      "days": 16
@@ -1372,47 +1372,55 @@
     "S": {
      "n": 254,
      "hr": 38.98,
-     "excess_pp": -2.1,
+     "excess_pp": -2.25,
      "alpha": 0.6725,
      "t": 2.54,
      "days": 18
     },
     "SC": {
-     "n": 493,
-     "hr": 62.88,
-     "excess_pp": 21.81,
-     "alpha": 0.6867,
-     "t": 2.29,
-     "days": 28
+     "n": 501,
+     "hr": 62.48,
+     "excess_pp": 21.24,
+     "alpha": 0.6687,
+     "t": 2.3,
+     "days": 29
+    },
+    "SN": {
+     "n": 4,
+     "hr": 25.0,
+     "excess_pp": -16.23,
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWZ1": {
      "n": 7,
      "hr": 85.71,
-     "excess_pp": 44.64,
-     "alpha": 0.0,
-     "t": 0.0,
+     "excess_pp": 44.48,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ2": {
      "n": 13,
      "hr": 76.92,
-     "excess_pp": 35.85,
-     "alpha": 0.0,
-     "t": 0.0,
+     "excess_pp": 35.69,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ3": {
      "n": 13,
      "hr": 76.92,
-     "excess_pp": 35.85,
-     "alpha": 0.0,
-     "t": 0.0,
+     "excess_pp": 35.69,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ4": {
      "n": 61,
      "hr": 68.85,
-     "excess_pp": 27.78,
+     "excess_pp": 27.62,
      "alpha": 1.7051,
      "t": 1.45,
      "days": 9
@@ -1420,7 +1428,7 @@
     "briefWZ5": {
      "n": 52,
      "hr": 71.15,
-     "excess_pp": 30.08,
+     "excess_pp": 29.92,
      "alpha": 3.1583,
      "t": 2.09,
      "days": 6
@@ -1428,58 +1436,58 @@
     "briefWZ6": {
      "n": 47,
      "hr": 70.21,
-     "excess_pp": 29.14,
+     "excess_pp": 28.98,
      "alpha": 2.5264,
      "t": 1.4,
      "days": 5
     },
     "briefWB1": {
-     "n": 900,
-     "hr": 44.33,
-     "excess_pp": 3.26,
-     "alpha": -0.2904,
-     "t": -1.45,
-     "days": 28
+     "n": 915,
+     "hr": 44.48,
+     "excess_pp": 3.25,
+     "alpha": -0.3134,
+     "t": -1.61,
+     "days": 29
     },
     "briefWB2": {
-     "n": 955,
-     "hr": 45.76,
-     "excess_pp": 4.69,
-     "alpha": -0.1267,
-     "t": -0.62,
-     "days": 28
+     "n": 968,
+     "hr": 46.07,
+     "excess_pp": 4.84,
+     "alpha": -0.0956,
+     "t": -0.48,
+     "days": 29
     },
     "briefWB3": {
-     "n": 3129,
-     "hr": 42.57,
-     "excess_pp": 1.5,
-     "alpha": -0.1969,
-     "t": -2.48,
-     "days": 28
+     "n": 3163,
+     "hr": 42.46,
+     "excess_pp": 1.23,
+     "alpha": -0.2548,
+     "t": -2.66,
+     "days": 29
     },
     "briefWB4": {
-     "n": 5670,
-     "hr": 41.94,
-     "excess_pp": 0.87,
-     "alpha": -0.1898,
-     "t": -3.18,
-     "days": 28
+     "n": 5712,
+     "hr": 41.86,
+     "excess_pp": 0.63,
+     "alpha": -0.2486,
+     "t": -3.02,
+     "days": 29
     },
     "briefWB5": {
-     "n": 4094,
-     "hr": 45.19,
-     "excess_pp": 4.12,
-     "alpha": -0.1037,
-     "t": -1.08,
-     "days": 28
+     "n": 4148,
+     "hr": 45.49,
+     "excess_pp": 4.26,
+     "alpha": -0.0843,
+     "t": -0.89,
+     "days": 29
     },
     "briefWB6": {
-     "n": 3761,
-     "hr": 39.54,
-     "excess_pp": -1.53,
-     "alpha": 0.0175,
-     "t": 0.42,
-     "days": 28
+     "n": 3837,
+     "hr": 39.87,
+     "excess_pp": -1.36,
+     "alpha": 0.0298,
+     "t": 0.71,
+     "days": 29
     }
    },
    "弱跌": {
@@ -1535,8 +1543,8 @@
      "n": 11,
      "hr": 54.55,
      "excess_pp": 20.56,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefB1": {
@@ -1663,24 +1671,24 @@
      "n": 1,
      "hr": 100.0,
      "excess_pp": 66.02,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ2": {
      "n": 12,
      "hr": 58.33,
      "excess_pp": 24.35,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ3": {
      "n": 12,
      "hr": 58.33,
      "excess_pp": 24.35,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ4": {
@@ -1761,249 +1769,249 @@
      "n": 63,
      "hr": 25.4,
      "excess_pp": -9.32,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefA1": {
      "n": 40,
      "hr": 30.0,
      "excess_pp": -4.72,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefA2": {
      "n": 34,
      "hr": 32.35,
      "excess_pp": -2.36,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefA3": {
      "n": 17,
      "hr": 17.65,
      "excess_pp": -17.07,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefA4": {
      "n": 3,
      "hr": 66.67,
      "excess_pp": 31.95,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefA5": {
      "n": 186,
      "hr": 35.48,
      "excess_pp": 0.77,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefB1": {
      "n": 59,
      "hr": 33.9,
      "excess_pp": 1.26,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefB2": {
      "n": 39,
      "hr": 25.64,
      "excess_pp": -7.0,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefB3": {
      "n": 37,
      "hr": 18.92,
      "excess_pp": -13.72,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefB4": {
      "n": 70,
      "hr": 14.29,
      "excess_pp": -18.36,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefB5": {
      "n": 87,
      "hr": 48.28,
      "excess_pp": 15.63,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "BUY": {
      "n": 186,
      "hr": 35.48,
      "excess_pp": 0.77,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "A": {
      "n": 14,
      "hr": 7.14,
      "excess_pp": -27.57,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "B": {
      "n": 4,
      "hr": 0.0,
      "excess_pp": -34.72,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "C": {
      "n": 10,
      "hr": 0.0,
      "excess_pp": -34.72,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "D": {
      "n": 22,
      "hr": 13.64,
      "excess_pp": -21.08,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefZT1": {
      "n": 1,
      "hr": 100.0,
      "excess_pp": 65.28,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "MF": {
      "n": 30,
      "hr": 16.67,
      "excess_pp": -18.05,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "S": {
      "n": 4,
      "hr": 75.0,
      "excess_pp": 40.28,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "SC": {
      "n": 11,
      "hr": 36.36,
      "excess_pp": 1.65,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWZ2": {
      "n": 1,
      "hr": 100.0,
      "excess_pp": 65.28,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ3": {
      "n": 1,
      "hr": 100.0,
      "excess_pp": 65.28,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ4": {
      "n": 1,
      "hr": 100.0,
      "excess_pp": 65.28,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ5": {
      "n": 1,
      "hr": 100.0,
      "excess_pp": 65.28,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWZ6": {
      "n": 1,
      "hr": 100.0,
      "excess_pp": 65.28,
-     "alpha": 0.0,
-     "t": 0.0,
+     "alpha": null,
+     "t": null,
      "days": 0
     },
     "briefWB1": {
      "n": 6,
      "hr": 16.67,
      "excess_pp": -18.05,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWB2": {
      "n": 12,
      "hr": 25.0,
      "excess_pp": -9.72,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWB3": {
      "n": 24,
      "hr": 20.83,
      "excess_pp": -13.88,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWB4": {
      "n": 40,
      "hr": 30.0,
      "excess_pp": -4.72,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWB5": {
      "n": 65,
      "hr": 30.77,
      "excess_pp": -3.95,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     },
     "briefWB6": {
      "n": 62,
      "hr": 33.87,
      "excess_pp": -0.84,
-     "alpha": 0.0,
-     "t": 0.0,
-     "days": 0
+     "alpha": null,
+     "t": null,
+     "days": 1
     }
    }
   },

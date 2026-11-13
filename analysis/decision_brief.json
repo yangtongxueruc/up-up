@@ -1,49 +1,49 @@
 {
  "meta": {
-  "D": 144,
-  "N": 106508,
+  "D": 145,
+  "N": 106754,
   "start": "2026-04-10",
-  "end": "2026-11-11",
-  "zt_n": 3864,
-  "buy_n": 102644,
+  "end": "2026-11-12",
+  "zt_n": 3872,
+  "buy_n": 102882,
   "cost": 0.2,
   "zt_thr": 9.5,
-  "generated_at": "2026-11-13 10:51",
+  "generated_at": "2026-11-13 11:46",
   "elapsed": 0.7
  },
  "benchmark": [
   {
    "label": "① 全池（符合条件即买，含涨停）",
-   "days": 144,
-   "n": 106508,
-   "per_day": 739.6,
-   "day_mean": -0.057,
-   "cum_gross": -8.7,
-   "cum_net": -31.6,
+   "days": 145,
+   "n": 106754,
+   "per_day": 736.2,
+   "day_mean": -0.059,
+   "cum_gross": -9.0,
+   "cum_net": -31.9,
    "win": 42.8,
    "payoff": 1.18,
-   "breakeven": 45.8
+   "breakeven": 45.9
   },
   {
    "label": "② 可直买组（14:30 未涨停，市价可成交）",
-   "days": 144,
-   "n": 102644,
-   "per_day": 712.8,
-   "day_mean": -0.11,
-   "cum_gross": -15.4,
-   "cum_net": -36.6,
-   "win": 42.2,
+   "days": 145,
+   "n": 102882,
+   "per_day": 709.5,
+   "day_mean": -0.111,
+   "cum_gross": -15.6,
+   "cum_net": -36.9,
+   "win": 42.3,
    "payoff": 1.13,
-   "breakeven": 46.9
+   "breakeven": 47.0
   },
   {
    "label": "③ 14:30 涨停组（需挂单排队，非市价可得）",
-   "days": 144,
-   "n": 3864,
-   "per_day": 26.8,
-   "day_mean": 1.229,
-   "cum_gross": 461.1,
-   "cum_net": 322.0,
+   "days": 145,
+   "n": 3872,
+   "per_day": 26.7,
+   "day_mean": 1.204,
+   "cum_gross": 447.6,
+   "cum_net": 311.0,
    "win": 57.1,
    "payoff": 1.47,
    "breakeven": 40.5
@@ -53,12 +53,12 @@
   "zt_share": 71.6
  },
  "forward": {
-  "checked_at": "2026-11-13 10:49",
-  "method": "时序holdout：前86天重新探索 → 后58天检验",
-  "best_oos_excess": -3.4,
+  "checked_at": "2026-11-13 11:46",
+  "method": "时序holdout：前87天重新探索 → 后58天检验",
+  "best_oos_excess": -2.9,
   "best_oos_pos_folds": "19/38",
   "passed": false,
-  "verdict": "未通过前向检验（测试期超额-3.4pp≤0），不提升为主规则",
+  "verdict": "未通过前向检验（测试期超额-2.9pp≤0），不提升为主规则",
   "source": "validate_rule.forward_gate"
  },
  "rulesA": [
