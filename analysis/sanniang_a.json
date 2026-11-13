@@ -35,7 +35,9 @@
     "chg_close": 3.93,
     "turnover1430": 7.93,
     "float_mktcap_yi": 56.42,
-    "vol_ratio": 2.44
+    "vol_ratio": 2.44,
+    "p_next": 3.01,
+    "r_next": -5.35
    },
    {
     "code": "600410",
@@ -48,7 +50,9 @@
     "chg_close": 3.84,
     "turnover1430": 8.69,
     "float_mktcap_yi": 142.33,
-    "vol_ratio": 1.37
+    "vol_ratio": 1.37,
+    "p_next": 14.3,
+    "r_next": 9.75
    },
    {
     "code": "600698",
@@ -61,7 +65,9 @@
     "chg_close": 3.8,
     "turnover1430": 7.89,
     "float_mktcap_yi": 61.12,
-    "vol_ratio": 2.08
+    "vol_ratio": 2.08,
+    "p_next": 7.16,
+    "r_next": -2.98
    },
    {
     "code": "600189",
@@ -74,7 +80,9 @@
     "chg_close": 4.44,
     "turnover1430": 9.68,
     "float_mktcap_yi": 65.66,
-    "vol_ratio": 1.12
+    "vol_ratio": 1.12,
+    "p_next": 8.91,
+    "r_next": -2.09
    },
    {
     "code": "002941",
@@ -87,7 +95,9 @@
     "chg_close": 2.93,
     "turnover1430": 6.39,
     "float_mktcap_yi": 82.02,
-    "vol_ratio": 1.84
+    "vol_ratio": 1.84,
+    "p_next": 10.44,
+    "r_next": -7.12
    }
   ],
   "diag": {
@@ -97,7 +107,9 @@
    "band_3_5": 14,
    "band_turn": 6,
    "final": 5
-  }
+  },
+  "mean_r_next": -1.56,
+  "n_r_next": 5
  },
  "history": [
   {
@@ -3490,7 +3502,9 @@
      "chg_close": 3.93,
      "turnover1430": 7.93,
      "float_mktcap_yi": 56.42,
-     "vol_ratio": 2.44
+     "vol_ratio": 2.44,
+     "p_next": 3.01,
+     "r_next": -5.35
     },
     {
      "code": "600410",
@@ -3503,7 +3517,9 @@
      "chg_close": 3.84,
      "turnover1430": 8.69,
      "float_mktcap_yi": 142.33,
-     "vol_ratio": 1.37
+     "vol_ratio": 1.37,
+     "p_next": 14.3,
+     "r_next": 9.75
     },
     {
      "code": "600698",
@@ -3516,7 +3532,9 @@
      "chg_close": 3.8,
      "turnover1430": 7.89,
      "float_mktcap_yi": 61.12,
-     "vol_ratio": 2.08
+     "vol_ratio": 2.08,
+     "p_next": 7.16,
+     "r_next": -2.98
     },
     {
      "code": "600189",
@@ -3529,7 +3547,9 @@
      "chg_close": 4.44,
      "turnover1430": 9.68,
      "float_mktcap_yi": 65.66,
-     "vol_ratio": 1.12
+     "vol_ratio": 1.12,
+     "p_next": 8.91,
+     "r_next": -2.09
     },
     {
      "code": "002941",
@@ -3542,7 +3562,9 @@
      "chg_close": 2.93,
      "turnover1430": 6.39,
      "float_mktcap_yi": 82.02,
-     "vol_ratio": 1.84
+     "vol_ratio": 1.84,
+     "p_next": 10.44,
+     "r_next": -7.12
     }
    ],
    "diag": {
@@ -3552,8 +3574,60 @@
     "band_3_5": 14,
     "band_turn": 6,
     "final": 5
-   }
+   },
+   "mean_r_next": -1.56,
+   "n_r_next": 5
   }
  ],
- "generated_at": "2026-11-12 14:47:52"
+ "generated_at": "2026-11-12 14:47:52",
+ "backfilled_at": "2026-11-13 11:37:03",
+ "test": {
+  "generated_at": "2026-11-13 11:37:03",
+  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
+  "cost_pct": 0.2,
+  "nmc_real_rows": 3570,
+  "nmc_total_rows": 106754,
+  "nmc_note": "流通市值：面板实测 3570 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
+  "full4": {
+   "days": 138,
+   "n": 722,
+   "alpha": -0.2425,
+   "t": -1.13,
+   "raw": -0.3289,
+   "win": 45.2,
+   "day_win": 42.8,
+   "oos_days": 56,
+   "oos_alpha": -0.1745,
+   "oos_t": -0.52,
+   "need_days": 296
+  },
+  "pool": {
+   "days": 143,
+   "n": 1616,
+   "alpha": -0.2588,
+   "t": -2.14,
+   "raw": -0.3304,
+   "win": 44.1,
+   "day_win": 42.7,
+   "oos_days": 58,
+   "oos_alpha": -0.355,
+   "oos_t": -1.82,
+   "need_days": 0
+  },
+  "forward": {
+   "days": 22,
+   "n": 209,
+   "mean": -0.223,
+   "mean_stock": -0.584,
+   "t": -0.4,
+   "win": 40.7,
+   "day_win": 36.4,
+   "need_days": 533
+  },
+  "coverage": {
+   "real_pairs": 209,
+   "in_panel": 91,
+   "recall": 0.4354
+  }
+ }
 }

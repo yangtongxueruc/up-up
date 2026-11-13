@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "note": "线上规则注册表（唯一显式真源）。2026-11-13 起「规则重验」不再写死 A/B/C：本文件 + 自动派生的线上规则表共同决定每天要验证哪些规则。新增/下线规则：改本文件的 rules（增删条目）或 disabled（临时停用 id）；decision_brief.json / regime_rules.json / discovered_rules.json 里的规则会自动跟随，无需改代码。",
+  "disabled": [],
+  "derived": {
+    "decision_brief": true,
+    "regime_rules": true,
+    "discovered_best": true
+  },
+  "rules": [
+    {
+      "id": "BUY",
+      "name": "基准·全部可直买（14:30 未涨停）",
+      "group": "基准",
+      "scope": "buy",
+      "timing": "1430",
+      "signal_time": "1430",
+      "conds": [],
+      "source": "decision_brief ② 可直买组",
+      "note": "对照组，不是选股规则；用于判断其它规则相对「买下整个池子」是否有增量。"
+    },
+    {
+      "id": "A",
+      "name": "A：14:30涨幅≤0.6% 且 换手率≥2%",
+      "group": "核心",
+      "scope": "all",
+      "timing": "1430",
+      "signal_time": "1430",
+      "conds": [["chg", "<=", 0.6], ["turnover", ">=", 2]],
+      "source": "site/build.py rulebar A + validate_rule",
+      "note": "历史核心规则，全量重验已证伪（超额收敛至零附近）。"
+    },
+    {
+      "id": "B",
+      "name": "B：14:30涨幅≤0.3% 且 换手率≥3%",
+      "group": "核心",
+      "scope": "all",
+      "timing": "1430",
+      "signal_time": "1430",
+      "conds": [["chg", "<=", 0.3], ["turnover", ">=", 3]],
+      "source": "validate_rule 核心回测 + rule_revalidation.html",
+      "note": ""
+    },
+    {
+      "id": "C",
+      "name": "C：涨幅≤0.6% 且 换手率≥3% 且 量比≤1.2",
+      "group": "核心",
+      "scope": "all",
+      "timing": "1430",
+      "signal_time": "1430",
+      "conds": [["chg", "<=", 0.6], ["turnover", ">=", 3], ["vr", "<=", 1.2]],
+      "source": "site/build.py rulebar C + validate_rule",
+      "note": ""
+    },
+    {
+      "id": "D",
+      "name": "D：涨幅≤1.0% 且 活跃度≥4",
+      "group": "核心",
+      "scope": "all",
+      "timing": "1430",
+      "signal_time": "1430",
+      "conds": [["chg", "<=", 1.0], ["activity", ">=", 4]],
+      "source": "rule_revalidation.html 现行规则表",
+      "note": ""
+    },
+    {
+      "id": "E",
+      "name": "反例E：涨幅>1.5%（过度冲高）",
+      "group": "反例",
+      "scope": "all",
+      "timing": "1430",
+      "signal_time": "1430",
+      "conds": [["chg", ">", 1.5]],
+      "source": "validate_rule 反例对照",
+      "note": "反向对照，不是买入规则。"
+    },
+    {
+      "id": "S",
+      "name": "S 动量S：涨幅≥2% 且 振幅≤3%",
+      "group": "站点徽章",
+      "scope": "all",
+      "timing": "1430",
+      "signal_time": "1430",
+      "conds": [["chg", ">=", 2.0], ["amplitude", "<=", 3.0]],
+      "source": "site/build.py SURV_CORE (1363/1642)",
+      "note": "站点 S 徽章。全样本 t 显著但收盘口径 OOS 不显著，仅作分档参考。"
+    },
+    {
+      "id": "SC",
+      "name": "SC 尾盘SC：未涨停·直买 且 drift(收盘>14:30)>1.0%",
+      "group": "站点徽章",
+      "scope": "buy",
+      "timing": "1430",
+      "signal_time": "close",
+      "conds": [["drift", ">", 1.0]],
+      "source": "site/analysis/sc_confidence.json threshold",
+      "note": "信号要等收盘才知道，14:30 买不到；按 exec 口径统计仅为择优能力，不构成可执行信号。"
+    },
+    {
+      "id": "SN",
+      "name": "SN 三娘验证A：涨幅3~5% 且 量比>1 且 换手5~10% 且 流通市值50~200亿",
+      "group": "站点徽章",
+      "scope": "all",
+      "timing": "1430",
+      "signal_time": "1430",
+      "conds": [["chg", ">=", 3.0], ["chg", "<=", 5.0], ["vr", ">", 1.0], ["turnover", ">=", 5.0], ["turnover", "<=", 10.0], ["nmc", ">=", 50.0], ["nmc", "<=", 200.0]],
+      "source": "site/sanniang_a.py RULE",
+      "note": "本为全市场主板独立筛选（不要求前收跌），与主池近乎正交；在本池内验证仅供参照，不可与池内规则直接比较。",
+      "comparable": false
+    },
+    {
+      "id": "MF",
+      "name": "MF 多因子 top30（池内14:30涨幅 Top30·涨停优先）",
+      "group": "站点徽章",
+      "scope": "all",
+      "timing": "1430",
+      "signal_time": "1430",
+      "kind": "topk",
+      "rank_field": "chg",
+      "k": 30,
+      "conds": [],
+      "source": "site/analysis/mf_scores.json + alpha_explore.py",
+      "note": "现行生产信号。约 69% 为 14:30 已涨停（市价买不进），全组 alpha 显著 ≠ 可跟买；可直买部分不显著。"
+    }
+  ]
+}

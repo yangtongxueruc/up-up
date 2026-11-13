@@ -1,0 +1,3282 @@
+{
+ "generated_at": "2026-11-13 11:36",
+ "D": 144,
+ "N": 106508,
+ "start": "2026-04-10",
+ "end": "2026-11-11",
+ "oos_start_date": "2026-08-14",
+ "base": {
+  "hr_A": 42.78,
+  "hr_B": 41.98,
+  "mean_A": -0.1208,
+  "mean_B": -0.1793
+ },
+ "rule_count": 35,
+ "summary": {
+  "显著为正": [
+   "briefB2",
+   "briefZT1",
+   "MF",
+   "S",
+   "SC",
+   "briefWZ2",
+   "briefWZ3",
+   "briefWZ4",
+   "briefWZ5",
+   "briefWZ6"
+  ],
+  "显著为负": [
+   "briefA1",
+   "briefA2",
+   "briefA3",
+   "briefA5",
+   "briefB1",
+   "briefB3",
+   "briefB4",
+   "BUY",
+   "B",
+   "briefWB3",
+   "briefWB4",
+   "briefWB5"
+  ],
+  "不显著": 11,
+  "样本不足": 2
+ },
+ "rules": [
+  {
+   "id": "E",
+   "name": "反例E：涨幅>1.5%（过度冲高）",
+   "group": "反例",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "validate_rule 反例对照",
+   "note": "反向对照，不是买入规则。",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">",
+     1.5
+    ]
+   ],
+   "n": 52319,
+   "days": 144,
+   "hr": 44.79,
+   "mean_ret": -0.0239,
+   "excess_pp": 2.02,
+   "alpha": 0.0244,
+   "t": 1.04,
+   "alpha_days": 144,
+   "days_beat": 79,
+   "days_total": 144,
+   "oos_alpha": -0.0364,
+   "oos_t": -0.99,
+   "oos_days": 58,
+   "need_days": 389,
+   "buyable": {
+    "n": 48455,
+    "alpha": -0.0943,
+    "t": -4.27,
+    "days": 144,
+    "hr": 43.81
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 16851,
+     "hr": 54.55,
+     "excess_pp": 4.47,
+     "alpha": 0.1095,
+     "t": 1.95,
+     "days": 28
+    },
+    "平": {
+     "n": 9886,
+     "hr": 36.19,
+     "excess_pp": -1.8,
+     "alpha": 0.0343,
+     "t": 0.7,
+     "days": 30
+    },
+    "跌": {
+     "n": 8383,
+     "hr": 42.97,
+     "excess_pp": 1.9,
+     "alpha": 0.0418,
+     "t": 1.08,
+     "days": 28
+    },
+    "涨": {
+     "n": 12520,
+     "hr": 43.87,
+     "excess_pp": 1.27,
+     "alpha": 0.044,
+     "t": 1.07,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 4616,
+     "hr": 33.67,
+     "excess_pp": -0.32,
+     "alpha": -0.0631,
+     "t": -1.09,
+     "days": 29
+    },
+    "震荡": {
+     "n": 63,
+     "hr": 25.4,
+     "excess_pp": -9.32,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 44.22
+  },
+  {
+   "id": "briefA1",
+   "name": "chg≥2",
+   "group": "口径A 规则表",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json rulesA",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     2.0
+    ]
+   ],
+   "n": 35935,
+   "days": 144,
+   "hr": 44.61,
+   "mean_ret": -0.1139,
+   "excess_pp": 1.84,
+   "alpha": -0.1119,
+   "t": -3.79,
+   "alpha_days": 144,
+   "days_beat": 72,
+   "days_total": 144,
+   "oos_alpha": -0.1922,
+   "oos_t": -4.43,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 35935,
+    "alpha": -0.1119,
+    "t": -3.79,
+    "days": 144,
+    "hr": 44.61
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 11801,
+     "hr": 55.38,
+     "excess_pp": 5.29,
+     "alpha": -0.0127,
+     "t": -0.2,
+     "days": 28
+    },
+    "平": {
+     "n": 6747,
+     "hr": 35.44,
+     "excess_pp": -2.55,
+     "alpha": -0.0958,
+     "t": -1.65,
+     "days": 30
+    },
+    "跌": {
+     "n": 5670,
+     "hr": 41.94,
+     "excess_pp": 0.87,
+     "alpha": -0.1898,
+     "t": -3.18,
+     "days": 28
+    },
+    "涨": {
+     "n": 8679,
+     "hr": 43.12,
+     "excess_pp": 0.51,
+     "alpha": -0.051,
+     "t": -1.04,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 2998,
+     "hr": 32.49,
+     "excess_pp": -1.5,
+     "alpha": -0.1796,
+     "t": -2.07,
+     "days": 29
+    },
+    "震荡": {
+     "n": 40,
+     "hr": 30.0,
+     "excess_pp": -4.72,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 43.93
+  },
+  {
+   "id": "briefA2",
+   "name": "chg 2~5",
+   "group": "口径A 规则表",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json rulesA",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     2.0
+    ],
+    [
+     "chg",
+     "<=",
+     5.0
+    ]
+   ],
+   "n": 29735,
+   "days": 144,
+   "hr": 44.06,
+   "mean_ret": -0.1657,
+   "excess_pp": 1.28,
+   "alpha": -0.1168,
+   "t": -4.07,
+   "alpha_days": 144,
+   "days_beat": 71,
+   "days_total": 144,
+   "oos_alpha": -0.123,
+   "oos_t": -2.97,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 29735,
+    "alpha": -0.1168,
+    "t": -4.07,
+    "days": 144,
+    "hr": 44.06
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 9460,
+     "hr": 54.87,
+     "excess_pp": 4.78,
+     "alpha": -0.0857,
+     "t": -1.71,
+     "days": 28
+    },
+    "平": {
+     "n": 5815,
+     "hr": 34.81,
+     "excess_pp": -3.18,
+     "alpha": -0.0779,
+     "t": -1.36,
+     "days": 30
+    },
+    "跌": {
+     "n": 4770,
+     "hr": 41.49,
+     "excess_pp": 0.42,
+     "alpha": -0.1677,
+     "t": -2.71,
+     "days": 28
+    },
+    "涨": {
+     "n": 7128,
+     "hr": 43.55,
+     "excess_pp": 0.94,
+     "alpha": -0.0418,
+     "t": -0.93,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 2528,
+     "hr": 31.33,
+     "excess_pp": -2.65,
+     "alpha": -0.1917,
+     "t": -2.06,
+     "days": 29
+    },
+    "震荡": {
+     "n": 34,
+     "hr": 32.35,
+     "excess_pp": -2.36,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 43.4
+  },
+  {
+   "id": "briefA3",
+   "name": "chg≥2 且 换手≥4",
+   "group": "口径A 规则表",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json rulesA",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     2.0
+    ],
+    [
+     "turnover",
+     ">=",
+     4.0
+    ]
+   ],
+   "n": 10320,
+   "days": 144,
+   "hr": 45.0,
+   "mean_ret": -0.135,
+   "excess_pp": 2.22,
+   "alpha": -0.2574,
+   "t": -3.62,
+   "alpha_days": 143,
+   "days_beat": 68,
+   "days_total": 144,
+   "oos_alpha": -0.4897,
+   "oos_t": -4.44,
+   "oos_days": 57,
+   "need_days": 0,
+   "buyable": {
+    "n": 10320,
+    "alpha": -0.2574,
+    "t": -3.62,
+    "days": 143,
+    "hr": 45.0
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 3473,
+     "hr": 54.74,
+     "excess_pp": 4.65,
+     "alpha": 0.048,
+     "t": 0.35,
+     "days": 28
+    },
+    "涨": {
+     "n": 2415,
+     "hr": 38.72,
+     "excess_pp": -3.89,
+     "alpha": -0.2776,
+     "t": -2.07,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 1071,
+     "hr": 33.8,
+     "excess_pp": -0.18,
+     "alpha": -0.6923,
+     "t": -3.35,
+     "days": 28
+    },
+    "平": {
+     "n": 1806,
+     "hr": 42.41,
+     "excess_pp": 4.43,
+     "alpha": -0.1937,
+     "t": -1.47,
+     "days": 30
+    },
+    "跌": {
+     "n": 1538,
+     "hr": 44.02,
+     "excess_pp": 2.95,
+     "alpha": -0.0837,
+     "t": -0.67,
+     "days": 28
+    },
+    "震荡": {
+     "n": 17,
+     "hr": 17.65,
+     "excess_pp": -17.07,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 43.46
+  },
+  {
+   "id": "briefA4",
+   "name": "chg≥2 且 振幅≤3",
+   "group": "口径A 规则表",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json rulesA",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     2.0
+    ],
+    [
+     "amplitude",
+     "<=",
+     3.0
+    ]
+   ],
+   "n": 2885,
+   "days": 128,
+   "hr": 46.59,
+   "mean_ret": 0.0591,
+   "excess_pp": 3.81,
+   "alpha": 0.0902,
+   "t": 1.0,
+   "alpha_days": 88,
+   "days_beat": 58,
+   "days_total": 128,
+   "oos_alpha": 0.0447,
+   "oos_t": 0.35,
+   "oos_days": 39,
+   "need_days": 264,
+   "buyable": {
+    "n": 2885,
+    "alpha": 0.0902,
+    "t": 1.0,
+    "days": 88,
+    "hr": 46.59
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 906,
+     "hr": 48.68,
+     "excess_pp": -1.41,
+     "alpha": -0.084,
+     "t": -0.57,
+     "days": 20
+    },
+    "跌": {
+     "n": 231,
+     "hr": 36.36,
+     "excess_pp": -4.71,
+     "alpha": -0.0011,
+     "t": -0.01,
+     "days": 16
+    },
+    "涨": {
+     "n": 900,
+     "hr": 57.67,
+     "excess_pp": 15.06,
+     "alpha": 0.0665,
+     "t": 0.42,
+     "days": 22
+    },
+    "弱跌": {
+     "n": 88,
+     "hr": 43.18,
+     "excess_pp": 9.2,
+     "alpha": -0.1813,
+     "t": -0.53,
+     "days": 10
+    },
+    "平": {
+     "n": 757,
+     "hr": 34.35,
+     "excess_pp": -3.64,
+     "alpha": 0.4307,
+     "t": 1.83,
+     "days": 19
+    },
+    "震荡": {
+     "n": 3,
+     "hr": 66.67,
+     "excess_pp": 31.95,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 48.21
+  },
+  {
+   "id": "briefA5",
+   "name": "rs≥0",
+   "group": "口径A 规则表",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json rulesA",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "rs",
+     ">=",
+     0.0
+    ]
+   ],
+   "n": 82820,
+   "days": 144,
+   "hr": 41.42,
+   "mean_ret": -0.2292,
+   "excess_pp": -1.36,
+   "alpha": -0.0411,
+   "t": -2.98,
+   "alpha_days": 144,
+   "days_beat": 52,
+   "days_total": 144,
+   "oos_alpha": -0.0407,
+   "oos_t": -3.36,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 82820,
+    "alpha": -0.0411,
+    "t": -2.98,
+    "days": 144,
+    "hr": 41.42
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 15916,
+     "hr": 51.45,
+     "excess_pp": 1.36,
+     "alpha": -0.0344,
+     "t": -0.59,
+     "days": 28
+    },
+    "平": {
+     "n": 19289,
+     "hr": 37.33,
+     "excess_pp": -0.66,
+     "alpha": -0.0538,
+     "t": -3.38,
+     "days": 30
+    },
+    "跌": {
+     "n": 17895,
+     "hr": 40.51,
+     "excess_pp": -0.56,
+     "alpha": -0.0767,
+     "t": -5.45,
+     "days": 28
+    },
+    "涨": {
+     "n": 19498,
+     "hr": 42.33,
+     "excess_pp": -0.28,
+     "alpha": -0.0305,
+     "t": -1.25,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 10036,
+     "hr": 33.34,
+     "excess_pp": -0.64,
+     "alpha": -0.015,
+     "t": -0.66,
+     "days": 29
+    },
+    "震荡": {
+     "n": 186,
+     "hr": 35.48,
+     "excess_pp": 0.77,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 40.96
+  },
+  {
+   "id": "briefA6",
+   "name": "chg≥3 且 振幅≤3",
+   "group": "口径A 规则表",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json rulesA",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ],
+    [
+     "amplitude",
+     "<=",
+     3.0
+    ]
+   ],
+   "n": 336,
+   "days": 64,
+   "hr": 56.85,
+   "mean_ret": 0.4212,
+   "excess_pp": 14.07,
+   "alpha": 0.3333,
+   "t": 1.36,
+   "alpha_days": 27,
+   "days_beat": 31,
+   "days_total": 64,
+   "oos_alpha": -0.4296,
+   "oos_t": -1.04,
+   "oos_days": 9,
+   "need_days": 32,
+   "buyable": {
+    "n": 336,
+    "alpha": 0.3333,
+    "t": 1.36,
+    "days": 27,
+    "hr": 56.85
+   },
+   "by_regime": {
+    "涨": {
+     "n": 115,
+     "hr": 71.3,
+     "excess_pp": 28.7,
+     "alpha": -0.1336,
+     "t": -0.25,
+     "days": 7
+    },
+    "平": {
+     "n": 77,
+     "hr": 46.75,
+     "excess_pp": 8.76,
+     "alpha": 0.5879,
+     "t": 1.09,
+     "days": 8
+    },
+    "强涨": {
+     "n": 120,
+     "hr": 52.5,
+     "excess_pp": 2.41,
+     "alpha": 0.609,
+     "t": 1.93,
+     "days": 10
+    },
+    "跌": {
+     "n": 13,
+     "hr": 30.77,
+     "excess_pp": -10.3,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "弱跌": {
+     "n": 11,
+     "hr": 54.55,
+     "excess_pp": 20.56,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 58.93
+  },
+  {
+   "id": "briefB1",
+   "name": "drift>0.19",
+   "group": "口径B 规则表",
+   "scope": "buy",
+   "timing": "close",
+   "signal_time": "close",
+   "kind": "cond",
+   "source": "decision_brief.json rulesB",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "drift",
+     ">",
+     0.19
+    ]
+   ],
+   "n": 32768,
+   "days": 143,
+   "hr": 38.41,
+   "mean_ret": -0.4519,
+   "excess_pp": -3.58,
+   "alpha": -0.2896,
+   "t": -9.77,
+   "alpha_days": 143,
+   "days_beat": 33,
+   "days_total": 143,
+   "oos_alpha": -0.284,
+   "oos_t": -5.98,
+   "oos_days": 57,
+   "need_days": 0,
+   "buyable": {
+    "n": 32768,
+    "alpha": -0.2896,
+    "t": -9.77,
+    "days": 143,
+    "hr": 38.41
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 11420,
+     "hr": 45.47,
+     "excess_pp": -2.03,
+     "alpha": -0.2792,
+     "t": -5.1,
+     "days": 28
+    },
+    "平": {
+     "n": 5792,
+     "hr": 31.16,
+     "excess_pp": -6.83,
+     "alpha": -0.2791,
+     "t": -4.12,
+     "days": 30
+    },
+    "跌": {
+     "n": 6118,
+     "hr": 40.44,
+     "excess_pp": 1.1,
+     "alpha": -0.3283,
+     "t": -5.09,
+     "days": 28
+    },
+    "涨": {
+     "n": 6259,
+     "hr": 35.6,
+     "excess_pp": -7.75,
+     "alpha": -0.2658,
+     "t": -3.78,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 3120,
+     "hr": 27.72,
+     "excess_pp": -7.14,
+     "alpha": -0.3016,
+     "t": -3.87,
+     "days": 28
+    },
+    "震荡": {
+     "n": 59,
+     "hr": 33.9,
+     "excess_pp": 1.26,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 47.88
+  },
+  {
+   "id": "briefB2",
+   "name": "drift<-0.10",
+   "group": "口径B 规则表",
+   "scope": "buy",
+   "timing": "close",
+   "signal_time": "close",
+   "kind": "cond",
+   "source": "decision_brief.json rulesB",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "drift",
+     "<",
+     -0.1
+    ]
+   ],
+   "n": 34578,
+   "days": 143,
+   "hr": 45.03,
+   "mean_ret": -0.0557,
+   "excess_pp": 3.05,
+   "alpha": 0.0659,
+   "t": 2.52,
+   "alpha_days": 143,
+   "days_beat": 85,
+   "days_total": 143,
+   "oos_alpha": 0.0487,
+   "oos_t": 1.59,
+   "oos_days": 57,
+   "need_days": 0,
+   "buyable": {
+    "n": 34578,
+    "alpha": 0.0659,
+    "t": 2.52,
+    "days": 143,
+    "hr": 45.03
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 8393,
+     "hr": 49.57,
+     "excess_pp": 2.06,
+     "alpha": 0.0106,
+     "t": 0.12,
+     "days": 28
+    },
+    "平": {
+     "n": 6955,
+     "hr": 43.16,
+     "excess_pp": 5.16,
+     "alpha": 0.072,
+     "t": 1.79,
+     "days": 30
+    },
+    "跌": {
+     "n": 5716,
+     "hr": 38.07,
+     "excess_pp": -1.27,
+     "alpha": 0.001,
+     "t": 0.02,
+     "days": 28
+    },
+    "涨": {
+     "n": 9360,
+     "hr": 48.82,
+     "excess_pp": 5.48,
+     "alpha": 0.1314,
+     "t": 2.59,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 4115,
+     "hr": 40.15,
+     "excess_pp": 5.29,
+     "alpha": 0.134,
+     "t": 2.33,
+     "days": 28
+    },
+    "震荡": {
+     "n": 39,
+     "hr": 25.64,
+     "excess_pp": -7.0,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正·含前视",
+   "alt_hr": 37.65
+  },
+  {
+   "id": "briefB3",
+   "name": "day_chg>2.23",
+   "group": "口径B 规则表",
+   "scope": "buy",
+   "timing": "close",
+   "signal_time": "close",
+   "kind": "cond",
+   "source": "decision_brief.json rulesB",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "day_chg",
+     ">",
+     2.23
+    ]
+   ],
+   "n": 33132,
+   "days": 144,
+   "hr": 43.06,
+   "mean_ret": -0.2494,
+   "excess_pp": 1.08,
+   "alpha": -0.1989,
+   "t": -6.15,
+   "alpha_days": 144,
+   "days_beat": 63,
+   "days_total": 144,
+   "oos_alpha": -0.3006,
+   "oos_t": -5.96,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 33132,
+    "alpha": -0.1989,
+    "t": -6.15,
+    "days": 144,
+    "hr": 43.06
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 11415,
+     "hr": 51.9,
+     "excess_pp": 4.39,
+     "alpha": -0.0593,
+     "t": -0.93,
+     "days": 28
+    },
+    "平": {
+     "n": 6087,
+     "hr": 33.58,
+     "excess_pp": -4.42,
+     "alpha": -0.1889,
+     "t": -2.75,
+     "days": 30
+    },
+    "跌": {
+     "n": 5248,
+     "hr": 41.1,
+     "excess_pp": 1.76,
+     "alpha": -0.2604,
+     "t": -3.65,
+     "days": 28
+    },
+    "涨": {
+     "n": 7680,
+     "hr": 42.89,
+     "excess_pp": -0.46,
+     "alpha": -0.1312,
+     "t": -2.45,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 2665,
+     "hr": 31.56,
+     "excess_pp": -3.3,
+     "alpha": -0.3028,
+     "t": -3.72,
+     "days": 29
+    },
+    "震荡": {
+     "n": 37,
+     "hr": 18.92,
+     "excess_pp": -13.72,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 45.81
+  },
+  {
+   "id": "briefB4",
+   "name": "activity>3.00",
+   "group": "口径B 规则表",
+   "scope": "buy",
+   "timing": "close",
+   "signal_time": "close",
+   "kind": "cond",
+   "source": "decision_brief.json rulesB",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "activity",
+     ">",
+     3.0
+    ]
+   ],
+   "n": 35904,
+   "days": 144,
+   "hr": 42.39,
+   "mean_ret": -0.2798,
+   "excess_pp": 0.41,
+   "alpha": -0.1455,
+   "t": -3.58,
+   "alpha_days": 144,
+   "days_beat": 71,
+   "days_total": 144,
+   "oos_alpha": -0.1839,
+   "oos_t": -2.98,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 35904,
+    "alpha": -0.1455,
+    "t": -3.58,
+    "days": 144,
+    "hr": 42.39
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 9805,
+     "hr": 49.78,
+     "excess_pp": 2.27,
+     "alpha": -0.0598,
+     "t": -0.58,
+     "days": 28
+    },
+    "平": {
+     "n": 6380,
+     "hr": 43.07,
+     "excess_pp": 5.07,
+     "alpha": -0.0639,
+     "t": -0.82,
+     "days": 30
+    },
+    "跌": {
+     "n": 6632,
+     "hr": 39.05,
+     "excess_pp": -0.29,
+     "alpha": -0.1542,
+     "t": -2.11,
+     "days": 28
+    },
+    "涨": {
+     "n": 9115,
+     "hr": 40.03,
+     "excess_pp": -3.32,
+     "alpha": -0.1927,
+     "t": -2.51,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 3902,
+     "hr": 34.39,
+     "excess_pp": -0.47,
+     "alpha": -0.1997,
+     "t": -1.92,
+     "days": 29
+    },
+    "震荡": {
+     "n": 70,
+     "hr": 14.29,
+     "excess_pp": -18.36,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 43.54
+  },
+  {
+   "id": "briefB5",
+   "name": "amplitude<2.74",
+   "group": "口径B 规则表",
+   "scope": "buy",
+   "timing": "close",
+   "signal_time": "close",
+   "kind": "cond",
+   "source": "decision_brief.json rulesB",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "amplitude",
+     "<",
+     2.74
+    ]
+   ],
+   "n": 33543,
+   "days": 144,
+   "hr": 40.65,
+   "mean_ret": -0.1605,
+   "excess_pp": -1.33,
+   "alpha": 0.0126,
+   "t": 0.19,
+   "alpha_days": 144,
+   "days_beat": 63,
+   "days_total": 144,
+   "oos_alpha": 0.1236,
+   "oos_t": 1.68,
+   "oos_days": 58,
+   "need_days": 15812,
+   "buyable": {
+    "n": 33543,
+    "alpha": 0.0126,
+    "t": 0.19,
+    "days": 144,
+    "hr": 40.65
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 8313,
+     "hr": 38.1,
+     "excess_pp": -9.41,
+     "alpha": -0.3196,
+     "t": -1.68,
+     "days": 28
+    },
+    "平": {
+     "n": 7695,
+     "hr": 38.96,
+     "excess_pp": 0.96,
+     "alpha": 0.0272,
+     "t": 0.29,
+     "days": 30
+    },
+    "跌": {
+     "n": 5297,
+     "hr": 37.34,
+     "excess_pp": -2.0,
+     "alpha": -0.0882,
+     "t": -0.98,
+     "days": 28
+    },
+    "涨": {
+     "n": 9637,
+     "hr": 46.05,
+     "excess_pp": 2.7,
+     "alpha": 0.0475,
+     "t": 0.47,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 2514,
+     "hr": 40.25,
+     "excess_pp": 5.39,
+     "alpha": 0.3364,
+     "t": 1.76,
+     "days": 29
+    },
+    "震荡": {
+     "n": 87,
+     "hr": 48.28,
+     "excess_pp": 15.63,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 40.64
+  },
+  {
+   "id": "BUY",
+   "name": "基准·全部可直买（14:30 未涨停）",
+   "group": "基准",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief ② 可直买组",
+   "note": "对照组，不是选股规则；用于判断其它规则相对「买下整个池子」是否有增量。",
+   "comparable": true,
+   "conds": [],
+   "n": 102644,
+   "days": 144,
+   "hr": 42.24,
+   "mean_ret": -0.1776,
+   "excess_pp": -0.54,
+   "alpha": -0.0532,
+   "t": -6.65,
+   "alpha_days": 144,
+   "days_beat": 39,
+   "days_total": 144,
+   "oos_alpha": -0.0407,
+   "oos_t": -3.86,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 102644,
+    "alpha": -0.0532,
+    "t": -6.65,
+    "days": 144,
+    "hr": 42.24
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 29943,
+     "hr": 49.38,
+     "excess_pp": -0.7,
+     "alpha": -0.0911,
+     "t": -4.93,
+     "days": 28
+    },
+    "平": {
+     "n": 19788,
+     "hr": 37.46,
+     "excess_pp": -0.53,
+     "alpha": -0.0528,
+     "t": -3.27,
+     "days": 30
+    },
+    "跌": {
+     "n": 17895,
+     "hr": 40.51,
+     "excess_pp": -0.56,
+     "alpha": -0.0767,
+     "t": -5.45,
+     "days": 28
+    },
+    "涨": {
+     "n": 24796,
+     "hr": 42.32,
+     "excess_pp": -0.29,
+     "alpha": -0.0369,
+     "t": -2.81,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 10036,
+     "hr": 33.34,
+     "excess_pp": -0.64,
+     "alpha": -0.015,
+     "t": -0.66,
+     "days": 29
+    },
+    "震荡": {
+     "n": 186,
+     "hr": 35.48,
+     "excess_pp": 0.77,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 41.4
+  },
+  {
+   "id": "A",
+   "name": "A：14:30涨幅≤0.6% 且 换手率≥2%",
+   "group": "核心",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "site/build.py rulebar A + validate_rule",
+   "note": "历史核心规则，全量重验已证伪（超额收敛至零附近）。",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     "<=",
+     0.6
+    ],
+    [
+     "turnover",
+     ">=",
+     2
+    ]
+   ],
+   "n": 5559,
+   "days": 144,
+   "hr": 42.11,
+   "mean_ret": -0.2558,
+   "excess_pp": -0.67,
+   "alpha": -0.1122,
+   "t": -1.56,
+   "alpha_days": 142,
+   "days_beat": 68,
+   "days_total": 144,
+   "oos_alpha": -0.1651,
+   "oos_t": -1.3,
+   "oos_days": 57,
+   "need_days": 92,
+   "buyable": {
+    "n": 5559,
+    "alpha": -0.1122,
+    "t": -1.56,
+    "days": 142,
+    "hr": 42.11
+   },
+   "by_regime": {
+    "震荡": {
+     "n": 14,
+     "hr": 7.14,
+     "excess_pp": -27.57,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "强涨": {
+     "n": 1536,
+     "hr": 49.8,
+     "excess_pp": -0.28,
+     "alpha": -0.0674,
+     "t": -0.49,
+     "days": 28
+    },
+    "涨": {
+     "n": 1277,
+     "hr": 37.9,
+     "excess_pp": -4.71,
+     "alpha": -0.1657,
+     "t": -1.37,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 673,
+     "hr": 32.24,
+     "excess_pp": -1.74,
+     "alpha": -0.3522,
+     "t": -1.55,
+     "days": 27
+    },
+    "平": {
+     "n": 1034,
+     "hr": 44.0,
+     "excess_pp": 6.02,
+     "alpha": 0.0526,
+     "t": 0.39,
+     "days": 30
+    },
+    "跌": {
+     "n": 1025,
+     "hr": 40.88,
+     "excess_pp": -0.19,
+     "alpha": 0.0374,
+     "t": 0.25,
+     "days": 28
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 40.85
+  },
+  {
+   "id": "B",
+   "name": "B：14:30涨幅≤0.3% 且 换手率≥3%",
+   "group": "核心",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "validate_rule 核心回测 + rule_revalidation.html",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     "<=",
+     0.3
+    ],
+    [
+     "turnover",
+     ">=",
+     3
+    ]
+   ],
+   "n": 1326,
+   "days": 141,
+   "hr": 44.8,
+   "mean_ret": -0.3172,
+   "excess_pp": 2.02,
+   "alpha": -0.2721,
+   "t": -2.3,
+   "alpha_days": 128,
+   "days_beat": 70,
+   "days_total": 141,
+   "oos_alpha": -0.3257,
+   "oos_t": -1.53,
+   "oos_days": 49,
+   "need_days": 0,
+   "buyable": {
+    "n": 1326,
+    "alpha": -0.2721,
+    "t": -2.3,
+    "days": 128,
+    "hr": 44.8
+   },
+   "by_regime": {
+    "震荡": {
+     "n": 4,
+     "hr": 0.0,
+     "excess_pp": -34.72,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "涨": {
+     "n": 315,
+     "hr": 42.22,
+     "excess_pp": -0.38,
+     "alpha": -0.1302,
+     "t": -0.62,
+     "days": 26
+    },
+    "强涨": {
+     "n": 357,
+     "hr": 52.38,
+     "excess_pp": 2.29,
+     "alpha": -0.1335,
+     "t": -0.66,
+     "days": 27
+    },
+    "跌": {
+     "n": 257,
+     "hr": 43.58,
+     "excess_pp": 2.51,
+     "alpha": -0.2529,
+     "t": -1.11,
+     "days": 27
+    },
+    "弱跌": {
+     "n": 148,
+     "hr": 35.14,
+     "excess_pp": 1.15,
+     "alpha": -0.7615,
+     "t": -1.67,
+     "days": 22
+    },
+    "平": {
+     "n": 245,
+     "hr": 44.9,
+     "excess_pp": 6.91,
+     "alpha": -0.1173,
+     "t": -0.52,
+     "days": 25
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 42.91
+  },
+  {
+   "id": "C",
+   "name": "C：涨幅≤0.6% 且 换手率≥3% 且 量比≤1.2",
+   "group": "核心",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "site/build.py rulebar C + validate_rule",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     "<=",
+     0.6
+    ],
+    [
+     "turnover",
+     ">=",
+     3
+    ],
+    [
+     "vr",
+     "<=",
+     1.2
+    ]
+   ],
+   "n": 1622,
+   "days": 115,
+   "hr": 43.16,
+   "mean_ret": -0.241,
+   "excess_pp": 0.38,
+   "alpha": -0.1161,
+   "t": -0.87,
+   "alpha_days": 88,
+   "days_beat": 62,
+   "days_total": 115,
+   "oos_alpha": -1.1023,
+   "oos_t": -0.92,
+   "oos_days": 4,
+   "need_days": 378,
+   "buyable": {
+    "n": 1622,
+    "alpha": -0.1161,
+    "t": -0.87,
+    "days": 88,
+    "hr": 43.16
+   },
+   "by_regime": {
+    "震荡": {
+     "n": 10,
+     "hr": 0.0,
+     "excess_pp": -34.72,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "跌": {
+     "n": 253,
+     "hr": 45.85,
+     "excess_pp": 4.78,
+     "alpha": -0.0984,
+     "t": -0.31,
+     "days": 15
+    },
+    "涨": {
+     "n": 342,
+     "hr": 35.96,
+     "excess_pp": -6.64,
+     "alpha": 0.1031,
+     "t": 0.41,
+     "days": 14
+    },
+    "强涨": {
+     "n": 540,
+     "hr": 52.04,
+     "excess_pp": 1.95,
+     "alpha": 0.0136,
+     "t": 0.08,
+     "days": 25
+    },
+    "弱跌": {
+     "n": 192,
+     "hr": 31.25,
+     "excess_pp": -2.73,
+     "alpha": -0.9153,
+     "t": -2.38,
+     "days": 16
+    },
+    "平": {
+     "n": 285,
+     "hr": 42.11,
+     "excess_pp": 4.12,
+     "alpha": 0.4233,
+     "t": 1.41,
+     "days": 17
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 41.18
+  },
+  {
+   "id": "D",
+   "name": "D：涨幅≤1.0% 且 活跃度≥4",
+   "group": "核心",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "rule_revalidation.html 现行规则表",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     "<=",
+     1.0
+    ],
+    [
+     "activity",
+     ">=",
+     4
+    ]
+   ],
+   "n": 6614,
+   "days": 144,
+   "hr": 42.98,
+   "mean_ret": -0.2372,
+   "excess_pp": 0.21,
+   "alpha": -0.1156,
+   "t": -1.39,
+   "alpha_days": 143,
+   "days_beat": 72,
+   "days_total": 144,
+   "oos_alpha": -0.1295,
+   "oos_t": -1.12,
+   "oos_days": 58,
+   "need_days": 154,
+   "buyable": {
+    "n": 6614,
+    "alpha": -0.1156,
+    "t": -1.39,
+    "days": 143,
+    "hr": 42.98
+   },
+   "by_regime": {
+    "震荡": {
+     "n": 22,
+     "hr": 13.64,
+     "excess_pp": -21.08,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "涨": {
+     "n": 1554,
+     "hr": 39.19,
+     "excess_pp": -3.42,
+     "alpha": -0.1822,
+     "t": -1.28,
+     "days": 28
+    },
+    "强涨": {
+     "n": 1462,
+     "hr": 51.16,
+     "excess_pp": 1.07,
+     "alpha": -0.0793,
+     "t": -0.34,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 864,
+     "hr": 38.54,
+     "excess_pp": 4.56,
+     "alpha": -0.2493,
+     "t": -1.13,
+     "days": 28
+    },
+    "平": {
+     "n": 1185,
+     "hr": 49.03,
+     "excess_pp": 11.04,
+     "alpha": 0.071,
+     "t": 0.39,
+     "days": 30
+    },
+    "跌": {
+     "n": 1527,
+     "hr": 37.26,
+     "excess_pp": -3.81,
+     "alpha": -0.0807,
+     "t": -0.6,
+     "days": 28
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 41.9
+  },
+  {
+   "id": "briefZT1",
+   "name": "涨停 且 活跃度≤3",
+   "group": "涨停组正期望区",
+   "scope": "board",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json zt",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "activity",
+     "<=",
+     3.0
+    ]
+   ],
+   "n": 404,
+   "days": 108,
+   "hr": 67.33,
+   "mean_ret": 2.8898,
+   "excess_pp": 24.55,
+   "alpha": 2.2271,
+   "t": 5.05,
+   "alpha_days": 49,
+   "days_beat": 82,
+   "days_total": 108,
+   "oos_alpha": 1.3155,
+   "oos_t": 1.36,
+   "oos_days": 9,
+   "need_days": 0,
+   "buyable": null,
+   "by_regime": {
+    "弱跌": {
+     "n": 42,
+     "hr": 57.14,
+     "excess_pp": 23.16,
+     "alpha": 0.9133,
+     "t": 1.48,
+     "days": 5
+    },
+    "平": {
+     "n": 58,
+     "hr": 67.24,
+     "excess_pp": 29.25,
+     "alpha": 2.6586,
+     "t": 1.78,
+     "days": 7
+    },
+    "强涨": {
+     "n": 163,
+     "hr": 73.01,
+     "excess_pp": 22.92,
+     "alpha": 3.3914,
+     "t": 6.73,
+     "days": 18
+    },
+    "涨": {
+     "n": 79,
+     "hr": 59.49,
+     "excess_pp": 16.89,
+     "alpha": 0.9559,
+     "t": 0.81,
+     "days": 10
+    },
+    "跌": {
+     "n": 61,
+     "hr": 68.85,
+     "excess_pp": 27.78,
+     "alpha": 1.7051,
+     "t": 1.45,
+     "days": 9
+    },
+    "震荡": {
+     "n": 1,
+     "hr": 100.0,
+     "excess_pp": 65.28,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正",
+   "alt_hr": 67.33
+  },
+  {
+   "id": "MF",
+   "name": "MF 多因子 top30（池内14:30涨幅 Top30·涨停优先）",
+   "group": "站点徽章",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "topk",
+   "source": "site/analysis/mf_scores.json + alpha_explore.py",
+   "note": "现行生产信号。约 69% 为 14:30 已涨停（市价买不进），全组 alpha 显著 ≠ 可跟买；可直买部分不显著。",
+   "comparable": true,
+   "conds": [],
+   "n": 4320,
+   "days": 144,
+   "hr": 51.6,
+   "mean_ret": 0.7911,
+   "excess_pp": 8.82,
+   "alpha": 0.8476,
+   "t": 8.28,
+   "alpha_days": 144,
+   "days_beat": 93,
+   "days_total": 144,
+   "oos_alpha": 0.5924,
+   "oos_t": 3.76,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 1355,
+    "alpha": -0.0934,
+    "t": -0.75,
+    "days": 91,
+    "hr": 41.99
+   },
+   "by_regime": {
+    "涨": {
+     "n": 840,
+     "hr": 48.21,
+     "excess_pp": 5.61,
+     "alpha": 0.6791,
+     "t": 3.12,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 870,
+     "hr": 47.01,
+     "excess_pp": 13.03,
+     "alpha": 0.3457,
+     "t": 1.68,
+     "days": 29
+    },
+    "跌": {
+     "n": 840,
+     "hr": 53.45,
+     "excess_pp": 12.38,
+     "alpha": 0.9665,
+     "t": 5.17,
+     "days": 28
+    },
+    "强涨": {
+     "n": 840,
+     "hr": 63.45,
+     "excess_pp": 13.36,
+     "alpha": 1.5383,
+     "t": 6.65,
+     "days": 28
+    },
+    "平": {
+     "n": 900,
+     "hr": 47.56,
+     "excess_pp": 9.57,
+     "alpha": 0.8332,
+     "t": 3.54,
+     "days": 30
+    },
+    "震荡": {
+     "n": 30,
+     "hr": 16.67,
+     "excess_pp": -18.05,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正",
+   "alt_hr": 51.81
+  },
+  {
+   "id": "R",
+   "name": "R 分regime规则（各档用各自最优条件）",
+   "group": "站点徽章",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "regime",
+   "source": "site/analysis/regime_rules.json",
+   "note": "强涨→换手≥3% 且 量比≤1.0 且 活跃度≥3（不加涨幅上限）；涨→换手≥5% 且 涨幅≤0.5%；平→涨幅≤0.6% 且 换手≥2% 且 量比≤1.0；跌→涨幅≤0.6% 且 换手≥2% 且 量比≤1.0；弱跌→涨幅≤0.4%（低涨幅）",
+   "comparable": true,
+   "conds": [],
+   "n": 6308,
+   "days": 132,
+   "hr": 44.85,
+   "mean_ret": 0.0774,
+   "excess_pp": 2.07,
+   "alpha": 0.0104,
+   "t": 0.11,
+   "alpha_days": 117,
+   "days_beat": 61,
+   "days_total": 132,
+   "oos_alpha": -0.3091,
+   "oos_t": -1.81,
+   "oos_days": 32,
+   "need_days": 38561,
+   "buyable": {
+    "n": 6056,
+    "alpha": -0.0129,
+    "t": -0.14,
+    "days": 117,
+    "hr": 43.79
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 3476,
+     "hr": 51.58,
+     "excess_pp": 1.49,
+     "alpha": 0.0649,
+     "t": 0.35,
+     "days": 27
+    },
+    "弱跌": {
+     "n": 1793,
+     "hr": 34.3,
+     "excess_pp": 0.32,
+     "alpha": 0.1144,
+     "t": 1.13,
+     "days": 29
+    },
+    "涨": {
+     "n": 199,
+     "hr": 38.69,
+     "excess_pp": -3.91,
+     "alpha": -0.3028,
+     "t": -1.09,
+     "days": 27
+    },
+    "平": {
+     "n": 449,
+     "hr": 38.98,
+     "excess_pp": 0.99,
+     "alpha": 0.2178,
+     "t": 1.39,
+     "days": 18
+    },
+    "跌": {
+     "n": 391,
+     "hr": 43.22,
+     "excess_pp": 2.15,
+     "alpha": 0.025,
+     "t": 0.1,
+     "days": 16
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 44.12
+  },
+  {
+   "id": "S",
+   "name": "S 动量S：涨幅≥2% 且 振幅≤3%",
+   "group": "站点徽章",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "site/build.py SURV_CORE (1363/1642)",
+   "note": "站点 S 徽章。全样本 t 显著但收盘口径 OOS 不显著，仅作分档参考。",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     2.0
+    ],
+    [
+     "amplitude",
+     "<=",
+     3.0
+    ]
+   ],
+   "n": 3058,
+   "days": 131,
+   "hr": 48.01,
+   "mean_ret": 0.2601,
+   "excess_pp": 5.23,
+   "alpha": 0.7381,
+   "t": 4.56,
+   "alpha_days": 102,
+   "days_beat": 75,
+   "days_total": 131,
+   "oos_alpha": 0.2401,
+   "oos_t": 1.36,
+   "oos_days": 41,
+   "need_days": 0,
+   "buyable": {
+    "n": 2885,
+    "alpha": 0.0902,
+    "t": 1.0,
+    "days": 88,
+    "hr": 46.59
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 965,
+     "hr": 50.47,
+     "excess_pp": 0.38,
+     "alpha": 0.713,
+     "t": 2.07,
+     "days": 23
+    },
+    "跌": {
+     "n": 254,
+     "hr": 38.98,
+     "excess_pp": -2.1,
+     "alpha": 0.6725,
+     "t": 2.54,
+     "days": 18
+    },
+    "涨": {
+     "n": 932,
+     "hr": 57.94,
+     "excess_pp": 15.33,
+     "alpha": 0.1785,
+     "t": 0.93,
+     "days": 22
+    },
+    "弱跌": {
+     "n": 113,
+     "hr": 48.67,
+     "excess_pp": 14.69,
+     "alpha": 0.7713,
+     "t": 1.38,
+     "days": 17
+    },
+    "平": {
+     "n": 790,
+     "hr": 35.95,
+     "excess_pp": -2.04,
+     "alpha": 1.2162,
+     "t": 3.13,
+     "days": 21
+    },
+    "震荡": {
+     "n": 4,
+     "hr": 75.0,
+     "excess_pp": 40.28,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正",
+   "alt_hr": 49.54
+  },
+  {
+   "id": "SC",
+   "name": "SC 尾盘SC：未涨停·直买 且 drift(收盘>14:30)>1.0%",
+   "group": "站点徽章",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "close",
+   "kind": "cond",
+   "source": "site/analysis/sc_confidence.json threshold",
+   "note": "信号要等收盘才知道，14:30 买不到；按 exec 口径统计仅为择优能力，不构成可执行信号。",
+   "comparable": true,
+   "conds": [
+    [
+     "drift",
+     ">",
+     1.0
+    ]
+   ],
+   "n": 3714,
+   "days": 140,
+   "hr": 56.73,
+   "mean_ret": 0.7503,
+   "excess_pp": 13.95,
+   "alpha": 0.8442,
+   "t": 7.55,
+   "alpha_days": 133,
+   "days_beat": 111,
+   "days_total": 140,
+   "oos_alpha": 0.483,
+   "oos_t": 2.49,
+   "oos_days": 50,
+   "need_days": 0,
+   "buyable": {
+    "n": 3714,
+    "alpha": 0.8442,
+    "t": 7.55,
+    "days": 133,
+    "hr": 56.73
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 1791,
+     "hr": 61.31,
+     "excess_pp": 11.22,
+     "alpha": 0.9805,
+     "t": 4.45,
+     "days": 27
+    },
+    "涨": {
+     "n": 500,
+     "hr": 54.6,
+     "excess_pp": 11.99,
+     "alpha": 0.9455,
+     "t": 3.7,
+     "days": 27
+    },
+    "跌": {
+     "n": 493,
+     "hr": 62.88,
+     "excess_pp": 21.81,
+     "alpha": 0.6867,
+     "t": 2.29,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 401,
+     "hr": 40.65,
+     "excess_pp": 6.66,
+     "alpha": 0.4193,
+     "t": 1.62,
+     "days": 24
+    },
+    "平": {
+     "n": 518,
+     "hr": 50.0,
+     "excess_pp": 12.01,
+     "alpha": 1.2026,
+     "t": 6.27,
+     "days": 26
+    },
+    "震荡": {
+     "n": 11,
+     "hr": 36.36,
+     "excess_pp": 1.65,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正·含前视",
+   "alt_hr": 36.89
+  },
+  {
+   "id": "SN",
+   "name": "SN 三娘验证A：涨幅3~5% 且 量比>1 且 换手5~10% 且 流通市值50~200亿",
+   "group": "站点徽章",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "site/sanniang_a.py RULE",
+   "note": "本为全市场主板独立筛选（不要求前收跌），与主池近乎正交；在本池内验证仅供参照，不可与池内规则直接比较。",
+   "comparable": false,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ],
+    [
+     "chg",
+     "<=",
+     5.0
+    ],
+    [
+     "vr",
+     ">",
+     1.0
+    ],
+    [
+     "turnover",
+     ">=",
+     5.0
+    ],
+    [
+     "turnover",
+     "<=",
+     10.0
+    ],
+    [
+     "nmc",
+     ">=",
+     50.0
+    ],
+    [
+     "nmc",
+     "<=",
+     200.0
+    ]
+   ],
+   "n": 23,
+   "days": 3,
+   "hr": 69.57,
+   "mean_ret": 1.3561,
+   "excess_pp": 26.79,
+   "alpha": 0.0,
+   "t": 0.0,
+   "alpha_days": 0,
+   "days_beat": 2,
+   "days_total": 3,
+   "oos_alpha": 0.0,
+   "oos_t": 0.0,
+   "oos_days": 0,
+   "need_days": null,
+   "buyable": {
+    "n": 23,
+    "alpha": 0.0,
+    "t": 0.0,
+    "days": 0,
+    "hr": 69.57
+   },
+   "by_regime": {
+    "平": {
+     "n": 23,
+     "hr": 69.57,
+     "excess_pp": 31.58,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "样本不足",
+   "alt_hr": 73.91
+  },
+  {
+   "id": "briefWZ1",
+   "name": "打板·活跃≤1",
+   "group": "胜率专项·打板",
+   "scope": "board",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_board",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "activity",
+     "<=",
+     1.0
+    ]
+   ],
+   "n": 29,
+   "days": 24,
+   "hr": 82.76,
+   "mean_ret": 6.1194,
+   "excess_pp": 39.98,
+   "alpha": 0.0,
+   "t": 0.0,
+   "alpha_days": 0,
+   "days_beat": 22,
+   "days_total": 24,
+   "oos_alpha": 0.0,
+   "oos_t": 0.0,
+   "oos_days": 0,
+   "need_days": null,
+   "buyable": null,
+   "by_regime": {
+    "跌": {
+     "n": 7,
+     "hr": 85.71,
+     "excess_pp": 44.64,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "强涨": {
+     "n": 14,
+     "hr": 71.43,
+     "excess_pp": 21.34,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "弱跌": {
+     "n": 1,
+     "hr": 100.0,
+     "excess_pp": 66.02,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "平": {
+     "n": 5,
+     "hr": 100.0,
+     "excess_pp": 62.01,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "涨": {
+     "n": 2,
+     "hr": 100.0,
+     "excess_pp": 57.39,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "样本不足",
+   "alt_hr": 82.76
+  },
+  {
+   "id": "briefWZ2",
+   "name": "打板·活跃≤2",
+   "group": "胜率专项·打板",
+   "scope": "board",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_board",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "activity",
+     "<=",
+     2.0
+    ]
+   ],
+   "n": 98,
+   "days": 59,
+   "hr": 72.45,
+   "mean_ret": 4.2305,
+   "excess_pp": 29.67,
+   "alpha": 4.6318,
+   "t": 2.66,
+   "alpha_days": 7,
+   "days_beat": 47,
+   "days_total": 59,
+   "oos_alpha": 0.0,
+   "oos_t": 0.0,
+   "oos_days": 0,
+   "need_days": 0,
+   "buyable": null,
+   "by_regime": {
+    "平": {
+     "n": 19,
+     "hr": 84.21,
+     "excess_pp": 46.22,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "跌": {
+     "n": 13,
+     "hr": 76.92,
+     "excess_pp": 35.85,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "弱跌": {
+     "n": 12,
+     "hr": 58.33,
+     "excess_pp": 24.35,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "强涨": {
+     "n": 40,
+     "hr": 77.5,
+     "excess_pp": 27.41,
+     "alpha": 5.8547,
+     "t": 2.67,
+     "days": 5
+    },
+    "涨": {
+     "n": 13,
+     "hr": 46.15,
+     "excess_pp": 3.55,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "震荡": {
+     "n": 1,
+     "hr": 100.0,
+     "excess_pp": 65.28,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正",
+   "alt_hr": 72.45
+  },
+  {
+   "id": "briefWZ3",
+   "name": "打板·活跃≤2 且 振幅≤11",
+   "group": "胜率专项·打板",
+   "scope": "board",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_board",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "activity",
+     "<=",
+     2.0
+    ],
+    [
+     "amplitude",
+     "<=",
+     11.0
+    ]
+   ],
+   "n": 98,
+   "days": 59,
+   "hr": 72.45,
+   "mean_ret": 4.2305,
+   "excess_pp": 29.67,
+   "alpha": 4.6318,
+   "t": 2.66,
+   "alpha_days": 7,
+   "days_beat": 47,
+   "days_total": 59,
+   "oos_alpha": 0.0,
+   "oos_t": 0.0,
+   "oos_days": 0,
+   "need_days": 0,
+   "buyable": null,
+   "by_regime": {
+    "平": {
+     "n": 19,
+     "hr": 84.21,
+     "excess_pp": 46.22,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "跌": {
+     "n": 13,
+     "hr": 76.92,
+     "excess_pp": 35.85,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "弱跌": {
+     "n": 12,
+     "hr": 58.33,
+     "excess_pp": 24.35,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "强涨": {
+     "n": 40,
+     "hr": 77.5,
+     "excess_pp": 27.41,
+     "alpha": 5.8547,
+     "t": 2.67,
+     "days": 5
+    },
+    "涨": {
+     "n": 13,
+     "hr": 46.15,
+     "excess_pp": 3.55,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "震荡": {
+     "n": 1,
+     "hr": 100.0,
+     "excess_pp": 65.28,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正",
+   "alt_hr": 72.45
+  },
+  {
+   "id": "briefWZ4",
+   "name": "打板·活跃≤3",
+   "group": "胜率专项·打板",
+   "scope": "board",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_board",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "activity",
+     "<=",
+     3.0
+    ]
+   ],
+   "n": 404,
+   "days": 108,
+   "hr": 67.33,
+   "mean_ret": 2.8898,
+   "excess_pp": 24.55,
+   "alpha": 2.2271,
+   "t": 5.05,
+   "alpha_days": 49,
+   "days_beat": 82,
+   "days_total": 108,
+   "oos_alpha": 1.3155,
+   "oos_t": 1.36,
+   "oos_days": 9,
+   "need_days": 0,
+   "buyable": null,
+   "by_regime": {
+    "弱跌": {
+     "n": 42,
+     "hr": 57.14,
+     "excess_pp": 23.16,
+     "alpha": 0.9133,
+     "t": 1.48,
+     "days": 5
+    },
+    "平": {
+     "n": 58,
+     "hr": 67.24,
+     "excess_pp": 29.25,
+     "alpha": 2.6586,
+     "t": 1.78,
+     "days": 7
+    },
+    "强涨": {
+     "n": 163,
+     "hr": 73.01,
+     "excess_pp": 22.92,
+     "alpha": 3.3914,
+     "t": 6.73,
+     "days": 18
+    },
+    "涨": {
+     "n": 79,
+     "hr": 59.49,
+     "excess_pp": 16.89,
+     "alpha": 0.9559,
+     "t": 0.81,
+     "days": 10
+    },
+    "跌": {
+     "n": 61,
+     "hr": 68.85,
+     "excess_pp": 27.78,
+     "alpha": 1.7051,
+     "t": 1.45,
+     "days": 9
+    },
+    "震荡": {
+     "n": 1,
+     "hr": 100.0,
+     "excess_pp": 65.28,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正",
+   "alt_hr": 67.33
+  },
+  {
+   "id": "briefWZ5",
+   "name": "打板·活跃≤3 且 量比≤1.2",
+   "group": "胜率专项·打板",
+   "scope": "board",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_board",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "activity",
+     "<=",
+     3.0
+    ],
+    [
+     "vr",
+     "<=",
+     1.2
+    ]
+   ],
+   "n": 339,
+   "days": 99,
+   "hr": 66.67,
+   "mean_ret": 2.86,
+   "excess_pp": 23.89,
+   "alpha": 2.4716,
+   "t": 4.76,
+   "alpha_days": 41,
+   "days_beat": 74,
+   "days_total": 99,
+   "oos_alpha": 0.8036,
+   "oos_t": 0.35,
+   "oos_days": 3,
+   "need_days": 0,
+   "buyable": null,
+   "by_regime": {
+    "弱跌": {
+     "n": 30,
+     "hr": 50.0,
+     "excess_pp": 16.02,
+     "alpha": 0.0011,
+     "t": 0.0,
+     "days": 4
+    },
+    "平": {
+     "n": 43,
+     "hr": 67.44,
+     "excess_pp": 29.45,
+     "alpha": 3.1149,
+     "t": 1.74,
+     "days": 6
+    },
+    "强涨": {
+     "n": 150,
+     "hr": 73.33,
+     "excess_pp": 23.25,
+     "alpha": 3.7685,
+     "t": 7.43,
+     "days": 17
+    },
+    "涨": {
+     "n": 63,
+     "hr": 53.97,
+     "excess_pp": 11.36,
+     "alpha": -0.0463,
+     "t": -0.04,
+     "days": 8
+    },
+    "跌": {
+     "n": 52,
+     "hr": 71.15,
+     "excess_pp": 30.08,
+     "alpha": 3.1583,
+     "t": 2.09,
+     "days": 6
+    },
+    "震荡": {
+     "n": 1,
+     "hr": 100.0,
+     "excess_pp": 65.28,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正",
+   "alt_hr": 66.67
+  },
+  {
+   "id": "briefWZ6",
+   "name": "打板·活跃≤3 且 换手≤4",
+   "group": "胜率专项·打板",
+   "scope": "board",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_board",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "activity",
+     "<=",
+     3.0
+    ],
+    [
+     "turnover",
+     "<=",
+     4.0
+    ]
+   ],
+   "n": 346,
+   "days": 105,
+   "hr": 66.76,
+   "mean_ret": 2.8709,
+   "excess_pp": 23.99,
+   "alpha": 2.1341,
+   "t": 4.42,
+   "alpha_days": 40,
+   "days_beat": 83,
+   "days_total": 105,
+   "oos_alpha": 1.9465,
+   "oos_t": 2.27,
+   "oos_days": 4,
+   "need_days": 0,
+   "buyable": null,
+   "by_regime": {
+    "弱跌": {
+     "n": 38,
+     "hr": 55.26,
+     "excess_pp": 21.28,
+     "alpha": 0.8731,
+     "t": 1.42,
+     "days": 5
+    },
+    "平": {
+     "n": 49,
+     "hr": 65.31,
+     "excess_pp": 27.32,
+     "alpha": 1.895,
+     "t": 1.17,
+     "days": 6
+    },
+    "强涨": {
+     "n": 146,
+     "hr": 71.92,
+     "excess_pp": 21.83,
+     "alpha": 3.2869,
+     "t": 5.93,
+     "days": 17
+    },
+    "涨": {
+     "n": 65,
+     "hr": 60.0,
+     "excess_pp": 17.39,
+     "alpha": 0.1596,
+     "t": 0.12,
+     "days": 7
+    },
+    "跌": {
+     "n": 47,
+     "hr": 70.21,
+     "excess_pp": 29.14,
+     "alpha": 2.5264,
+     "t": 1.4,
+     "days": 5
+    },
+    "震荡": {
+     "n": 1,
+     "hr": 100.0,
+     "excess_pp": 65.28,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为正",
+   "alt_hr": 66.76
+  },
+  {
+   "id": "briefWB1",
+   "name": "直买·涨幅≥5",
+   "group": "胜率专项·直买",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_buy",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     5.0
+    ]
+   ],
+   "n": 6201,
+   "days": 144,
+   "hr": 47.27,
+   "mean_ret": 0.1342,
+   "excess_pp": 4.49,
+   "alpha": -0.151,
+   "t": -1.63,
+   "alpha_days": 141,
+   "days_beat": 74,
+   "days_total": 144,
+   "oos_alpha": -0.4946,
+   "oos_t": -3.29,
+   "oos_days": 56,
+   "need_days": 72,
+   "buyable": {
+    "n": 6201,
+    "alpha": -0.151,
+    "t": -1.63,
+    "days": 141,
+    "hr": 47.27
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 2342,
+     "hr": 57.39,
+     "excess_pp": 7.3,
+     "alpha": 0.1372,
+     "t": 0.86,
+     "days": 28
+    },
+    "涨": {
+     "n": 1551,
+     "hr": 41.13,
+     "excess_pp": -1.47,
+     "alpha": -0.0436,
+     "t": -0.28,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 470,
+     "hr": 38.72,
+     "excess_pp": 4.74,
+     "alpha": -0.1673,
+     "t": -0.58,
+     "days": 26
+    },
+    "平": {
+     "n": 932,
+     "hr": 39.38,
+     "excess_pp": 1.39,
+     "alpha": -0.2968,
+     "t": -1.44,
+     "days": 30
+    },
+    "跌": {
+     "n": 900,
+     "hr": 44.33,
+     "excess_pp": 3.26,
+     "alpha": -0.2904,
+     "t": -1.45,
+     "days": 28
+    },
+    "震荡": {
+     "n": 6,
+     "hr": 16.67,
+     "excess_pp": -18.05,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 46.51
+  },
+  {
+   "id": "briefWB2",
+   "name": "直买·股价≥50",
+   "group": "胜率专项·直买",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_buy",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "price",
+     ">=",
+     50.0
+    ]
+   ],
+   "n": 6284,
+   "days": 144,
+   "hr": 44.32,
+   "mean_ret": -0.1372,
+   "excess_pp": 1.54,
+   "alpha": -0.0722,
+   "t": -0.69,
+   "alpha_days": 143,
+   "days_beat": 81,
+   "days_total": 144,
+   "oos_alpha": -0.258,
+   "oos_t": -1.7,
+   "oos_days": 57,
+   "need_days": 1059,
+   "buyable": {
+    "n": 6284,
+    "alpha": -0.0722,
+    "t": -0.69,
+    "days": 143,
+    "hr": 44.32
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 2007,
+     "hr": 49.68,
+     "excess_pp": -0.41,
+     "alpha": -0.1228,
+     "t": -0.49,
+     "days": 28
+    },
+    "涨": {
+     "n": 1621,
+     "hr": 36.83,
+     "excess_pp": -5.78,
+     "alpha": -0.348,
+     "t": -1.44,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 575,
+     "hr": 42.26,
+     "excess_pp": 8.28,
+     "alpha": -0.1146,
+     "t": -0.43,
+     "days": 28
+    },
+    "平": {
+     "n": 1114,
+     "hr": 45.6,
+     "excess_pp": 7.61,
+     "alpha": 0.3733,
+     "t": 1.83,
+     "days": 30
+    },
+    "跌": {
+     "n": 955,
+     "hr": 45.76,
+     "excess_pp": 4.69,
+     "alpha": -0.1267,
+     "t": -0.62,
+     "days": 28
+    },
+    "震荡": {
+     "n": 12,
+     "hr": 25.0,
+     "excess_pp": -9.72,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 43.13
+  },
+  {
+   "id": "briefWB3",
+   "name": "直买·涨幅≥3",
+   "group": "胜率专项·直买",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_buy",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     3.0
+    ]
+   ],
+   "n": 19812,
+   "days": 144,
+   "hr": 45.46,
+   "mean_ret": -0.082,
+   "excess_pp": 2.68,
+   "alpha": -0.1162,
+   "t": -2.16,
+   "alpha_days": 144,
+   "days_beat": 70,
+   "days_total": 144,
+   "oos_alpha": -0.2997,
+   "oos_t": -4.46,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 19812,
+    "alpha": -0.1162,
+    "t": -2.16,
+    "days": 144,
+    "hr": 45.46
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 6764,
+     "hr": 56.87,
+     "excess_pp": 6.79,
+     "alpha": 0.0546,
+     "t": 0.52,
+     "days": 28
+    },
+    "平": {
+     "n": 3443,
+     "hr": 36.02,
+     "excess_pp": -1.97,
+     "alpha": -0.1945,
+     "t": -1.93,
+     "days": 30
+    },
+    "跌": {
+     "n": 3129,
+     "hr": 42.57,
+     "excess_pp": 1.5,
+     "alpha": -0.1969,
+     "t": -2.48,
+     "days": 28
+    },
+    "涨": {
+     "n": 4863,
+     "hr": 42.05,
+     "excess_pp": -0.55,
+     "alpha": -0.1,
+     "t": -1.46,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 1589,
+     "hr": 33.79,
+     "excess_pp": -0.19,
+     "alpha": -0.0841,
+     "t": -0.43,
+     "days": 29
+    },
+    "震荡": {
+     "n": 24,
+     "hr": 20.83,
+     "excess_pp": -13.88,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 44.69
+  },
+  {
+   "id": "briefWB4",
+   "name": "直买·涨幅≥2",
+   "group": "胜率专项·直买",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_buy",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     ">=",
+     2.0
+    ]
+   ],
+   "n": 35935,
+   "days": 144,
+   "hr": 44.61,
+   "mean_ret": -0.1139,
+   "excess_pp": 1.84,
+   "alpha": -0.1119,
+   "t": -3.79,
+   "alpha_days": 144,
+   "days_beat": 72,
+   "days_total": 144,
+   "oos_alpha": -0.1922,
+   "oos_t": -4.43,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 35935,
+    "alpha": -0.1119,
+    "t": -3.79,
+    "days": 144,
+    "hr": 44.61
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 11801,
+     "hr": 55.38,
+     "excess_pp": 5.29,
+     "alpha": -0.0127,
+     "t": -0.2,
+     "days": 28
+    },
+    "平": {
+     "n": 6747,
+     "hr": 35.44,
+     "excess_pp": -2.55,
+     "alpha": -0.0958,
+     "t": -1.65,
+     "days": 30
+    },
+    "跌": {
+     "n": 5670,
+     "hr": 41.94,
+     "excess_pp": 0.87,
+     "alpha": -0.1898,
+     "t": -3.18,
+     "days": 28
+    },
+    "涨": {
+     "n": 8679,
+     "hr": 43.12,
+     "excess_pp": 0.51,
+     "alpha": -0.051,
+     "t": -1.04,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 2998,
+     "hr": 32.49,
+     "excess_pp": -1.5,
+     "alpha": -0.1796,
+     "t": -2.07,
+     "days": 29
+    },
+    "震荡": {
+     "n": 40,
+     "hr": 30.0,
+     "excess_pp": -4.72,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 43.93
+  },
+  {
+   "id": "briefWB5",
+   "name": "直买·股价≥20",
+   "group": "胜率专项·直买",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_buy",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "price",
+     ">=",
+     20.0
+    ]
+   ],
+   "n": 25411,
+   "days": 144,
+   "hr": 43.31,
+   "mean_ret": -0.1932,
+   "excess_pp": 0.53,
+   "alpha": -0.1115,
+   "t": -2.3,
+   "alpha_days": 144,
+   "days_beat": 85,
+   "days_total": 144,
+   "oos_alpha": -0.1951,
+   "oos_t": -2.86,
+   "oos_days": 58,
+   "need_days": 0,
+   "buyable": {
+    "n": 25411,
+    "alpha": -0.1115,
+    "t": -2.3,
+    "days": 144,
+    "hr": 43.31
+   },
+   "by_regime": {
+    "强涨": {
+     "n": 7912,
+     "hr": 48.82,
+     "excess_pp": -1.26,
+     "alpha": -0.1352,
+     "t": -1.04,
+     "days": 28
+    },
+    "平": {
+     "n": 4474,
+     "hr": 42.24,
+     "excess_pp": 4.26,
+     "alpha": 0.0178,
+     "t": 0.19,
+     "days": 30
+    },
+    "跌": {
+     "n": 4094,
+     "hr": 45.19,
+     "excess_pp": 4.12,
+     "alpha": -0.1037,
+     "t": -1.08,
+     "days": 28
+    },
+    "涨": {
+     "n": 6453,
+     "hr": 38.39,
+     "excess_pp": -4.22,
+     "alpha": -0.1971,
+     "t": -1.69,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 2413,
+     "hr": 37.51,
+     "excess_pp": 3.52,
+     "alpha": -0.1316,
+     "t": -1.22,
+     "days": 29
+    },
+    "震荡": {
+     "n": 65,
+     "hr": 30.77,
+     "excess_pp": -3.95,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    }
+   },
+   "verdict": "显著为负",
+   "alt_hr": 42.68
+  },
+  {
+   "id": "briefWB6",
+   "name": "直买·涨幅≤0.5",
+   "group": "胜率专项·直买",
+   "scope": "buy",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "source": "decision_brief.json winrate_buy",
+   "note": "",
+   "comparable": true,
+   "conds": [
+    [
+     "chg",
+     "<=",
+     0.5
+    ]
+   ],
+   "n": 18998,
+   "days": 144,
+   "hr": 40.85,
+   "mean_ret": -0.2275,
+   "excess_pp": -1.93,
+   "alpha": -0.0412,
+   "t": -1.04,
+   "alpha_days": 144,
+   "days_beat": 66,
+   "days_total": 144,
+   "oos_alpha": 0.0249,
+   "oos_t": 0.64,
+   "oos_days": 58,
+   "need_days": 389,
+   "buyable": {
+    "n": 18998,
+    "alpha": -0.0412,
+    "t": -1.04,
+    "days": 144,
+    "hr": 40.85
+   },
+   "by_regime": {
+    "震荡": {
+     "n": 62,
+     "hr": 33.87,
+     "excess_pp": -0.84,
+     "alpha": 0.0,
+     "t": 0.0,
+     "days": 0
+    },
+    "强涨": {
+     "n": 4668,
+     "hr": 44.34,
+     "excess_pp": -5.74,
+     "alpha": -0.273,
+     "t": -1.88,
+     "days": 28
+    },
+    "弱跌": {
+     "n": 2273,
+     "hr": 34.98,
+     "excess_pp": 0.99,
+     "alpha": 0.0915,
+     "t": 1.17,
+     "days": 29
+    },
+    "涨": {
+     "n": 4498,
+     "hr": 40.13,
+     "excess_pp": -2.48,
+     "alpha": -0.0418,
+     "t": -0.63,
+     "days": 28
+    },
+    "平": {
+     "n": 3736,
+     "hr": 42.37,
+     "excess_pp": 4.38,
+     "alpha": -0.0159,
+     "t": -0.23,
+     "days": 30
+    },
+    "跌": {
+     "n": 3761,
+     "hr": 39.54,
+     "excess_pp": -1.53,
+     "alpha": 0.0175,
+     "t": 0.42,
+     "days": 28
+    }
+   },
+   "verdict": "不显著",
+   "alt_hr": 39.67
+  }
+ ],
+ "gate_candidates": [
+  {
+   "id": "GATE",
+   "name": "门禁测试候选：换手≥3% 且 量比≤1.0 且 活跃度≥3",
+   "group": "门禁候选",
+   "scope": "all",
+   "timing": "1430",
+   "signal_time": "1430",
+   "kind": "cond",
+   "conds": [
+    [
+     "turnover",
+     ">=",
+     3
+    ],
+    [
+     "vr",
+     "<=",
+     1.0
+    ],
+    [
+     "activity",
+     ">=",
+     3
+    ]
+   ],
+   "source": "discovered_rules.json forward_gate",
+   "note": "仅在前 60% 天上训练、后 40% 天上检验，不算已上线规则。",
+   "comparable": true,
+   "live": false
+  }
+ ],
+ "gate_oos_excess": -3.4,
+ "regime_order": [
+  "强涨",
+  "涨",
+  "平",
+  "跌",
+  "弱跌",
+  "震荡"
+ ],
+ "warnings": [],
+ "registry_note": "rule_registry.json + decision_brief/regime_rules/discovered_rules 自动派生",
+ "elapsed": 4.29
+}
