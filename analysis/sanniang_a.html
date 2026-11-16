@@ -29,7 +29,7 @@ tbody tr:hover{background:#fafbfd}
 </style></head><body><div class='wrap'>
 <a class='back' href='../index.html'>← 返回站点首页</a>
 <h1>三娘验证A</h1>
-<div class='subtitle'>A股主板（600/601/603/605/000/001/002/003）· 不要求前一日下跌 ｜ 口径：全部指标取 <b>真 14:30</b> 时点 ｜ 名单生成于 2026-11-13 14:39:37</div>
+<div class='subtitle'>A股主板（600/601/603/605/000/001/002/003）· 不要求前一日下跌 ｜ 口径：全部指标取 <b>真 14:30</b> 时点 ｜ 名单生成于 2026-11-13 14:39:37 ｜ 次日早盘回填于 <b>2026-11-16 11:39:06</b></div>
 
 <div class='card'>
   <h2>规则定义</h2>
@@ -44,12 +44,12 @@ tbody tr:hover{background:#fafbfd}
 
 <div class='card'>
   <h2>当日名单（2026-11-13 · 2 只）</h2>
-  
+  <div class='kpi'><div><b class='dn'>-1.96%</b><span>当日名单 14:30→次日11:30 均值（2 只）</span></div><div><b>1</b><span>其中次日为正</span></div></div>
   <table>
     <thead><tr><th>#</th><th>代码</th><th>名称</th><th>14:30 涨幅</th><th>量比</th><th>换手率</th>
       <th>流通市值(亿)</th><th>收盘涨幅</th><th>次日11:30</th></tr></thead>
-    <tbody><tr><td>1</td><td>002647</td><td>仁东控股</td><td class='up'>+3.51%</td><td>2.74</td><td>8.42%</td><td>80.7</td><td class='up'>+3.25%</td><td>待回填</td></tr>
-<tr><td>2</td><td>600829</td><td>人民同泰</td><td class='up'>+3.27%</td><td>1.55</td><td>7.17%</td><td>58.5</td><td class='up'>+3.17%</td><td>待回填</td></tr></tbody>
+    <tbody><tr><td>1</td><td>002647</td><td>仁东控股</td><td class='up'>+3.51%</td><td>2.74</td><td>8.42%</td><td>80.7</td><td class='up'>+3.25%</td><td><b class='dn'>-7.28%</b></td></tr>
+<tr><td>2</td><td>600829</td><td>人民同泰</td><td class='up'>+3.27%</td><td>1.55</td><td>7.17%</td><td>58.5</td><td class='up'>+3.17%</td><td><b class='up'>+3.37%</b></td></tr></tbody>
   </table>
   <div class='note'>筛选链路：全A 5578 只 → 主板 ∩ 流通市值 50~200亿 = <b>1250</b> 只
     → 14:30 涨幅在区间 = <b>17</b> 只 → 叠加换手率区间 = <b>2</b> 只 → 再要求量比&gt;1 = <b>2</b> 只。</div>
@@ -60,10 +60,10 @@ tbody tr:hover{background:#fafbfd}
 
 <div class='card'>
   <h2>前向验证（口径A：14:30 买 → 次日 11:30 卖）</h2>
-  
+  <div class='kpi'><div><b class='dn'>-1.96%</b><span>当日名单 14:30→次日11:30 均值（2 只）</span></div><div><b>1</b><span>其中次日为正</span></div></div>
   <table>
     <thead><tr><th>日期</th><th>命中只数</th><th>组合均值</th><th>当日名单（前12只）</th></tr></thead>
-    <tbody><tr><td>2026-11-13</td><td>2</td><td>待回填</td><td>002647, 600829</td></tr>
+    <tbody><tr><td>2026-11-13</td><td>2</td><td>-1.96%</td><td>002647, 600829</td></tr>
 <tr><td>2026-11-12</td><td>5</td><td>-1.56%</td><td>600815, 600410, 600698, 600189, 002941</td></tr>
 <tr><td>2026-11-11</td><td>11</td><td>-0.94%</td><td>603618, 603773, 600815, 000070, 002979, 001283, 600345, 002303, 001314, 002036, 002896</td></tr>
 <tr><td>2026-11-10</td><td>15</td><td>+1.03%</td><td>002792, 601929, 002291, 002842, 603662, 600501, 002298, 002115, 600278, 603773, 600592, 000026</td></tr>
@@ -87,7 +87,7 @@ tbody tr:hover{background:#fafbfd}
 <tr><td>2026-10-15</td><td>6</td><td>-3.37%</td><td>603366, 603328, 002667, 002167, 605299, 601519</td></tr>
 <tr><td>2026-10-14</td><td>8</td><td>-3.40%</td><td>002667, 601116, 001283, 600403, 603124, 603216, 601566, 600792</td></tr></tbody>
   </table>
-  <div class='note'>检验数据尚未生成：运行 <code>site/sn_alpha.py</code> 后本页会显示全条件/池内/前向三套口径的 alpha 与 t 值。本页仅作<b>规则跟踪与观察记录</b>，不构成买入信号。</div>
+  <div class='note'><b>检验结论</b>（更新于 2026-11-16 11:39:06）：<ul><li><b>全条件口径</b>（含流通市值 50~200亿）：139 天 / 723 笔，日均 alpha -0.220%，t=-1.03（未达显著）</li><li><b>池内代理口径</b>（面板只含「前收跌∩14:30涨」，覆盖三娘真实名单约 44%）：144 天 / 1619 笔，日均 alpha -0.243%，t=-2.01（显著负）</li><li><b>全市场前向跟踪</b>（本页名单的真实累积）：23 天 / 211 笔，日均 -0.30%（按天等权；按笔加权 -0.60%），t=-0.55（未达显著），个股胜率 40.8%；达到 t=2 还需约 280 天</li></ul>全条件口径与池内口径均为<b>绝对超额</b>（已扣横截面均值），前向口径为<b>绝对收益</b>（未剔大盘，故与大市同向波动）。任一显著格为负时必须读作「反向规避」，不得读成「可买入」。<br>本页仅作<b>规则跟踪与观察记录</b>，不构成买入信号。</div>
 </div>
 
 <div class='disclaimer'>
