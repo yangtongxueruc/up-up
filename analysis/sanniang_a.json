@@ -35,9 +35,7 @@
     "chg_close": 7.72,
     "turnover1430": 6.55,
     "float_mktcap_yi": 130.14,
-    "vol_ratio": 4.18,
-    "p_next": 18.9,
-    "r_next": -6.2
+    "vol_ratio": 4.18
    },
    {
     "code": "600829",
@@ -50,9 +48,7 @@
     "chg_close": 5.11,
     "turnover1430": 9.07,
     "float_mktcap_yi": 62.05,
-    "vol_ratio": 1.56,
-    "p_next": 9.69,
-    "r_next": -8.5
+    "vol_ratio": 1.56
    },
    {
     "code": "603906",
@@ -65,9 +61,7 @@
     "chg_close": 2.64,
     "turnover1430": 5.81,
     "float_mktcap_yi": 94.28,
-    "vol_ratio": 1.71,
-    "p_next": 14.2,
-    "r_next": -1.8
+    "vol_ratio": 1.71
    }
   ],
   "diag": {
@@ -77,9 +71,7 @@
    "band_3_5": 37,
    "band_turn": 3,
    "final": 3
-  },
-  "mean_r_next": -5.5,
-  "n_r_next": 3
+  }
  },
  "history": [
   {
@@ -3607,9 +3599,7 @@
      "chg_close": 7.72,
      "turnover1430": 6.55,
      "float_mktcap_yi": 130.14,
-     "vol_ratio": 4.18,
-     "p_next": 18.9,
-     "r_next": -6.2
+     "vol_ratio": 4.18
     },
     {
      "code": "600829",
@@ -3622,9 +3612,7 @@
      "chg_close": 5.11,
      "turnover1430": 9.07,
      "float_mktcap_yi": 62.05,
-     "vol_ratio": 1.56,
-     "p_next": 9.69,
-     "r_next": -8.5
+     "vol_ratio": 1.56
     },
     {
      "code": "603906",
@@ -3637,9 +3625,7 @@
      "chg_close": 2.64,
      "turnover1430": 5.81,
      "float_mktcap_yi": 94.28,
-     "vol_ratio": 1.71,
-     "p_next": 14.2,
-     "r_next": -1.8
+     "vol_ratio": 1.71
     }
    ],
    "diag": {
@@ -3649,60 +3635,8 @@
     "band_3_5": 37,
     "band_turn": 3,
     "final": 3
-   },
-   "mean_r_next": -5.5,
-   "n_r_next": 3
+   }
   }
  ],
- "generated_at": "2026-11-16 14:49:14",
- "backfilled_at": "2026-11-17 11:40:37",
- "test": {
-  "generated_at": "2026-11-17 11:40:38",
-  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
-  "cost_pct": 0.2,
-  "nmc_real_rows": 4396,
-  "nmc_total_rows": 107580,
-  "nmc_note": "流通市值：面板实测 4396 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
-  "full4": {
-   "days": 140,
-   "n": 723,
-   "alpha": -0.2897,
-   "t": -1.29,
-   "raw": -0.3676,
-   "win": 45.1,
-   "day_win": 42.9,
-   "oos_days": 56,
-   "oos_alpha": -0.2673,
-   "oos_t": -0.7,
-   "need_days": 196
-  },
-  "pool": {
-   "days": 145,
-   "n": 1622,
-   "alpha": -0.2657,
-   "t": -2.17,
-   "raw": -0.3293,
-   "win": 44.1,
-   "day_win": 42.8,
-   "oos_days": 58,
-   "oos_alpha": -0.4107,
-   "oos_t": -2.02,
-   "need_days": 0
-  },
-  "forward": {
-   "days": 24,
-   "n": 214,
-   "mean": -0.515,
-   "mean_stock": -0.666,
-   "t": -0.92,
-   "win": 40.2,
-   "day_win": 33.3,
-   "need_days": 91
-  },
-  "coverage": {
-   "real_pairs": 214,
-   "in_panel": 93,
-   "recall": 0.4346
-  }
- }
+ "generated_at": "2026-11-16 14:49:14"
 }
