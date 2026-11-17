@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16 22:50",
+ "generated_at": "2026-11-17 10:42",
  "baseline": 42.1,
  "n": 107102,
  "best": null,
@@ -36,7 +36,7 @@
   "test_days": 59
  },
  "forward_validation": {
-  "checked_at": "2026-11-16 22:50",
+  "checked_at": "2026-11-17 10:42",
   "method": "时序holdout：前87天重新探索 → 后59天检验",
   "best_oos_excess": -3.0,
   "best_oos_pos_folds": "19/39",
