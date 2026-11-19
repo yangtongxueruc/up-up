@@ -35,7 +35,9 @@
     "chg_close": 5.75,
     "turnover1430": 6.35,
     "float_mktcap_yi": 86.35,
-    "vol_ratio": 2.34
+    "vol_ratio": 2.34,
+    "p_next": 1.02,
+    "r_next": 12.09
    },
    {
     "code": "600881",
@@ -48,7 +50,9 @@
     "chg_close": 2.89,
     "turnover1430": 7.18,
     "float_mktcap_yi": 57.53,
-    "vol_ratio": 5.6
+    "vol_ratio": 5.6,
+    "p_next": 1.61,
+    "r_next": -10.06
    }
   ],
   "diag": {
@@ -58,7 +62,9 @@
    "band_3_5": 31,
    "band_turn": 3,
    "final": 2
-  }
+  },
+  "mean_r_next": 1.01,
+  "n_r_next": 2
  },
  "history": [
   {
@@ -3646,7 +3652,9 @@
      "chg_close": 5.75,
      "turnover1430": 6.35,
      "float_mktcap_yi": 86.35,
-     "vol_ratio": 2.34
+     "vol_ratio": 2.34,
+     "p_next": 1.02,
+     "r_next": 12.09
     },
     {
      "code": "600881",
@@ -3659,7 +3667,9 @@
      "chg_close": 2.89,
      "turnover1430": 7.18,
      "float_mktcap_yi": 57.53,
-     "vol_ratio": 5.6
+     "vol_ratio": 5.6,
+     "p_next": 1.61,
+     "r_next": -10.06
     }
    ],
    "diag": {
@@ -3669,8 +3679,60 @@
     "band_3_5": 31,
     "band_turn": 3,
     "final": 2
-   }
+   },
+   "mean_r_next": 1.01,
+   "n_r_next": 2
   }
  ],
- "generated_at": "2026-11-18 14:32:00"
+ "generated_at": "2026-11-18 14:32:00",
+ "backfilled_at": "2026-11-19 11:41:28",
+ "test": {
+  "generated_at": "2026-11-19 11:41:28",
+  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
+  "cost_pct": 0.2,
+  "nmc_real_rows": 5328,
+  "nmc_total_rows": 108512,
+  "nmc_note": "流通市值：面板实测 5328 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
+  "full4": {
+   "days": 142,
+   "n": 725,
+   "alpha": -0.2948,
+   "t": -1.32,
+   "raw": -0.3905,
+   "win": 45.1,
+   "day_win": 43.0,
+   "oos_days": 57,
+   "oos_alpha": -0.2506,
+   "oos_t": -0.65,
+   "need_days": 186
+  },
+  "pool": {
+   "days": 147,
+   "n": 1631,
+   "alpha": -0.2834,
+   "t": -2.33,
+   "raw": -0.3644,
+   "win": 44.0,
+   "day_win": 42.2,
+   "oos_days": 59,
+   "oos_alpha": -0.4583,
+   "oos_t": -2.26,
+   "need_days": 0
+  },
+  "forward": {
+   "days": 25,
+   "n": 216,
+   "mean": -0.454,
+   "mean_stock": -0.65,
+   "t": -0.84,
+   "win": 40.3,
+   "day_win": 36.0,
+   "need_days": 118
+  },
+  "coverage": {
+   "real_pairs": 216,
+   "in_panel": 94,
+   "recall": 0.4352
+  }
+ }
 }
