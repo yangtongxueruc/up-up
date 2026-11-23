@@ -3693,5 +3693,55 @@
    }
   }
  ],
- "generated_at": "2026-11-20 14:34:26"
+ "generated_at": "2026-11-20 14:34:26",
+ "backfilled_at": "2026-11-23 11:40:06",
+ "test": {
+  "generated_at": "2026-11-23 11:40:07",
+  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
+  "cost_pct": 0.2,
+  "nmc_real_rows": 5683,
+  "nmc_total_rows": 108867,
+  "nmc_note": "流通市值：面板实测 5683 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
+  "full4": {
+   "days": 143,
+   "n": 726,
+   "alpha": -0.2124,
+   "t": -0.9,
+   "raw": -0.319,
+   "win": 45.2,
+   "day_win": 43.4,
+   "oos_days": 58,
+   "oos_alpha": -0.0482,
+   "oos_t": -0.11,
+   "need_days": 569
+  },
+  "pool": {
+   "days": 149,
+   "n": 1638,
+   "alpha": -0.2769,
+   "t": -2.28,
+   "raw": -0.3665,
+   "win": 44.0,
+   "day_win": 42.3,
+   "oos_days": 60,
+   "oos_alpha": -0.3912,
+   "oos_t": -1.96,
+   "need_days": 0
+  },
+  "forward": {
+   "days": 26,
+   "n": 217,
+   "mean": -0.064,
+   "mean_stock": -0.602,
+   "t": -0.1,
+   "win": 40.6,
+   "day_win": 38.5,
+   "need_days": 10705
+  },
+  "coverage": {
+   "real_pairs": 217,
+   "in_panel": 95,
+   "recall": 0.4378
+  }
+ }
 }
