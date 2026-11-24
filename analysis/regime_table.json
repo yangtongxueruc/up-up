@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24 10:26",
+ "generated_at": "2026-11-24 11:55",
  "regimes": {
   "强涨": {
    "n": 31185,
@@ -18,12 +18,12 @@
    "ruleA_ret": -0.6
   },
   "平": {
-   "n": 21011,
-   "base": 37.4,
-   "ruleA_n": 1066,
-   "ruleA_hr": 43.6,
-   "excess": 6.2,
-   "ruleA_ret": -0.26
+   "n": 23144,
+   "base": 38.9,
+   "ruleA_n": 1129,
+   "ruleA_hr": 43.4,
+   "excess": 4.5,
+   "ruleA_ret": -0.24
   },
   "跌": {
    "n": 19771,
@@ -51,14 +51,14 @@
   }
  },
  "overall": {
-  "n": 108867,
-  "base": 41.8,
-  "ruleA_n": 5679,
+  "n": 111000,
+  "base": 42.0,
+  "ruleA_n": 5742,
   "ruleA_hr": 40.4,
-  "excess": -1.4
+  "excess": -1.6
  },
  "all_rules": {
-  "generated_at": "2026-11-24 10:26",
+  "generated_at": "2026-11-24 11:55",
   "count": 35,
   "catalog": [
    {
@@ -266,7 +266,7 @@
     "scope": "all",
     "timing": "1430",
     "signal_time": "1430",
-    "verdict": "样本不足"
+    "verdict": "不显著"
    },
    {
     "id": "briefWZ1",
@@ -329,7 +329,7 @@
     "scope": "buy",
     "timing": "1430",
     "signal_time": "1430",
-    "verdict": "显著为负"
+    "verdict": "不显著"
    },
    {
     "id": "briefWB2",
@@ -928,193 +928,193 @@
    },
    "平": {
     "E": {
-     "n": 10079,
-     "hr": 35.81,
-     "excess_pp": -1.56,
-     "alpha": 0.0244,
-     "t": 0.5,
-     "days": 31
+     "n": 11440,
+     "hr": 40.03,
+     "excess_pp": 0.43,
+     "alpha": 0.0382,
+     "t": 0.78,
+     "days": 32
     },
     "briefA1": {
-     "n": 6872,
-     "hr": 35.08,
-     "excess_pp": -2.28,
-     "alpha": -0.1074,
-     "t": -1.88,
-     "days": 31
+     "n": 7906,
+     "hr": 40.03,
+     "excess_pp": 0.43,
+     "alpha": -0.0931,
+     "t": -1.63,
+     "days": 32
     },
     "briefA2": {
-     "n": 5917,
-     "hr": 34.49,
-     "excess_pp": -2.87,
-     "alpha": -0.0842,
-     "t": -1.51,
-     "days": 31
+     "n": 6735,
+     "hr": 38.98,
+     "excess_pp": -0.63,
+     "alpha": -0.0755,
+     "t": -1.38,
+     "days": 32
     },
     "briefA3": {
-     "n": 1848,
-     "hr": 41.88,
-     "excess_pp": 4.52,
-     "alpha": -0.2205,
-     "t": -1.7,
-     "days": 31
+     "n": 2129,
+     "hr": 46.74,
+     "excess_pp": 7.13,
+     "alpha": -0.1891,
+     "t": -1.46,
+     "days": 32
     },
     "briefA4": {
-     "n": 761,
-     "hr": 34.17,
-     "excess_pp": -3.2,
-     "alpha": 0.4323,
-     "t": 1.94,
-     "days": 20
+     "n": 764,
+     "hr": 34.29,
+     "excess_pp": -5.31,
+     "alpha": 0.3401,
+     "t": 1.47,
+     "days": 21
     },
     "briefA5": {
-     "n": 19798,
-     "hr": 36.68,
-     "excess_pp": -0.69,
-     "alpha": -0.0533,
-     "t": -3.46,
-     "days": 31
+     "n": 21839,
+     "hr": 38.88,
+     "excess_pp": -0.73,
+     "alpha": -0.0574,
+     "t": -3.71,
+     "days": 32
     },
     "briefA6": {
      "n": 77,
      "hr": 46.75,
-     "excess_pp": 9.39,
+     "excess_pp": 7.15,
      "alpha": 0.5879,
      "t": 1.09,
      "days": 8
     },
     "briefB1": {
-     "n": 5928,
-     "hr": 30.82,
-     "excess_pp": -6.57,
-     "alpha": -0.2823,
-     "t": -4.3,
-     "days": 31
+     "n": 7166,
+     "hr": 33.9,
+     "excess_pp": -5.02,
+     "alpha": -0.2834,
+     "t": -4.46,
+     "days": 32
     },
     "briefB2": {
-     "n": 7159,
-     "hr": 42.27,
-     "excess_pp": 4.87,
-     "alpha": 0.0694,
-     "t": 1.78,
-     "days": 31
+     "n": 7359,
+     "hr": 42.68,
+     "excess_pp": 3.77,
+     "alpha": 0.0667,
+     "t": 1.77,
+     "days": 32
     },
     "briefB3": {
-     "n": 6207,
-     "hr": 33.24,
-     "excess_pp": -4.16,
-     "alpha": -0.2136,
-     "t": -3.02,
-     "days": 31
+     "n": 7280,
+     "hr": 38.02,
+     "excess_pp": -0.9,
+     "alpha": -0.1979,
+     "t": -2.81,
+     "days": 32
     },
     "briefB4": {
-     "n": 6630,
-     "hr": 41.93,
-     "excess_pp": 4.54,
-     "alpha": -0.0755,
-     "t": -1.0,
-     "days": 31
+     "n": 8063,
+     "hr": 45.52,
+     "excess_pp": 6.6,
+     "alpha": -0.0676,
+     "t": -0.91,
+     "days": 32
     },
     "briefB5": {
-     "n": 7848,
-     "hr": 38.4,
-     "excess_pp": 1.01,
-     "alpha": 0.0387,
-     "t": 0.43,
-     "days": 31
+     "n": 7945,
+     "hr": 38.14,
+     "excess_pp": -0.78,
+     "alpha": -0.0082,
+     "t": -0.08,
+     "days": 32
     },
     "BUY": {
-     "n": 20297,
-     "hr": 36.82,
-     "excess_pp": -0.54,
-     "alpha": -0.0524,
-     "t": -3.34,
-     "days": 31
+     "n": 22338,
+     "hr": 38.96,
+     "excess_pp": -0.65,
+     "alpha": -0.0565,
+     "t": -3.6,
+     "days": 32
     },
     "A": {
-     "n": 1066,
-     "hr": 42.96,
-     "excess_pp": 5.6,
-     "alpha": 0.0512,
-     "t": 0.4,
-     "days": 31
+     "n": 1129,
+     "hr": 43.58,
+     "excess_pp": 3.97,
+     "alpha": 0.0322,
+     "t": 0.25,
+     "days": 32
     },
     "B": {
-     "n": 253,
-     "hr": 43.87,
-     "excess_pp": 6.51,
-     "alpha": -0.1304,
-     "t": -0.6,
-     "days": 26
-    },
-    "C": {
-     "n": 285,
-     "hr": 42.11,
-     "excess_pp": 4.74,
-     "alpha": 0.4233,
-     "t": 1.41,
-     "days": 17
-    },
-    "D": {
-     "n": 1267,
-     "hr": 46.49,
-     "excess_pp": 9.12,
-     "alpha": 0.0656,
-     "t": 0.37,
-     "days": 31
-    },
-    "briefZT1": {
-     "n": 59,
-     "hr": 66.1,
-     "excess_pp": 28.74,
-     "alpha": 2.6586,
-     "t": 1.78,
-     "days": 7
-    },
-    "MF": {
-     "n": 930,
-     "hr": 47.1,
-     "excess_pp": 9.73,
-     "alpha": 0.8306,
-     "t": 3.65,
-     "days": 31
-    },
-    "R": {
-     "n": 450,
-     "hr": 38.89,
-     "excess_pp": 1.52,
-     "alpha": 0.2178,
-     "t": 1.39,
-     "days": 18
-    },
-    "S": {
-     "n": 795,
-     "hr": 35.72,
-     "excess_pp": -1.64,
-     "alpha": 1.1526,
-     "t": 3.06,
-     "days": 22
-    },
-    "SC": {
-     "n": 540,
-     "hr": 48.89,
-     "excess_pp": 11.52,
-     "alpha": 1.1599,
-     "t": 6.12,
+     "n": 260,
+     "hr": 43.85,
+     "excess_pp": 4.24,
+     "alpha": -0.1604,
+     "t": -0.76,
      "days": 27
     },
+    "C": {
+     "n": 288,
+     "hr": 42.36,
+     "excess_pp": 2.76,
+     "alpha": 0.3596,
+     "t": 1.24,
+     "days": 18
+    },
+    "D": {
+     "n": 1457,
+     "hr": 47.56,
+     "excess_pp": 7.96,
+     "alpha": 0.0512,
+     "t": 0.3,
+     "days": 32
+    },
+    "briefZT1": {
+     "n": 62,
+     "hr": 67.74,
+     "excess_pp": 28.14,
+     "alpha": 3.4588,
+     "t": 2.27,
+     "days": 8
+    },
+    "MF": {
+     "n": 960,
+     "hr": 48.33,
+     "excess_pp": 8.73,
+     "alpha": 0.9029,
+     "t": 3.9,
+     "days": 32
+    },
+    "R": {
+     "n": 460,
+     "hr": 38.91,
+     "excess_pp": -0.69,
+     "alpha": 0.1379,
+     "t": 0.82,
+     "days": 19
+    },
+    "S": {
+     "n": 800,
+     "hr": 36.0,
+     "excess_pp": -3.6,
+     "alpha": 1.2209,
+     "t": 3.33,
+     "days": 23
+    },
+    "SC": {
+     "n": 628,
+     "hr": 53.18,
+     "excess_pp": 13.58,
+     "alpha": 1.1655,
+     "t": 6.38,
+     "days": 28
+    },
     "SN": {
-     "n": 24,
-     "hr": 70.83,
-     "excess_pp": 33.47,
-     "alpha": null,
-     "t": null,
-     "days": 2
+     "n": 42,
+     "hr": 76.19,
+     "excess_pp": 36.59,
+     "alpha": 0.0921,
+     "t": 0.24,
+     "days": 3
     },
     "briefWZ1": {
      "n": 5,
      "hr": 100.0,
-     "excess_pp": 62.63,
+     "excess_pp": 60.4,
      "alpha": null,
      "t": null,
      "days": 0
@@ -1122,7 +1122,7 @@
     "briefWZ2": {
      "n": 19,
      "hr": 84.21,
-     "excess_pp": 46.84,
+     "excess_pp": 44.61,
      "alpha": null,
      "t": null,
      "days": 1
@@ -1130,82 +1130,82 @@
     "briefWZ3": {
      "n": 19,
      "hr": 84.21,
-     "excess_pp": 46.84,
+     "excess_pp": 44.61,
      "alpha": null,
      "t": null,
      "days": 1
     },
     "briefWZ4": {
-     "n": 59,
-     "hr": 66.1,
-     "excess_pp": 28.74,
-     "alpha": 2.6586,
-     "t": 1.78,
-     "days": 7
+     "n": 62,
+     "hr": 67.74,
+     "excess_pp": 28.14,
+     "alpha": 3.4588,
+     "t": 2.27,
+     "days": 8
     },
     "briefWZ5": {
-     "n": 43,
-     "hr": 67.44,
-     "excess_pp": 30.08,
+     "n": 44,
+     "hr": 68.18,
+     "excess_pp": 28.58,
      "alpha": 3.1149,
      "t": 1.74,
      "days": 6
     },
     "briefWZ6": {
-     "n": 50,
-     "hr": 64.0,
-     "excess_pp": 26.63,
-     "alpha": 1.895,
-     "t": 1.17,
-     "days": 6
+     "n": 53,
+     "hr": 66.04,
+     "excess_pp": 26.43,
+     "alpha": 2.9186,
+     "t": 1.71,
+     "days": 7
     },
     "briefWB1": {
-     "n": 955,
-     "hr": 38.74,
-     "excess_pp": 1.38,
-     "alpha": -0.3282,
-     "t": -1.63,
-     "days": 31
+     "n": 1171,
+     "hr": 46.11,
+     "excess_pp": 6.51,
+     "alpha": -0.2882,
+     "t": -1.45,
+     "days": 32
     },
     "briefWB2": {
-     "n": 1148,
-     "hr": 44.86,
-     "excess_pp": 7.49,
-     "alpha": 0.3654,
-     "t": 1.85,
-     "days": 31
+     "n": 1210,
+     "hr": 46.86,
+     "excess_pp": 7.26,
+     "alpha": 0.3831,
+     "t": 1.99,
+     "days": 32
     },
     "briefWB3": {
-     "n": 3510,
-     "hr": 35.61,
-     "excess_pp": -1.75,
-     "alpha": -0.2194,
-     "t": -2.18,
-     "days": 31
+     "n": 4135,
+     "hr": 41.91,
+     "excess_pp": 2.31,
+     "alpha": -0.192,
+     "t": -1.89,
+     "days": 32
     },
     "briefWB4": {
-     "n": 6872,
-     "hr": 35.08,
-     "excess_pp": -2.28,
-     "alpha": -0.1074,
-     "t": -1.88,
-     "days": 31
+     "n": 7906,
+     "hr": 40.03,
+     "excess_pp": 0.43,
+     "alpha": -0.0931,
+     "t": -1.63,
+     "days": 32
     },
     "briefWB5": {
-     "n": 4591,
-     "hr": 41.6,
-     "excess_pp": 4.24,
-     "alpha": 0.0196,
-     "t": 0.21,
-     "days": 31
+     "n": 4981,
+     "hr": 44.31,
+     "excess_pp": 4.7,
+     "alpha": 0.0343,
+     "t": 0.38,
+     "days": 32
     },
     "briefWB6": {
-     "n": 3857,
-     "hr": 41.33,
-     "excess_pp": 3.96,
-     "alpha": -0.0083,
-     "t": -0.12,
-     "days": 31
+     "n": 4095,
+     "hr": 40.95,
+     "excess_pp": 1.35,
+     "alpha": -0.0415,
+     "t": -0.56,
+     "days": 32
     }
    },
    "跌": {
@@ -2046,13 +2046,12 @@
     "briefB4",
     "BUY",
     "B",
-    "briefWB1",
     "briefWB3",
     "briefWB4",
     "briefWB5"
    ],
-   "不显著": 10,
-   "样本不足": 2
+   "不显著": 12,
+   "样本不足": 1
   },
   "report": "analysis/rule_revalidation.html"
  }

@@ -22,211 +22,94 @@
   "note": "全市场独立筛选，与「前收跌 ∩ 14:30 上涨」主池近乎正交。历史期望未验证为正，按「前向验证」跟踪，不作为买入信号。"
  },
  "latest": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "members": [
    {
-    "code": "603936",
-    "sym": "sh603936",
-    "name": "博敏电子",
-    "prev": 11.38,
-    "p1430": 11.94,
-    "pclose": 11.89,
-    "chg1430": 4.92,
-    "chg_close": 4.48,
-    "turnover1430": 9.32,
-    "float_mktcap_yi": 74.89,
-    "vol_ratio": 1.76
+    "code": "601595",
+    "sym": "sh601595",
+    "name": "上海电影",
+    "prev": 32.52,
+    "p1430": 34.06,
+    "pclose": 34.26,
+    "chg1430": 4.74,
+    "chg_close": 5.35,
+    "turnover1430": 6.08,
+    "float_mktcap_yi": 154.05,
+    "vol_ratio": 1.18
    },
    {
-    "code": "603538",
-    "sym": "sh603538",
-    "name": "美诺华",
-    "prev": 17.32,
-    "p1430": 18.17,
-    "pclose": 18.17,
-    "chg1430": 4.91,
-    "chg_close": 4.91,
-    "turnover1430": 5.23,
-    "float_mktcap_yi": 61.12,
-    "vol_ratio": 1.39
+    "code": "003021",
+    "sym": "sz003021",
+    "name": "兆威机电",
+    "prev": 84.51,
+    "p1430": 88.46,
+    "pclose": 89.12,
+    "chg1430": 4.67,
+    "chg_close": 5.45,
+    "turnover1430": 5.92,
+    "float_mktcap_yi": 185.82,
+    "vol_ratio": 1.41
    },
    {
-    "code": "600664",
-    "sym": "sh600664",
-    "name": "哈药股份",
-    "prev": 4.51,
-    "p1430": 4.73,
-    "pclose": 4.72,
-    "chg1430": 4.88,
-    "chg_close": 4.66,
-    "turnover1430": 5.91,
-    "float_mktcap_yi": 118.87,
-    "vol_ratio": 1.19
-   },
-   {
-    "code": "002980",
-    "sym": "sz002980",
-    "name": "华盛昌",
-    "prev": 58.0,
-    "p1430": 60.64,
-    "pclose": 60.16,
-    "chg1430": 4.55,
-    "chg_close": 3.72,
-    "turnover1430": 8.99,
-    "float_mktcap_yi": 60.94,
-    "vol_ratio": 1.24
-   },
-   {
-    "code": "002580",
-    "sym": "sz002580",
-    "name": "圣阳股份",
-    "prev": 14.52,
-    "p1430": 15.16,
-    "pclose": 15.12,
-    "chg1430": 4.41,
-    "chg_close": 4.13,
-    "turnover1430": 6.54,
-    "float_mktcap_yi": 68.44,
-    "vol_ratio": 1.01
-   },
-   {
-    "code": "002342",
-    "sym": "sz002342",
-    "name": "巨力索具",
-    "prev": 5.44,
-    "p1430": 5.67,
-    "pclose": 5.67,
-    "chg1430": 4.23,
-    "chg_close": 4.23,
-    "turnover1430": 5.11,
-    "float_mktcap_yi": 54.13,
-    "vol_ratio": 1.1
-   },
-   {
-    "code": "002149",
-    "sym": "sz002149",
-    "name": "西部材料",
-    "prev": 26.8,
-    "p1430": 27.93,
-    "pclose": 27.79,
-    "chg1430": 4.22,
-    "chg_close": 3.69,
-    "turnover1430": 8.24,
-    "float_mktcap_yi": 135.65,
-    "vol_ratio": 1.2
-   },
-   {
-    "code": "002792",
-    "sym": "sz002792",
-    "name": "通宇通讯",
-    "prev": 20.32,
-    "p1430": 21.16,
-    "pclose": 21.08,
-    "chg1430": 4.13,
-    "chg_close": 3.74,
-    "turnover1430": 5.72,
-    "float_mktcap_yi": 71.6,
-    "vol_ratio": 1.1
-   },
-   {
-    "code": "603738",
-    "sym": "sh603738",
-    "name": "泰晶科技",
-    "prev": 19.95,
-    "p1430": 20.77,
-    "pclose": 20.68,
-    "chg1430": 4.11,
-    "chg_close": 3.66,
-    "turnover1430": 5.48,
-    "float_mktcap_yi": 79.76,
-    "vol_ratio": 1.23
-   },
-   {
-    "code": "002263",
-    "sym": "sz002263",
-    "name": "大东南",
-    "prev": 2.69,
-    "p1430": 2.8,
-    "pclose": 2.8,
-    "chg1430": 4.09,
-    "chg_close": 4.09,
-    "turnover1430": 5.12,
-    "float_mktcap_yi": 52.41,
-    "vol_ratio": 3.38
-   },
-   {
-    "code": "002975",
-    "sym": "sz002975",
-    "name": "博杰股份",
-    "prev": 63.35,
-    "p1430": 65.91,
-    "pclose": 65.5,
-    "chg1430": 4.04,
-    "chg_close": 3.39,
-    "turnover1430": 6.85,
-    "float_mktcap_yi": 90.54,
-    "vol_ratio": 1.17
-   },
-   {
-    "code": "002297",
-    "sym": "sz002297",
-    "name": "博云新材",
-    "prev": 11.91,
-    "p1430": 12.39,
-    "pclose": 12.35,
-    "chg1430": 4.03,
-    "chg_close": 3.69,
-    "turnover1430": 5.02,
-    "float_mktcap_yi": 70.72,
-    "vol_ratio": 1.36
-   },
-   {
-    "code": "600172",
-    "sym": "sh600172",
-    "name": "黄河旋风",
-    "prev": 9.17,
-    "p1430": 9.52,
-    "pclose": 9.48,
-    "chg1430": 3.82,
-    "chg_close": 3.38,
-    "turnover1430": 6.29,
-    "float_mktcap_yi": 121.75,
-    "vol_ratio": 1.42
+    "code": "601566",
+    "sym": "sh601566",
+    "name": "九牧王",
+    "prev": 8.43,
+    "p1430": 8.78,
+    "pclose": 8.78,
+    "chg1430": 4.15,
+    "chg_close": 4.15,
+    "turnover1430": 6.7,
+    "float_mktcap_yi": 50.45,
+    "vol_ratio": 1.31
    },
    {
     "code": "002452",
     "sym": "sz002452",
     "name": "长高电气",
-    "prev": 10.27,
-    "p1430": 10.64,
-    "pclose": 10.66,
-    "chg1430": 3.6,
-    "chg_close": 3.8,
-    "turnover1430": 5.16,
-    "float_mktcap_yi": 55.15,
-    "vol_ratio": 1.29
+    "prev": 10.71,
+    "p1430": 11.15,
+    "pclose": 11.4,
+    "chg1430": 4.11,
+    "chg_close": 6.44,
+    "turnover1430": 6.15,
+    "float_mktcap_yi": 59.19,
+    "vol_ratio": 1.51
    },
    {
-    "code": "002552",
-    "sym": "sz002552",
-    "name": "宝鼎科技",
-    "prev": 28.27,
-    "p1430": 29.13,
-    "pclose": 29.04,
-    "chg1430": 3.04,
-    "chg_close": 2.72,
-    "turnover1430": 5.11,
-    "float_mktcap_yi": 106.87,
-    "vol_ratio": 1.65
+    "code": "600619",
+    "sym": "sh600619",
+    "name": "海立股份",
+    "prev": 14.35,
+    "p1430": 14.91,
+    "pclose": 14.9,
+    "chg1430": 3.9,
+    "chg_close": 3.83,
+    "turnover1430": 9.9,
+    "float_mktcap_yi": 117.59,
+    "vol_ratio": 1.04
+   },
+   {
+    "code": "001283",
+    "sym": "sz001283",
+    "name": "豪鹏科技",
+    "prev": 48.61,
+    "p1430": 50.26,
+    "pclose": 50.39,
+    "chg1430": 3.39,
+    "chg_close": 3.66,
+    "turnover1430": 7.19,
+    "float_mktcap_yi": 52.07,
+    "vol_ratio": 1.43
    }
   ],
   "diag": {
    "all_a": 5580,
-   "base_n": 1139,
-   "fetched": 1136,
-   "band_3_5": 174,
-   "band_turn": 23,
-   "final": 15
+   "base_n": 1149,
+   "fetched": 1147,
+   "band_3_5": 31,
+   "band_turn": 8,
+   "final": 6
   }
  },
  "history": [
@@ -3902,7 +3785,9 @@
      "chg_close": 4.48,
      "turnover1430": 9.32,
      "float_mktcap_yi": 74.89,
-     "vol_ratio": 1.76
+     "vol_ratio": 1.76,
+     "p_next": 11.98,
+     "r_next": 0.34
     },
     {
      "code": "603538",
@@ -3915,7 +3800,9 @@
      "chg_close": 4.91,
      "turnover1430": 5.23,
      "float_mktcap_yi": 61.12,
-     "vol_ratio": 1.39
+     "vol_ratio": 1.39,
+     "p_next": 18.26,
+     "r_next": 0.5
     },
     {
      "code": "600664",
@@ -3928,7 +3815,9 @@
      "chg_close": 4.66,
      "turnover1430": 5.91,
      "float_mktcap_yi": 118.87,
-     "vol_ratio": 1.19
+     "vol_ratio": 1.19,
+     "p_next": 4.69,
+     "r_next": -0.85
     },
     {
      "code": "002980",
@@ -3941,7 +3830,9 @@
      "chg_close": 3.72,
      "turnover1430": 8.99,
      "float_mktcap_yi": 60.94,
-     "vol_ratio": 1.24
+     "vol_ratio": 1.24,
+     "p_next": 61.75,
+     "r_next": 1.83
     },
     {
      "code": "002580",
@@ -3954,7 +3845,9 @@
      "chg_close": 4.13,
      "turnover1430": 6.54,
      "float_mktcap_yi": 68.44,
-     "vol_ratio": 1.01
+     "vol_ratio": 1.01,
+     "p_next": 15.19,
+     "r_next": 0.2
     },
     {
      "code": "002342",
@@ -3967,7 +3860,9 @@
      "chg_close": 4.23,
      "turnover1430": 5.11,
      "float_mktcap_yi": 54.13,
-     "vol_ratio": 1.1
+     "vol_ratio": 1.1,
+     "p_next": 5.78,
+     "r_next": 1.94
     },
     {
      "code": "002149",
@@ -3980,7 +3875,9 @@
      "chg_close": 3.69,
      "turnover1430": 8.24,
      "float_mktcap_yi": 135.65,
-     "vol_ratio": 1.2
+     "vol_ratio": 1.2,
+     "p_next": 28.12,
+     "r_next": 0.68
     },
     {
      "code": "002792",
@@ -3993,7 +3890,9 @@
      "chg_close": 3.74,
      "turnover1430": 5.72,
      "float_mktcap_yi": 71.6,
-     "vol_ratio": 1.1
+     "vol_ratio": 1.1,
+     "p_next": 22.06,
+     "r_next": 4.25
     },
     {
      "code": "603738",
@@ -4006,7 +3905,9 @@
      "chg_close": 3.66,
      "turnover1430": 5.48,
      "float_mktcap_yi": 79.76,
-     "vol_ratio": 1.23
+     "vol_ratio": 1.23,
+     "p_next": 21.28,
+     "r_next": 2.46
     },
     {
      "code": "002263",
@@ -4019,7 +3920,9 @@
      "chg_close": 4.09,
      "turnover1430": 5.12,
      "float_mktcap_yi": 52.41,
-     "vol_ratio": 3.38
+     "vol_ratio": 3.38,
+     "p_next": 2.73,
+     "r_next": -2.5
     },
     {
      "code": "002975",
@@ -4032,7 +3935,9 @@
      "chg_close": 3.39,
      "turnover1430": 6.85,
      "float_mktcap_yi": 90.54,
-     "vol_ratio": 1.17
+     "vol_ratio": 1.17,
+     "p_next": 67.94,
+     "r_next": 3.08
     },
     {
      "code": "002297",
@@ -4045,7 +3950,9 @@
      "chg_close": 3.69,
      "turnover1430": 5.02,
      "float_mktcap_yi": 70.72,
-     "vol_ratio": 1.36
+     "vol_ratio": 1.36,
+     "p_next": 12.63,
+     "r_next": 1.94
     },
     {
      "code": "600172",
@@ -4058,7 +3965,9 @@
      "chg_close": 3.38,
      "turnover1430": 6.29,
      "float_mktcap_yi": 121.75,
-     "vol_ratio": 1.42
+     "vol_ratio": 1.42,
+     "p_next": 9.62,
+     "r_next": 1.05
     },
     {
      "code": "002452",
@@ -4071,7 +3980,9 @@
      "chg_close": 3.8,
      "turnover1430": 5.16,
      "float_mktcap_yi": 55.15,
-     "vol_ratio": 1.29
+     "vol_ratio": 1.29,
+     "p_next": 10.88,
+     "r_next": 2.26
     },
     {
      "code": "002552",
@@ -4084,7 +3995,9 @@
      "chg_close": 2.72,
      "turnover1430": 5.11,
      "float_mktcap_yi": 106.87,
-     "vol_ratio": 1.65
+     "vol_ratio": 1.65,
+     "p_next": 28.58,
+     "r_next": -1.89
     }
    ],
    "diag": {
@@ -4094,8 +4007,101 @@
     "band_3_5": 174,
     "band_turn": 23,
     "final": 15
+   },
+   "mean_r_next": 1.02,
+   "n_r_next": 15
+  },
+  {
+   "date": "2026-11-24",
+   "members": [
+    {
+     "code": "601595",
+     "sym": "sh601595",
+     "name": "上海电影",
+     "prev": 32.52,
+     "p1430": 34.06,
+     "pclose": 34.26,
+     "chg1430": 4.74,
+     "chg_close": 5.35,
+     "turnover1430": 6.08,
+     "float_mktcap_yi": 154.05,
+     "vol_ratio": 1.18
+    },
+    {
+     "code": "003021",
+     "sym": "sz003021",
+     "name": "兆威机电",
+     "prev": 84.51,
+     "p1430": 88.46,
+     "pclose": 89.12,
+     "chg1430": 4.67,
+     "chg_close": 5.45,
+     "turnover1430": 5.92,
+     "float_mktcap_yi": 185.82,
+     "vol_ratio": 1.41
+    },
+    {
+     "code": "601566",
+     "sym": "sh601566",
+     "name": "九牧王",
+     "prev": 8.43,
+     "p1430": 8.78,
+     "pclose": 8.78,
+     "chg1430": 4.15,
+     "chg_close": 4.15,
+     "turnover1430": 6.7,
+     "float_mktcap_yi": 50.45,
+     "vol_ratio": 1.31
+    },
+    {
+     "code": "002452",
+     "sym": "sz002452",
+     "name": "长高电气",
+     "prev": 10.71,
+     "p1430": 11.15,
+     "pclose": 11.4,
+     "chg1430": 4.11,
+     "chg_close": 6.44,
+     "turnover1430": 6.15,
+     "float_mktcap_yi": 59.19,
+     "vol_ratio": 1.51
+    },
+    {
+     "code": "600619",
+     "sym": "sh600619",
+     "name": "海立股份",
+     "prev": 14.35,
+     "p1430": 14.91,
+     "pclose": 14.9,
+     "chg1430": 3.9,
+     "chg_close": 3.83,
+     "turnover1430": 9.9,
+     "float_mktcap_yi": 117.59,
+     "vol_ratio": 1.04
+    },
+    {
+     "code": "001283",
+     "sym": "sz001283",
+     "name": "豪鹏科技",
+     "prev": 48.61,
+     "p1430": 50.26,
+     "pclose": 50.39,
+     "chg1430": 3.39,
+     "chg_close": 3.66,
+     "turnover1430": 7.19,
+     "float_mktcap_yi": 52.07,
+     "vol_ratio": 1.43
+    }
+   ],
+   "diag": {
+    "all_a": 5580,
+    "base_n": 1149,
+    "fetched": 1147,
+    "band_3_5": 31,
+    "band_turn": 8,
+    "final": 6
    }
   }
  ],
- "generated_at": "2026-11-23 14:34:13"
+ "generated_at": "2026-11-24 14:35:40"
 }

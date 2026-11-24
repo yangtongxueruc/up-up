@@ -1,64 +1,64 @@
 {
  "meta": {
-  "D": 150,
-  "N": 108735,
+  "D": 151,
+  "N": 108867,
   "start": "2026-04-10",
-  "end": "2026-11-19",
-  "zt_n": 3957,
-  "buy_n": 104778,
+  "end": "2026-11-20",
+  "zt_n": 3977,
+  "buy_n": 104890,
   "cost": 0.2,
   "zt_thr": 9.5,
-  "generated_at": "2026-11-23 10:49",
-  "elapsed": 0.8
+  "generated_at": "2026-11-24 10:48",
+  "elapsed": 0.7
  },
  "benchmark": [
   {
    "label": "① 全池（符合条件即买，含涨停）",
-   "days": 150,
-   "n": 108735,
-   "per_day": 724.9,
-   "day_mean": -0.079,
-   "cum_gross": -12.0,
-   "cum_net": -34.9,
+   "days": 151,
+   "n": 108867,
+   "per_day": 721.0,
+   "day_mean": -0.077,
+   "cum_gross": -11.8,
+   "cum_net": -34.8,
    "win": 42.6,
    "payoff": 1.18,
    "breakeven": 45.9
   },
   {
    "label": "② 可直买组（14:30 未涨停，市价可成交）",
-   "days": 150,
-   "n": 104778,
-   "per_day": 698.5,
-   "day_mean": -0.131,
-   "cum_gross": -18.7,
-   "cum_net": -39.8,
+   "days": 151,
+   "n": 104890,
+   "per_day": 694.6,
+   "day_mean": -0.133,
+   "cum_gross": -19.0,
+   "cum_net": -40.2,
    "win": 42.1,
    "payoff": 1.13,
    "breakeven": 47.1
   },
   {
    "label": "③ 14:30 涨停组（需挂单排队，非市价可得）",
-   "days": 150,
-   "n": 3957,
-   "per_day": 26.4,
-   "day_mean": 1.186,
-   "cum_gross": 465.6,
-   "cum_net": 320.3,
-   "win": 56.9,
-   "payoff": 1.46,
-   "breakeven": 40.6
+   "days": 151,
+   "n": 3977,
+   "per_day": 26.3,
+   "day_mean": 1.205,
+   "cum_gross": 488.2,
+   "cum_net": 336.2,
+   "win": 57.0,
+   "payoff": 1.47,
+   "breakeven": 40.5
   }
  ],
  "mf": {
   "zt_share": 71.6
  },
  "forward": {
-  "checked_at": "2026-11-23 10:48",
-  "method": "时序holdout：前90天重新探索 → 后60天检验",
-  "best_oos_excess": -1.3,
-  "best_oos_pos_folds": "21/41",
+  "checked_at": "2026-11-24 10:48",
+  "method": "时序holdout：前90天重新探索 → 后61天检验",
+  "best_oos_excess": -1.4,
+  "best_oos_pos_folds": "21/42",
   "passed": false,
-  "verdict": "未通过前向检验（测试期超额-1.3pp≤0），不提升为主规则",
+  "verdict": "未通过前向检验（测试期超额-1.4pp≤0），不提升为主规则",
   "source": "validate_rule.forward_gate"
  },
  "rulesA": [
