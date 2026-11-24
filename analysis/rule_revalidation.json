@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24 10:49",
+ "generated_at": "2026-11-24 10:26",
  "D": 151,
  "N": 108867,
  "start": "2026-04-10",
@@ -3295,5 +3295,5 @@
  ],
  "warnings": [],
  "registry_note": "rule_registry.json + decision_brief/regime_rules/discovered_rules 自动派生",
- "elapsed": 4.21
+ "elapsed": 2.46
 }
