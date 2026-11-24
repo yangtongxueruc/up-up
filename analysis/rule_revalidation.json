@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-23 10:49",
- "D": 150,
- "N": 108735,
+ "generated_at": "2026-11-24 10:49",
+ "D": 151,
+ "N": 108867,
  "start": "2026-04-10",
- "end": "2026-11-19",
+ "end": "2026-11-20",
  "oos_start_date": "2026-08-20",
  "base": {
   "hr_A": 42.65,
   "hr_B": 41.82,
-  "mean_A": -0.1306,
-  "mean_B": -0.1907
+  "mean_A": -0.1302,
+  "mean_B": -0.19
  },
  "rule_count": 35,
  "summary": {
@@ -35,11 +35,12 @@
    "briefB4",
    "BUY",
    "B",
+   "briefWB1",
    "briefWB3",
    "briefWB4",
    "briefWB5"
   ],
-  "不显著": 11,
+  "不显著": 10,
   "样本不足": 2
  },
  "rules": [
@@ -61,25 +62,25 @@
      1.5
     ]
    ],
-   "n": 53128,
-   "days": 150,
+   "n": 53191,
+   "days": 151,
    "hr": 44.67,
-   "mean_ret": -0.0357,
-   "excess_pp": 2.02,
-   "alpha": 0.0113,
-   "t": 0.45,
-   "alpha_days": 150,
-   "days_beat": 83,
-   "days_total": 150,
-   "oos_alpha": -0.0421,
-   "oos_t": -1.07,
-   "oos_days": 60,
-   "need_days": 2813,
+   "mean_ret": -0.0341,
+   "excess_pp": 2.03,
+   "alpha": 0.0184,
+   "t": 0.71,
+   "alpha_days": 151,
+   "days_beat": 84,
+   "days_total": 151,
+   "oos_alpha": -0.0237,
+   "oos_t": -0.55,
+   "oos_days": 61,
+   "need_days": 1048,
    "buyable": {
-    "n": 49171,
-    "alpha": -0.108,
-    "t": -4.6,
-    "days": 150,
+    "n": 49214,
+    "alpha": -0.1084,
+    "t": -4.64,
+    "days": 151,
     "hr": 43.68
    },
    "by_regime": {
@@ -116,12 +117,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 4780,
-     "hr": 34.52,
-     "excess_pp": -0.53,
-     "alpha": -0.0621,
-     "t": -1.11,
-     "days": 30
+     "n": 4843,
+     "hr": 34.69,
+     "excess_pp": -0.42,
+     "alpha": -0.0252,
+     "t": -0.39,
+     "days": 31
     },
     "震荡": {
      "n": 63,
@@ -153,26 +154,26 @@
      2.0
     ]
    ],
-   "n": 36411,
-   "days": 150,
-   "hr": 44.46,
-   "mean_ret": -0.1267,
-   "excess_pp": 1.81,
-   "alpha": -0.128,
-   "t": -4.13,
-   "alpha_days": 150,
+   "n": 36439,
+   "days": 151,
+   "hr": 44.45,
+   "mean_ret": -0.1265,
+   "excess_pp": 1.8,
+   "alpha": -0.1278,
+   "t": -4.15,
+   "alpha_days": 151,
    "days_beat": 75,
-   "days_total": 150,
-   "oos_alpha": -0.2175,
-   "oos_t": -4.47,
-   "oos_days": 60,
+   "days_total": 151,
+   "oos_alpha": -0.2156,
+   "oos_t": -4.5,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 36411,
-    "alpha": -0.128,
-    "t": -4.13,
-    "days": 150,
-    "hr": 44.46
+    "n": 36439,
+    "alpha": -0.1278,
+    "t": -4.15,
+    "days": 151,
+    "hr": 44.45
    },
    "by_regime": {
     "强涨": {
@@ -208,12 +209,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 3092,
-     "hr": 33.15,
-     "excess_pp": -1.9,
-     "alpha": -0.1892,
-     "t": -2.24,
-     "days": 30
+     "n": 3120,
+     "hr": 33.14,
+     "excess_pp": -1.96,
+     "alpha": -0.1863,
+     "t": -2.28,
+     "days": 31
     },
     "震荡": {
      "n": 40,
@@ -225,7 +226,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 43.73
+   "alt_hr": 43.72
   },
   {
    "id": "briefA2",
@@ -250,25 +251,25 @@
      5.0
     ]
    ],
-   "n": 30131,
-   "days": 150,
+   "n": 30150,
+   "days": 151,
    "hr": 43.9,
-   "mean_ret": -0.1767,
-   "excess_pp": 1.26,
-   "alpha": -0.1338,
-   "t": -4.23,
-   "alpha_days": 150,
+   "mean_ret": -0.1763,
+   "excess_pp": 1.25,
+   "alpha": -0.1306,
+   "t": -4.13,
+   "alpha_days": 151,
    "days_beat": 74,
-   "days_total": 150,
-   "oos_alpha": -0.1671,
-   "oos_t": -3.09,
-   "oos_days": 60,
+   "days_total": 151,
+   "oos_alpha": -0.1586,
+   "oos_t": -2.95,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 30131,
-    "alpha": -0.1338,
-    "t": -4.23,
-    "days": 150,
+    "n": 30150,
+    "alpha": -0.1306,
+    "t": -4.13,
+    "days": 151,
     "hr": 43.9
    },
    "by_regime": {
@@ -305,12 +306,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 2609,
-     "hr": 32.08,
-     "excess_pp": -2.96,
-     "alpha": -0.1958,
-     "t": -2.17,
-     "days": 30
+     "n": 2628,
+     "hr": 32.12,
+     "excess_pp": -2.99,
+     "alpha": -0.1782,
+     "t": -2.0,
+     "days": 31
     },
     "震荡": {
      "n": 34,
@@ -347,25 +348,25 @@
      4.0
     ]
    ],
-   "n": 10483,
-   "days": 150,
+   "n": 10502,
+   "days": 151,
    "hr": 44.76,
-   "mean_ret": -0.1606,
-   "excess_pp": 2.11,
-   "alpha": -0.2871,
-   "t": -3.99,
-   "alpha_days": 149,
-   "days_beat": 71,
-   "days_total": 150,
-   "oos_alpha": -0.4791,
-   "oos_t": -4.81,
-   "oos_days": 59,
+   "mean_ret": -0.1579,
+   "excess_pp": 2.12,
+   "alpha": -0.2776,
+   "t": -3.85,
+   "alpha_days": 150,
+   "days_beat": 72,
+   "days_total": 151,
+   "oos_alpha": -0.4521,
+   "oos_t": -4.45,
+   "oos_days": 60,
    "need_days": 0,
    "buyable": {
-    "n": 10483,
-    "alpha": -0.2871,
-    "t": -3.99,
-    "days": 149,
+    "n": 10502,
+    "alpha": -0.2776,
+    "t": -3.85,
+    "days": 150,
     "hr": 44.76
    },
    "by_regime": {
@@ -386,12 +387,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 1093,
-     "hr": 33.67,
-     "excess_pp": -1.38,
-     "alpha": -0.7551,
-     "t": -3.61,
-     "days": 29
+     "n": 1112,
+     "hr": 33.9,
+     "excess_pp": -1.2,
+     "alpha": -0.6919,
+     "t": -3.27,
+     "days": 30
     },
     "平": {
      "n": 1848,
@@ -419,7 +420,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 43.16
+   "alt_hr": 43.17
   },
   {
    "id": "briefA4",
@@ -493,7 +494,7 @@
     "弱跌": {
      "n": 91,
      "hr": 43.96,
-     "excess_pp": 8.91,
+     "excess_pp": 8.85,
      "alpha": -0.1733,
      "t": -0.56,
      "days": 11
@@ -536,26 +537,26 @@
      0.0
     ]
    ],
-   "n": 84954,
-   "days": 150,
-   "hr": 41.28,
-   "mean_ret": -0.2396,
+   "n": 85066,
+   "days": 151,
+   "hr": 41.27,
+   "mean_ret": -0.2399,
    "excess_pp": -1.37,
-   "alpha": -0.0409,
-   "t": -3.08,
-   "alpha_days": 150,
+   "alpha": -0.0451,
+   "t": -3.26,
+   "alpha_days": 151,
    "days_beat": 54,
-   "days_total": 150,
-   "oos_alpha": -0.0518,
-   "oos_t": -5.43,
-   "oos_days": 60,
+   "days_total": 151,
+   "oos_alpha": -0.0619,
+   "oos_t": -4.48,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 84954,
-    "alpha": -0.0409,
-    "t": -3.08,
-    "days": 150,
-    "hr": 41.28
+    "n": 85066,
+    "alpha": -0.0451,
+    "t": -3.26,
+    "days": 151,
+    "hr": 41.27
    },
    "by_regime": {
     "强涨": {
@@ -591,12 +592,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 10499,
-     "hr": 34.42,
-     "excess_pp": -0.62,
-     "alpha": -0.017,
-     "t": -0.77,
-     "days": 30
+     "n": 10611,
+     "hr": 34.43,
+     "excess_pp": -0.68,
+     "alpha": -0.0382,
+     "t": -1.27,
+     "days": 31
     },
     "震荡": {
      "n": 186,
@@ -690,7 +691,7 @@
     "弱跌": {
      "n": 11,
      "hr": 54.55,
-     "excess_pp": 19.5,
+     "excess_pp": 19.44,
      "alpha": null,
      "t": null,
      "days": 0
@@ -717,26 +718,26 @@
      0.19
     ]
    ],
-   "n": 33593,
-   "days": 149,
-   "hr": 38.2,
-   "mean_ret": -0.4663,
-   "excess_pp": -3.62,
-   "alpha": -0.2954,
-   "t": -10.01,
-   "alpha_days": 149,
+   "n": 33634,
+   "days": 150,
+   "hr": 38.19,
+   "mean_ret": -0.467,
+   "excess_pp": -3.63,
+   "alpha": -0.3027,
+   "t": -10.02,
+   "alpha_days": 150,
    "days_beat": 35,
-   "days_total": 149,
-   "oos_alpha": -0.3134,
-   "oos_t": -6.49,
-   "oos_days": 60,
+   "days_total": 150,
+   "oos_alpha": -0.3313,
+   "oos_t": -6.53,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 33593,
-    "alpha": -0.2954,
-    "t": -10.01,
-    "days": 149,
-    "hr": 38.2
+    "n": 33634,
+    "alpha": -0.3027,
+    "t": -10.02,
+    "days": 150,
+    "hr": 38.19
    },
    "by_regime": {
     "强涨": {
@@ -772,12 +773,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 3360,
+     "n": 3401,
      "hr": 29.02,
-     "excess_pp": -6.54,
-     "alpha": -0.3008,
-     "t": -4.0,
-     "days": 29
+     "excess_pp": -6.6,
+     "alpha": -0.3375,
+     "t": -4.14,
+     "days": 30
     },
     "震荡": {
      "n": 59,
@@ -789,7 +790,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 47.66
+   "alt_hr": 47.65
   },
   {
    "id": "briefB2",
@@ -809,25 +810,25 @@
      -0.1
     ]
    ],
-   "n": 35080,
-   "days": 149,
+   "n": 35137,
+   "days": 150,
    "hr": 44.85,
-   "mean_ret": -0.0664,
+   "mean_ret": -0.0653,
    "excess_pp": 3.03,
-   "alpha": 0.0689,
-   "t": 2.69,
-   "alpha_days": 149,
-   "days_beat": 88,
-   "days_total": 149,
-   "oos_alpha": 0.0668,
-   "oos_t": 2.24,
-   "oos_days": 60,
+   "alpha": 0.0698,
+   "t": 2.75,
+   "alpha_days": 150,
+   "days_beat": 89,
+   "days_total": 150,
+   "oos_alpha": 0.0691,
+   "oos_t": 2.35,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 35080,
-    "alpha": 0.0689,
-    "t": 2.69,
-    "days": 149,
+    "n": 35137,
+    "alpha": 0.0698,
+    "t": 2.75,
+    "days": 150,
     "hr": 44.85
    },
    "by_regime": {
@@ -864,12 +865,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 4149,
-     "hr": 40.37,
+     "n": 4206,
+     "hr": 40.44,
      "excess_pp": 4.82,
-     "alpha": 0.1308,
-     "t": 2.36,
-     "days": 29
+     "alpha": 0.1334,
+     "t": 2.49,
+     "days": 30
     },
     "震荡": {
      "n": 39,
@@ -881,7 +882,7 @@
     }
    },
    "verdict": "显著为正·含前视",
-   "alt_hr": 37.5
+   "alt_hr": 37.49
   },
   {
    "id": "briefB3",
@@ -901,26 +902,26 @@
      2.23
     ]
    ],
-   "n": 33619,
-   "days": 150,
-   "hr": 42.84,
-   "mean_ret": -0.2665,
-   "excess_pp": 1.03,
-   "alpha": -0.2181,
-   "t": -6.47,
-   "alpha_days": 150,
+   "n": 33645,
+   "days": 151,
+   "hr": 42.83,
+   "mean_ret": -0.2669,
+   "excess_pp": 1.01,
+   "alpha": -0.225,
+   "t": -6.58,
+   "alpha_days": 151,
    "days_beat": 66,
-   "days_total": 150,
-   "oos_alpha": -0.3271,
-   "oos_t": -6.27,
-   "oos_days": 60,
+   "days_total": 151,
+   "oos_alpha": -0.3424,
+   "oos_t": -6.39,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 33619,
-    "alpha": -0.2181,
-    "t": -6.47,
-    "days": 150,
-    "hr": 42.84
+    "n": 33645,
+    "alpha": -0.225,
+    "t": -6.58,
+    "days": 151,
+    "hr": 42.83
    },
    "by_regime": {
     "强涨": {
@@ -956,12 +957,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 2765,
-     "hr": 32.01,
-     "excess_pp": -3.55,
-     "alpha": -0.3145,
-     "t": -3.96,
-     "days": 30
+     "n": 2791,
+     "hr": 31.92,
+     "excess_pp": -3.69,
+     "alpha": -0.3449,
+     "t": -4.17,
+     "days": 31
     },
     "震荡": {
      "n": 37,
@@ -973,7 +974,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 45.64
+   "alt_hr": 45.62
   },
   {
    "id": "briefB4",
@@ -993,26 +994,26 @@
      3.0
     ]
    ],
-   "n": 36745,
-   "days": 150,
-   "hr": 41.96,
-   "mean_ret": -0.3078,
-   "excess_pp": 0.14,
-   "alpha": -0.167,
-   "t": -4.11,
-   "alpha_days": 150,
-   "days_beat": 72,
-   "days_total": 150,
-   "oos_alpha": -0.2258,
-   "oos_t": -3.91,
-   "oos_days": 60,
+   "n": 36816,
+   "days": 151,
+   "hr": 41.97,
+   "mean_ret": -0.3059,
+   "excess_pp": 0.15,
+   "alpha": -0.164,
+   "t": -4.05,
+   "alpha_days": 151,
+   "days_beat": 73,
+   "days_total": 151,
+   "oos_alpha": -0.2175,
+   "oos_t": -3.79,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 36745,
-    "alpha": -0.167,
-    "t": -4.11,
-    "days": 150,
-    "hr": 41.96
+    "n": 36816,
+    "alpha": -0.164,
+    "t": -4.05,
+    "days": 151,
+    "hr": 41.97
    },
    "by_regime": {
     "强涨": {
@@ -1048,12 +1049,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 4005,
-     "hr": 34.73,
-     "excess_pp": -0.82,
-     "alpha": -0.2104,
-     "t": -2.08,
-     "days": 30
+     "n": 4076,
+     "hr": 34.91,
+     "excess_pp": -0.71,
+     "alpha": -0.1945,
+     "t": -1.97,
+     "days": 31
     },
     "震荡": {
      "n": 70,
@@ -1065,7 +1066,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 43.15
+   "alt_hr": 43.14
   },
   {
    "id": "briefB5",
@@ -1085,26 +1086,26 @@
      2.74
     ]
    ],
-   "n": 34295,
-   "days": 150,
-   "hr": 40.69,
-   "mean_ret": -0.1619,
-   "excess_pp": -1.13,
-   "alpha": 0.0275,
-   "t": 0.44,
-   "alpha_days": 150,
+   "n": 34318,
+   "days": 151,
+   "hr": 40.67,
+   "mean_ret": -0.1627,
+   "excess_pp": -1.15,
+   "alpha": 0.016,
+   "t": 0.25,
+   "alpha_days": 151,
    "days_beat": 67,
-   "days_total": 150,
-   "oos_alpha": 0.1387,
-   "oos_t": 1.96,
-   "oos_days": 60,
-   "need_days": 2950,
+   "days_total": 151,
+   "oos_alpha": 0.1085,
+   "oos_t": 1.43,
+   "oos_days": 61,
+   "need_days": 9513,
    "buyable": {
-    "n": 34295,
-    "alpha": 0.0275,
-    "t": 0.44,
-    "days": 150,
-    "hr": 40.69
+    "n": 34318,
+    "alpha": 0.016,
+    "t": 0.25,
+    "days": 151,
+    "hr": 40.67
    },
    "by_regime": {
     "强涨": {
@@ -1140,12 +1141,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 2739,
-     "hr": 41.18,
-     "excess_pp": 5.63,
-     "alpha": 0.3271,
-     "t": 1.77,
-     "days": 30
+     "n": 2762,
+     "hr": 40.95,
+     "excess_pp": 5.33,
+     "alpha": 0.2615,
+     "t": 1.37,
+     "days": 31
     },
     "震荡": {
      "n": 87,
@@ -1171,26 +1172,26 @@
    "note": "对照组，不是选股规则；用于判断其它规则相对「买下整个池子」是否有增量。",
    "comparable": true,
    "conds": [],
-   "n": 104778,
-   "days": 150,
-   "hr": 42.11,
-   "mean_ret": -0.1871,
+   "n": 104890,
+   "days": 151,
+   "hr": 42.1,
+   "mean_ret": -0.1874,
    "excess_pp": -0.54,
-   "alpha": -0.0525,
-   "t": -6.79,
-   "alpha_days": 150,
+   "alpha": -0.0566,
+   "t": -6.5,
+   "alpha_days": 151,
    "days_beat": 41,
-   "days_total": 150,
-   "oos_alpha": -0.0476,
-   "oos_t": -5.32,
-   "oos_days": 60,
+   "days_total": 151,
+   "oos_alpha": -0.0579,
+   "oos_t": -4.28,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 104778,
-    "alpha": -0.0525,
-    "t": -6.79,
-    "days": 150,
-    "hr": 42.11
+    "n": 104890,
+    "alpha": -0.0566,
+    "t": -6.5,
+    "days": 151,
+    "hr": 42.1
    },
    "by_regime": {
     "强涨": {
@@ -1226,12 +1227,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 10499,
-     "hr": 34.42,
-     "excess_pp": -0.62,
-     "alpha": -0.017,
-     "t": -0.77,
-     "days": 30
+     "n": 10611,
+     "hr": 34.43,
+     "excess_pp": -0.68,
+     "alpha": -0.0382,
+     "t": -1.27,
+     "days": 31
     },
     "震荡": {
      "n": 186,
@@ -1268,26 +1269,26 @@
      2
     ]
    ],
-   "n": 5667,
-   "days": 150,
-   "hr": 41.73,
-   "mean_ret": -0.2736,
-   "excess_pp": -0.92,
-   "alpha": -0.1309,
-   "t": -1.85,
-   "alpha_days": 148,
+   "n": 5679,
+   "days": 151,
+   "hr": 41.7,
+   "mean_ret": -0.2744,
+   "excess_pp": -0.95,
+   "alpha": -0.1359,
+   "t": -1.93,
+   "alpha_days": 149,
    "days_beat": 69,
-   "days_total": 150,
-   "oos_alpha": -0.1678,
-   "oos_t": -1.37,
-   "oos_days": 59,
-   "need_days": 25,
+   "days_total": 151,
+   "oos_alpha": -0.1795,
+   "oos_t": -1.49,
+   "oos_days": 60,
+   "need_days": 12,
    "buyable": {
-    "n": 5667,
-    "alpha": -0.1309,
-    "t": -1.85,
-    "days": 148,
-    "hr": 41.73
+    "n": 5679,
+    "alpha": -0.1359,
+    "t": -1.93,
+    "days": 149,
+    "hr": 41.7
    },
    "by_regime": {
     "震荡": {
@@ -1315,12 +1316,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 689,
-     "hr": 32.66,
-     "excess_pp": -2.39,
-     "alpha": -0.3574,
-     "t": -1.63,
-     "days": 28
+     "n": 701,
+     "hr": 32.52,
+     "excess_pp": -2.58,
+     "alpha": -0.3752,
+     "t": -1.77,
+     "days": 29
     },
     "平": {
      "n": 1066,
@@ -1340,7 +1341,7 @@
     }
    },
    "verdict": "不显著",
-   "alt_hr": 40.41
+   "alt_hr": 40.43
   },
   {
    "id": "B",
@@ -1365,26 +1366,26 @@
      3
     ]
    ],
-   "n": 1352,
-   "days": 147,
-   "hr": 44.23,
-   "mean_ret": -0.3651,
-   "excess_pp": 1.58,
-   "alpha": -0.3409,
-   "t": -2.83,
-   "alpha_days": 133,
+   "n": 1355,
+   "days": 148,
+   "hr": 44.21,
+   "mean_ret": -0.3673,
+   "excess_pp": 1.56,
+   "alpha": -0.3502,
+   "t": -2.92,
+   "alpha_days": 134,
    "days_beat": 70,
-   "days_total": 147,
-   "oos_alpha": -0.4692,
-   "oos_t": -2.08,
-   "oos_days": 51,
+   "days_total": 148,
+   "oos_alpha": -0.4907,
+   "oos_t": -2.2,
+   "oos_days": 52,
    "need_days": 0,
    "buyable": {
-    "n": 1352,
-    "alpha": -0.3409,
-    "t": -2.83,
-    "days": 133,
-    "hr": 44.23
+    "n": 1355,
+    "alpha": -0.3502,
+    "t": -2.92,
+    "days": 134,
+    "hr": 44.21
    },
    "by_regime": {
     "震荡": {
@@ -1420,12 +1421,12 @@
      "days": 31
     },
     "弱跌": {
-     "n": 150,
-     "hr": 34.67,
-     "excess_pp": -0.38,
-     "alpha": -0.7615,
-     "t": -1.67,
-     "days": 22
+     "n": 153,
+     "hr": 34.64,
+     "excess_pp": -0.47,
+     "alpha": -0.7976,
+     "t": -1.82,
+     "days": 23
     },
     "平": {
      "n": 253,
@@ -1437,7 +1438,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 42.38
+   "alt_hr": 42.44
   },
   {
    "id": "C",
@@ -1524,7 +1525,7 @@
     "弱跌": {
      "n": 193,
      "hr": 31.09,
-     "excess_pp": -3.96,
+     "excess_pp": -4.02,
      "alpha": -0.9153,
      "t": -2.38,
      "days": 16
@@ -1564,26 +1565,26 @@
      4
     ]
    ],
-   "n": 6876,
-   "days": 150,
-   "hr": 42.26,
-   "mean_ret": -0.2695,
-   "excess_pp": -0.39,
-   "alpha": -0.1253,
-   "t": -1.56,
-   "alpha_days": 149,
+   "n": 6902,
+   "days": 151,
+   "hr": 42.19,
+   "mean_ret": -0.2721,
+   "excess_pp": -0.45,
+   "alpha": -0.1322,
+   "t": -1.65,
+   "alpha_days": 150,
    "days_beat": 73,
-   "days_total": 150,
-   "oos_alpha": -0.1125,
-   "oos_t": -1.04,
-   "oos_days": 60,
-   "need_days": 96,
+   "days_total": 151,
+   "oos_alpha": -0.1297,
+   "oos_t": -1.21,
+   "oos_days": 61,
+   "need_days": 71,
    "buyable": {
-    "n": 6876,
-    "alpha": -0.1253,
-    "t": -1.56,
-    "days": 149,
-    "hr": 42.26
+    "n": 6902,
+    "alpha": -0.1322,
+    "t": -1.65,
+    "days": 150,
+    "hr": 42.19
    },
    "by_regime": {
     "震荡": {
@@ -1611,12 +1612,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 895,
-     "hr": 39.22,
-     "excess_pp": 4.17,
-     "alpha": -0.2371,
-     "t": -1.11,
-     "days": 29
+     "n": 921,
+     "hr": 38.76,
+     "excess_pp": 3.66,
+     "alpha": -0.268,
+     "t": -1.29,
+     "days": 30
     },
     "平": {
      "n": 1267,
@@ -1636,7 +1637,7 @@
     }
    },
    "verdict": "不显著",
-   "alt_hr": 41.08
+   "alt_hr": 41.09
   },
   {
    "id": "briefZT1",
@@ -1656,16 +1657,16 @@
      3.0
     ]
    ],
-   "n": 410,
-   "days": 112,
-   "hr": 67.32,
-   "mean_ret": 2.8905,
-   "excess_pp": 24.67,
+   "n": 411,
+   "days": 113,
+   "hr": 67.4,
+   "mean_ret": 2.9092,
+   "excess_pp": 24.75,
    "alpha": 2.2727,
    "t": 5.23,
    "alpha_days": 50,
-   "days_beat": 85,
-   "days_total": 112,
+   "days_beat": 86,
+   "days_total": 113,
    "oos_alpha": 1.6348,
    "oos_t": 1.78,
    "oos_days": 10,
@@ -1673,9 +1674,9 @@
    "buyable": null,
    "by_regime": {
     "弱跌": {
-     "n": 43,
-     "hr": 58.14,
-     "excess_pp": 23.09,
+     "n": 44,
+     "hr": 59.09,
+     "excess_pp": 23.99,
      "alpha": 0.9133,
      "t": 1.48,
      "days": 5
@@ -1722,7 +1723,7 @@
     }
    },
    "verdict": "显著为正",
-   "alt_hr": 67.32
+   "alt_hr": 67.4
   },
   {
    "id": "MF",
@@ -1736,26 +1737,26 @@
    "note": "现行生产信号。约 69% 为 14:30 已涨停（市价买不进），全组 alpha 显著 ≠ 可跟买；可直买部分不显著。",
    "comparable": true,
    "conds": [],
-   "n": 4500,
-   "days": 150,
-   "hr": 51.22,
-   "mean_ret": 0.7434,
-   "excess_pp": 8.57,
-   "alpha": 0.8222,
-   "t": 8.26,
-   "alpha_days": 150,
-   "days_beat": 97,
-   "days_total": 150,
-   "oos_alpha": 0.6078,
-   "oos_t": 4.09,
-   "oos_days": 60,
+   "n": 4530,
+   "days": 151,
+   "hr": 51.24,
+   "mean_ret": 0.7541,
+   "excess_pp": 8.59,
+   "alpha": 0.831,
+   "t": 8.37,
+   "alpha_days": 151,
+   "days_beat": 98,
+   "days_total": 151,
+   "oos_alpha": 0.6332,
+   "oos_t": 4.27,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 1442,
-    "alpha": -0.1236,
-    "t": -1.04,
-    "days": 97,
-    "hr": 41.68
+    "n": 1452,
+    "alpha": -0.1332,
+    "t": -1.13,
+    "days": 98,
+    "hr": 41.53
    },
    "by_regime": {
     "涨": {
@@ -1767,12 +1768,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 900,
-     "hr": 47.44,
-     "excess_pp": 12.4,
-     "alpha": 0.3446,
-     "t": 1.73,
-     "days": 30
+     "n": 930,
+     "hr": 47.63,
+     "excess_pp": 12.53,
+     "alpha": 0.403,
+     "t": 2.01,
+     "days": 31
     },
     "跌": {
      "n": 960,
@@ -1808,7 +1809,7 @@
     }
    },
    "verdict": "显著为正",
-   "alt_hr": 51.29
+   "alt_hr": 51.32
   },
   {
    "id": "R",
@@ -1822,26 +1823,26 @@
    "note": "强涨→换手≥3% 且 量比≤1.0 且 活跃度≥3（不加涨幅上限）；涨→换手≥5% 且 涨幅≤0.5%；平→涨幅≤0.6% 且 换手≥2% 且 量比≤1.0；跌→涨幅≤0.6% 且 换手≥2% 且 量比≤1.0；弱跌→涨幅≤0.4%（低涨幅）",
    "comparable": true,
    "conds": [],
-   "n": 6411,
-   "days": 135,
-   "hr": 45.22,
-   "mean_ret": 0.0838,
-   "excess_pp": 2.57,
-   "alpha": 0.0116,
-   "t": 0.13,
-   "alpha_days": 118,
-   "days_beat": 63,
-   "days_total": 135,
-   "oos_alpha": -0.2668,
-   "oos_t": -1.71,
-   "oos_days": 31,
-   "need_days": 27811,
+   "n": 6441,
+   "days": 136,
+   "hr": 45.21,
+   "mean_ret": 0.0805,
+   "excess_pp": 2.56,
+   "alpha": 0.0045,
+   "t": 0.05,
+   "alpha_days": 119,
+   "days_beat": 64,
+   "days_total": 136,
+   "oos_alpha": -0.2844,
+   "oos_t": -1.87,
+   "oos_days": 32,
+   "need_days": 190281,
    "buyable": {
-    "n": 6159,
-    "alpha": -0.0116,
-    "t": -0.13,
-    "days": 118,
-    "hr": 44.2
+    "n": 6189,
+    "alpha": -0.0184,
+    "t": -0.21,
+    "days": 119,
+    "hr": 44.19
    },
    "by_regime": {
     "强涨": {
@@ -1853,12 +1854,12 @@
      "days": 27
     },
     "弱跌": {
-     "n": 1894,
-     "hr": 36.11,
-     "excess_pp": 1.07,
-     "alpha": 0.1155,
-     "t": 1.18,
-     "days": 30
+     "n": 1924,
+     "hr": 36.23,
+     "excess_pp": 1.12,
+     "alpha": 0.085,
+     "t": 0.86,
+     "days": 31
     },
     "涨": {
      "n": 199,
@@ -1886,7 +1887,7 @@
     }
    },
    "verdict": "不显著",
-   "alt_hr": 44.31
+   "alt_hr": 44.28
   },
   {
    "id": "S",
@@ -1960,7 +1961,7 @@
     "弱跌": {
      "n": 116,
      "hr": 49.14,
-     "excess_pp": 14.09,
+     "excess_pp": 14.03,
      "alpha": 0.7232,
      "t": 1.37,
      "days": 18
@@ -2003,26 +2004,26 @@
      1.0
     ]
    ],
-   "n": 3800,
-   "days": 146,
-   "hr": 56.34,
-   "mean_ret": 0.7232,
-   "excess_pp": 13.69,
-   "alpha": 0.8206,
-   "t": 7.53,
-   "alpha_days": 139,
+   "n": 3810,
+   "days": 147,
+   "hr": 56.3,
+   "mean_ret": 0.7227,
+   "excess_pp": 13.65,
+   "alpha": 0.8171,
+   "t": 7.55,
+   "alpha_days": 140,
    "days_beat": 114,
-   "days_total": 146,
-   "oos_alpha": 0.4363,
-   "oos_t": 2.42,
-   "oos_days": 54,
+   "days_total": 147,
+   "oos_alpha": 0.4343,
+   "oos_t": 2.45,
+   "oos_days": 55,
    "need_days": 0,
    "buyable": {
-    "n": 3800,
-    "alpha": 0.8206,
-    "t": 7.53,
-    "days": 139,
-    "hr": 56.34
+    "n": 3810,
+    "alpha": 0.8171,
+    "t": 7.55,
+    "days": 140,
+    "hr": 56.3
    },
    "by_regime": {
     "强涨": {
@@ -2050,12 +2051,12 @@
      "days": 32
     },
     "弱跌": {
-     "n": 416,
-     "hr": 40.62,
-     "excess_pp": 5.58,
-     "alpha": 0.3671,
-     "t": 1.44,
-     "days": 25
+     "n": 426,
+     "hr": 40.61,
+     "excess_pp": 5.5,
+     "alpha": 0.3656,
+     "t": 1.5,
+     "days": 26
     },
     "平": {
      "n": 540,
@@ -2075,7 +2076,7 @@
     }
    },
    "verdict": "显著为正·含前视",
-   "alt_hr": 36.58
+   "alt_hr": 36.51
   },
   {
    "id": "SN",
@@ -2166,7 +2167,7 @@
     "弱跌": {
      "n": 1,
      "hr": 0.0,
-     "excess_pp": -35.05,
+     "excess_pp": -35.11,
      "alpha": null,
      "t": null,
      "days": 0
@@ -2197,7 +2198,7 @@
    "days": 25,
    "hr": 83.33,
    "mean_ret": 6.2488,
-   "excess_pp": 40.68,
+   "excess_pp": 40.69,
    "alpha": null,
    "t": null,
    "alpha_days": 1,
@@ -2228,7 +2229,7 @@
     "弱跌": {
      "n": 1,
      "hr": 100.0,
-     "excess_pp": 64.95,
+     "excess_pp": 64.89,
      "alpha": null,
      "t": null,
      "days": 0
@@ -2306,7 +2307,7 @@
     "弱跌": {
      "n": 12,
      "hr": 58.33,
-     "excess_pp": 23.29,
+     "excess_pp": 23.23,
      "alpha": null,
      "t": null,
      "days": 0
@@ -2397,7 +2398,7 @@
     "弱跌": {
      "n": 12,
      "hr": 58.33,
-     "excess_pp": 23.29,
+     "excess_pp": 23.23,
      "alpha": null,
      "t": null,
      "days": 0
@@ -2448,16 +2449,16 @@
      3.0
     ]
    ],
-   "n": 410,
-   "days": 112,
-   "hr": 67.32,
-   "mean_ret": 2.8905,
-   "excess_pp": 24.67,
+   "n": 411,
+   "days": 113,
+   "hr": 67.4,
+   "mean_ret": 2.9092,
+   "excess_pp": 24.75,
    "alpha": 2.2727,
    "t": 5.23,
    "alpha_days": 50,
-   "days_beat": 85,
-   "days_total": 112,
+   "days_beat": 86,
+   "days_total": 113,
    "oos_alpha": 1.6348,
    "oos_t": 1.78,
    "oos_days": 10,
@@ -2465,9 +2466,9 @@
    "buyable": null,
    "by_regime": {
     "弱跌": {
-     "n": 43,
-     "hr": 58.14,
-     "excess_pp": 23.09,
+     "n": 44,
+     "hr": 59.09,
+     "excess_pp": 23.99,
      "alpha": 0.9133,
      "t": 1.48,
      "days": 5
@@ -2514,7 +2515,7 @@
     }
    },
    "verdict": "显著为正",
-   "alt_hr": 67.32
+   "alt_hr": 67.4
   },
   {
    "id": "briefWZ5",
@@ -2539,16 +2540,16 @@
      1.2
     ]
    ],
-   "n": 342,
-   "days": 101,
-   "hr": 66.96,
-   "mean_ret": 2.9069,
-   "excess_pp": 24.31,
+   "n": 343,
+   "days": 102,
+   "hr": 67.06,
+   "mean_ret": 2.9293,
+   "excess_pp": 24.41,
    "alpha": 2.4716,
    "t": 4.76,
    "alpha_days": 41,
-   "days_beat": 76,
-   "days_total": 101,
+   "days_beat": 77,
+   "days_total": 102,
    "oos_alpha": 0.8036,
    "oos_t": 0.35,
    "oos_days": 3,
@@ -2556,9 +2557,9 @@
    "buyable": null,
    "by_regime": {
     "弱跌": {
-     "n": 31,
-     "hr": 51.61,
-     "excess_pp": 16.57,
+     "n": 32,
+     "hr": 53.12,
+     "excess_pp": 18.02,
      "alpha": 0.0011,
      "t": 0.0,
      "days": 4
@@ -2605,7 +2606,7 @@
     }
    },
    "verdict": "显著为正",
-   "alt_hr": 66.96
+   "alt_hr": 67.06
   },
   {
    "id": "briefWZ6",
@@ -2634,7 +2635,7 @@
    "days": 109,
    "hr": 66.76,
    "mean_ret": 2.872,
-   "excess_pp": 24.11,
+   "excess_pp": 24.12,
    "alpha": 2.192,
    "t": 4.62,
    "alpha_days": 41,
@@ -2649,7 +2650,7 @@
     "弱跌": {
      "n": 39,
      "hr": 56.41,
-     "excess_pp": 21.37,
+     "excess_pp": 21.3,
      "alpha": 0.8731,
      "t": 1.42,
      "days": 5
@@ -2716,26 +2717,26 @@
      5.0
     ]
    ],
-   "n": 6281,
-   "days": 150,
-   "hr": 47.11,
-   "mean_ret": 0.1135,
-   "excess_pp": 4.46,
-   "alpha": -0.1731,
-   "t": -1.93,
-   "alpha_days": 147,
+   "n": 6290,
+   "days": 151,
+   "hr": 47.07,
+   "mean_ret": 0.1121,
+   "excess_pp": 4.43,
+   "alpha": -0.1789,
+   "t": -2.0,
+   "alpha_days": 148,
    "days_beat": 77,
-   "days_total": 150,
-   "oos_alpha": -0.4852,
-   "oos_t": -3.51,
-   "oos_days": 59,
-   "need_days": 11,
+   "days_total": 151,
+   "oos_alpha": -0.4945,
+   "oos_t": -3.63,
+   "oos_days": 60,
+   "need_days": 0,
    "buyable": {
-    "n": 6281,
-    "alpha": -0.1731,
-    "t": -1.93,
-    "days": 147,
-    "hr": 47.11
+    "n": 6290,
+    "alpha": -0.1789,
+    "t": -2.0,
+    "days": 148,
+    "hr": 47.07
    },
    "by_regime": {
     "强涨": {
@@ -2755,12 +2756,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 483,
-     "hr": 38.92,
-     "excess_pp": 3.88,
-     "alpha": -0.2142,
-     "t": -0.76,
-     "days": 27
+     "n": 492,
+     "hr": 38.62,
+     "excess_pp": 3.51,
+     "alpha": -0.2437,
+     "t": -0.89,
+     "days": 28
     },
     "平": {
      "n": 955,
@@ -2787,8 +2788,8 @@
      "days": 1
     }
    },
-   "verdict": "不显著",
-   "alt_hr": 46.28
+   "verdict": "显著为负",
+   "alt_hr": 46.26
   },
   {
    "id": "briefWB2",
@@ -2808,25 +2809,25 @@
      50.0
     ]
    ],
-   "n": 6396,
-   "days": 150,
+   "n": 6402,
+   "days": 151,
    "hr": 44.11,
-   "mean_ret": -0.1508,
-   "excess_pp": 1.46,
-   "alpha": -0.0679,
-   "t": -0.66,
-   "alpha_days": 149,
-   "days_beat": 84,
-   "days_total": 150,
-   "oos_alpha": -0.234,
-   "oos_t": -1.59,
-   "oos_days": 60,
-   "need_days": 1220,
+   "mean_ret": -0.1498,
+   "excess_pp": 1.47,
+   "alpha": -0.0628,
+   "t": -0.62,
+   "alpha_days": 150,
+   "days_beat": 85,
+   "days_total": 151,
+   "oos_alpha": -0.2186,
+   "oos_t": -1.5,
+   "oos_days": 61,
+   "need_days": 1411,
    "buyable": {
-    "n": 6396,
-    "alpha": -0.0679,
-    "t": -0.66,
-    "days": 149,
+    "n": 6402,
+    "alpha": -0.0628,
+    "t": -0.62,
+    "days": 150,
     "hr": 44.11
    },
    "by_regime": {
@@ -2847,12 +2848,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 584,
-     "hr": 42.47,
-     "excess_pp": 7.42,
-     "alpha": -0.0561,
-     "t": -0.21,
-     "days": 29
+     "n": 590,
+     "hr": 42.54,
+     "excess_pp": 7.44,
+     "alpha": -0.0309,
+     "t": -0.12,
+     "days": 30
     },
     "平": {
      "n": 1148,
@@ -2900,26 +2901,26 @@
      3.0
     ]
    ],
-   "n": 20069,
-   "days": 150,
-   "hr": 45.3,
-   "mean_ret": -0.098,
-   "excess_pp": 2.66,
-   "alpha": -0.1364,
-   "t": -2.55,
-   "alpha_days": 150,
+   "n": 20088,
+   "days": 151,
+   "hr": 45.29,
+   "mean_ret": -0.0983,
+   "excess_pp": 2.64,
+   "alpha": -0.1393,
+   "t": -2.62,
+   "alpha_days": 151,
    "days_beat": 73,
-   "days_total": 150,
-   "oos_alpha": -0.3105,
-   "oos_t": -4.8,
-   "oos_days": 60,
+   "days_total": 151,
+   "oos_alpha": -0.3148,
+   "oos_t": -4.94,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 20069,
-    "alpha": -0.1364,
-    "t": -2.55,
-    "days": 150,
-    "hr": 45.3
+    "n": 20088,
+    "alpha": -0.1393,
+    "t": -2.62,
+    "days": 151,
+    "hr": 45.29
    },
    "by_regime": {
     "强涨": {
@@ -2955,12 +2956,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 1639,
-     "hr": 34.41,
-     "excess_pp": -0.63,
-     "alpha": -0.1047,
-     "t": -0.55,
-     "days": 30
+     "n": 1658,
+     "hr": 34.32,
+     "excess_pp": -0.79,
+     "alpha": -0.1199,
+     "t": -0.65,
+     "days": 31
     },
     "震荡": {
      "n": 24,
@@ -2972,7 +2973,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 44.46
+   "alt_hr": 44.45
   },
   {
    "id": "briefWB4",
@@ -2992,26 +2993,26 @@
      2.0
     ]
    ],
-   "n": 36411,
-   "days": 150,
-   "hr": 44.46,
-   "mean_ret": -0.1267,
-   "excess_pp": 1.81,
-   "alpha": -0.128,
-   "t": -4.13,
-   "alpha_days": 150,
+   "n": 36439,
+   "days": 151,
+   "hr": 44.45,
+   "mean_ret": -0.1265,
+   "excess_pp": 1.8,
+   "alpha": -0.1278,
+   "t": -4.15,
+   "alpha_days": 151,
    "days_beat": 75,
-   "days_total": 150,
-   "oos_alpha": -0.2175,
-   "oos_t": -4.47,
-   "oos_days": 60,
+   "days_total": 151,
+   "oos_alpha": -0.2156,
+   "oos_t": -4.5,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 36411,
-    "alpha": -0.128,
-    "t": -4.13,
-    "days": 150,
-    "hr": 44.46
+    "n": 36439,
+    "alpha": -0.1278,
+    "t": -4.15,
+    "days": 151,
+    "hr": 44.45
    },
    "by_regime": {
     "强涨": {
@@ -3047,12 +3048,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 3092,
-     "hr": 33.15,
-     "excess_pp": -1.9,
-     "alpha": -0.1892,
-     "t": -2.24,
-     "days": 30
+     "n": 3120,
+     "hr": 33.14,
+     "excess_pp": -1.96,
+     "alpha": -0.1863,
+     "t": -2.28,
+     "days": 31
     },
     "震荡": {
      "n": 40,
@@ -3064,7 +3065,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 43.73
+   "alt_hr": 43.72
   },
   {
    "id": "briefWB5",
@@ -3084,26 +3085,26 @@
      20.0
     ]
    ],
-   "n": 25940,
-   "days": 150,
-   "hr": 43.11,
-   "mean_ret": -0.2061,
-   "excess_pp": 0.47,
-   "alpha": -0.1069,
-   "t": -2.28,
-   "alpha_days": 150,
-   "days_beat": 88,
-   "days_total": 150,
-   "oos_alpha": -0.173,
-   "oos_t": -2.61,
-   "oos_days": 60,
+   "n": 25958,
+   "days": 151,
+   "hr": 43.12,
+   "mean_ret": -0.2056,
+   "excess_pp": 0.48,
+   "alpha": -0.1041,
+   "t": -2.23,
+   "alpha_days": 151,
+   "days_beat": 89,
+   "days_total": 151,
+   "oos_alpha": -0.1648,
+   "oos_t": -2.5,
+   "oos_days": 61,
    "need_days": 0,
    "buyable": {
-    "n": 25940,
-    "alpha": -0.1069,
-    "t": -2.28,
-    "days": 150,
-    "hr": 43.11
+    "n": 25958,
+    "alpha": -0.1041,
+    "t": -2.23,
+    "days": 151,
+    "hr": 43.12
    },
    "by_regime": {
     "强涨": {
@@ -3139,12 +3140,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 2467,
-     "hr": 38.18,
-     "excess_pp": 3.14,
-     "alpha": -0.107,
-     "t": -1.0,
-     "days": 30
+     "n": 2485,
+     "hr": 38.31,
+     "excess_pp": 3.2,
+     "alpha": -0.093,
+     "t": -0.89,
+     "days": 31
     },
     "震荡": {
      "n": 65,
@@ -3156,7 +3157,7 @@
     }
    },
    "verdict": "显著为负",
-   "alt_hr": 42.44
+   "alt_hr": 42.45
   },
   {
    "id": "briefWB6",
@@ -3176,26 +3177,26 @@
      0.5
     ]
    ],
-   "n": 19601,
-   "days": 150,
-   "hr": 40.75,
-   "mean_ret": -0.2364,
-   "excess_pp": -1.9,
-   "alpha": -0.0352,
-   "t": -0.93,
-   "alpha_days": 150,
-   "days_beat": 70,
-   "days_total": 150,
-   "oos_alpha": 0.0299,
-   "oos_t": 0.82,
-   "oos_days": 60,
-   "need_days": 544,
+   "n": 19635,
+   "days": 151,
+   "hr": 40.76,
+   "mean_ret": -0.237,
+   "excess_pp": -1.89,
+   "alpha": -0.0406,
+   "t": -1.06,
+   "alpha_days": 151,
+   "days_beat": 71,
+   "days_total": 151,
+   "oos_alpha": 0.0156,
+   "oos_t": 0.41,
+   "oos_days": 61,
+   "need_days": 387,
    "buyable": {
-    "n": 19601,
-    "alpha": -0.0352,
-    "t": -0.93,
-    "days": 150,
-    "hr": 40.75
+    "n": 19635,
+    "alpha": -0.0406,
+    "t": -1.06,
+    "days": 151,
+    "hr": 40.76
    },
    "by_regime": {
     "震荡": {
@@ -3215,12 +3216,12 @@
      "days": 28
     },
     "弱跌": {
-     "n": 2397,
-     "hr": 36.67,
-     "excess_pp": 1.63,
-     "alpha": 0.0921,
-     "t": 1.22,
-     "days": 30
+     "n": 2431,
+     "hr": 36.77,
+     "excess_pp": 1.67,
+     "alpha": 0.0619,
+     "t": 0.78,
+     "days": 31
     },
     "涨": {
      "n": 4498,
@@ -3283,7 +3284,7 @@
    "live": false
   }
  ],
- "gate_oos_excess": -1.3,
+ "gate_oos_excess": -1.4,
  "regime_order": [
   "强涨",
   "涨",
@@ -3294,5 +3295,5 @@
  ],
  "warnings": [],
  "registry_note": "rule_registry.json + decision_brief/regime_rules/discovered_rules 自动派生",
- "elapsed": 4.71
+ "elapsed": 4.21
 }
