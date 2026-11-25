@@ -22,109 +22,30 @@
   "note": "全市场独立筛选，与「前收跌 ∩ 14:30 上涨」主池近乎正交。历史期望未验证为正，按「前向验证」跟踪，不作为买入信号。"
  },
  "latest": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "members": [
    {
-    "code": "601595",
-    "sym": "sh601595",
-    "name": "上海电影",
-    "prev": 32.52,
-    "p1430": 34.06,
-    "pclose": 34.26,
-    "chg1430": 4.74,
-    "chg_close": 5.35,
-    "turnover1430": 6.08,
-    "float_mktcap_yi": 154.05,
-    "vol_ratio": 1.18,
-    "p_next": 32.21,
-    "r_next": -5.43
-   },
-   {
-    "code": "003021",
-    "sym": "sz003021",
-    "name": "兆威机电",
-    "prev": 84.51,
-    "p1430": 88.46,
-    "pclose": 89.12,
-    "chg1430": 4.67,
-    "chg_close": 5.45,
-    "turnover1430": 5.92,
-    "float_mktcap_yi": 185.82,
-    "vol_ratio": 1.41,
-    "p_next": 83.24,
-    "r_next": -5.9
-   },
-   {
-    "code": "601566",
-    "sym": "sh601566",
-    "name": "九牧王",
-    "prev": 8.43,
-    "p1430": 8.78,
-    "pclose": 8.78,
-    "chg1430": 4.15,
-    "chg_close": 4.15,
-    "turnover1430": 6.7,
-    "float_mktcap_yi": 50.45,
-    "vol_ratio": 1.31,
-    "p_next": 8.85,
-    "r_next": 0.8
-   },
-   {
-    "code": "002452",
-    "sym": "sz002452",
-    "name": "长高电气",
-    "prev": 10.71,
-    "p1430": 11.15,
-    "pclose": 11.4,
-    "chg1430": 4.11,
-    "chg_close": 6.44,
-    "turnover1430": 6.15,
-    "float_mktcap_yi": 59.19,
-    "vol_ratio": 1.51,
-    "p_next": 10.92,
-    "r_next": -2.06
-   },
-   {
-    "code": "600619",
-    "sym": "sh600619",
-    "name": "海立股份",
-    "prev": 14.35,
-    "p1430": 14.91,
-    "pclose": 14.9,
-    "chg1430": 3.9,
-    "chg_close": 3.83,
-    "turnover1430": 9.9,
-    "float_mktcap_yi": 117.59,
-    "vol_ratio": 1.04,
-    "p_next": 14.15,
-    "r_next": -5.1
-   },
-   {
-    "code": "001283",
-    "sym": "sz001283",
-    "name": "豪鹏科技",
-    "prev": 48.61,
-    "p1430": 50.26,
-    "pclose": 50.39,
-    "chg1430": 3.39,
-    "chg_close": 3.66,
-    "turnover1430": 7.19,
-    "float_mktcap_yi": 52.07,
-    "vol_ratio": 1.43,
-    "p_next": 49.46,
-    "r_next": -1.59
+    "code": "002042",
+    "sym": "sz002042",
+    "name": "华孚时尚",
+    "prev": 3.84,
+    "p1430": 4.0,
+    "pclose": 3.99,
+    "chg1430": 4.17,
+    "chg_close": 3.91,
+    "turnover1430": 7.92,
+    "float_mktcap_yi": 68.03,
+    "vol_ratio": 1.12
    }
   ],
   "diag": {
    "all_a": 5580,
-   "base_n": 1149,
-   "fetched": 1147,
-   "band_3_5": 31,
-   "band_turn": 8,
-   "final": 6
-  },
-  "mean_r_next": -3.21,
-  "n_r_next": 6
+   "base_n": 1131,
+   "fetched": 1128,
+   "band_3_5": 8,
+   "band_turn": 1,
+   "final": 1
+  }
  },
  "history": [
   {
@@ -4129,57 +4050,33 @@
    },
    "mean_r_next": -3.21,
    "n_r_next": 6
+  },
+  {
+   "date": "2026-11-25",
+   "members": [
+    {
+     "code": "002042",
+     "sym": "sz002042",
+     "name": "华孚时尚",
+     "prev": 3.84,
+     "p1430": 4.0,
+     "pclose": 3.99,
+     "chg1430": 4.17,
+     "chg_close": 3.91,
+     "turnover1430": 7.92,
+     "float_mktcap_yi": 68.03,
+     "vol_ratio": 1.12
+    }
+   ],
+   "diag": {
+    "all_a": 5580,
+    "base_n": 1131,
+    "fetched": 1128,
+    "band_3_5": 8,
+    "band_turn": 1,
+    "final": 1
+   }
   }
  ],
- "generated_at": "2026-11-24 14:35:40",
- "backfilled_at": "2026-11-25 11:39:06",
- "test": {
-  "generated_at": "2026-11-25 11:39:07",
-  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
-  "cost_pct": 0.2,
-  "nmc_real_rows": 7974,
-  "nmc_total_rows": 111158,
-  "nmc_note": "流通市值：面板实测 7974 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
-  "full4": {
-   "days": 144,
-   "n": 744,
-   "alpha": -0.2092,
-   "t": -0.89,
-   "raw": -0.3084,
-   "win": 46.1,
-   "day_win": 43.8,
-   "oos_days": 58,
-   "oos_alpha": -0.005,
-   "oos_t": -0.01,
-   "need_days": 585
-  },
-  "pool": {
-   "days": 151,
-   "n": 1689,
-   "alpha": -0.2821,
-   "t": -2.34,
-   "raw": -0.3613,
-   "win": 45.1,
-   "day_win": 42.4,
-   "oos_days": 61,
-   "oos_alpha": -0.4343,
-   "oos_t": -2.23,
-   "need_days": 0
-  },
-  "forward": {
-   "days": 28,
-   "n": 238,
-   "mean": -0.138,
-   "mean_stock": -0.566,
-   "t": -0.22,
-   "win": 42.4,
-   "day_win": 39.3,
-   "need_days": 2205
-  },
-  "coverage": {
-   "real_pairs": 238,
-   "in_panel": 109,
-   "recall": 0.458
-  }
- }
+ "generated_at": "2026-11-25 14:49:40"
 }
