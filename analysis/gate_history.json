@@ -183,6 +183,10 @@
   {
    "date": "2026-11-24",
    "passed": false
+  },
+  {
+   "date": "2026-11-25",
+   "passed": false
   }
  ]
 }
