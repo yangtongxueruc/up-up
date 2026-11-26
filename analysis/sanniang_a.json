@@ -35,7 +35,9 @@
     "chg_close": 3.91,
     "turnover1430": 7.92,
     "float_mktcap_yi": 68.03,
-    "vol_ratio": 1.12
+    "vol_ratio": 1.12,
+    "p_next": 3.82,
+    "r_next": -4.5
    }
   ],
   "diag": {
@@ -45,7 +47,9 @@
    "band_3_5": 8,
    "band_turn": 1,
    "final": 1
-  }
+  },
+  "mean_r_next": -4.5,
+  "n_r_next": 1
  },
  "history": [
   {
@@ -4065,7 +4069,9 @@
      "chg_close": 3.91,
      "turnover1430": 7.92,
      "float_mktcap_yi": 68.03,
-     "vol_ratio": 1.12
+     "vol_ratio": 1.12,
+     "p_next": 3.82,
+     "r_next": -4.5
     }
    ],
    "diag": {
@@ -4075,8 +4081,60 @@
     "band_3_5": 8,
     "band_turn": 1,
     "final": 1
-   }
+   },
+   "mean_r_next": -4.5,
+   "n_r_next": 1
   }
  ],
- "generated_at": "2026-11-25 14:49:40"
+ "generated_at": "2026-11-25 14:49:40",
+ "backfilled_at": "2026-11-26 11:38:39",
+ "test": {
+  "generated_at": "2026-11-26 11:38:40",
+  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
+  "cost_pct": 0.2,
+  "nmc_real_rows": 8264,
+  "nmc_total_rows": 111448,
+  "nmc_note": "流通市值：面板实测 8264 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
+  "full4": {
+   "days": 145,
+   "n": 745,
+   "alpha": -0.2359,
+   "t": -1.0,
+   "raw": -0.3357,
+   "win": 46.0,
+   "day_win": 43.4,
+   "oos_days": 58,
+   "oos_alpha": -0.0306,
+   "oos_t": -0.07,
+   "need_days": 432
+  },
+  "pool": {
+   "days": 152,
+   "n": 1691,
+   "alpha": -0.2986,
+   "t": -2.47,
+   "raw": -0.3784,
+   "win": 45.0,
+   "day_win": 42.1,
+   "oos_days": 61,
+   "oos_alpha": -0.4846,
+   "oos_t": -2.45,
+   "need_days": 0
+  },
+  "forward": {
+   "days": 29,
+   "n": 239,
+   "mean": -0.288,
+   "mean_stock": -0.582,
+   "t": -0.47,
+   "win": 42.3,
+   "day_win": 37.9,
+   "need_days": 495
+  },
+  "coverage": {
+   "real_pairs": 239,
+   "in_panel": 110,
+   "recall": 0.4603
+  }
+ }
 }
