@@ -22,34 +22,56 @@
   "note": "全市场独立筛选，与「前收跌 ∩ 14:30 上涨」主池近乎正交。历史期望未验证为正，按「前向验证」跟踪，不作为买入信号。"
  },
  "latest": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "members": [
    {
-    "code": "002042",
-    "sym": "sz002042",
-    "name": "华孚时尚",
-    "prev": 3.84,
-    "p1430": 4.0,
-    "pclose": 3.99,
-    "chg1430": 4.17,
-    "chg_close": 3.91,
-    "turnover1430": 7.92,
-    "float_mktcap_yi": 68.03,
-    "vol_ratio": 1.12,
-    "p_next": 3.82,
-    "r_next": -4.5
+    "code": "002716",
+    "sym": "sz002716",
+    "name": "湖南白银",
+    "prev": 6.22,
+    "p1430": 6.52,
+    "pclose": 6.53,
+    "chg1430": 4.82,
+    "chg_close": 4.98,
+    "turnover1430": 6.1,
+    "float_mktcap_yi": 151.89,
+    "vol_ratio": 1.65
+   },
+   {
+    "code": "000593",
+    "sym": "sz000593",
+    "name": "德龙汇能",
+    "prev": 20.54,
+    "p1430": 21.5,
+    "pclose": 21.56,
+    "chg1430": 4.67,
+    "chg_close": 4.97,
+    "turnover1430": 9.34,
+    "float_mktcap_yi": 77.29,
+    "vol_ratio": 3.16
+   },
+   {
+    "code": "603175",
+    "sym": "sh603175",
+    "name": "超颖电子",
+    "prev": 90.49,
+    "p1430": 93.57,
+    "pclose": 93.94,
+    "chg1430": 3.4,
+    "chg_close": 3.81,
+    "turnover1430": 9.26,
+    "float_mktcap_yi": 57.06,
+    "vol_ratio": 2.13
    }
   ],
   "diag": {
    "all_a": 5580,
-   "base_n": 1131,
-   "fetched": 1128,
-   "band_3_5": 8,
-   "band_turn": 1,
-   "final": 1
-  },
-  "mean_r_next": -4.5,
-  "n_r_next": 1
+   "base_n": 1130,
+   "fetched": 1130,
+   "band_3_5": 31,
+   "band_turn": 7,
+   "final": 3
+  }
  },
  "history": [
   {
@@ -4084,57 +4106,59 @@
    },
    "mean_r_next": -4.5,
    "n_r_next": 1
+  },
+  {
+   "date": "2026-11-26",
+   "members": [
+    {
+     "code": "002716",
+     "sym": "sz002716",
+     "name": "湖南白银",
+     "prev": 6.22,
+     "p1430": 6.52,
+     "pclose": 6.53,
+     "chg1430": 4.82,
+     "chg_close": 4.98,
+     "turnover1430": 6.1,
+     "float_mktcap_yi": 151.89,
+     "vol_ratio": 1.65
+    },
+    {
+     "code": "000593",
+     "sym": "sz000593",
+     "name": "德龙汇能",
+     "prev": 20.54,
+     "p1430": 21.5,
+     "pclose": 21.56,
+     "chg1430": 4.67,
+     "chg_close": 4.97,
+     "turnover1430": 9.34,
+     "float_mktcap_yi": 77.29,
+     "vol_ratio": 3.16
+    },
+    {
+     "code": "603175",
+     "sym": "sh603175",
+     "name": "超颖电子",
+     "prev": 90.49,
+     "p1430": 93.57,
+     "pclose": 93.94,
+     "chg1430": 3.4,
+     "chg_close": 3.81,
+     "turnover1430": 9.26,
+     "float_mktcap_yi": 57.06,
+     "vol_ratio": 2.13
+    }
+   ],
+   "diag": {
+    "all_a": 5580,
+    "base_n": 1130,
+    "fetched": 1130,
+    "band_3_5": 31,
+    "band_turn": 7,
+    "final": 3
+   }
   }
  ],
- "generated_at": "2026-11-25 14:49:40",
- "backfilled_at": "2026-11-26 11:38:39",
- "test": {
-  "generated_at": "2026-11-26 11:38:40",
-  "universe": "site/data 面板（主板 ∩ 前收跌 ∩ 14:30涨）",
-  "cost_pct": 0.2,
-  "nmc_real_rows": 8264,
-  "nmc_total_rows": 111448,
-  "nmc_note": "流通市值：面板实测 8264 行；其余由 float_shares.json 的流通股本×当日价回推（近似）",
-  "full4": {
-   "days": 145,
-   "n": 745,
-   "alpha": -0.2359,
-   "t": -1.0,
-   "raw": -0.3357,
-   "win": 46.0,
-   "day_win": 43.4,
-   "oos_days": 58,
-   "oos_alpha": -0.0306,
-   "oos_t": -0.07,
-   "need_days": 432
-  },
-  "pool": {
-   "days": 152,
-   "n": 1691,
-   "alpha": -0.2986,
-   "t": -2.47,
-   "raw": -0.3784,
-   "win": 45.0,
-   "day_win": 42.1,
-   "oos_days": 61,
-   "oos_alpha": -0.4846,
-   "oos_t": -2.45,
-   "need_days": 0
-  },
-  "forward": {
-   "days": 29,
-   "n": 239,
-   "mean": -0.288,
-   "mean_stock": -0.582,
-   "t": -0.47,
-   "win": 42.3,
-   "day_win": 37.9,
-   "need_days": 495
-  },
-  "coverage": {
-   "real_pairs": 239,
-   "in_panel": 110,
-   "recall": 0.4603
-  }
- }
+ "generated_at": "2026-11-26 14:45:40"
 }
