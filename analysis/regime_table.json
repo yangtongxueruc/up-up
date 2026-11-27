@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26 10:37",
+ "generated_at": "2026-11-27 10:48",
  "regimes": {
   "强涨": {
    "n": 31185,
@@ -34,12 +34,12 @@
    "ruleA_ret": -0.35
   },
   "弱跌": {
-   "n": 11115,
+   "n": 11405,
    "base": 35.6,
-   "ruleA_n": 701,
-   "ruleA_hr": 33.8,
-   "excess": -1.8,
-   "ruleA_ret": -1.0
+   "ruleA_n": 718,
+   "ruleA_hr": 34.7,
+   "excess": -0.9,
+   "ruleA_ret": -0.94
   },
   "震荡": {
    "n": 193,
@@ -51,14 +51,14 @@
   }
  },
  "overall": {
-  "n": 111158,
-  "base": 42.1,
-  "ruleA_n": 5750,
-  "ruleA_hr": 40.4,
-  "excess": -1.7
+  "n": 111448,
+  "base": 42.0,
+  "ruleA_n": 5767,
+  "ruleA_hr": 40.5,
+  "excess": -1.5
  },
  "all_rules": {
-  "generated_at": "2026-11-26 10:38",
+  "generated_at": "2026-11-27 10:49",
   "count": 35,
   "catalog": [
    {
@@ -185,7 +185,7 @@
     "scope": "all",
     "timing": "1430",
     "signal_time": "1430",
-    "verdict": "显著为负"
+    "verdict": "不显著"
    },
    {
     "id": "B",
@@ -329,7 +329,7 @@
     "scope": "buy",
     "timing": "1430",
     "signal_time": "1430",
-    "verdict": "不显著"
+    "verdict": "显著为负"
    },
    {
     "id": "briefWB2",
@@ -1492,185 +1492,185 @@
    },
    "弱跌": {
     "E": {
-     "n": 4843,
-     "hr": 34.69,
-     "excess_pp": -0.42,
-     "alpha": -0.0252,
-     "t": -0.39,
-     "days": 31
+     "n": 4949,
+     "hr": 34.57,
+     "excess_pp": -0.57,
+     "alpha": -0.0416,
+     "t": -0.64,
+     "days": 32
     },
     "briefA1": {
-     "n": 3120,
-     "hr": 33.14,
-     "excess_pp": -1.96,
-     "alpha": -0.1863,
-     "t": -2.28,
-     "days": 31
+     "n": 3170,
+     "hr": 32.97,
+     "excess_pp": -2.18,
+     "alpha": -0.2064,
+     "t": -2.53,
+     "days": 32
     },
     "briefA2": {
-     "n": 2628,
-     "hr": 32.12,
-     "excess_pp": -2.99,
-     "alpha": -0.1782,
-     "t": -2.0,
-     "days": 31
+     "n": 2663,
+     "hr": 31.99,
+     "excess_pp": -3.15,
+     "alpha": -0.1967,
+     "t": -2.23,
+     "days": 32
     },
     "briefA3": {
-     "n": 1112,
-     "hr": 33.9,
-     "excess_pp": -1.2,
-     "alpha": -0.6919,
-     "t": -3.27,
-     "days": 30
+     "n": 1130,
+     "hr": 33.81,
+     "excess_pp": -1.34,
+     "alpha": -0.6878,
+     "t": -3.36,
+     "days": 31
     },
     "briefA4": {
      "n": 91,
      "hr": 43.96,
-     "excess_pp": 8.85,
+     "excess_pp": 8.81,
      "alpha": -0.1733,
      "t": -0.56,
      "days": 11
     },
     "briefA5": {
-     "n": 10611,
-     "hr": 34.43,
+     "n": 10876,
+     "hr": 34.46,
      "excess_pp": -0.68,
-     "alpha": -0.0382,
-     "t": -1.27,
-     "days": 31
+     "alpha": -0.0368,
+     "t": -1.26,
+     "days": 32
     },
     "briefA6": {
      "n": 11,
      "hr": 54.55,
-     "excess_pp": 19.44,
+     "excess_pp": 19.4,
      "alpha": null,
      "t": null,
      "days": 0
     },
     "briefB1": {
-     "n": 3401,
-     "hr": 29.02,
-     "excess_pp": -6.6,
-     "alpha": -0.3375,
-     "t": -4.14,
-     "days": 30
+     "n": 3478,
+     "hr": 29.21,
+     "excess_pp": -6.36,
+     "alpha": -0.3276,
+     "t": -4.12,
+     "days": 31
     },
     "briefB2": {
-     "n": 4206,
-     "hr": 40.44,
-     "excess_pp": 4.82,
-     "alpha": 0.1334,
+     "n": 4299,
+     "hr": 40.2,
+     "excess_pp": 4.62,
+     "alpha": 0.1296,
      "t": 2.49,
-     "days": 30
+     "days": 31
     },
     "briefB3": {
-     "n": 2791,
-     "hr": 31.92,
-     "excess_pp": -3.69,
-     "alpha": -0.3449,
-     "t": -4.17,
-     "days": 31
+     "n": 2839,
+     "hr": 31.7,
+     "excess_pp": -3.87,
+     "alpha": -0.3693,
+     "t": -4.41,
+     "days": 32
     },
     "briefB4": {
-     "n": 4076,
-     "hr": 34.91,
-     "excess_pp": -0.71,
-     "alpha": -0.1945,
-     "t": -1.97,
-     "days": 31
+     "n": 4161,
+     "hr": 34.97,
+     "excess_pp": -0.6,
+     "alpha": -0.1861,
+     "t": -1.94,
+     "days": 32
     },
     "briefB5": {
-     "n": 2762,
-     "hr": 40.95,
-     "excess_pp": 5.33,
-     "alpha": 0.2615,
-     "t": 1.37,
-     "days": 31
+     "n": 2815,
+     "hr": 40.78,
+     "excess_pp": 5.21,
+     "alpha": 0.2517,
+     "t": 1.36,
+     "days": 32
     },
     "BUY": {
-     "n": 10611,
-     "hr": 34.43,
+     "n": 10876,
+     "hr": 34.46,
      "excess_pp": -0.68,
-     "alpha": -0.0382,
-     "t": -1.27,
-     "days": 31
+     "alpha": -0.0368,
+     "t": -1.26,
+     "days": 32
     },
     "A": {
-     "n": 701,
-     "hr": 32.52,
-     "excess_pp": -2.58,
-     "alpha": -0.3752,
-     "t": -1.77,
-     "days": 29
+     "n": 718,
+     "hr": 33.57,
+     "excess_pp": -1.58,
+     "alpha": -0.3045,
+     "t": -1.4,
+     "days": 30
     },
     "B": {
-     "n": 153,
-     "hr": 34.64,
-     "excess_pp": -0.47,
-     "alpha": -0.7976,
-     "t": -1.82,
-     "days": 23
+     "n": 158,
+     "hr": 35.44,
+     "excess_pp": 0.3,
+     "alpha": -0.7125,
+     "t": -1.67,
+     "days": 24
     },
     "C": {
-     "n": 193,
-     "hr": 31.09,
-     "excess_pp": -4.02,
+     "n": 195,
+     "hr": 31.28,
+     "excess_pp": -3.86,
      "alpha": -0.9153,
      "t": -2.38,
      "days": 16
     },
     "D": {
-     "n": 921,
-     "hr": 38.76,
-     "excess_pp": 3.66,
-     "alpha": -0.268,
-     "t": -1.29,
-     "days": 30
+     "n": 955,
+     "hr": 39.58,
+     "excess_pp": 4.44,
+     "alpha": -0.2129,
+     "t": -1.02,
+     "days": 31
     },
     "briefZT1": {
-     "n": 44,
-     "hr": 59.09,
-     "excess_pp": 23.99,
+     "n": 46,
+     "hr": 60.87,
+     "excess_pp": 25.73,
      "alpha": 0.9133,
      "t": 1.48,
      "days": 5
     },
     "MF": {
-     "n": 930,
-     "hr": 47.63,
-     "excess_pp": 12.53,
-     "alpha": 0.403,
-     "t": 2.01,
-     "days": 31
+     "n": 960,
+     "hr": 47.29,
+     "excess_pp": 12.15,
+     "alpha": 0.3652,
+     "t": 1.84,
+     "days": 32
     },
     "R": {
-     "n": 1924,
-     "hr": 36.23,
-     "excess_pp": 1.12,
-     "alpha": 0.085,
-     "t": 0.86,
-     "days": 31
+     "n": 1984,
+     "hr": 36.79,
+     "excess_pp": 1.65,
+     "alpha": 0.1098,
+     "t": 1.11,
+     "days": 32
     },
     "S": {
-     "n": 116,
-     "hr": 49.14,
-     "excess_pp": 14.03,
+     "n": 117,
+     "hr": 49.57,
+     "excess_pp": 14.43,
      "alpha": 0.7232,
      "t": 1.37,
      "days": 18
     },
     "SC": {
-     "n": 426,
-     "hr": 40.61,
-     "excess_pp": 5.5,
-     "alpha": 0.3656,
-     "t": 1.5,
-     "days": 26
+     "n": 437,
+     "hr": 40.96,
+     "excess_pp": 5.82,
+     "alpha": 0.438,
+     "t": 1.78,
+     "days": 27
     },
     "SN": {
-     "n": 1,
+     "n": 2,
      "hr": 0.0,
-     "excess_pp": -35.11,
+     "excess_pp": -35.14,
      "alpha": null,
      "t": null,
      "days": 0
@@ -1678,7 +1678,7 @@
     "briefWZ1": {
      "n": 1,
      "hr": 100.0,
-     "excess_pp": 64.89,
+     "excess_pp": 64.86,
      "alpha": null,
      "t": null,
      "days": 0
@@ -1686,7 +1686,7 @@
     "briefWZ2": {
      "n": 12,
      "hr": 58.33,
-     "excess_pp": 23.23,
+     "excess_pp": 23.19,
      "alpha": null,
      "t": null,
      "days": 0
@@ -1694,82 +1694,82 @@
     "briefWZ3": {
      "n": 12,
      "hr": 58.33,
-     "excess_pp": 23.23,
+     "excess_pp": 23.19,
      "alpha": null,
      "t": null,
      "days": 0
     },
     "briefWZ4": {
-     "n": 44,
-     "hr": 59.09,
-     "excess_pp": 23.99,
+     "n": 46,
+     "hr": 60.87,
+     "excess_pp": 25.73,
      "alpha": 0.9133,
      "t": 1.48,
      "days": 5
     },
     "briefWZ5": {
-     "n": 32,
-     "hr": 53.12,
-     "excess_pp": 18.02,
+     "n": 34,
+     "hr": 55.88,
+     "excess_pp": 20.74,
      "alpha": 0.0011,
      "t": 0.0,
      "days": 4
     },
     "briefWZ6": {
-     "n": 39,
-     "hr": 56.41,
-     "excess_pp": 21.3,
+     "n": 41,
+     "hr": 58.54,
+     "excess_pp": 23.39,
      "alpha": 0.8731,
      "t": 1.42,
      "days": 5
     },
     "briefWB1": {
-     "n": 492,
-     "hr": 38.62,
-     "excess_pp": 3.51,
-     "alpha": -0.2437,
-     "t": -0.89,
-     "days": 28
+     "n": 507,
+     "hr": 38.07,
+     "excess_pp": 2.92,
+     "alpha": -0.2691,
+     "t": -1.01,
+     "days": 29
     },
     "briefWB2": {
-     "n": 590,
-     "hr": 42.54,
-     "excess_pp": 7.44,
-     "alpha": -0.0309,
-     "t": -0.12,
-     "days": 30
+     "n": 598,
+     "hr": 42.47,
+     "excess_pp": 7.33,
+     "alpha": -0.0282,
+     "t": -0.11,
+     "days": 31
     },
     "briefWB3": {
-     "n": 1658,
-     "hr": 34.32,
-     "excess_pp": -0.79,
-     "alpha": -0.1199,
-     "t": -0.65,
-     "days": 31
+     "n": 1685,
+     "hr": 34.01,
+     "excess_pp": -1.14,
+     "alpha": -0.1573,
+     "t": -0.87,
+     "days": 32
     },
     "briefWB4": {
-     "n": 3120,
-     "hr": 33.14,
-     "excess_pp": -1.96,
-     "alpha": -0.1863,
-     "t": -2.28,
-     "days": 31
+     "n": 3170,
+     "hr": 32.97,
+     "excess_pp": -2.18,
+     "alpha": -0.2064,
+     "t": -2.53,
+     "days": 32
     },
     "briefWB5": {
-     "n": 2485,
-     "hr": 38.31,
-     "excess_pp": 3.2,
-     "alpha": -0.093,
-     "t": -0.89,
-     "days": 31
+     "n": 2529,
+     "hr": 38.0,
+     "excess_pp": 2.86,
+     "alpha": -0.1079,
+     "t": -1.05,
+     "days": 32
     },
     "briefWB6": {
-     "n": 2431,
-     "hr": 36.77,
-     "excess_pp": 1.67,
-     "alpha": 0.0619,
-     "t": 0.78,
-     "days": 31
+     "n": 2508,
+     "hr": 37.32,
+     "excess_pp": 2.18,
+     "alpha": 0.0844,
+     "t": 1.06,
+     "days": 32
     }
    },
    "震荡": {
@@ -2045,8 +2045,8 @@
     "briefB3",
     "briefB4",
     "BUY",
-    "A",
     "B",
+    "briefWB1",
     "briefWB3",
     "briefWB4",
     "briefWB5"
